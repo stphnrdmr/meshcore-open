@@ -975,6 +975,10 @@ class MeshCoreConnector extends ChangeNotifier {
       await _usbFrameSubscription?.cancel();
       _usbFrameSubscription = null;
       await _usbSerialService.connect(portName: portName, baudRate: baudRate);
+      _activeUsbPortKey = _usbSerialService.activePortKey ?? _activeUsbPortKey;
+      _activeUsbPortLabel =
+          _usbSerialService.activePortDisplayLabel ?? _activeUsbPortLabel;
+      notifyListeners();
       if (PlatformInfo.isWeb) {
         await stopScan();
       }
