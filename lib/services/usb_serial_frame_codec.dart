@@ -27,6 +27,7 @@ class UsbSerialDecodedPacket {
 
 class UsbSerialFrameDecoder {
   final List<int> _rxBuffer = <int>[];
+  int _startIndex = 0;
 
   List<UsbSerialDecodedPacket> ingest(Uint8List bytes) {
     if (bytes.isEmpty) {
@@ -37,34 +38,56 @@ class UsbSerialFrameDecoder {
     final packets = <UsbSerialDecodedPacket>[];
 
     while (true) {
-      if (_rxBuffer.isEmpty) {
+      if (_startIndex >= _rxBuffer.length) {
+        _rxBuffer.clear();
+        _startIndex = 0;
         return packets;
       }
 
-      if (_rxBuffer.first != usbSerialRxFrameStart &&
-          _rxBuffer.first != usbSerialTxFrameStart) {
-        _rxBuffer.removeAt(0);
+      if (_rxBuffer[_startIndex] != usbSerialRxFrameStart &&
+          _rxBuffer[_startIndex] != usbSerialTxFrameStart) {
+        _startIndex++;
+        _compactBufferIfNeeded();
         continue;
       }
 
-      if (_rxBuffer.length < usbSerialHeaderLength) {
+      final availableLength = _rxBuffer.length - _startIndex;
+      if (availableLength < usbSerialHeaderLength) {
+        _compactBufferIfNeeded(force: true);
         return packets;
       }
 
-      final payloadLength = _rxBuffer[1] | (_rxBuffer[2] << 8);
+      final payloadLength =
+          _rxBuffer[_startIndex + 1] | (_rxBuffer[_startIndex + 2] << 8);
       final packetLength = usbSerialHeaderLength + payloadLength;
-      if (_rxBuffer.length < packetLength) {
+      if (availableLength < packetLength) {
+        _compactBufferIfNeeded(force: true);
         return packets;
       }
 
-      final frameStart = _rxBuffer.first;
+      final frameStart = _rxBuffer[_startIndex];
       final payload = Uint8List.fromList(
-        _rxBuffer.sublist(usbSerialHeaderLength, packetLength),
+        _rxBuffer.sublist(
+          _startIndex + usbSerialHeaderLength,
+          _startIndex + packetLength,
+        ),
       );
-      _rxBuffer.removeRange(0, packetLength);
+      _startIndex += packetLength;
+      _compactBufferIfNeeded();
       packets.add(
         UsbSerialDecodedPacket(frameStart: frameStart, payload: payload),
       );
     }
+  }
+
+  void _compactBufferIfNeeded({bool force = false}) {
+    if (_startIndex == 0) {
+      return;
+    }
+    if (!force && _startIndex < 1024 && _startIndex < (_rxBuffer.length ~/ 2)) {
+      return;
+    }
+    _rxBuffer.removeRange(0, _startIndex);
+    _startIndex = 0;
   }
 }

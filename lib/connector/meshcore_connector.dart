@@ -981,7 +981,6 @@ class MeshCoreConnector extends ChangeNotifier {
     _selfInfoRetryTimer = null;
     _hasReceivedDeviceInfo = false;
     _pendingInitialChannelSync = false;
-    _hasReceivedDeviceInfo = false;
   }
 
   bool get _shouldAutoReconnect =>

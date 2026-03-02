@@ -21,6 +21,8 @@ import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import java.util.Locale
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 class MainActivity : FlutterActivity() {
     private val usbMethodChannelName = "meshcore_open/android_usb_serial"
@@ -29,6 +31,7 @@ class MainActivity : FlutterActivity() {
 
     private lateinit var usbManager: UsbManager
     private val mainHandler = Handler(Looper.getMainLooper())
+    private val usbIoExecutor: ExecutorService = Executors.newSingleThreadExecutor()
 
     private var eventSink: EventChannel.EventSink? = null
     private var usbConnection: UsbDeviceConnection? = null
@@ -112,6 +115,7 @@ class MainActivity : FlutterActivity() {
 
     override fun onDestroy() {
         closeUsbConnection()
+        usbIoExecutor.shutdownNow()
         unregisterReceiver(permissionReceiver)
         super.onDestroy()
     }
@@ -191,11 +195,17 @@ class MainActivity : FlutterActivity() {
             return
         }
 
-        try {
-            port.write(data, 1000)
-            result.success(null)
-        } catch (error: Exception) {
-            result.error("usb_write_failed", error.message, null)
+        usbIoExecutor.execute {
+            try {
+                port.write(data, 1000)
+                mainHandler.post {
+                    result.success(null)
+                }
+            } catch (error: Exception) {
+                mainHandler.post {
+                    result.error("usb_write_failed", error.message, null)
+                }
+            }
         }
     }
 

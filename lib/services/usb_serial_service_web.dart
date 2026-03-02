@@ -88,8 +88,10 @@ class UsbSerialService {
 
       debugPrint('USB serial opened port=$_connectedPortName via Web Serial');
     } catch (error) {
+      await _cleanupFailedConnect();
       _status = UsbSerialStatus.disconnected;
       _connectedPortName = null;
+      _connectedPortKey = null;
       rethrow;
     }
   }
@@ -203,6 +205,37 @@ class UsbSerialService {
   Future<void> _openPort(JSObject port, int baudRate) {
     final options = JSObject()..['baudRate'] = baudRate.toJS;
     return port.callMethod<JSPromise<JSAny?>>('open'.toJS, options).toDart;
+  }
+
+  Future<void> _cleanupFailedConnect() async {
+    final reader = _reader;
+    final writer = _writer;
+    final port = _port;
+
+    _reader = null;
+    _writer = null;
+    _port = null;
+
+    if (reader != null) {
+      try {
+        await reader.callMethod<JSPromise<JSAny?>>('cancel'.toJS).toDart;
+      } catch (_) {
+        // Ignore cleanup errors after a failed connect.
+      }
+      _releaseLock(reader);
+    }
+
+    if (writer != null) {
+      _releaseLock(writer);
+    }
+
+    if (port != null) {
+      try {
+        await port.callMethod<JSPromise<JSAny?>>('close'.toJS).toDart;
+      } catch (_) {
+        // Ignore cleanup errors after a failed connect.
+      }
+    }
   }
 
   JSObject? _getReader(JSObject port) {
