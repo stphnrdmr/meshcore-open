@@ -50,7 +50,18 @@ void main() {
   test('describeWebUsbPort returns chooser label when no usb ids exist', () {
     expect(
       describeWebUsbPort(vendorId: null, productId: null),
-      usbRequestPortLabel,
+      'Choose USB Device',
+    );
+  });
+
+  test('describeWebUsbPort uses caller-provided chooser label', () {
+    expect(
+      describeWebUsbPort(
+        vendorId: null,
+        productId: null,
+        requestPortLabel: 'Select a USB device',
+      ),
+      'Select a USB device',
     );
   });
 

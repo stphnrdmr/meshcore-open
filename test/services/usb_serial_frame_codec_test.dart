@@ -13,6 +13,21 @@ void main() {
     );
   });
 
+  test('wrapUsbSerialTxFrame rejects payloads above protocol maximum', () {
+    final payload = Uint8List(usbSerialMaxPayloadLength + 1);
+
+    expect(
+      () => wrapUsbSerialTxFrame(payload),
+      throwsA(
+        isA<ArgumentError>().having(
+          (error) => error.name,
+          'name',
+          'payload.length',
+        ),
+      ),
+    );
+  });
+
   test('UsbSerialFrameDecoder buffers partial frames until complete', () {
     final decoder = UsbSerialFrameDecoder();
 
@@ -79,6 +94,30 @@ void main() {
       expect(packets[0].payload, orderedEquals(<int>[0x22]));
       expect(packets[1].isRxFrame, isTrue);
       expect(packets[1].payload, orderedEquals(<int>[0x33]));
+    },
+  );
+
+  test(
+    'UsbSerialFrameDecoder drops oversized frames and resyncs on the next valid packet',
+    () {
+      final decoder = UsbSerialFrameDecoder();
+
+      final packets = decoder.ingest(
+        Uint8List.fromList(<int>[
+          usbSerialRxFrameStart,
+          0xAD,
+          0x00,
+          0x99,
+          usbSerialRxFrameStart,
+          0x01,
+          0x00,
+          0x44,
+        ]),
+      );
+
+      expect(packets, hasLength(1));
+      expect(packets.single.isRxFrame, isTrue);
+      expect(packets.single.payload, orderedEquals(<int>[0x44]));
     },
   );
 }

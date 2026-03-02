@@ -21,6 +21,7 @@ class _UsbScreenState extends State<UsbScreen> {
   bool _isLoadingPorts = true;
   bool _isConnecting = false;
   bool _navigatedToContacts = false;
+  bool _didScheduleInitialLoad = false;
   String? _selectedPort;
   String? _errorText;
   late final MeshCoreConnector _connector;
@@ -58,13 +59,16 @@ class _UsbScreenState extends State<UsbScreen> {
       }
     };
     _connector.addListener(_connectionListener);
-    unawaited(_loadPorts());
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     _connector.setUsbRequestPortLabel(context.l10n.usbScreenStatus);
+    if (!_didScheduleInitialLoad) {
+      _didScheduleInitialLoad = true;
+      unawaited(_loadPorts());
+    }
   }
 
   @override
