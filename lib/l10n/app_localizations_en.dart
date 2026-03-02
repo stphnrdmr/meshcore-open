@@ -39,6 +39,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get common_delete => 'Delete';
 
   @override
+  String get common_deleteAll => 'Delete All';
+
+  @override
   String get common_close => 'Close';
 
   @override
@@ -3137,5 +3140,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get discoveredContacts_copyContact => 'Copy Contact to clipboard';
 
   @override
-  String get discoveredContacts_deleteContact => 'Delete Contact';
+  String get discoveredContacts_deleteContact => 'Delete Discovered Contact';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Delete All Discovered Contacts';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Are you sure you want to delete all discovered contacts?';
 }

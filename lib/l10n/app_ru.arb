@@ -1061,5 +1061,8 @@
   "discoveredContacts_addContact": "Добавить контакт",
   "discoveredContacts_Title": "Обнаруженные контакты",
   "discoveredContacts_deleteContact": "Удалить контакт",
-  "contactsSettings_overwriteOldestSubtitle": "Когда список контактов заполнен, будет заменен самый старый контакт, который не находится в избранном."
+  "contactsSettings_overwriteOldestSubtitle": "Когда список контактов заполнен, будет заменен самый старый контакт, который не находится в избранном.",
+  "common_deleteAll": "Удалить все",
+  "discoveredContacts_deleteContactAllContent": "Вы уверены, что хотите удалить все обнаруженные контакты?",
+  "discoveredContacts_deleteContactAll": "Удалить Все Обнаруженные Контакты"
 }

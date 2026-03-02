@@ -1821,5 +1821,8 @@
   "contactsSettings_autoAddSensorsSubtitle": "Autoriser le compagnon à ajouter automatiquement les capteurs découverts.",
   "discoveredContacts_Title": "Contacts découverts",
   "discoveredContacts_searchHint": "Rechercher des contacts découverts",
-  "contactsSettings_overwriteOldestSubtitle": "Lorsque la liste de contacts est pleine, le contact le plus ancien non favori sera remplacé."
+  "contactsSettings_overwriteOldestSubtitle": "Lorsque la liste de contacts est pleine, le contact le plus ancien non favori sera remplacé.",
+  "common_deleteAll": "Supprimer tout",
+  "discoveredContacts_deleteContactAll": "Supprimer tous les contacts découverts",
+  "discoveredContacts_deleteContactAllContent": "Êtes-vous sûr de vouloir supprimer tous les contacts découverts ?"
 }

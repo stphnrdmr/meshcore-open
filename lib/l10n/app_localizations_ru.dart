@@ -39,6 +39,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get common_delete => 'Удалить';
 
   @override
+  String get common_deleteAll => 'Удалить все';
+
+  @override
   String get common_close => 'Закрыть';
 
   @override
@@ -3202,4 +3205,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get discoveredContacts_deleteContact => 'Удалить контакт';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Удалить Все Обнаруженные Контакты';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Вы уверены, что хотите удалить все обнаруженные контакты?';
 }

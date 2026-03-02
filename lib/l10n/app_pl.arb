@@ -1821,5 +1821,8 @@
   "contactsSettings_autoAddSensorsSubtitle": "Zezwól towarzyszowi na automatyczne dodawanie wykrytych czujników.",
   "discoveredContacts_noMatching": "Brak pasujących kontaktów",
   "discoveredContacts_deleteContact": "Usuń kontakt",
-  "contactsSettings_overwriteOldestSubtitle": "Gdy lista kontaktów jest pełna, najstarszy nieulubiony kontakt zostanie zastąpiony."
+  "contactsSettings_overwriteOldestSubtitle": "Gdy lista kontaktów jest pełna, najstarszy nieulubiony kontakt zostanie zastąpiony.",
+  "common_deleteAll": "Usuń wszystko",
+  "discoveredContacts_deleteContactAllContent": "Czy na pewno chcesz usunąć wszystkie znalezione kontakty?",
+  "discoveredContacts_deleteContactAll": "Usuń wszystkie odkryte kontakty"
 }

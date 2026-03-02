@@ -39,6 +39,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get common_delete => 'Excluir';
 
   @override
+  String get common_deleteAll => 'Excluir Tudo';
+
+  @override
   String get common_close => 'Fechar';
 
   @override
@@ -3190,4 +3193,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get discoveredContacts_deleteContact => 'Excluir Contato';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Excluir Todos os Contatos Descobertos';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Tem certeza de que deseja excluir todos os contatos descobertos?';
 }

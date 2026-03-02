@@ -10,6 +10,7 @@
   "common_unknownDevice": "Unknown Device",
   "common_save": "Save",
   "common_delete": "Delete",
+  "common_deleteAll": "Delete All",
   "common_close": "Close",
   "common_edit": "Edit",
   "common_add": "Add",
@@ -1859,5 +1860,7 @@
   "discoveredContacts_contactAdded": "Contact added",
   "discoveredContacts_addContact": "Add Contact",
   "discoveredContacts_copyContact": "Copy Contact to clipboard",
-  "discoveredContacts_deleteContact": "Delete Contact"
+  "discoveredContacts_deleteContact": "Delete Discovered Contact",
+  "discoveredContacts_deleteContactAll": "Delete All Discovered Contacts",
+  "discoveredContacts_deleteContactAllContent": "Are you sure you want to delete all discovered contacts?"
 }

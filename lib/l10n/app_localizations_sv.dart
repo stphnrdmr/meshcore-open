@@ -39,6 +39,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get common_delete => 'Radera';
 
   @override
+  String get common_deleteAll => 'Ta bort alla';
+
+  @override
   String get common_close => 'Stänga';
 
   @override
@@ -3158,4 +3161,12 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get discoveredContacts_deleteContact => 'Ta bort kontakt';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Ta bort alla upptäckta kontakter';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Är du säker på att du vill ta bort alla upptäckta kontakter?';
 }

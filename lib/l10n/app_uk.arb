@@ -1821,5 +1821,8 @@
   "discoveredContacts_deleteContact": "Видалити контакт",
   "discoveredContacts_copyContact": "Копіювати контакт у буфер обміну",
   "discoveredContacts_addContact": "Додати контакт",
-  "contactsSettings_overwriteOldestSubtitle": "Коли список контактів заповнений, найстарший контакт без позначки улюбленого буде замінений."
+  "contactsSettings_overwriteOldestSubtitle": "Коли список контактів заповнений, найстарший контакт без позначки улюбленого буде замінений.",
+  "common_deleteAll": "Видалити все",
+  "discoveredContacts_deleteContactAll": "Видалити всі виявлені контакти",
+  "discoveredContacts_deleteContactAllContent": "Ви впевнені, що хочете видалити всі виявлені контакти?"
 }

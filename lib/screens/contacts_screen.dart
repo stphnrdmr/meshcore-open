@@ -222,7 +222,7 @@ class _ContactsScreenState extends State<ContactsScreen>
       final bytes = hex2Uint8List(hexString);
       final importContactFrame = buildImportContactFrame(bytes);
       _pendingOperations.add(ContactOperationType.import);
-      await connector.sendFrame(importContactFrame, expectsGenericAck: true);
+      connector.importContact(importContactFrame);
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

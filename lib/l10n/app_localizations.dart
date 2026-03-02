@@ -184,6 +184,12 @@ abstract class AppLocalizations {
   /// **'Delete'**
   String get common_delete;
 
+  /// No description provided for @common_deleteAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete All'**
+  String get common_deleteAll;
+
   /// No description provided for @common_close.
   ///
   /// In en, this message translates to:
@@ -5510,8 +5516,20 @@ abstract class AppLocalizations {
   /// No description provided for @discoveredContacts_deleteContact.
   ///
   /// In en, this message translates to:
-  /// **'Delete Contact'**
+  /// **'Delete Discovered Contact'**
   String get discoveredContacts_deleteContact;
+
+  /// No description provided for @discoveredContacts_deleteContactAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete All Discovered Contacts'**
+  String get discoveredContacts_deleteContactAll;
+
+  /// No description provided for @discoveredContacts_deleteContactAllContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete all discovered contacts?'**
+  String get discoveredContacts_deleteContactAllContent;
 }
 
 class _AppLocalizationsDelegate

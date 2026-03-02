@@ -1821,5 +1821,8 @@
   "discoveredContacts_Title": "Objavené kontakty",
   "contactsSettings_overwriteOldestTitle": "Prepísať najstaršie",
   "discoveredContacts_addContact": "Pridať kontakt",
-  "contactsSettings_overwriteOldestSubtitle": "Keď je zoznam kontaktov plný, bude nahradený najstarší neoznačený kontakt."
+  "contactsSettings_overwriteOldestSubtitle": "Keď je zoznam kontaktov plný, bude nahradený najstarší neoznačený kontakt.",
+  "discoveredContacts_deleteContactAll": "Zmazať všetky objavené kontakty",
+  "common_deleteAll": "Zmazať všetko",
+  "discoveredContacts_deleteContactAllContent": "Ste si istí, že chcete zmazať všetky objavené kontakty?"
 }

@@ -1527,6 +1527,8 @@ class MeshCoreConnector extends ChangeNotifier {
   Future<void> removeContact(Contact contact) async {
     if (!isConnected) return;
 
+    _handleDiscovery(contact, Uint8List(0), noNotify: true);
+
     await sendFrame(buildRemoveContactFrame(contact.publicKey));
     _contacts.removeWhere((c) => c.publicKeyHex == contact.publicKeyHex);
     _knownContactKeys.remove(contact.publicKeyHex);
@@ -1552,23 +1554,15 @@ class MeshCoreConnector extends ChangeNotifier {
 
   Future<void> importDiscoveredContact(DiscoveryContact contact) async {
     if (!isConnected) return;
+
     await sendFrame(
-      buildSetAutoAddConfigFrame(
-        autoAddChat: true,
-        autoAddRepeater: true,
-        autoAddRoomServer: true,
-        autoAddSensor: true,
-        overwriteOldest: _overwriteOldest,
-      ),
-    );
-    await sendFrame(buildImportContactFrame(contact.rawPacket));
-    await sendFrame(
-      buildSetAutoAddConfigFrame(
-        autoAddChat: _autoAddUsers,
-        autoAddRepeater: _autoAddRepeaters,
-        autoAddRoomServer: _autoAddRoomServers,
-        autoAddSensor: _autoAddSensors,
-        overwriteOldest: _overwriteOldest,
+      buildUpdateContactPathFrame(
+        contact.publicKey,
+        contact.path,
+        contact.pathLength,
+        type: contact.type,
+        flags: 0,
+        name: contact.name,
       ),
     );
 
@@ -3805,6 +3799,76 @@ class MeshCoreConnector extends ChangeNotifier {
     }
   }
 
+  void importContact(Uint8List frame) {
+    final packet = BufferReader(frame);
+    int payloadType = 0;
+    Uint8List pathBytes = Uint8List(0);
+    try {
+      packet.skipBytes(1); // Skip frame type byte
+      packet.skipBytes(1); // Skip SNR byte
+      packet.skipBytes(1); // Skip RSSI byte
+      final header = packet.readByte();
+      payloadType = (header >> 2) & 0x0F;
+      //final payloadVer = (header >> 6) & 0x03;
+      final pathLen = packet.readByte();
+      pathBytes = packet.readBytes(pathLen);
+    } catch (e) {
+      appLogger.warn('Malformed RX frame: $e', tag: 'Connector');
+      return;
+    }
+    double latitude = 0.0;
+    double longitude = 0.0;
+    String name = '';
+    Uint8List publicKey = Uint8List(0);
+    int type = 0;
+    int timestamp = 0;
+    bool hasLocation = false;
+    bool hasName = false;
+    if (payloadType != payloadTypeADVERT) {
+      appLogger.warn('Unexpected payload type: $payloadType', tag: 'Connector');
+      return;
+    }
+    try {
+      publicKey = packet.readBytes(32);
+      timestamp = packet.readInt32LE();
+      //TODO add signature verification
+      packet.skipBytes(64); // Skip signature for now
+      final flags = packet.readByte();
+      type = flags & 0x0F;
+      hasLocation = (flags & 0x10) != 0;
+      // For future use:
+      //final hasFeature1 = (flags & 0x20) != 0;
+      //final hasFeature2 = (flags & 0x40) != 0;
+      hasName = (flags & 0x80) != 0;
+      if (hasLocation && packet.remaining >= 8) {
+        latitude = packet.readInt32LE() / 1e6;
+        longitude = packet.readInt32LE() / 1e6;
+      }
+      if (hasName && packet.remaining > 0) {
+        name = packet.readString();
+      }
+    } catch (e) {
+      appLogger.warn('Malformed advert frame: $e', tag: 'Connector');
+      return;
+    }
+
+    importDiscoveredContact(
+      DiscoveryContact(
+        rawPacket: frame,
+        publicKey: publicKey,
+        name: name,
+        type: type,
+        pathLength: pathBytes.length,
+        path: Uint8List.fromList(
+          pathBytes.reversed.toList(),
+        ), // Store path in reverse for easier use in outgoing messages
+        latitude: latitude,
+        longitude: longitude,
+        lastSeen: DateTime.fromMillisecondsSinceEpoch(timestamp * 1000),
+      ),
+    );
+  }
+
   void _handlePayloadAdvertReceived(
     Uint8List rawPacket,
     Uint8List payload,
@@ -3982,7 +4046,11 @@ class MeshCoreConnector extends ChangeNotifier {
     }
   }
 
-  void _handleDiscovery(Contact contact, Uint8List rawPacket) {
+  void _handleDiscovery(
+    Contact contact,
+    Uint8List rawPacket, {
+    bool noNotify = false,
+  }) {
     debugPrint('Discovered new contact: ${contact.name}');
 
     final existingIndex = _discoveredContacts.indexWhere(
@@ -4022,7 +4090,7 @@ class MeshCoreConnector extends ChangeNotifier {
     unawaited(_persistDiscoveredContacts());
 
     // Show notification for new contact (advertisement)
-    if (_appSettingsService != null) {
+    if (_appSettingsService != null && !noNotify) {
       final settings = _appSettingsService!.settings;
       if (settings.notificationsEnabled && settings.notifyOnNewAdvert) {
         _notificationService.showAdvertNotification(
@@ -4032,6 +4100,11 @@ class MeshCoreConnector extends ChangeNotifier {
         );
       }
     }
+  }
+
+  void removeAllDiscoveredContacts() {
+    _discoveredContacts.clear();
+    notifyListeners();
   }
 }
 

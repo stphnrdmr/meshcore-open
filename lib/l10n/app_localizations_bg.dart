@@ -39,6 +39,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get common_delete => 'Изтрий';
 
   @override
+  String get common_deleteAll => 'Изтрий всичко';
+
+  @override
   String get common_close => 'Затвори';
 
   @override
@@ -3189,4 +3192,12 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get discoveredContacts_deleteContact => 'Изтрий контакт';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Изтриване на Всички Открити Контакти';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Сигурни ли сте, че искате да изтриете всички открити контакти?';
 }

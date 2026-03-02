@@ -39,6 +39,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get common_delete => '删除';
 
   @override
+  String get common_deleteAll => '删除全部';
+
+  @override
   String get common_close => '关闭';
 
   @override
@@ -2957,4 +2960,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get discoveredContacts_deleteContact => '删除联系人';
+
+  @override
+  String get discoveredContacts_deleteContactAll => '删除所有发现的联系人';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent => '您确定要删除所有发现的联系人吗？';
 }

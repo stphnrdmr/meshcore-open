@@ -56,6 +56,25 @@ class _DiscoveryScreenState extends State<DiscoveryScreen> {
           subtitle: false,
         ),
         centerTitle: true,
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                child: Row(
+                  children: [
+                    const Icon(Icons.delete, color: Colors.red),
+                    const SizedBox(width: 8),
+                    Text(context.l10n.discoveredContacts_deleteContactAll),
+                  ],
+                ),
+                onTap: () {
+                  _deleteContacts(context, connector);
+                },
+              ),
+            ],
+            icon: const Icon(Icons.more_vert),
+          ),
+        ],
       ),
       body: Column(
         children: [
@@ -161,6 +180,30 @@ class _DiscoveryScreenState extends State<DiscoveryScreen> {
         connector.removeDiscoveredContact(contact);
         break;
     }
+  }
+
+  void _deleteContacts(BuildContext context, MeshCoreConnector connector) {
+    final l10n = context.l10n;
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.common_deleteAll),
+        content: Text(l10n.discoveredContacts_deleteContactAllContent),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text(l10n.common_cancel),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(context);
+              connector.removeAllDiscoveredContacts();
+            },
+            child: Text(l10n.common_deleteAll),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildFilters(
