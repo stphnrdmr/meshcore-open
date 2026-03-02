@@ -738,16 +738,14 @@ class MeshCoreConnector extends ChangeNotifier {
     });
 
     await FlutterBluePlus.startScan(
-      withKeywords: ["MeshCore-", "Whisper-", "Wismesh-", "WisCore-"],
+      withKeywords: ["MeshCore-", "Whisper-"],
       webOptionalServices: [Guid(MeshCoreUuids.service)],
       timeout: timeout,
       androidScanMode: AndroidScanMode.lowLatency,
     );
 
     await Future.delayed(timeout);
-    if (!PlatformInfo.isWeb) {
-      await stopScan();
-    }
+    await stopScan();
   }
 
   Future<void> stopScan() async {
@@ -836,30 +834,17 @@ class MeshCoreConnector extends ChangeNotifier {
         throw Exception("MeshCore characteristics not found");
       }
 
-      if (PlatformInfo.isWeb) {
-        debugPrint('Starting setNotifyValue(true)');
-        debugPrint('Web: Calling setNotifyValue(true) without awaiting');
-        unawaited(() async {
-          try {
-            await _txCharacteristic!.setNotifyValue(true);
-          } catch (error) {
-            debugPrint('Web setNotifyValue error (ignoring): $error');
+      bool notifySet = false;
+      for (int attempt = 0; attempt < 3 && !notifySet; attempt++) {
+        try {
+          if (attempt > 0) {
+            await Future.delayed(Duration(milliseconds: 500 * attempt));
           }
-        }());
-        debugPrint('setNotifyValue(true) configuration completed');
-      } else {
-        bool notifySet = false;
-        for (int attempt = 0; attempt < 3 && !notifySet; attempt++) {
-          try {
-            if (attempt > 0) {
-              await Future.delayed(Duration(milliseconds: 500 * attempt));
-            }
-            await _txCharacteristic!.setNotifyValue(true);
-            notifySet = true;
-          } catch (e) {
-            debugPrint('setNotifyValue attempt ${attempt + 1}/3 failed: $e');
-            if (attempt == 2) rethrow;
-          }
+          await _txCharacteristic!.setNotifyValue(true);
+          notifySet = true;
+        } catch (e) {
+          debugPrint('setNotifyValue attempt ${attempt + 1}/3 failed: $e');
+          if (attempt == 2) rethrow;
         }
       }
       _notifySubscription = _txCharacteristic!.onValueReceived.listen(
@@ -867,8 +852,6 @@ class MeshCoreConnector extends ChangeNotifier {
       );
 
       _setState(MeshCoreConnectionState.connected);
-      _hasReceivedDeviceInfo = false;
-      _pendingInitialChannelSync = true;
 
       await _requestDeviceInfo();
       _startBatteryPolling();
@@ -882,6 +865,9 @@ class MeshCoreConnector extends ChangeNotifier {
 
       // Keep device clock aligned on every connection.
       await syncTime();
+
+      // Fetch channels so we can track unread counts for incoming messages
+      unawaited(getChannels());
     } catch (e) {
       debugPrint("Connection error: $e");
       await disconnect(manual: false);
@@ -904,6 +890,7 @@ class MeshCoreConnector extends ChangeNotifier {
     await stopScan();
     _cancelReconnectTimer();
     _manualDisconnect = false;
+    _resetConnectionHandshakeState();
     _activeTransport = MeshCoreTransportType.usb;
     _activeUsbPort = portName;
     unawaited(_backgroundService?.start());
@@ -929,16 +916,20 @@ class MeshCoreConnector extends ChangeNotifier {
       );
 
       _setState(MeshCoreConnectionState.connected);
-      _hasReceivedDeviceInfo = false;
       _pendingInitialChannelSync = true;
       await _requestDeviceInfo();
       _startBatteryPolling();
-      final gotSelfInfo = await _waitForSelfInfo(
+      var gotSelfInfo = await _waitForSelfInfo(
         timeout: const Duration(seconds: 3),
       );
       if (!gotSelfInfo) {
         await refreshDeviceInfo();
-        await _waitForSelfInfo(timeout: const Duration(seconds: 3));
+        gotSelfInfo = await _waitForSelfInfo(
+          timeout: const Duration(seconds: 3),
+        );
+      }
+      if (!gotSelfInfo) {
+        throw StateError('Timed out waiting for SELF_INFO during connect');
       }
 
       await syncTime();
@@ -978,6 +969,19 @@ class MeshCoreConnector extends ChangeNotifier {
     timer.cancel();
     removeListener(listener);
     return result;
+  }
+
+  void _resetConnectionHandshakeState() {
+    _selfPublicKey = null;
+    _selfName = null;
+    _selfLatitude = null;
+    _selfLongitude = null;
+    _awaitingSelfInfo = false;
+    _selfInfoRetryTimer?.cancel();
+    _selfInfoRetryTimer = null;
+    _hasReceivedDeviceInfo = false;
+    _pendingInitialChannelSync = false;
+    _hasReceivedDeviceInfo = false;
   }
 
   bool get _shouldAutoReconnect =>
@@ -2119,12 +2123,16 @@ class MeshCoreConnector extends ChangeNotifier {
 
     // Auto-fetch contacts after getting self info
     getContacts();
-    _maybeStartInitialChannelSync();
+    if (_activeTransport == MeshCoreTransportType.usb) {
+      _maybeStartInitialChannelSync();
+    }
   }
 
   void _handleDeviceInfo(Uint8List frame) {
     if (frame.length < 4) return;
-    _hasReceivedDeviceInfo = true;
+    if (_activeTransport == MeshCoreTransportType.usb) {
+      _hasReceivedDeviceInfo = true;
+    }
     _firmwareVerCode = frame[1];
 
     // Parse client_repeat from firmware v9+ (byte 80)
@@ -2148,13 +2156,17 @@ class MeshCoreConnector extends ChangeNotifier {
       if (nextMaxChannels > previousMaxChannels) {
         unawaited(loadChannelSettings(maxChannels: nextMaxChannels));
         unawaited(loadAllChannelMessages(maxChannels: nextMaxChannels));
-        if (isConnected && !_pendingInitialChannelSync) {
+        if (isConnected &&
+            (_activeTransport != MeshCoreTransportType.usb ||
+                !_pendingInitialChannelSync)) {
           unawaited(getChannels(maxChannels: nextMaxChannels));
         }
       }
     }
     notifyListeners();
-    _maybeStartInitialChannelSync();
+    if (_activeTransport == MeshCoreTransportType.usb) {
+      _maybeStartInitialChannelSync();
+    }
   }
 
   void _maybeStartInitialChannelSync() {
