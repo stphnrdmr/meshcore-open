@@ -15,85 +15,85 @@ class AppLocalizationsSk extends AppLocalizations {
   String get nav_contacts => 'Kontakty';
 
   @override
-  String get nav_channels => 'KanÃ¡ly';
+  String get nav_channels => 'Kanály';
 
   @override
   String get nav_map => 'Mapa';
 
   @override
-  String get common_cancel => 'ZruÅ¡iÅ¥';
+  String get common_cancel => 'Zrušiť';
 
   @override
   String get common_ok => 'OK\nDobre';
 
   @override
-  String get common_connect => 'PripojiÅ¥';
+  String get common_connect => 'Pripojiť';
 
   @override
-  String get common_unknownDevice => 'NeznÃ¡me zariadenie';
+  String get common_unknownDevice => 'Neznáme zariadenie';
 
   @override
-  String get common_save => 'UloÅ¾iÅ¥';
+  String get common_save => 'Uložiť';
 
   @override
-  String get common_delete => 'OdstrÃ¡niÅ¥';
+  String get common_delete => 'Odstrániť';
 
   @override
-  String get common_close => 'ZavrieÅ¥';
+  String get common_close => 'Zavrieť';
 
   @override
-  String get common_edit => 'UpraviÅ¥';
+  String get common_edit => 'Upraviť';
 
   @override
-  String get common_add => 'PridaÅ¥';
+  String get common_add => 'Pridať';
 
   @override
   String get common_settings => 'Nastavenia';
 
   @override
-  String get common_disconnect => 'OdpojiÅ¥';
+  String get common_disconnect => 'Odpojiť';
 
   @override
-  String get common_connected => 'PripojenÃ©';
+  String get common_connected => 'Pripojené';
 
   @override
-  String get common_disconnected => 'OdpojenÃ©';
+  String get common_disconnected => 'Odpojené';
 
   @override
-  String get common_create => 'VytvoriÅ¥';
+  String get common_create => 'Vytvoriť';
 
   @override
-  String get common_continue => 'PokraÄovaÅ¥';
+  String get common_continue => 'Pokračovať';
 
   @override
-  String get common_share => 'ZdieÄ¾aÅ¥';
+  String get common_share => 'Zdieľať';
 
   @override
-  String get common_copy => 'KopÃ­rovaÅ¥';
+  String get common_copy => 'Kopírovať';
 
   @override
-  String get common_retry => 'PokusÅ¥ znova';
+  String get common_retry => 'Pokusť znova';
 
   @override
-  String get common_hide => 'SkryÅ¥';
+  String get common_hide => 'Skryť';
 
   @override
-  String get common_remove => 'OdstrÃ¡niÅ¥';
+  String get common_remove => 'Odstrániť';
 
   @override
   String get common_enable => 'Povolit';
 
   @override
-  String get common_disable => 'ZakÃ¡zaÅ¥';
+  String get common_disable => 'Zakázať';
 
   @override
-  String get common_reboot => 'RestartovaÅ¥';
+  String get common_reboot => 'Restartovať';
 
   @override
-  String get common_loading => 'NaÄÃ­tavanie...';
+  String get common_loading => 'Načítavanie...';
 
   @override
-  String get common_notAvailable => 'â€”';
+  String get common_notAvailable => '—';
 
   @override
   String common_voltageValue(String volts) {
@@ -119,21 +119,65 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get usbScreenSubtitle =>
-      'Vyberte detekovanÃ½ sÃ©riovÃ½ zariadenie a pripojte ho priamo k vaÅ¡ej MeshCore uzlu.';
+      'Vyberte detekovaný sériový zariadenie a pripojte ho priamo k vašej MeshCore uzlu.';
 
   @override
   String get usbScreenStatus => 'Vyberte USB zariadenie';
 
   @override
   String get usbScreenNote =>
-      'USB sÃ©riovÃ¡ komunikÃ¡cia je aktÃ­vna na podporovanÃ½ch zariadeniach s Androidom a na desktopovÃ½ch platformÃ¡ch.';
+      'USB sériová komunikácia je aktívna na podporovaných zariadeniach s Androidom a na desktopových platformách.';
 
   @override
   String get usbScreenEmptyState =>
-      'NenaÅ¡li sa Å¾iadne USB zariadenia. Pripojte jedno a obnovte.';
+      'Nenašli sa žiadne USB zariadenia. Pripojte jedno a obnovte.';
 
   @override
-  String get scanner_scanning => 'SkrÃ­vania zariadenÃ­...';
+  String get usbErrorPermissionDenied =>
+      'Žiadosť o prístup cez USB bola zamietnutá.';
+
+  @override
+  String get usbErrorDeviceMissing =>
+      'Vybrané USB zariadenie už nie je dostupné.';
+
+  @override
+  String get usbErrorInvalidPort => 'Vyberte platné USB zariadenie.';
+
+  @override
+  String get usbErrorBusy =>
+      'Ďalšia požiadavka na pripojenie cez USB je aktuálne v prebiehajúcom procese.';
+
+  @override
+  String get usbErrorNotConnected => 'Nie je pripojené žiadne USB zariadenie.';
+
+  @override
+  String get usbErrorOpenFailed =>
+      'Nepodarilo sa otvoriť vybrané USB zariadenie.';
+
+  @override
+  String get usbErrorConnectFailed =>
+      'Nezvládlo sa pripojenie k vybranému USB zariadeniu.';
+
+  @override
+  String get usbErrorUnsupported =>
+      'Podpora USB sériového rozhrania nie je na tejto platforme dostupná.';
+
+  @override
+  String get usbErrorAlreadyActive => 'Pripojenie cez USB je už aktivované.';
+
+  @override
+  String get usbErrorNoDeviceSelected =>
+      'Nebolo vybrané žiadne USB zariadenie.';
+
+  @override
+  String get usbErrorPortClosed => 'Pripojenie cez USB nie je aktivované.';
+
+  @override
+  String get usbErrorConnectTimedOut =>
+      'Čakal som, kým sa zariadenie neozvými, ale časový limit sa dosiahol.';
+
+  @override
+  String get scanner_scanning => 'Skrívania zariadení...';
 
   @override
   String get scanner_connecting => 'Pripojujem sa...';
@@ -142,19 +186,19 @@ class AppLocalizationsSk extends AppLocalizations {
   String get scanner_disconnecting => 'Odpojuje sa...';
 
   @override
-  String get scanner_notConnected => 'NezriadenÃ©';
+  String get scanner_notConnected => 'Nezriadené';
 
   @override
   String scanner_connectedTo(String deviceName) {
-    return 'PripojenÃ© k $deviceName';
+    return 'Pripojené k $deviceName';
   }
 
   @override
-  String get scanner_searchingDevices => 'HÄ¾adÃ¡m zariadenia MeshCore...';
+  String get scanner_searchingDevices => 'Hľadám zariadenia MeshCore...';
 
   @override
   String get scanner_tapToScan =>
-      'StlaÄ skenovanie na nÃ¡jdenie zariadenÃ­ MeshCore.';
+      'Stlač skenovanie na nájdenie zariadení MeshCore.';
 
   @override
   String scanner_connectionFailed(String error) {
@@ -165,27 +209,27 @@ class AppLocalizationsSk extends AppLocalizations {
   String get scanner_stop => 'Zastavte';
 
   @override
-  String get scanner_scan => 'SkonÄiÅ¥';
+  String get scanner_scan => 'Skončiť';
 
   @override
-  String get scanner_bluetoothOff => 'Bluetooth je vypnutÃ½';
+  String get scanner_bluetoothOff => 'Bluetooth je vypnutý';
 
   @override
   String get scanner_bluetoothOffMessage =>
-      'ProsÃ­m, zapnite Bluetooth, aby ste mohli skenovaÅ¥ pre zariadenia.';
+      'Prosím, zapnite Bluetooth, aby ste mohli skenovať pre zariadenia.';
 
   @override
-  String get scanner_chromeRequired => 'VyÅ¾aduje sa prehliadaÄ Chrome';
+  String get scanner_chromeRequired => 'Vyžaduje sa prehliadač Chrome';
 
   @override
   String get scanner_chromeRequiredMessage =>
-      'TÃ¡to webovÃ¡ aplikÃ¡cia vyÅ¾aduje Google Chrome alebo prehliadaÄ zaloÅ¾enÃ½ na Chromium pre podporu Bluetooth.';
+      'Táto webová aplikácia vyžaduje Google Chrome alebo prehliadač založený na Chromium pre podporu Bluetooth.';
 
   @override
   String get scanner_enableBluetooth => 'Povolte Bluetooth';
 
   @override
-  String get device_quickSwitch => 'RÃ½chle prepÃ­naÄ';
+  String get device_quickSwitch => 'Rýchle prepínač';
 
   @override
   String get device_meshcore => 'MeshCore';
@@ -194,125 +238,123 @@ class AppLocalizationsSk extends AppLocalizations {
   String get settings_title => 'Nastavenia';
 
   @override
-  String get settings_deviceInfo => 'InformÃ¡cie o zariadenÃ­';
+  String get settings_deviceInfo => 'Informácie o zariadení';
 
   @override
-  String get settings_appSettings => 'Nastavenia aplikÃ¡cie';
+  String get settings_appSettings => 'Nastavenia aplikácie';
 
   @override
   String get settings_appSettingsSubtitle =>
-      'Upozornenia, sprÃ¡vy a nastavenia mapy';
+      'Upozornenia, správy a nastavenia mapy';
 
   @override
   String get settings_nodeSettings => 'Nastavenia uzla';
 
   @override
-  String get settings_nodeName => 'NÃ¡zov uzla';
+  String get settings_nodeName => 'Názov uzla';
 
   @override
-  String get settings_nodeNameNotSet => 'NezriadenÃ©';
+  String get settings_nodeNameNotSet => 'Nezriadené';
 
   @override
-  String get settings_nodeNameHint => 'Zadajte nÃ¡zov uzla';
+  String get settings_nodeNameHint => 'Zadajte názov uzla';
 
   @override
-  String get settings_nodeNameUpdated => 'Meno aktualizovanÃ©';
+  String get settings_nodeNameUpdated => 'Meno aktualizované';
 
   @override
-  String get settings_radioSettings => 'Nastavenia rÃ¡dia';
+  String get settings_radioSettings => 'Nastavenia rádia';
 
   @override
   String get settings_radioSettingsSubtitle =>
-      'Frekvencia, vÃ½kon, rozptylovacÃ­ faktor';
+      'Frekvencia, výkon, rozptylovací faktor';
 
   @override
-  String get settings_radioSettingsUpdated =>
-      'Nastavenia rÃ¡dia aktualizovanÃ©';
+  String get settings_radioSettingsUpdated => 'Nastavenia rádia aktualizované';
 
   @override
   String get settings_location => 'Lokalita';
 
   @override
-  String get settings_locationSubtitle => 'GPS sÃºradnice';
+  String get settings_locationSubtitle => 'GPS súradnice';
 
   @override
-  String get settings_locationUpdated => 'Lokalita aktualizovanÃ¡';
+  String get settings_locationUpdated => 'Lokalita aktualizovaná';
 
   @override
   String get settings_locationBothRequired =>
-      'Zadajte obidve zloÅ¾ky zemyslenia a zloÅ¾ky meracieho kruhu.';
+      'Zadajte obidve zložky zemyslenia a zložky meracieho kruhu.';
 
   @override
-  String get settings_locationInvalid => 'NeplatnÃ¡ Å¡Ã­rka alebo dÄºÅ¾ka.';
+  String get settings_locationInvalid => 'Neplatná šírka alebo dĺžka.';
 
   @override
-  String get settings_locationGPSEnable => 'AktivovaÅ¥ GPS';
+  String get settings_locationGPSEnable => 'Aktivovať GPS';
 
   @override
   String get settings_locationGPSEnableSubtitle =>
-      'PovolÃ­ automatickÃ© aktualizovanie polohy pomocou GPS.';
+      'Povolí automatické aktualizovanie polohy pomocou GPS.';
 
   @override
   String get settings_locationIntervalSec => 'Interval pre GPS (Sekundy)';
 
   @override
   String get settings_locationIntervalInvalid =>
-      'Interval musÃ­ byÅ¥ aspoÅˆ 60 sekÃºnd a menej ako 86400 sekÃºnd.';
+      'Interval musí byť aspoň 60 sekúnd a menej ako 86400 sekúnd.';
 
   @override
-  String get settings_latitude => 'SÃºradnica';
+  String get settings_latitude => 'Súradnica';
 
   @override
-  String get settings_longitude => 'DÄºÅ¾ka';
+  String get settings_longitude => 'Dĺžka';
 
   @override
-  String get settings_privacyMode => 'ReÅ¾im ochrany sÃºkromia';
+  String get settings_privacyMode => 'Režim ochrany súkromia';
 
   @override
-  String get settings_privacyModeSubtitle => 'SkryÅ¥ meno/poloha v reklamÃ¡ch';
+  String get settings_privacyModeSubtitle => 'Skryť meno/poloha v reklamách';
 
   @override
   String get settings_privacyModeToggle =>
-      'PrepÃ­naÄ sÃºkromnÃ©ho reÅ¾imu skryje vaÅ¡e meno a polohu v reklamÃ¡ch.';
+      'Prepínač súkromného režimu skryje vaše meno a polohu v reklamách.';
 
   @override
-  String get settings_privacyModeEnabled => 'OchrannÃ½ reÅ¾im je povolenÃ½.';
+  String get settings_privacyModeEnabled => 'Ochranný režim je povolený.';
 
   @override
-  String get settings_privacyModeDisabled => 'OchrannÃ½ reÅ¾im je vypnutÃ½';
+  String get settings_privacyModeDisabled => 'Ochranný režim je vypnutý';
 
   @override
-  String get settings_actions => 'MoÅ¾nÃ© akcie';
+  String get settings_actions => 'Možné akcie';
 
   @override
-  String get settings_sendAdvertisement => 'OdoslaÅ¥ reklamu';
+  String get settings_sendAdvertisement => 'Odoslať reklamu';
 
   @override
-  String get settings_sendAdvertisementSubtitle =>
-      'MomentÃ¡lne priezornejÅ¡ie.';
+  String get settings_sendAdvertisementSubtitle => 'Momentálne priezornejšie.';
 
   @override
-  String get settings_advertisementSent => 'Reklama odeslanÃ¡';
+  String get settings_advertisementSent => 'Reklama odeslaná';
 
   @override
-  String get settings_syncTime => 'ÄŒas synchronizÃ¡cie';
+  String get settings_syncTime => 'Čas synchronizácie';
 
   @override
   String get settings_syncTimeSubtitle =>
-      'NastaviÅ¥ hodiny zariadenia na Äas telefÃ³nu';
+      'Nastaviť hodiny zariadenia na čas telefónu';
 
   @override
-  String get settings_timeSynchronized => 'ÄŒas synchronizovanÃ½';
+  String get settings_timeSynchronized => 'Čas synchronizovaný';
 
   @override
-  String get settings_refreshContacts => 'NaÄÃ­taÅ¥ Kontakty';
+  String get settings_refreshContacts => 'Načítať Kontakty';
 
   @override
   String get settings_refreshContactsSubtitle =>
-      'NaÄÃ­taÅ¥ zoznam kontaktov z zariadenia';
+      'Načítať zoznam kontaktov z zariadenia';
 
   @override
-  String get settings_rebootDevice => 'RestartovaÅ¥ zariadenie';
+  String get settings_rebootDevice => 'Restartovať zariadenie';
 
   @override
   String get settings_rebootDeviceSubtitle =>
@@ -320,7 +362,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get settings_rebootDeviceConfirm =>
-      'Ste si istÃ½, Å¾e chcete zariadenie reÅ¡tartovaÅ¥? Budete odpojenÃ­.';
+      'Ste si istý, že chcete zariadenie reštartovať? Budete odpojení.';
 
   @override
   String get settings_debug => 'Ladenie';
@@ -330,16 +372,16 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get settings_bleDebugLogSubtitle =>
-      'PrÃ­kazy BLE, odpovede a surovÃ© dÃ¡ta';
+      'Príkazy BLE, odpovede a surové dáta';
 
   @override
-  String get settings_appDebugLog => 'ZÃ¡znam ladenia aplikÃ¡cie';
+  String get settings_appDebugLog => 'Záznam ladenia aplikácie';
 
   @override
-  String get settings_appDebugLogSubtitle => 'SprÃ¡vy z ladenia aplikÃ¡cie';
+  String get settings_appDebugLogSubtitle => 'Správy z ladenia aplikácie';
 
   @override
-  String get settings_about => 'O nÃ¡s';
+  String get settings_about => 'O nás';
 
   @override
   String settings_aboutVersion(String version) {
@@ -351,11 +393,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get settings_aboutDescription =>
-      'OtvorenÃ½ zdrojovÃ½ Flutter klient pre MeshCore LoRa sieÅ¥ovÃ© zariadenia.';
+      'Otvorený zdrojový Flutter klient pre MeshCore LoRa sieťové zariadenia.';
 
   @override
   String get settings_aboutOpenMeteoAttribution =>
-      'Ãšdaje o nadmorskej vÃ½Å¡ke LOS: Open-Meteo (CC BY 4.0)';
+      'Údaje o nadmorskej výške LOS: Open-Meteo (CC BY 4.0)';
 
   @override
   String get settings_infoName => 'Meno';
@@ -367,16 +409,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get settings_infoStatus => 'Status';
 
   @override
-  String get settings_infoBattery => 'BatÃ©ria';
+  String get settings_infoBattery => 'Batéria';
 
   @override
-  String get settings_infoPublicKey => 'VerejnÃ½ kÄ¾ÃºÄ';
+  String get settings_infoPublicKey => 'Verejný kľúč';
 
   @override
-  String get settings_infoContactsCount => 'PoÄet kontaktov';
+  String get settings_infoContactsCount => 'Počet kontaktov';
 
   @override
-  String get settings_infoChannelCount => 'PoÄet kanÃ¡lov';
+  String get settings_infoChannelCount => 'Počet kanálov';
 
   @override
   String get settings_presets => 'Prednastavenia';
@@ -385,41 +427,39 @@ class AppLocalizationsSk extends AppLocalizations {
   String get settings_frequency => 'Frekvencia (MHz)';
 
   @override
-  String get settings_frequencyHelper => '300,0 â€“ 2500,0';
+  String get settings_frequencyHelper => '300,0 – 2500,0';
 
   @override
-  String get settings_frequencyInvalid => 'NeplatnÃ¡ frekvencia (300-2500 MHz)';
+  String get settings_frequencyInvalid => 'Neplatná frekvencia (300-2500 MHz)';
 
   @override
-  String get settings_bandwidth => 'Å Ã­rka pÃ¡sma';
+  String get settings_bandwidth => 'Šírka pásma';
 
   @override
-  String get settings_spreadingFactor => 'RozptÃ½Ä¾ovacÃ­ faktor';
+  String get settings_spreadingFactor => 'Rozptýľovací faktor';
 
   @override
-  String get settings_codingRate => 'CenovÃ½ kurz pre programovanie';
+  String get settings_codingRate => 'Cenový kurz pre programovanie';
 
   @override
-  String get settings_txPower => 'TX VÃ½kon (dBm)';
+  String get settings_txPower => 'TX Výkon (dBm)';
 
   @override
   String get settings_txPowerHelper => '0 - 22';
 
   @override
-  String get settings_txPowerInvalid =>
-      'NeplatnÃ¡ hodnota vÃ½konu TX (0-22 dBm)';
+  String get settings_txPowerInvalid => 'Neplatná hodnota výkonu TX (0-22 dBm)';
 
   @override
-  String get settings_clientRepeat =>
-      'OpÃ¤tovnÃ© pouÅ¾itie bez elektrickej siete';
+  String get settings_clientRepeat => 'Opätovné použitie bez elektrickej siete';
 
   @override
   String get settings_clientRepeatSubtitle =>
-      'UmoÅ¾nite, aby toto zariadenie opakovÃ¡valo siete pre ostatnÃ½ch.';
+      'Umožnite, aby toto zariadenie opakovávalo siete pre ostatných.';
 
   @override
   String get settings_clientRepeatFreqWarning =>
-      'PouÅ¾itie off-grid systÃ©mu vyÅ¾aduje frekvencie 433, 869 alebo 918 MHz.';
+      'Použitie off-grid systému vyžaduje frekvencie 433, 869 alebo 918 MHz.';
 
   @override
   String settings_error(String message) {
@@ -427,37 +467,37 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get appSettings_title => 'Nastavenia aplikÃ¡cie';
+  String get appSettings_title => 'Nastavenia aplikácie';
 
   @override
-  String get appSettings_appearance => 'VzhÄ¾ad';
+  String get appSettings_appearance => 'Vzhľad';
 
   @override
-  String get appSettings_theme => 'TÃ©ma';
+  String get appSettings_theme => 'Téma';
 
   @override
-  String get appSettings_themeSystem => 'PredvolenÃ½ systÃ©m';
+  String get appSettings_themeSystem => 'Predvolený systém';
 
   @override
   String get appSettings_themeLight => 'Svetlo';
 
   @override
-  String get appSettings_themeDark => 'TmavÃ©';
+  String get appSettings_themeDark => 'Tmavé';
 
   @override
   String get appSettings_language => 'Jazyk';
 
   @override
-  String get appSettings_languageSystem => 'PredvolenÃ½ systÃ©m';
+  String get appSettings_languageSystem => 'Predvolený systém';
 
   @override
   String get appSettings_languageEn => 'English';
 
   @override
-  String get appSettings_languageFr => 'FranÃ§ais';
+  String get appSettings_languageFr => 'Français';
 
   @override
-  String get appSettings_languageEs => 'EspaÃ±ol';
+  String get appSettings_languageEs => 'Español';
 
   @override
   String get appSettings_languageDe => 'Deutsch';
@@ -466,16 +506,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get appSettings_languagePl => 'Polski';
 
   @override
-  String get appSettings_languageSl => 'SlovenÅ¡Äina';
+  String get appSettings_languageSl => 'Slovenščina';
 
   @override
-  String get appSettings_languagePt => 'PortuguÃªs';
+  String get appSettings_languagePt => 'Português';
 
   @override
   String get appSettings_languageIt => 'Italiano';
 
   @override
-  String get appSettings_languageZh => 'ä¸­æ–‡';
+  String get appSettings_languageZh => '中文';
 
   @override
   String get appSettings_languageSv => 'Svenska';
@@ -484,104 +524,103 @@ class AppLocalizationsSk extends AppLocalizations {
   String get appSettings_languageNl => 'Nederlands';
 
   @override
-  String get appSettings_languageSk => 'SlovenÄina';
+  String get appSettings_languageSk => 'Slovenčina';
 
   @override
-  String get appSettings_languageBg => 'Ð‘ÑŠÐ»Ð³Ð°Ñ€ÑÐºÐ¸';
+  String get appSettings_languageBg => 'Български';
 
   @override
-  String get appSettings_languageRu => 'RuÅ¡tina';
+  String get appSettings_languageRu => 'Ruština';
 
   @override
-  String get appSettings_languageUk => 'UkrajinskÃ¡';
+  String get appSettings_languageUk => 'Ukrajinská';
 
   @override
-  String get appSettings_enableMessageTracing => 'PovoliÅ¥ sledovanie sprÃ¡v';
+  String get appSettings_enableMessageTracing => 'Povoliť sledovanie správ';
 
   @override
   String get appSettings_enableMessageTracingSubtitle =>
-      'ZobraziÅ¥ podrobnÃ© metadÃ¡ta o smerovanÃ­ a ÄasovanÃ­ sprÃ¡v';
+      'Zobraziť podrobné metadáta o smerovaní a časovaní správ';
 
   @override
   String get appSettings_notifications => 'Upozornenia';
 
   @override
-  String get appSettings_enableNotifications => 'Povolte NotifikÃ¡cie';
+  String get appSettings_enableNotifications => 'Povolte Notifikácie';
 
   @override
   String get appSettings_enableNotificationsSubtitle =>
-      'ZÃ­sÅ¥ o upozornenia na sprÃ¡vy a inzerÃ¡ty';
+      'Zísť o upozornenia na správy a inzeráty';
 
   @override
   String get appSettings_notificationPermissionDenied =>
-      'OdmietenÃ¡ povolenie notifikÃ¡ciÃ­';
+      'Odmietená povolenie notifikácií';
 
   @override
-  String get appSettings_notificationsEnabled => 'Upozornenia povolenÃ©';
+  String get appSettings_notificationsEnabled => 'Upozornenia povolené';
 
   @override
-  String get appSettings_notificationsDisabled => 'Upozornenia sÃº vypnutÃ©';
+  String get appSettings_notificationsDisabled => 'Upozornenia sú vypnuté';
 
   @override
-  String get appSettings_messageNotifications => 'SprÃ¡vy od upozornenÃ­';
+  String get appSettings_messageNotifications => 'Správy od upozornení';
 
   @override
   String get appSettings_messageNotificationsSubtitle =>
-      'ZobraziÅ¥ upozornenie pri prijÃ­manÃ­ novÃ½ch sprÃ¡v';
+      'Zobraziť upozornenie pri prijímaní nových správ';
 
   @override
-  String get appSettings_channelMessageNotifications =>
-      'NotifikÃ¡cie z kanÃ¡lov';
+  String get appSettings_channelMessageNotifications => 'Notifikácie z kanálov';
 
   @override
   String get appSettings_channelMessageNotificationsSubtitle =>
-      'ZobraziÅ¥ upozornenie pri prijÃ­manÃ­ sprÃ¡v z kanÃ¡lu';
+      'Zobraziť upozornenie pri prijímaní správ z kanálu';
 
   @override
   String get appSettings_advertisementNotifications => 'Upozornenia na reklamy';
 
   @override
   String get appSettings_advertisementNotificationsSubtitle =>
-      'ZobraziÅ¥ upozornenie, keÄ sa objavia novÃ© uzly.';
+      'Zobraziť upozornenie, keď sa objavia nové uzly.';
 
   @override
-  String get appSettings_messaging => 'SprÃ¡vy';
+  String get appSettings_messaging => 'Správy';
 
   @override
-  String get appSettings_clearPathOnMaxRetry => 'VyÄisti cestu na Max Retry';
+  String get appSettings_clearPathOnMaxRetry => 'Vyčisti cestu na Max Retry';
 
   @override
   String get appSettings_clearPathOnMaxRetrySubtitle =>
-      'ResetovaÅ¥ kontaktnÃ½ priebeh po 5 neÃºspeÅ¡nÃ½ch pokusoch o doruÄenie';
+      'Resetovať kontaktný priebeh po 5 neúspešných pokusoch o doručenie';
 
   @override
   String get appSettings_pathsWillBeCleared =>
-      'Cesty budÃº vymazanÃ© po 5 neÃºspeÅ¡nÃ½ch pokusoch.';
+      'Cesty budú vymazané po 5 neúspešných pokusoch.';
 
   @override
   String get appSettings_pathsWillNotBeCleared =>
-      'Cesty sa automaticky nevymazÃ¡vajÃº.';
+      'Cesty sa automaticky nevymazávajú.';
 
   @override
-  String get appSettings_autoRouteRotation => 'AutomatickÃ© prechodovÃ© trasy';
+  String get appSettings_autoRouteRotation => 'Automatické prechodové trasy';
 
   @override
   String get appSettings_autoRouteRotationSubtitle =>
-      'Striedajte sa medzi najlepÅ¡Ã­mi trasami a reÅ¾imom povodÅˆovej analÃ½zy.';
+      'Striedajte sa medzi najlepšími trasami a režimom povodňovej analýzy.';
 
   @override
   String get appSettings_autoRouteRotationEnabled =>
-      'AutomatickÃ© otÃ¡Äanie trasy povolenÃ©';
+      'Automatické otáčanie trasy povolené';
 
   @override
   String get appSettings_autoRouteRotationDisabled =>
-      'AutomatickÃ© prekladanie trÃ¡s pozastavenÃ©';
+      'Automatické prekladanie trás pozastavené';
 
   @override
-  String get appSettings_battery => 'BatÃ©ria';
+  String get appSettings_battery => 'Batéria';
 
   @override
-  String get appSettings_batteryChemistry => 'ChemickÃ¡ zloÅ¾enie batÃ©rie';
+  String get appSettings_batteryChemistry => 'Chemická zloženie batérie';
 
   @override
   String appSettings_batteryChemistryPerDevice(String deviceName) {
@@ -590,13 +629,13 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get appSettings_batteryChemistryConnectFirst =>
-      'Pripojte sa k zariadeniu na vÃ½ber';
+      'Pripojte sa k zariadeniu na výber';
 
   @override
   String get appSettings_batteryNmc => '18650 NMC (3,0-4,2V)';
 
   @override
-  String get appSettings_batteryLifepo4 => 'LiFePO4 (2,6â€“3,65V)';
+  String get appSettings_batteryLifepo4 => 'LiFePO4 (2,6–3,65V)';
 
   @override
   String get appSettings_batteryLipo => 'LiPo (3,0-4,2V)';
@@ -605,410 +644,408 @@ class AppLocalizationsSk extends AppLocalizations {
   String get appSettings_mapDisplay => 'Zobrazenie mapy';
 
   @override
-  String get appSettings_showRepeaters => 'ZobraziÅ¥ opakovaÄe';
+  String get appSettings_showRepeaters => 'Zobraziť opakovače';
 
   @override
   String get appSettings_showRepeatersSubtitle =>
-      'ZobraziÅ¥ opakujÃºce sa uzly na mape';
+      'Zobraziť opakujúce sa uzly na mape';
 
   @override
-  String get appSettings_showChatNodes => 'ZobraziÅ¥ uzly chatovÃ½ch sprÃ¡v';
+  String get appSettings_showChatNodes => 'Zobraziť uzly chatových správ';
 
   @override
   String get appSettings_showChatNodesSubtitle =>
-      'ZobraziÅ¥ chatovÃ© uzly na mape';
+      'Zobraziť chatové uzly na mape';
 
   @override
-  String get appSettings_showOtherNodes => 'ZobraziÅ¥ ÄalÅ¡ie uzly';
+  String get appSettings_showOtherNodes => 'Zobraziť ďalšie uzly';
 
   @override
   String get appSettings_showOtherNodesSubtitle =>
-      'ZobraziÅ¥ ostatnÃ© typy uzlov na mape';
+      'Zobraziť ostatné typy uzlov na mape';
 
   @override
-  String get appSettings_timeFilter => 'Filtrovacie ÄŒasovÃ© Obdoby';
+  String get appSettings_timeFilter => 'Filtrovacie Časové Obdoby';
 
   @override
-  String get appSettings_timeFilterShowAll => 'ZobraziÅ¥ vÅ¡etky uzly';
+  String get appSettings_timeFilterShowAll => 'Zobraziť všetky uzly';
 
   @override
   String appSettings_timeFilterShowLast(int hours) {
-    return 'ZobraziÅ¥ uzly z poslednÃ½ch $hours hodÃ­n';
+    return 'Zobraziť uzly z posledných $hours hodín';
   }
 
   @override
-  String get appSettings_mapTimeFilter => 'FiltraÄnÃ½ Äas mapy';
+  String get appSettings_mapTimeFilter => 'Filtračný čas mapy';
 
   @override
   String get appSettings_showNodesDiscoveredWithin =>
-      'ZobraziÅ¥ uzly objavenÃ© v:';
+      'Zobraziť uzly objavené v:';
 
   @override
-  String get appSettings_allTime => 'VÅ¡etky Äasy';
+  String get appSettings_allTime => 'Všetky časy';
 
   @override
-  String get appSettings_lastHour => 'PoslednÃ¡ hodina';
+  String get appSettings_lastHour => 'Posledná hodina';
 
   @override
-  String get appSettings_last6Hours => 'PoslednÃ© 6 hodÃ­n';
+  String get appSettings_last6Hours => 'Posledné 6 hodín';
 
   @override
-  String get appSettings_last24Hours => 'PoslednÃ½ch 24 hodÃ­n';
+  String get appSettings_last24Hours => 'Posledných 24 hodín';
 
   @override
-  String get appSettings_lastWeek => 'Minul tÃ½Å¾deÅˆ';
+  String get appSettings_lastWeek => 'Minul týždeň';
 
   @override
-  String get appSettings_offlineMapCache => 'Offline Mapa PamÃ¤Å¥';
+  String get appSettings_offlineMapCache => 'Offline Mapa Pamäť';
 
   @override
   String get appSettings_unitsTitle => 'Jednotky';
 
   @override
-  String get appSettings_unitsMetric => 'MetrickÃ© (m / km)';
+  String get appSettings_unitsMetric => 'Metrické (m / km)';
 
   @override
-  String get appSettings_unitsImperial => 'ImperiÃ¡lne (ft / mi)';
+  String get appSettings_unitsImperial => 'Imperiálne (ft / mi)';
 
   @override
-  String get appSettings_noAreaSelected => 'NeoznaÄila sa Å¾iadna oblasÅ¥';
+  String get appSettings_noAreaSelected => 'Neoznačila sa žiadna oblasť';
 
   @override
   String appSettings_areaSelectedZoom(int minZoom, int maxZoom) {
-    return 'VyberenÃ¡ oblasÅ¥ (zoom $minZoom-$maxZoom)';
+    return 'Vyberená oblasť (zoom $minZoom-$maxZoom)';
   }
 
   @override
   String get appSettings_debugCard => 'Ladenie';
 
   @override
-  String get appSettings_appDebugLogging => 'ZÃ¡znamy ladenia aplikÃ¡cie';
+  String get appSettings_appDebugLogging => 'Záznamy ladenia aplikácie';
 
   @override
   String get appSettings_appDebugLoggingSubtitle =>
-      'LogovacÃ­ sprÃ¡vy aplikÃ¡cie pre ladenie';
+      'Logovací správy aplikácie pre ladenie';
 
   @override
   String get appSettings_appDebugLoggingEnabled =>
-      'AplikÃ¡cia povolila ladenie protokolmi';
+      'Aplikácia povolila ladenie protokolmi';
 
   @override
   String get appSettings_appDebugLoggingDisabled =>
-      'ZabudovanÃ© ladenie aplikÃ¡cie je vypnutÃ©.';
+      'Zabudované ladenie aplikácie je vypnuté.';
 
   @override
   String get contacts_title => 'Kontakty';
 
   @override
-  String get contacts_noContacts => 'ZatiaÄ¾ Å¾iadne kontakty.';
+  String get contacts_noContacts => 'Zatiaľ žiadne kontakty.';
 
   @override
   String get contacts_contactsWillAppear =>
-      'Kontakty sa zobrazia, keÄ zariadenia spÃºÅ¡Å¥ajÃº reklamu.';
+      'Kontakty sa zobrazia, keď zariadenia spúšťajú reklamu.';
 
   @override
-  String get contacts_unread => 'NepreÄÃ­tanÃ©';
+  String get contacts_unread => 'Neprečítané';
 
   @override
-  String get contacts_searchContactsNoNumber => 'HÄ¾adaÅ¥ kontakty...';
+  String get contacts_searchContactsNoNumber => 'Hľadať kontakty...';
 
   @override
   String contacts_searchContacts(int number, String str) {
-    return 'VyhÄ¾adÃ¡vajte kontakty...';
+    return 'Vyhľadávajte kontakty...';
   }
 
   @override
   String contacts_searchFavorites(int number, String str) {
-    return 'HÄ¾adaÅ¥ $number$str obÄ¾ÃºbenÃ©...';
+    return 'Hľadať $number$str obľúbené...';
   }
 
   @override
   String contacts_searchUsers(int number, String str) {
-    return 'HÄ¾adaÅ¥ $number$str pouÅ¾Ã­vateÄ¾ov...';
+    return 'Hľadať $number$str používateľov...';
   }
 
   @override
   String contacts_searchRepeaters(int number, String str) {
-    return 'HÄ¾adaÅ¥ $number$str opakovaÄe...';
+    return 'Hľadať $number$str opakovače...';
   }
 
   @override
   String contacts_searchRoomServers(int number, String str) {
-    return 'HÄ¾adaj $number$str serverov miestnostÃ­...';
+    return 'Hľadaj $number$str serverov miestností...';
   }
 
   @override
-  String get contacts_noUnreadContacts => 'Å½iadne nepreÄÃ­tanÃ© kontakty';
+  String get contacts_noUnreadContacts => 'Žiadne neprečítané kontakty';
 
   @override
   String get contacts_noContactsFound =>
-      'Neboli nÃ¡jdenÃ½ch Å¾iadnych kontaktov ani skupiny.';
+      'Neboli nájdených žiadnych kontaktov ani skupiny.';
 
   @override
-  String get contacts_deleteContact => 'OdstrÃ¡niÅ¥ kontakt';
+  String get contacts_deleteContact => 'Odstrániť kontakt';
 
   @override
   String contacts_removeConfirm(String contactName) {
-    return 'OdstrÃ¡niÅ¥ $contactName z kontaktov?';
+    return 'Odstrániť $contactName z kontaktov?';
   }
 
   @override
-  String get contacts_manageRepeater => 'SpravovaÅ¥ opakovanÃ© zoznamy';
+  String get contacts_manageRepeater => 'Spravovať opakované zoznamy';
 
   @override
-  String get contacts_manageRoom => 'SpravovaÅ¥ server miestnosti';
+  String get contacts_manageRoom => 'Spravovať server miestnosti';
 
   @override
-  String get contacts_roomLogin => 'PrihlÃ¡senie do miestnosti';
+  String get contacts_roomLogin => 'Prihlásenie do miestnosti';
 
   @override
-  String get contacts_openChat => 'OtvorenÃ© Chat';
+  String get contacts_openChat => 'Otvorené Chat';
 
   @override
-  String get contacts_editGroup => 'UpraviÅ¥ skupinu';
+  String get contacts_editGroup => 'Upraviť skupinu';
 
   @override
-  String get contacts_deleteGroup => 'VymaÅ¾Å¥ skupinu';
+  String get contacts_deleteGroup => 'Vymažť skupinu';
 
   @override
   String contacts_deleteGroupConfirm(String groupName) {
-    return 'OdstrÃ¡niÅ¥ \"$groupName\"?';
+    return 'Odstrániť \"$groupName\"?';
   }
 
   @override
-  String get contacts_newGroup => 'NovÃ¡ skupina';
+  String get contacts_newGroup => 'Nová skupina';
 
   @override
-  String get contacts_groupName => 'NÃ¡zov skupiny';
+  String get contacts_groupName => 'Názov skupiny';
 
   @override
-  String get contacts_groupNameRequired => 'Skupina musÃ­ maÅ¥ nÃ¡zov.';
+  String get contacts_groupNameRequired => 'Skupina musí mať názov.';
 
   @override
   String contacts_groupAlreadyExists(String name) {
-    return 'Skupina \"$name\" uÅ¾ existuje';
+    return 'Skupina \"$name\" už existuje';
   }
 
   @override
-  String get contacts_filterContacts => 'FiltrovaÅ¥ kontakty...';
+  String get contacts_filterContacts => 'Filtrovať kontakty...';
 
   @override
   String get contacts_noContactsMatchFilter =>
-      'Å½iadne kontakty neodÃ­du vÃ¡Å¡mu filtru.';
+      'Žiadne kontakty neodídu vášmu filtru.';
 
   @override
-  String get contacts_noMembers => 'Å½iadni Älenovia';
+  String get contacts_noMembers => 'Žiadni členovia';
 
   @override
-  String get contacts_lastSeenNow => 'PoslednÃ© zreteÄ¾nÃ© zobrazenie teraz';
+  String get contacts_lastSeenNow => 'Posledné zreteľné zobrazenie teraz';
 
   @override
   String contacts_lastSeenMinsAgo(int minutes) {
-    return 'PoslednÃ© zobrazenie $minutes min. dozadu';
+    return 'Posledné zobrazenie $minutes min. dozadu';
   }
 
   @override
   String get contacts_lastSeenHourAgo =>
-      'Zobral/Zabral poslednÃ½krÃ¡t pred hodinou.';
+      'Zobral/Zabral poslednýkrát pred hodinou.';
 
   @override
   String contacts_lastSeenHoursAgo(int hours) {
-    return 'PoslednÃ© zobrazenie $hours hodÃ­n dozadu';
+    return 'Posledné zobrazenie $hours hodín dozadu';
   }
 
   @override
   String get contacts_lastSeenDayAgo =>
-      'Zobral/Zabral poslednÃ½ raz pred 1 dÅˆom.';
+      'Zobral/Zabral posledný raz pred 1 dňom.';
 
   @override
   String contacts_lastSeenDaysAgo(int days) {
-    return 'PoslednÃ© zobrazenie $days dnÃ­ dozadu';
+    return 'Posledné zobrazenie $days dní dozadu';
   }
 
   @override
-  String get channels_title => 'KanÃ¡ly';
+  String get channels_title => 'Kanály';
 
   @override
-  String get channels_noChannelsConfigured => 'NeobsiahnutÃ© Å¾iadne kanÃ¡ly';
+  String get channels_noChannelsConfigured => 'Neobsiahnuté žiadne kanály';
 
   @override
-  String get channels_addPublicChannel => 'PridaÅ¥ verejnÃ½ kanÃ¡l';
+  String get channels_addPublicChannel => 'Pridať verejný kanál';
 
   @override
-  String get channels_searchChannels => 'VyhÄ¾adÃ¡vajte kanÃ¡ly...';
+  String get channels_searchChannels => 'Vyhľadávajte kanály...';
 
   @override
-  String get channels_noChannelsFound => 'Neobsiahlo sa Å¾iadnych kanÃ¡lov.';
+  String get channels_noChannelsFound => 'Neobsiahlo sa žiadnych kanálov.';
 
   @override
   String channels_channelIndex(int index) {
-    return 'KanÃ¡l $index';
+    return 'Kanál $index';
   }
 
   @override
-  String get channels_hashtagChannel => 'KanÃ¡l s hashtagom';
+  String get channels_hashtagChannel => 'Kanál s hashtagom';
 
   @override
-  String get channels_public => 'VeÄ¾kÃ© verejnÃ©';
+  String get channels_public => 'Veľké verejné';
 
   @override
-  String get channels_private => 'OsobnÃ©';
+  String get channels_private => 'Osobné';
 
   @override
-  String get channels_publicChannel => 'VeÄ¾kÃ© verejne kanÃ¡ly';
+  String get channels_publicChannel => 'Veľké verejne kanály';
 
   @override
-  String get channels_privateChannel => 'OsobnÃ© kanÃ¡l';
+  String get channels_privateChannel => 'Osobné kanál';
 
   @override
-  String get channels_editChannel => 'UpraviÅ¥ kanÃ¡l';
+  String get channels_editChannel => 'Upraviť kanál';
 
   @override
-  String get channels_muteChannel => 'StlmiÅ¥ kanÃ¡l';
+  String get channels_muteChannel => 'Stlmiť kanál';
 
   @override
-  String get channels_unmuteChannel => 'ZruÅ¡iÅ¥ stlmenie kanÃ¡la';
+  String get channels_unmuteChannel => 'Zrušiť stlmenie kanála';
 
   @override
-  String get channels_deleteChannel => 'OdstrÃ¡niÅ¥ kanÃ¡l';
+  String get channels_deleteChannel => 'Odstrániť kanál';
 
   @override
   String channels_deleteChannelConfirm(String name) {
-    return 'OdstrÃ¡niÅ¥ \"$name\"? To sa nedÃ¡ zruÅ¡iÅ¥.';
+    return 'Odstrániť \"$name\"? To sa nedá zrušiť.';
   }
 
   @override
   String channels_channelDeleteFailed(String name) {
-    return 'KanÃ¡l \"$name\" sa nepodarilo odstrÃ¡niÅ¥';
+    return 'Kanál \"$name\" sa nepodarilo odstrániť';
   }
 
   @override
   String channels_channelDeleted(String name) {
-    return 'KanÃ¡l \"$name\" bol odstrÃ¡nenÃ½';
+    return 'Kanál \"$name\" bol odstránený';
   }
 
   @override
-  String get channels_addChannel => 'PridaÅ¥ kanÃ¡l';
+  String get channels_addChannel => 'Pridať kanál';
 
   @override
-  String get channels_channelIndexLabel => 'Index kanÃ¡la';
+  String get channels_channelIndexLabel => 'Index kanála';
 
   @override
-  String get channels_channelName => 'NÃ¡zov kanÃ¡lu';
+  String get channels_channelName => 'Názov kanálu';
 
   @override
-  String get channels_usePublicChannel => 'PouÅ¾ite verejnÃ½ kanÃ¡l';
+  String get channels_usePublicChannel => 'Použite verejný kanál';
 
   @override
-  String get channels_standardPublicPsk => 'Å tandardnÃ½ verejnÃ½ PSK';
+  String get channels_standardPublicPsk => 'Štandardný verejný PSK';
 
   @override
-  String get channels_pskHex => 'PSK (Å ifrovacia kÄ¾ÃºÄik)';
+  String get channels_pskHex => 'PSK (Šifrovacia kľúčik)';
 
   @override
-  String get channels_generateRandomPsk => 'GenerovaÅ¥ nÃ¡hodnÃ½ PSK';
+  String get channels_generateRandomPsk => 'Generovať náhodný PSK';
 
   @override
-  String get channels_enterChannelName => 'ProsÃ­m, zadajte nÃ¡zov kanÃ¡la.';
+  String get channels_enterChannelName => 'Prosím, zadajte názov kanála.';
 
   @override
   String get channels_pskMustBe32Hex =>
-      'PSK musÃ­ maÅ¥ 32 hexadecimÃ¡lovÃ½ch znakov.';
+      'PSK musí mať 32 hexadecimálových znakov.';
 
   @override
   String channels_channelAdded(String name) {
-    return 'KanÃ¡l \"$name\" pridanÃ½';
+    return 'Kanál \"$name\" pridaný';
   }
 
   @override
   String channels_editChannelTitle(int index) {
-    return 'UpraviÅ¥ kanÃ¡l $index';
+    return 'Upraviť kanál $index';
   }
 
   @override
-  String get channels_smazCompression => 'OdstrÃ¡nenie kompresie SMAZ';
+  String get channels_smazCompression => 'Odstránenie kompresie SMAZ';
 
   @override
   String channels_channelUpdated(String name) {
-    return 'KanÃ¡l \"$name\" bol aktualizovanÃ½';
+    return 'Kanál \"$name\" bol aktualizovaný';
   }
 
   @override
-  String get channels_publicChannelAdded => 'VeÄ¾kÃ½ kanÃ¡l pridanÃ½';
+  String get channels_publicChannelAdded => 'Veľký kanál pridaný';
 
   @override
-  String get channels_sortBy => 'TriediÅ¥ podÄ¾a';
+  String get channels_sortBy => 'Triediť podľa';
 
   @override
-  String get channels_sortManual => 'RuÄne';
+  String get channels_sortManual => 'Ručne';
 
   @override
   String get channels_sortAZ => 'A-Z';
 
   @override
-  String get channels_sortLatestMessages => 'PoslednÃ© sprÃ¡vy';
+  String get channels_sortLatestMessages => 'Posledné správy';
 
   @override
-  String get channels_sortUnread => 'NezriadenÃ©';
+  String get channels_sortUnread => 'Nezriadené';
 
   @override
-  String get channels_createPrivateChannel => 'Vytvorte sÃºkromnÃ½ kanÃ¡l';
+  String get channels_createPrivateChannel => 'Vytvorte súkromný kanál';
 
   @override
   String get channels_createPrivateChannelDesc =>
-      'ZabezpeÄenÃ© pomocou tajnÃ©ho kÄ¾ÃºÄa.';
+      'Zabezpečené pomocou tajného kľúča.';
 
   @override
-  String get channels_joinPrivateChannel =>
-      'PripojiÅ¥ sa k sÃºkromnÃ©mu kanÃ¡lu';
+  String get channels_joinPrivateChannel => 'Pripojiť sa k súkromnému kanálu';
 
   @override
-  String get channels_joinPrivateChannelDesc =>
-      'RuÄne zadajte tajnÃ½ kÄ¾ÃºÄ.';
+  String get channels_joinPrivateChannelDesc => 'Ručne zadajte tajný kľúč.';
 
   @override
-  String get channels_joinPublicChannel => 'Pripojte sa k verejnÃ©mu kanÃ¡lu';
+  String get channels_joinPublicChannel => 'Pripojte sa k verejnému kanálu';
 
   @override
   String get channels_joinPublicChannelDesc =>
-      'KtoÌvek saÌtoÌ na tutoÌ kanalizovaÌt.';
+      'Któvek sátó na tutó kanalizovát.';
 
   @override
-  String get channels_joinHashtagChannel => 'Pripojte sa k Hashtag KanÃ¡lu';
+  String get channels_joinHashtagChannel => 'Pripojte sa k Hashtag Kanálu';
 
   @override
   String get channels_joinHashtagChannelDesc =>
-      'KtoekolikoÄ¾vek sa mÃ´Å¾e pridaÅ¥ do hashtag kanÃ¡lov.';
+      'Ktoekolikoľvek sa môže pridať do hashtag kanálov.';
 
   @override
-  String get channels_scanQrCode => 'Skenujte QR kÃ³d';
+  String get channels_scanQrCode => 'Skenujte QR kód';
 
   @override
-  String get channels_scanQrCodeComingSoon => 'ÄŒoskoro';
+  String get channels_scanQrCodeComingSoon => 'Čoskoro';
 
   @override
   String get channels_enterHashtag => 'Zadajte hashtag';
 
   @override
-  String get channels_hashtagHint => 'napr. #tÃ­m';
+  String get channels_hashtagHint => 'napr. #tím';
 
   @override
-  String get chat_noMessages => 'ZatiaÄ¾ Å¾iadne sprÃ¡vy.';
+  String get chat_noMessages => 'Zatiaľ žiadne správy.';
 
   @override
-  String get chat_sendMessageToStart => 'PoÅ¡lite sprÃ¡vu na zaÄiatok';
+  String get chat_sendMessageToStart => 'Pošlite správu na začiatok';
 
   @override
-  String get chat_originalMessageNotFound => 'NeznÃ¡my pÃ´vodnÃ½ odkaz.';
+  String get chat_originalMessageNotFound => 'Neznámy pôvodný odkaz.';
 
   @override
   String chat_replyingTo(String name) {
-    return 'OdpovedÃ¡m $name';
+    return 'Odpovedám $name';
   }
 
   @override
   String chat_replyTo(String name) {
-    return 'OdpovedaÅ¥ $name';
+    return 'Odpovedať $name';
   }
 
   @override
@@ -1016,39 +1053,39 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String chat_sendMessageTo(String contactName) {
-    return 'PoÅ¡li sprÃ¡vu $contactName';
+    return 'Pošli správu $contactName';
   }
 
   @override
-  String get chat_typeMessage => 'NapiÅ¡te sprÃ¡vu...';
+  String get chat_typeMessage => 'Napište správu...';
 
   @override
   String chat_messageTooLong(int maxBytes) {
-    return 'SprÃ¡va je prÃ­liÅ¡ dlhÃ¡ (max $maxBytes bytov).';
+    return 'Správa je príliš dlhá (max $maxBytes bytov).';
   }
 
   @override
-  String get chat_messageCopied => 'SprÃ¡va skopÃ­rovanÃ¡';
+  String get chat_messageCopied => 'Správa skopírovaná';
 
   @override
-  String get chat_messageDeleted => 'Posolstvo odstrÃ¡nenÃ©';
+  String get chat_messageDeleted => 'Posolstvo odstránené';
 
   @override
   String get chat_retryingMessage => 'Pokus o obnovenie';
 
   @override
   String chat_retryCount(int current, int max) {
-    return 'SkÃºsiÅ¥ $current/$max';
+    return 'Skúsiť $current/$max';
   }
 
   @override
-  String get chat_sendGif => 'OdoslaÅ¥ GIF';
+  String get chat_sendGif => 'Odoslať GIF';
 
   @override
-  String get chat_reply => 'OdpovedaÅ¥';
+  String get chat_reply => 'Odpovedať';
 
   @override
-  String get chat_addReaction => 'PridaÅ¥ Reakciu';
+  String get chat_addReaction => 'Pridať Reakciu';
 
   @override
   String get chat_me => 'Mne';
@@ -1057,7 +1094,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get emojiCategorySmileys => 'Emoji';
 
   @override
-  String get emojiCategoryGestures => 'GestÃ¡';
+  String get emojiCategoryGestures => 'Gestá';
 
   @override
   String get emojiCategoryHearts => 'Srdcia';
@@ -1069,84 +1106,84 @@ class AppLocalizationsSk extends AppLocalizations {
   String get gifPicker_title => 'Vyberte GIF';
 
   @override
-  String get gifPicker_searchHint => 'VyhÄ¾adÃ¡vajte GIFy...';
+  String get gifPicker_searchHint => 'Vyhľadávajte GIFy...';
 
   @override
-  String get gifPicker_poweredBy => 'NapÃ¡janÃ© spoloÄnosÅ¥ou GIPHY';
+  String get gifPicker_poweredBy => 'Napájané spoločnosťou GIPHY';
 
   @override
-  String get gifPicker_noGifsFound => 'Neboli nÃ¡jdenÃ© Å¾iadne GIFy.';
+  String get gifPicker_noGifsFound => 'Neboli nájdené žiadne GIFy.';
 
   @override
-  String get gifPicker_failedLoad => 'Nepodarilo sa naÄÃ­taÅ¥ GIFy';
+  String get gifPicker_failedLoad => 'Nepodarilo sa načítať GIFy';
 
   @override
-  String get gifPicker_failedSearch => 'Nepodarilo sa vyhÄ¾adaÅ¥ GIFy';
+  String get gifPicker_failedSearch => 'Nepodarilo sa vyhľadať GIFy';
 
   @override
-  String get gifPicker_noInternet => 'Å½iadna internetovÃ¡ konektivita';
+  String get gifPicker_noInternet => 'Žiadna internetová konektivita';
 
   @override
-  String get debugLog_appTitle => 'ZÃ¡znam ladenia aplikÃ¡cie';
+  String get debugLog_appTitle => 'Záznam ladenia aplikácie';
 
   @override
   String get debugLog_bleTitle => 'Log BLE Debug';
 
   @override
-  String get debugLog_copyLog => 'KopÃ­rovaÅ¥ zÃ¡znam';
+  String get debugLog_copyLog => 'Kopírovať záznam';
 
   @override
-  String get debugLog_clearLog => 'VymaÅ¾aÅ¥ zÃ¡znam';
+  String get debugLog_clearLog => 'Vymažať záznam';
 
   @override
-  String get debugLog_copied => 'ZÃ¡znam ladenia skopÃ­rovanÃ½';
+  String get debugLog_copied => 'Záznam ladenia skopírovaný';
 
   @override
-  String get debugLog_bleCopied => 'KopÃ­rovanÃ½ zÃ¡znam z BLE.';
+  String get debugLog_bleCopied => 'Kopírovaný záznam z BLE.';
 
   @override
   String get debugLog_noEntries =>
-      'ZatiaÄ¾ neboli zaznamenanÃ© Å¾iadne debug logy.';
+      'Zatiaľ neboli zaznamenané žiadne debug logy.';
 
   @override
   String get debugLog_enableInSettings =>
-      'Povolte ladicovÃ© logy v nastaveniach';
+      'Povolte ladicové logy v nastaveniach';
 
   @override
-  String get debugLog_frames => 'RÃ¡mce';
+  String get debugLog_frames => 'Rámce';
 
   @override
   String get debugLog_rawLogRx => 'Raw Log-RX';
 
   @override
-  String get debugLog_noBleActivity => 'ZatiaÄ¾ Å¾iadna aktivita BLE.';
+  String get debugLog_noBleActivity => 'Zatiaľ žiadna aktivita BLE.';
 
   @override
   String debugFrame_length(int count) {
-    return 'DÄºÅ¾ka rÃ¡mca: $count bajtov';
+    return 'Dĺžka rámca: $count bajtov';
   }
 
   @override
   String debugFrame_command(String value) {
-    return 'PrikaÌzÌŒ: 0x$value';
+    return 'Prikáž: 0x$value';
   }
 
   @override
-  String get debugFrame_textMessageHeader => 'TextovÃ¡ zvesÅ¥:';
+  String get debugFrame_textMessageHeader => 'Textová zvesť:';
 
   @override
   String debugFrame_destinationPubKey(String pubKey) {
-    return '- CieÄ¾ovÃ½ PubKey: $pubKey';
+    return '- Cieľový PubKey: $pubKey';
   }
 
   @override
   String debugFrame_timestamp(int timestamp) {
-    return '- ÄŒasovÃ© oznaÄenie: $timestamp';
+    return '- Časové označenie: $timestamp';
   }
 
   @override
   String debugFrame_flags(String value) {
-    return '- Å½iadne vlajky: 0x$value';
+    return '- Žiadne vlajky: 0x$value';
   }
 
   @override
@@ -1158,7 +1195,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get debugFrame_textTypeCli => 'CLI';
 
   @override
-  String get debugFrame_textTypePlain => 'JednoduchÃ©';
+  String get debugFrame_textTypePlain => 'Jednoduché';
 
   @override
   String debugFrame_text(String text) {
@@ -1169,33 +1206,33 @@ class AppLocalizationsSk extends AppLocalizations {
   String get debugFrame_hexDump => 'Hex Dump:';
 
   @override
-  String get chat_pathManagement => 'SprÃ¡va ciest';
+  String get chat_pathManagement => 'Správa ciest';
 
   @override
-  String get chat_ShowAllPaths => 'ZobraziÅ¥ vÅ¡etky cesty';
+  String get chat_ShowAllPaths => 'Zobraziť všetky cesty';
 
   @override
-  String get chat_routingMode => 'ReÅ¾im trasy';
+  String get chat_routingMode => 'Režim trasy';
 
   @override
-  String get chat_autoUseSavedPath => 'PouÅ¾iÅ¥ uloÅ¾enÃº cestu';
+  String get chat_autoUseSavedPath => 'Použiť uloženú cestu';
 
   @override
   String get chat_forceFloodMode =>
-      'ZavrieÅ¥ reÅ¾im nÃºdzovÃ©ho povodÅˆovÃ©ho reÅ¾imu';
+      'Zavrieť režim núdzového povodňového režimu';
 
   @override
-  String get chat_recentAckPaths => 'NedÃ¡vne cesty ACK (klepni na pouÅ¾itie):';
+  String get chat_recentAckPaths => 'Nedávne cesty ACK (klepni na použitie):';
 
   @override
   String get chat_pathHistoryFull =>
-      'HistÃ³ria ciest je plnÃ¡. OdstrÃ¡Åˆte zÃ¡znamy, aby ste mohli pridaÅ¥ novÃ©.';
+      'História ciest je plná. Odstráňte záznamy, aby ste mohli pridať nové.';
 
   @override
   String get chat_hopSingular => 'Skok';
 
   @override
-  String get chat_hopPlural => 'SkÃ¡kaÅ¥';
+  String get chat_hopPlural => 'Skákať';
 
   @override
   String chat_hopsCount(int count) {
@@ -1209,49 +1246,49 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get chat_successes => 'Ãšspechy';
+  String get chat_successes => 'Úspechy';
 
   @override
-  String get chat_removePath => 'OdstrÃ¡niÅ¥ cestu';
+  String get chat_removePath => 'Odstrániť cestu';
 
   @override
   String get chat_noPathHistoryYet =>
-      'ZatiaÄ¾ Å¾iadna histÃ³ria trÃ¡s.\nPoÅ¡lite sprÃ¡vu a objavte trasy.';
+      'Zatiaľ žiadna história trás.\nPošlite správu a objavte trasy.';
 
   @override
   String get chat_pathActions => 'Cesty:';
 
   @override
-  String get chat_setCustomPath => 'NastaviÅ¥ vlastnÃº cestu';
+  String get chat_setCustomPath => 'Nastaviť vlastnú cestu';
 
   @override
-  String get chat_setCustomPathSubtitle => 'RuÄne zadajte trasu.';
+  String get chat_setCustomPathSubtitle => 'Ručne zadajte trasu.';
 
   @override
-  String get chat_clearPath => 'VyÄistiÅ¡ cestu';
+  String get chat_clearPath => 'Vyčistiš cestu';
 
   @override
   String get chat_clearPathSubtitle =>
-      'Znovu nÃ¡jsÅ¥ vynÃºtene pri nasledujÃºcej poÅ¡lite';
+      'Znovu nájsť vynútene pri nasledujúcej pošlite';
 
   @override
   String get chat_pathCleared =>
-      'Cesta vyÄistenÃ¡. NasledujÃºce prepoÄetnÃ© zÃ­ska trasu znova.';
+      'Cesta vyčistená. Nasledujúce prepočetné získa trasu znova.';
 
   @override
   String get chat_floodModeSubtitle =>
-      'PouÅ¾ite prepÃ­nanie trasy v navigaÄnom paneli.';
+      'Použite prepínanie trasy v navigačnom paneli.';
 
   @override
   String get chat_floodModeEnabled =>
-      'OdosporÅˆovacia prevÃ¡dzka je zapnutÃ¡. Vypnite ju znova cez ikonu routovania v navigaÄnom pÃ¡se.';
+      'Odosporňovacia prevádzka je zapnutá. Vypnite ju znova cez ikonu routovania v navigačnom páse.';
 
   @override
-  String get chat_fullPath => 'CelÃ¡ cesta';
+  String get chat_fullPath => 'Celá cesta';
 
   @override
   String get chat_pathDetailsNotAvailable =>
-      'Podrobnosti o ceste zatiaÄ¾ dostupnÃ© nie sÃº. SkÃºste poslaÅ¥ sprÃ¡vu na obnovenie.';
+      'Podrobnosti o ceste zatiaľ dostupné nie sú. Skúste poslať správu na obnovenie.';
 
   @override
   String chat_pathSetHops(int hopCount, String status) {
@@ -1261,41 +1298,41 @@ class AppLocalizationsSk extends AppLocalizations {
       other: 'hops',
       one: 'hop',
     );
-    return 'Cesta nastavenÃ¡: $hopCount $_temp0 - $status';
+    return 'Cesta nastavená: $hopCount $_temp0 - $status';
   }
 
   @override
   String get chat_pathSavedLocally =>
-      'UloÅ¾enÃ© lokÃ¡lne. Spojte sa na synchronizÃ¡ciu.';
+      'Uložené lokálne. Spojte sa na synchronizáciu.';
 
   @override
-  String get chat_pathDeviceConfirmed => 'Zariadenie potvrdenÃ©.';
+  String get chat_pathDeviceConfirmed => 'Zariadenie potvrdené.';
 
   @override
   String get chat_pathDeviceNotConfirmed =>
-      'Zariadenie zatiaÄ¾ nebolo potvrdenÃ©.';
+      'Zariadenie zatiaľ nebolo potvrdené.';
 
   @override
-  String get chat_type => 'NapiÅ¡te';
+  String get chat_type => 'Napište';
 
   @override
   String get chat_path => 'Cesta';
 
   @override
-  String get chat_publicKey => 'VerejnÃ½ kÄ¾ÃºÄ';
+  String get chat_publicKey => 'Verejný kľúč';
 
   @override
-  String get chat_compressOutgoingMessages => 'KomprimovaÅ¥ odoslanÃ© sprÃ¡vy';
+  String get chat_compressOutgoingMessages => 'Komprimovať odoslané správy';
 
   @override
-  String get chat_floodForced => 'PovodÅˆovÃ¡ (nutenÃ¡)';
+  String get chat_floodForced => 'Povodňová (nutená)';
 
   @override
-  String get chat_directForced => 'Priame (donÃºtenÃ©)';
+  String get chat_directForced => 'Priame (donútené)';
 
   @override
   String chat_hopsForced(int count) {
-    return '$count skokov (nutenÃ©)';
+    return '$count skokov (nutené)';
   }
 
   @override
@@ -1305,30 +1342,30 @@ class AppLocalizationsSk extends AppLocalizations {
   String get chat_direct => 'Priamo';
 
   @override
-  String get chat_poiShared => 'ZdieÄ¾anÃ© body zÃ¡ujmu';
+  String get chat_poiShared => 'Zdieľané body záujmu';
 
   @override
   String chat_unread(int count) {
-    return 'NezriadenÃ©: $count';
+    return 'Nezriadené: $count';
   }
 
   @override
-  String get chat_openLink => 'OtvoriÅ¥ odkaz?';
+  String get chat_openLink => 'Otvoriť odkaz?';
 
   @override
   String get chat_openLinkConfirmation =>
-      'Chcete otvoriÅ¥ tento odkaz v prehliadaÄi?';
+      'Chcete otvoriť tento odkaz v prehliadači?';
 
   @override
-  String get chat_open => 'OtvoriÅ¥';
+  String get chat_open => 'Otvoriť';
 
   @override
   String chat_couldNotOpenLink(String url) {
-    return 'Nepodarilo sa otvoriÅ¥ odkaz: $url';
+    return 'Nepodarilo sa otvoriť odkaz: $url';
   }
 
   @override
-  String get chat_invalidLink => 'NeplatnÃ½ formÃ¡t odkazu';
+  String get chat_invalidLink => 'Neplatný formát odkazu';
 
   @override
   String get map_title => 'Mapa uzlov';
@@ -1340,11 +1377,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get map_losScreenTitle => 'Line of Sight';
 
   @override
-  String get map_noNodesWithLocation => 'Å½iadne uzly s Ãºdajmi o polohe';
+  String get map_noNodesWithLocation => 'Žiadne uzly s údajmi o polohe';
 
   @override
   String get map_nodesNeedGps =>
-      'UholnÃ­ky musia zdieÄ¾aÅ¥ svoje GPS sÃºradnice, aby sa zobrazili na mape.';
+      'Uholníky musia zdieľať svoje GPS súradnice, aby sa zobrazili na mape.';
 
   @override
   String map_nodesCount(int count) {
@@ -1353,7 +1390,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String map_pinsCount(int count) {
-    return 'KrÃºÅ¾ky: $count';
+    return 'Krúžky: $count';
   }
 
   @override
@@ -1372,17 +1409,17 @@ class AppLocalizationsSk extends AppLocalizations {
   String get map_pinDm => 'Zabudka (DM)';
 
   @override
-  String get map_pinPrivate => 'Zabudka (OsobnÃ¡)';
+  String get map_pinPrivate => 'Zabudka (Osobná)';
 
   @override
-  String get map_pinPublic => 'ZablokovaÅ¥ (verejne)';
+  String get map_pinPublic => 'Zablokovať (verejne)';
 
   @override
-  String get map_lastSeen => 'PoslednÃ© zreteÄ¾nÃ© zobrazenie';
+  String get map_lastSeen => 'Posledné zreteľné zobrazenie';
 
   @override
   String get map_disconnectConfirm =>
-      'Ste si istÃ½/Ã¡, Å¾e chcete odpojiÅ¥ od tohto zariadenia?';
+      'Ste si istý/á, že chcete odpojiť od tohto zariadenia?';
 
   @override
   String get map_from => 'Od';
@@ -1391,170 +1428,167 @@ class AppLocalizationsSk extends AppLocalizations {
   String get map_source => 'Zdroj';
 
   @override
-  String get map_flags => 'ZÃ¡stavy';
+  String get map_flags => 'Zástavy';
 
   @override
-  String get map_shareMarkerHere => 'ZdieÄ¾te znaÄku tu';
+  String get map_shareMarkerHere => 'Zdieľte značku tu';
 
   @override
-  String get map_pinLabel => 'OznaÄka upozornenia';
+  String get map_pinLabel => 'Označka upozornenia';
 
   @override
-  String get map_label => 'ZnaÄka';
+  String get map_label => 'Značka';
 
   @override
-  String get map_pointOfInterest => 'Bod zÃ¡ujmu';
+  String get map_pointOfInterest => 'Bod záujmu';
 
   @override
-  String get map_sendToContact => 'PoÅ¡leÅ¥ na kontakt';
+  String get map_sendToContact => 'Pošleť na kontakt';
 
   @override
-  String get map_sendToChannel => 'PoslaÅ¥ do kanÃ¡lu';
+  String get map_sendToChannel => 'Poslať do kanálu';
 
   @override
-  String get map_noChannelsAvailable => 'ÐÐµexistujÃº Å¾iadne kanÃ¡ly.';
+  String get map_noChannelsAvailable => 'Неexistujú žiadne kanály.';
 
   @override
-  String get map_publicLocationShare => 'ZdieÄ¾iÅ¥ verejnÃº lokalitu';
+  String get map_publicLocationShare => 'Zdieľiť verejnú lokalitu';
 
   @override
   String map_publicLocationShareConfirm(String channelLabel) {
-    return 'ÄŒoskoro budete zdieÄ¾aÅ¥ polohu v $channelLabel. Tento kanÃ¡l je verejnÃ½ a mÃ´Å¾e ho vidieÅ¥ kaÅ¾dÃ½ s PSK.';
+    return 'Čoskoro budete zdieľať polohu v $channelLabel. Tento kanál je verejný a môže ho vidieť každý s PSK.';
   }
 
   @override
   String get map_connectToShareMarkers =>
-      'Pripojte sa k zariadeniu na zdieÄ¾anie znaÄiek';
+      'Pripojte sa k zariadeniu na zdieľanie značiek';
 
   @override
-  String get map_filterNodes => 'FiltrovaÅ¥ uzly';
+  String get map_filterNodes => 'Filtrovať uzly';
 
   @override
   String get map_nodeTypes => 'Typy uzlov';
 
   @override
-  String get map_chatNodes => 'ChatovÃ© uzly';
+  String get map_chatNodes => 'Chatové uzly';
 
   @override
-  String get map_repeaters => 'OpakovadlÃ¡';
+  String get map_repeaters => 'Opakovadlá';
 
   @override
-  String get map_otherNodes => 'OstatnÃ© uzly';
+  String get map_otherNodes => 'Ostatné uzly';
 
   @override
-  String get map_keyPrefix => 'PÃ¤Å¥cifernÃ© predpona';
+  String get map_keyPrefix => 'Päťciferné predpona';
 
   @override
-  String get map_filterByKeyPrefix =>
-      'FiltrovaÅ¥ podÄ¾a predponovÃ©ho kÄ¾ÃºÄa';
+  String get map_filterByKeyPrefix => 'Filtrovať podľa predponového kľúča';
 
   @override
-  String get map_publicKeyPrefix => 'Prefix verejnÃ©ho kÄ¾ÃºÄa';
+  String get map_publicKeyPrefix => 'Prefix verejného kľúča';
 
   @override
-  String get map_markers => 'OznaÄkovaÄe';
+  String get map_markers => 'Označkovače';
 
   @override
-  String get map_showSharedMarkers => 'ZobraziÅ¥ zdieÄ¾anÃ© znaÄky';
+  String get map_showSharedMarkers => 'Zobraziť zdieľané značky';
 
   @override
-  String get map_lastSeenTime => 'PoslednÃ½ Äas sledovania';
+  String get map_lastSeenTime => 'Posledný čas sledovania';
 
   @override
-  String get map_sharedPin => 'ZdieÄ¾anÃ½ PIN';
+  String get map_sharedPin => 'Zdieľaný PIN';
 
   @override
-  String get map_joinRoom => 'PripojiÅ¥ miestnosÅ¥';
+  String get map_joinRoom => 'Pripojiť miestnosť';
 
   @override
-  String get map_manageRepeater => 'SpravovaÅ¥ Opakovanie';
+  String get map_manageRepeater => 'Spravovať Opakovanie';
 
   @override
   String get map_tapToAdd => 'Kliknite na uzly, aby ste ich pridali k ceste.';
 
   @override
-  String get map_runTrace => 'SpustiÅ¥ trasovanÃ­m cesty';
+  String get map_runTrace => 'Spustiť trasovaním cesty';
 
   @override
-  String get map_removeLast => 'OdstrÃ¡niÅ¥ poslednÃ½';
+  String get map_removeLast => 'Odstrániť posledný';
 
   @override
-  String get map_pathTraceCancelled =>
-      'ZruÅ¡enie stopÃ¡Å¾e cesty bolo zruÅ¡enÃ©.';
+  String get map_pathTraceCancelled => 'Zrušenie stopáže cesty bolo zrušené.';
 
   @override
-  String get mapCache_title => 'Offline Mapa PamÃ¤Å¥';
+  String get mapCache_title => 'Offline Mapa Pamäť';
 
   @override
-  String get mapCache_selectAreaFirst =>
-      'Vyberte si oblasÅ¥ na predprerÃºÄenie.';
+  String get mapCache_selectAreaFirst => 'Vyberte si oblasť na predprerúčenie.';
 
   @override
   String get mapCache_noTilesToDownload =>
-      'Å½iadne dlaÅ¾dice na stiahnutie pre toto zÃ³na';
+      'Žiadne dlaždice na stiahnutie pre toto zóna';
 
   @override
-  String get mapCache_downloadTilesTitle => 'StiahnuÅ¥ dlaÅ¾dice';
+  String get mapCache_downloadTilesTitle => 'Stiahnuť dlaždice';
 
   @override
   String mapCache_downloadTilesPrompt(int count) {
-    return 'StiahnuÅ¥ $count dlaÅ¾dÃ­c na offline pouÅ¾itie?';
+    return 'Stiahnuť $count dlaždíc na offline použitie?';
   }
 
   @override
-  String get mapCache_downloadAction => 'StiahnuÅ¥';
+  String get mapCache_downloadAction => 'Stiahnuť';
 
   @override
   String mapCache_cachedTiles(int count) {
-    return 'ZabudenÃ© $count dlaÅ¾dÃ­c';
+    return 'Zabudené $count dlaždíc';
   }
 
   @override
   String mapCache_cachedTilesWithFailed(int downloaded, int failed) {
-    return 'UloÅ¾enÃ© $downloaded dlaÅ¾dice ($failed neÃºspeÅ¡nÃ©)';
+    return 'Uložené $downloaded dlaždice ($failed neúspešné)';
   }
 
   @override
-  String get mapCache_clearOfflineCacheTitle => 'VymazaÅ¥ offline uloÅ¾enie';
+  String get mapCache_clearOfflineCacheTitle => 'Vymazať offline uloženie';
 
   @override
   String get mapCache_clearOfflineCachePrompt =>
-      'OdstrÃ¡niÅ¥ vÅ¡etky uloÅ¾enÃ© mapovÃ© dlaÅ¾dice?';
+      'Odstrániť všetky uložené mapové dlaždice?';
 
   @override
-  String get mapCache_offlineCacheCleared => 'Offline polia vymazanÃ¡';
+  String get mapCache_offlineCacheCleared => 'Offline polia vymazaná';
 
   @override
-  String get mapCache_noAreaSelected => 'NeoznaÄila sa Å¾iadna oblasÅ¥';
+  String get mapCache_noAreaSelected => 'Neoznačila sa žiadna oblasť';
 
   @override
-  String get mapCache_cacheArea => 'ObdÄºÅ¾kovÃ¡ oblasÅ¥';
+  String get mapCache_cacheArea => 'Obdĺžková oblasť';
 
   @override
-  String get mapCache_useCurrentView => 'PouÅ¾ite aktuÃ¡lny zobrazenie';
+  String get mapCache_useCurrentView => 'Použite aktuálny zobrazenie';
 
   @override
-  String get mapCache_zoomRange => 'Rozsah zvÃ¤ÄÅ¡enia';
+  String get mapCache_zoomRange => 'Rozsah zväčšenia';
 
   @override
   String mapCache_estimatedTiles(int count) {
-    return 'OdhadnutÃ© dlaÅ¾dice: $count';
+    return 'Odhadnuté dlaždice: $count';
   }
 
   @override
   String mapCache_downloadedTiles(int completed, int total) {
-    return 'StiahnutÃ© $completed / $total';
+    return 'Stiahnuté $completed / $total';
   }
 
   @override
-  String get mapCache_downloadTilesButton => 'StiahnuÅ¥ dlaÅ¾dice';
+  String get mapCache_downloadTilesButton => 'Stiahnuť dlaždice';
 
   @override
-  String get mapCache_clearCacheButton => 'VyprÃ¡zdniÅ¥ VÃ¤dsÅ¥';
+  String get mapCache_clearCacheButton => 'Vyprázdniť Vädsť';
 
   @override
   String mapCache_failedDownloads(int count) {
-    return 'NeÃºspeÅ¡nÃ© stiahnutia: $count';
+    return 'Neúspešné stiahnutia: $count';
   }
 
   @override
@@ -1568,7 +1602,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get time_justNow => 'PrÃ­beh';
+  String get time_justNow => 'Príbeh';
 
   @override
   String time_minutesAgo(int minutes) {
@@ -1582,7 +1616,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String time_daysAgo(int days) {
-    return '$days dnÃ­ dozadu';
+    return '$days dní dozadu';
   }
 
   @override
@@ -1592,16 +1626,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get time_hours => 'hodiny';
 
   @override
-  String get time_day => 'deÅˆ';
+  String get time_day => 'deň';
 
   @override
   String get time_days => 'dni';
 
   @override
-  String get time_week => 'tÃ½Å¾deÅˆ';
+  String get time_week => 'týždeň';
 
   @override
-  String get time_weeks => 'tÃ½Å¾dne';
+  String get time_weeks => 'týždne';
 
   @override
   String get time_month => 'mesiac';
@@ -1610,23 +1644,23 @@ class AppLocalizationsSk extends AppLocalizations {
   String get time_months => 'mesiace';
 
   @override
-  String get time_minutes => 'minÃºty';
+  String get time_minutes => 'minúty';
 
   @override
-  String get time_allTime => 'VÅ¡etko ÄŒasom';
+  String get time_allTime => 'Všetko Časom';
 
   @override
-  String get dialog_disconnect => 'OdpojiÅ¥';
+  String get dialog_disconnect => 'Odpojiť';
 
   @override
   String get dialog_disconnectConfirm =>
-      'Ste si istÃ½/Ã¡, Å¾e chcete odpojiÅ¥ od tohto zariadenia?';
+      'Ste si istý/á, že chcete odpojiť od tohto zariadenia?';
 
   @override
-  String get login_repeaterLogin => 'OpÃ¤tovnÃ© prihlÃ¡senie';
+  String get login_repeaterLogin => 'Opätovné prihlásenie';
 
   @override
-  String get login_roomLogin => 'PrihlÃ¡senie do miestnosti';
+  String get login_roomLogin => 'Prihlásenie do miestnosti';
 
   @override
   String get login_password => 'Heslo';
@@ -1635,62 +1669,62 @@ class AppLocalizationsSk extends AppLocalizations {
   String get login_enterPassword => 'Zadajte heslo';
 
   @override
-  String get login_savePassword => 'UloÅ¾iÅ¥ heslo';
+  String get login_savePassword => 'Uložiť heslo';
 
   @override
   String get login_savePasswordSubtitle =>
-      'Heslo bude bezpeÄne uloÅ¾enÃ© na tomto zariadenÃ­.';
+      'Heslo bude bezpečne uložené na tomto zariadení.';
 
   @override
   String get login_repeaterDescription =>
-      'Zadajte heslo opakovaÄa, aby ste zÃ­skali prÃ­stup k nastaveniam a stavu.';
+      'Zadajte heslo opakovača, aby ste získali prístup k nastaveniam a stavu.';
 
   @override
   String get login_roomDescription =>
-      'Zadajte heslo do miestnosti na prÃ­stup k nastaveniam a stavu.';
+      'Zadajte heslo do miestnosti na prístup k nastaveniam a stavu.';
 
   @override
-  String get login_routing => 'RÃºtiace';
+  String get login_routing => 'Rútiace';
 
   @override
-  String get login_routingMode => 'ReÅ¾im trasy';
+  String get login_routingMode => 'Režim trasy';
 
   @override
-  String get login_autoUseSavedPath => 'PouÅ¾iÅ¥ uloÅ¾enÃº cestu';
+  String get login_autoUseSavedPath => 'Použiť uloženú cestu';
 
   @override
   String get login_forceFloodMode =>
-      'ZavrieÅ¥ reÅ¾im nÃºdzovÃ©ho povodÅˆovÃ©ho reÅ¾imu';
+      'Zavrieť režim núdzového povodňového režimu';
 
   @override
-  String get login_managePaths => 'SpravovaÅ¥ Cesty';
+  String get login_managePaths => 'Spravovať Cesty';
 
   @override
-  String get login_login => 'PrihlÃ¡siÅ¥';
+  String get login_login => 'Prihlásiť';
 
   @override
   String login_attempt(int current, int max) {
-    return 'SkÃºÅ¡aj $current/$max';
+    return 'Skúšaj $current/$max';
   }
 
   @override
   String login_failed(String error) {
-    return 'PrihlÃ¡senie zlyhalo: $error';
+    return 'Prihlásenie zlyhalo: $error';
   }
 
   @override
   String get login_failedMessage =>
-      'PrihlÃ¡senie zlyhalo. Heslo je nesprÃ¡vne alebo je opakovaÄ nedostupnÃ½.';
+      'Prihlásenie zlyhalo. Heslo je nesprávne alebo je opakovač nedostupný.';
 
   @override
-  String get common_reload => 'NaÄÃ­taÅ¥';
+  String get common_reload => 'Načítať';
 
   @override
-  String get common_clear => 'ZmazaÅ¥';
+  String get common_clear => 'Zmazať';
 
   @override
   String path_currentPath(String path) {
-    return 'AktÃ­vna cesta: $path';
+    return 'Aktívna cesta: $path';
   }
 
   @override
@@ -1701,151 +1735,150 @@ class AppLocalizationsSk extends AppLocalizations {
       other: 'hops',
       one: 'hop',
     );
-    return 'PouÅ¾Ã­va $count $_temp0 cestu';
+    return 'Používa $count $_temp0 cestu';
   }
 
   @override
-  String get path_enterCustomPath => 'Zadajte vlastnÃ½ priebeh';
+  String get path_enterCustomPath => 'Zadajte vlastný priebeh';
 
   @override
-  String get path_currentPathLabel => 'AktuÃ¡lny priebeh';
+  String get path_currentPathLabel => 'Aktuálny priebeh';
 
   @override
   String get path_hexPrefixInstructions =>
-      'Zadajte 2-miestne hexovÃ© predpony pre kaÅ¾dÃº fÃ¡zu, oddelenÃ© Äiarkami.';
+      'Zadajte 2-miestne hexové predpony pre každú fázu, oddelené čiarkami.';
 
   @override
   String get path_hexPrefixExample =>
-      'A1,F2,3C (kaÅ¾dÃ½ uzel pouÅ¾Ã­va prvÃ½ bajt svojho verejnÃ©ho kÄ¾ÃºÄa)';
+      'A1,F2,3C (každý uzel používa prvý bajt svojho verejného kľúča)';
 
   @override
-  String get path_labelHexPrefixes => 'Cesty (hexovÃ© predpony)';
+  String get path_labelHexPrefixes => 'Cesty (hexové predpony)';
 
   @override
   String get path_helperMaxHops =>
-      'Max 64 skokov. KaÅ¾dÃ½ prefix je 2 hexadecimÃ¡lne znaky (1 bajt).';
+      'Max 64 skokov. Každý prefix je 2 hexadecimálne znaky (1 bajt).';
 
   @override
   String get path_selectFromContacts => 'Vyberte sa z kontaktov:';
 
   @override
   String get path_noRepeatersFound =>
-      'NenaÅ¡li sa Å¾iadne opakovaÄe ani serverovÃ© miestnosti.';
+      'Nenašli sa žiadne opakovače ani serverové miestnosti.';
 
   @override
   String get path_customPathsRequire =>
-      'VlastnÃ© cesty vyÅ¾adujÃº medziletoch, ktorÃ© mÃ´Å¾u prenÃ¡Å¡aÅ¥ sprÃ¡vky.';
+      'Vlastné cesty vyžadujú medziletoch, ktoré môžu prenášať správky.';
 
   @override
   String path_invalidHexPrefixes(String prefixes) {
-    return 'NeplatnÃ© hexovÃ© predpony: $prefixes';
+    return 'Neplatné hexové predpony: $prefixes';
   }
 
   @override
   String get path_tooLong =>
-      'Cesta je prÃ­liÅ¡ dlhÃ¡. UmoÅ¾nenÃ© je maximum 64 skokov.';
+      'Cesta je príliš dlhá. Umožnené je maximum 64 skokov.';
 
   @override
-  String get path_setPath => 'NastaviÅ¥ cestu';
+  String get path_setPath => 'Nastaviť cestu';
 
   @override
-  String get repeater_management => 'SprÃ¡va opakÃ©rov';
+  String get repeater_management => 'Správa opakérov';
 
   @override
-  String get room_management => 'SprÃ¡va servera miestnosti';
+  String get room_management => 'Správa servera miestnosti';
 
   @override
-  String get repeater_managementTools => 'NÃ¡stroje na sprÃ¡vu';
+  String get repeater_managementTools => 'Nástroje na správu';
 
   @override
   String get repeater_status => 'Status';
 
   @override
   String get repeater_statusSubtitle =>
-      'ZobraziÅ¥ stav, Å¡tatistiky a susedov repeatera';
+      'Zobraziť stav, štatistiky a susedov repeatera';
 
   @override
   String get repeater_telemetry => 'Telemetria';
 
   @override
   String get repeater_telemetrySubtitle =>
-      'ZobraziÅ¥ telemetriu senzorov a systÃ©movÃ½ch Å¡tatistÃ­k';
+      'Zobraziť telemetriu senzorov a systémových štatistík';
 
   @override
   String get repeater_cli => 'CLI';
 
   @override
-  String get repeater_cliSubtitle => 'PoÅ¡lite prÃ­kazy opakovaÄu';
+  String get repeater_cliSubtitle => 'Pošlite príkazy opakovaču';
 
   @override
-  String get repeater_neighbors => 'SÃºseznÃ½';
+  String get repeater_neighbors => 'Súsezný';
 
   @override
-  String get repeater_neighborsSubtitle =>
-      'ZobraziÅ¥ susednÃ© body bez skokov.';
+  String get repeater_neighborsSubtitle => 'Zobraziť susedné body bez skokov.';
 
   @override
   String get repeater_settings => 'Nastavenia';
 
   @override
-  String get repeater_settingsSubtitle => 'Konfigurujte parametre opakovaÄa';
+  String get repeater_settingsSubtitle => 'Konfigurujte parametre opakovača';
 
   @override
-  String get repeater_statusTitle => 'Status opakÃ©ho zboru';
+  String get repeater_statusTitle => 'Status opakého zboru';
 
   @override
-  String get repeater_routingMode => 'ReÅ¾im trasy';
+  String get repeater_routingMode => 'Režim trasy';
 
   @override
-  String get repeater_autoUseSavedPath => 'PouÅ¾iÅ¥ uloÅ¾enÃº cestu';
+  String get repeater_autoUseSavedPath => 'Použiť uloženú cestu';
 
   @override
   String get repeater_forceFloodMode =>
-      'ZavrieÅ¥ reÅ¾im nÃºdzovÃ©ho povodÅˆovÃ©ho reÅ¾imu';
+      'Zavrieť režim núdzového povodňového režimu';
 
   @override
-  String get repeater_pathManagement => 'SprÃ¡va trÃ¡s';
+  String get repeater_pathManagement => 'Správa trás';
 
   @override
-  String get repeater_refresh => 'ObnoviÅ¥';
+  String get repeater_refresh => 'Obnoviť';
 
   @override
-  String get repeater_statusRequestTimeout => 'PoÅ¾iadavka stavu zlyhala.';
+  String get repeater_statusRequestTimeout => 'Požiadavka stavu zlyhala.';
 
   @override
   String repeater_errorLoadingStatus(String error) {
-    return 'Chyba pri naÄÃ­tanÃ­ stavu: $error';
+    return 'Chyba pri načítaní stavu: $error';
   }
 
   @override
-  String get repeater_systemInformation => 'InformÃ¡cie o systÃ©me';
+  String get repeater_systemInformation => 'Informácie o systéme';
 
   @override
-  String get repeater_battery => 'BatÃ©ria';
+  String get repeater_battery => 'Batéria';
 
   @override
-  String get repeater_clockAtLogin => 'ÄŒas (pÅ™i pÅ™ihlÃ¡Å¡enÃ­)';
+  String get repeater_clockAtLogin => 'Čas (při přihlášení)';
 
   @override
-  String get repeater_uptime => 'DostupnosÅ¥';
+  String get repeater_uptime => 'Dostupnosť';
 
   @override
-  String get repeater_queueLength => 'DÄºÅ¾ka fronty';
+  String get repeater_queueLength => 'Dĺžka fronty';
 
   @override
-  String get repeater_debugFlags => 'KontrolnÃ© znaÄky';
+  String get repeater_debugFlags => 'Kontrolné značky';
 
   @override
-  String get repeater_radioStatistics => 'RÃ¡dio Å tatistiky';
+  String get repeater_radioStatistics => 'Rádio Štatistiky';
 
   @override
-  String get repeater_lastRssi => 'PoslednÃ¡ RSSI';
+  String get repeater_lastRssi => 'Posledná RSSI';
 
   @override
-  String get repeater_lastSnr => 'PoslednÃ½ SNR';
+  String get repeater_lastSnr => 'Posledný SNR';
 
   @override
-  String get repeater_noiseFloor => 'Hladina Å¡umu';
+  String get repeater_noiseFloor => 'Hladina šumu';
 
   @override
   String get repeater_txAirtime => 'TX Airtime';
@@ -1854,16 +1887,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get repeater_rxAirtime => 'RX Airtime';
 
   @override
-  String get repeater_packetStatistics => 'Statistiky balÃ­ka';
+  String get repeater_packetStatistics => 'Statistiky balíka';
 
   @override
-  String get repeater_sent => 'OdoslanÃ©';
+  String get repeater_sent => 'Odoslané';
 
   @override
-  String get repeater_received => 'PriÅ¡lo';
+  String get repeater_received => 'Prišlo';
 
   @override
-  String get repeater_duplicates => 'DuplikÃ¡ty';
+  String get repeater_duplicates => 'Duplikáty';
 
   @override
   String repeater_daysHoursMinsSecs(
@@ -1872,17 +1905,17 @@ class AppLocalizationsSk extends AppLocalizations {
     int minutes,
     int seconds,
   ) {
-    return '$days dnÃ­ ${hours}h ${minutes}m ${seconds}s';
+    return '$days dní ${hours}h ${minutes}m ${seconds}s';
   }
 
   @override
   String repeater_packetTxTotal(int total, String flood, String direct) {
-    return 'Celkem: $total, PovodÅˆovÃ½ reÅ¾im: $flood, Priamy: $direct';
+    return 'Celkem: $total, Povodňový režim: $flood, Priamy: $direct';
   }
 
   @override
   String repeater_packetRxTotal(int total, String flood, String direct) {
-    return 'Celkem: $total, PovodÅˆovÃ½ reÅ¾im: $flood, Priamy: $direct';
+    return 'Celkem: $total, Povodňový režim: $flood, Priamy: $direct';
   }
 
   @override
@@ -1896,33 +1929,31 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get repeater_settingsTitle => 'Nastavenia OpakovacÌŒa';
+  String get repeater_settingsTitle => 'Nastavenia Opakovača';
 
   @override
-  String get repeater_basicSettings => 'ZÃ¡kladnÃ© nastavenia';
+  String get repeater_basicSettings => 'Základné nastavenia';
 
   @override
-  String get repeater_repeaterName => 'Opakovacia nÃ¡zov';
+  String get repeater_repeaterName => 'Opakovacia názov';
 
   @override
-  String get repeater_repeaterNameHelper =>
-      'Zobrazenie nÃ¡zvu tohto opakovaÄa';
+  String get repeater_repeaterNameHelper => 'Zobrazenie názvu tohto opakovača';
 
   @override
-  String get repeater_adminPassword => 'Heslo administrÃ¡tora';
+  String get repeater_adminPassword => 'Heslo administrátora';
 
   @override
-  String get repeater_adminPasswordHelper => 'CelÃ½ prÃ­stupovÃ½ heslo';
+  String get repeater_adminPasswordHelper => 'Celý prístupový heslo';
 
   @override
-  String get repeater_guestPassword => 'Heslo hosÅ¥a';
+  String get repeater_guestPassword => 'Heslo hosťa';
 
   @override
-  String get repeater_guestPasswordHelper =>
-      'PrÃ­stupovÃ½ heslo iba na ÄÃ­tanie';
+  String get repeater_guestPasswordHelper => 'Prístupový heslo iba na čítanie';
 
   @override
-  String get repeater_radioSettings => 'Nastavenia rÃ¡dia';
+  String get repeater_radioSettings => 'Nastavenia rádia';
 
   @override
   String get repeater_frequencyMhz => 'Frekvencia (MHz)';
@@ -1937,28 +1968,28 @@ class AppLocalizationsSk extends AppLocalizations {
   String get repeater_txPowerHelper => '1-30 dBm';
 
   @override
-  String get repeater_bandwidth => 'Å Ã­rka pÃ¡sma';
+  String get repeater_bandwidth => 'Šírka pásma';
 
   @override
-  String get repeater_spreadingFactor => 'Å Ã­renie faktoru';
+  String get repeater_spreadingFactor => 'Šírenie faktoru';
 
   @override
-  String get repeater_codingRate => 'RÃ½chlosÅ¥ kÃ³dovania';
+  String get repeater_codingRate => 'Rýchlosť kódovania';
 
   @override
   String get repeater_locationSettings => 'Nastavenia polohy';
 
   @override
-  String get repeater_latitude => 'SÃºradnica';
+  String get repeater_latitude => 'Súradnica';
 
   @override
-  String get repeater_latitudeHelper => 'DesatinnÃ© zloÅ¾ky (napr. 37.7749)';
+  String get repeater_latitudeHelper => 'Desatinné zložky (napr. 37.7749)';
 
   @override
-  String get repeater_longitude => 'DÄºÅ¾ka';
+  String get repeater_longitude => 'Dĺžka';
 
   @override
-  String get repeater_longitudeHelper => 'DesatinnÃ© zloÅ¾ky (napr. -122.4194)';
+  String get repeater_longitudeHelper => 'Desatinné zložky (napr. -122.4194)';
 
   @override
   String get repeater_features => 'Funkcie';
@@ -1968,176 +1999,173 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get repeater_packetForwardingSubtitle =>
-      'Povolte opakovaÄ na smerovanie paketov.';
+      'Povolte opakovač na smerovanie paketov.';
 
   @override
-  String get repeater_guestAccess => 'PrÃ­stup pre hostÃ­';
+  String get repeater_guestAccess => 'Prístup pre hostí';
 
   @override
   String get repeater_guestAccessSubtitle =>
-      'UmoÅ¾niÅ¥ prÃ­stup hosta iba na ÄÃ­tanie.';
+      'Umožniť prístup hosta iba na čítanie.';
 
   @override
-  String get repeater_privacyMode => 'ReÅ¾im ochrany sÃºkromia';
+  String get repeater_privacyMode => 'Režim ochrany súkromia';
 
   @override
-  String get repeater_privacyModeSubtitle => 'SkryÅ¥ meno/poloha v reklamÃ¡ch';
+  String get repeater_privacyModeSubtitle => 'Skryť meno/poloha v reklamách';
 
   @override
   String get repeater_advertisementSettings => 'Nastavenia reklamy';
 
   @override
-  String get repeater_localAdvertInterval =>
-      'LokÃ¡lna reklamnÃ¡ ÄasovÃ¡ obdoba';
+  String get repeater_localAdvertInterval => 'Lokálna reklamná časová obdoba';
 
   @override
   String repeater_localAdvertIntervalMinutes(int minutes) {
-    return '$minutes minÃºt';
+    return '$minutes minút';
   }
 
   @override
   String get repeater_floodAdvertInterval =>
-      'Interval reklamnej povodÅˆovej reklamy';
+      'Interval reklamnej povodňovej reklamy';
 
   @override
   String repeater_floodAdvertIntervalHours(int hours) {
-    return '$hours hodÃ­n';
+    return '$hours hodín';
   }
 
   @override
-  String get repeater_encryptedAdvertInterval =>
-      'Å ifrovanÃ½ reklamnÃ½ interval';
+  String get repeater_encryptedAdvertInterval => 'Šifrovaný reklamný interval';
 
   @override
-  String get repeater_dangerZone => 'NebezpeÄnÃ¡ zÃ³na';
+  String get repeater_dangerZone => 'Nebezpečná zóna';
 
   @override
-  String get repeater_rebootRepeater => 'Restart RepetÃ©r';
+  String get repeater_rebootRepeater => 'Restart Repetér';
 
   @override
-  String get repeater_rebootRepeaterSubtitle =>
-      'ResetovaÅ¥ vysielacÃ­ prÃ­stroj';
+  String get repeater_rebootRepeaterSubtitle => 'Resetovať vysielací prístroj';
 
   @override
   String get repeater_rebootRepeaterConfirm =>
-      'Ste si istÃ½, Å¾e chcete tento opakovaÄ restartovaÅ¥?';
+      'Ste si istý, že chcete tento opakovač restartovať?';
 
   @override
-  String get repeater_regenerateIdentityKey => 'GenerovaÅ¥ kÄ¾ÃºÄ identity';
+  String get repeater_regenerateIdentityKey => 'Generovať kľúč identity';
 
   @override
   String get repeater_regenerateIdentityKeySubtitle =>
-      'GenerovaÅ¥ novÃ½ pÃ¡r verejnÃ½ch/privÃ¡tnych kÄ¾ÃºÄov';
+      'Generovať nový pár verejných/privátnych kľúčov';
 
   @override
   String get repeater_regenerateIdentityKeyConfirm =>
-      'Toto vytvorÃ­ novÃ½ identitu pre opakovaÄ. PokraÄovaÅ¥?';
+      'Toto vytvorí nový identitu pre opakovač. Pokračovať?';
 
   @override
-  String get repeater_eraseFileSystem => 'VymaÅ¾aÅ¥ SystÃ©movÃ½ ReÅ¥azec';
+  String get repeater_eraseFileSystem => 'Vymažať Systémový Reťazec';
 
   @override
   String get repeater_eraseFileSystemSubtitle =>
-      'FormÃ¡tovaÅ¥ systÃ©m opakujÃºcich sa sÃºborov';
+      'Formátovať systém opakujúcich sa súborov';
 
   @override
   String get repeater_eraseFileSystemConfirm =>
-      'VAROVANIE: Toto zmaÅ¾e vÅ¡etky dÃ¡ta na opakovaÄi. To sa nedÃ¡ zruÅ¡iÅ¥!';
+      'VAROVANIE: Toto zmaže všetky dáta na opakovači. To sa nedá zrušiť!';
 
   @override
   String get repeater_eraseSerialOnly =>
-      'OdstrÃ¡nenie je dostupnÃ© len cez sÃ©riovÃ© rozhranie.';
+      'Odstránenie je dostupné len cez sériové rozhranie.';
 
   @override
   String repeater_commandSent(String command) {
-    return 'PoforovanÃ½ prÃ­kaz: $command';
+    return 'Poforovaný príkaz: $command';
   }
 
   @override
   String repeater_errorSendingCommand(String error) {
-    return 'Chyba pri odeslanÃ­ prÃ­kazu: $error';
+    return 'Chyba pri odeslaní príkazu: $error';
   }
 
   @override
-  String get repeater_confirm => 'PotvrdiÅ¥';
+  String get repeater_confirm => 'Potvrdiť';
 
   @override
-  String get repeater_settingsSaved => 'Nastavenia boli uloÅ¾enÃ© ÃºspeÅ¡ne.';
+  String get repeater_settingsSaved => 'Nastavenia boli uložené úspešne.';
 
   @override
   String repeater_errorSavingSettings(String error) {
-    return 'Chyba pri ukladanÃ­ nastavenÃ­: $error';
+    return 'Chyba pri ukladaní nastavení: $error';
   }
 
   @override
-  String get repeater_refreshBasicSettings => 'ObnoviÅ¥ zÃ¡kladnÃ© nastavenia';
+  String get repeater_refreshBasicSettings => 'Obnoviť základné nastavenia';
 
   @override
-  String get repeater_refreshRadioSettings => 'ObnoviÅ¥ Nastavenia RÃ¡diÃ­';
+  String get repeater_refreshRadioSettings => 'Obnoviť Nastavenia Rádií';
 
   @override
-  String get repeater_refreshTxPower => 'ObnoviÅ¥ TX napÃ¡janie';
+  String get repeater_refreshTxPower => 'Obnoviť TX napájanie';
 
   @override
-  String get repeater_refreshLocationSettings => 'ObnoviÅ¥ Nastavenia Miesta';
+  String get repeater_refreshLocationSettings => 'Obnoviť Nastavenia Miesta';
 
   @override
-  String get repeater_refreshPacketForwarding => 'ObnoviÅ¥ smerovanie paketov';
+  String get repeater_refreshPacketForwarding => 'Obnoviť smerovanie paketov';
 
   @override
-  String get repeater_refreshGuestAccess => 'ObnoviÅ¥ prÃ­stup hosÅ¥a';
+  String get repeater_refreshGuestAccess => 'Obnoviť prístup hosťa';
 
   @override
-  String get repeater_refreshPrivacyMode => 'ObnoviÅ¥ OchrannÃ½ reÅ¾im';
+  String get repeater_refreshPrivacyMode => 'Obnoviť Ochranný režim';
 
   @override
   String get repeater_refreshAdvertisementSettings =>
-      'ObnoviÅ¥ nastavenia reklamy';
+      'Obnoviť nastavenia reklamy';
 
   @override
   String repeater_refreshed(String label) {
-    return '$label sa znova naÄÃ­talo';
+    return '$label sa znova načítalo';
   }
 
   @override
   String repeater_errorRefreshing(String label) {
-    return 'Chyba pri obnovenÃ­ $label';
+    return 'Chyba pri obnovení $label';
   }
 
   @override
   String get repeater_cliTitle => 'Opakovacia CLI';
 
   @override
-  String get repeater_debugNextCommand => 'Oprava NasledujÃºceho PrÃ­kaz';
+  String get repeater_debugNextCommand => 'Oprava Nasledujúceho Príkaz';
 
   @override
   String get repeater_commandHelp => 'Pomoc';
 
   @override
-  String get repeater_clearHistory => 'VymazaÅ¥ histÃ³riu';
+  String get repeater_clearHistory => 'Vymazať históriu';
 
   @override
   String get repeater_noCommandsSent =>
-      'ZatiaÄ¾ neboli odeslanÃ© Å¾iadne prÃ­kazy.';
+      'Zatiaľ neboli odeslané žiadne príkazy.';
 
   @override
   String get repeater_typeCommandOrUseQuick =>
-      'Zadajte prÃ­kaz niÅ¾Å¡ie alebo pouÅ¾ite rÃ½chle prÃ­kazy';
+      'Zadajte príkaz nižšie alebo použite rýchle príkazy';
 
   @override
-  String get repeater_enterCommandHint => 'Zadajte prÃ­kaz...';
+  String get repeater_enterCommandHint => 'Zadajte príkaz...';
 
   @override
-  String get repeater_previousCommand => 'PredchÃ¡dzajÃºci prÃ­kaz';
+  String get repeater_previousCommand => 'Predchádzajúci príkaz';
 
   @override
-  String get repeater_nextCommand => 'NasledujÃºci prÃ­kaz';
+  String get repeater_nextCommand => 'Nasledujúci príkaz';
 
   @override
-  String get repeater_enterCommandFirst => 'Zadajte najprv prÃ­kaz';
+  String get repeater_enterCommandFirst => 'Zadajte najprv príkaz';
 
   @override
-  String get repeater_cliCommandFrameTitle => 'RÃ¡mok PrÃ­kaz CLI';
+  String get repeater_cliCommandFrameTitle => 'Rámok Príkaz CLI';
 
   @override
   String repeater_cliCommandError(String error) {
@@ -2145,16 +2173,16 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get repeater_cliQuickGetName => 'ZÃ­sÅ¥ meno';
+  String get repeater_cliQuickGetName => 'Zísť meno';
 
   @override
-  String get repeater_cliQuickGetRadio => 'ZÃ­sÅ¥ po rÃ¡diu';
+  String get repeater_cliQuickGetRadio => 'Zísť po rádiu';
 
   @override
-  String get repeater_cliQuickGetTx => 'ZÃ­sÅ¥ TX';
+  String get repeater_cliQuickGetTx => 'Zísť TX';
 
   @override
-  String get repeater_cliQuickNeighbors => 'SÃºseznÃ½';
+  String get repeater_cliQuickNeighbors => 'Súsezný';
 
   @override
   String get repeater_cliQuickVersion => 'Verzia';
@@ -2166,224 +2194,224 @@ class AppLocalizationsSk extends AppLocalizations {
   String get repeater_cliQuickClock => 'Hodiny';
 
   @override
-  String get repeater_cliHelpAdvert => 'Odosiela reklamnÃº balÃ­Äek.';
+  String get repeater_cliHelpAdvert => 'Odosiela reklamnú balíček.';
 
   @override
   String get repeater_cliHelpReboot =>
-      'Resetuje zariadenie. (pozor, mÃ´Å¾e dÃ´jsÅ¥ k \'Timeoutu\', Äo je normÃ¡lne)';
+      'Resetuje zariadenie. (pozor, môže dôjsť k \'Timeoutu\', čo je normálne)';
 
   @override
   String get repeater_cliHelpClock =>
-      'Zobrazuje aktuÃ¡lny Äas podÄ¾a hodiniek zariadenia.';
+      'Zobrazuje aktuálny čas podľa hodiniek zariadenia.';
 
   @override
   String get repeater_cliHelpPassword =>
-      'NastavÃ­ novÃ½ administrÃ¡torskÃ½ prÃ­stupovÃ½ Ãºdaj pre zariadenie.';
+      'Nastaví nový administrátorský prístupový údaj pre zariadenie.';
 
   @override
   String get repeater_cliHelpVersion =>
-      'Zobrazuje verziu zariadenia a dÃ¡tum zostavenia firmvÃ©ru.';
+      'Zobrazuje verziu zariadenia a dátum zostavenia firmvéru.';
 
   @override
   String get repeater_cliHelpClearStats =>
-      'Resetuje rÃ´zne Å¡tatistickÃ© poÄÃ­tadlÃ¡ na nulu.';
+      'Resetuje rôzne štatistické počítadlá na nulu.';
 
   @override
-  String get repeater_cliHelpSetAf => 'Nastavuje ÄasovÃ½ faktor.';
+  String get repeater_cliHelpSetAf => 'Nastavuje časový faktor.';
 
   @override
   String get repeater_cliHelpSetTx =>
-      'Nastavenie vysielacej sily LoRa v dBm. (potrebuje sa reÅ¡tart na aplikÃ¡ciu)';
+      'Nastavenie vysielacej sily LoRa v dBm. (potrebuje sa reštart na aplikáciu)';
 
   @override
   String get repeater_cliHelpSetRepeat =>
-      'UmoÅ¾Åˆuje alebo vypÃ­na zopakovanÃ½ prÃ­spevok pre tento uzol.';
+      'Umožňuje alebo vypína zopakovaný príspevok pre tento uzol.';
 
   @override
   String get repeater_cliHelpSetAllowReadOnly =>
-      '(Server miestnosti) Ak je \'zapnutÃ©\', potom bude povolenÃ½ prÃ­stup s prÃ¡zdnym heslom, ale nebude moÅ¾nÃ© posielaÅ¥ sprÃ¡vu do miestnosti. (iba ÄÃ­taÅ¥).';
+      '(Server miestnosti) Ak je \'zapnuté\', potom bude povolený prístup s prázdnym heslom, ale nebude možné posielať správu do miestnosti. (iba čítať).';
 
   @override
   String get repeater_cliHelpSetFloodMax =>
-      'Nastavuje maximÃ¡lny poÄet skokov pre vstupnÃ½ povelovÃ½ paket (ak je >= max, paket nie je preposlanÃ½)';
+      'Nastavuje maximálny počet skokov pre vstupný povelový paket (ak je >= max, paket nie je preposlaný)';
 
   @override
   String get repeater_cliHelpSetIntThresh =>
-      'Nastavuje hranicu ruÅ¾iveho ladenia (v dB). PredvolenÃ© je 14. NastavenÃ­m na 0 sa vypne detekcia ruÅ¾iveho ladenia kanÃ¡lu.';
+      'Nastavuje hranicu ruživeho ladenia (v dB). Predvolené je 14. Nastavením na 0 sa vypne detekcia ruživeho ladenia kanálu.';
 
   @override
   String get repeater_cliHelpSetAgcResetInterval =>
-      'Nastavuje interval na reÅ¡tartovanie Auto Gain Controlleru. Nastavenie na 0 vypne funkciu.';
+      'Nastavuje interval na reštartovanie Auto Gain Controlleru. Nastavenie na 0 vypne funkciu.';
 
   @override
   String get repeater_cliHelpSetMultiAcks =>
-      'PovolÃ­ alebo pozastavÃ­ funkciiu \"dvojitÃ© potvrdenia\".';
+      'Povolí alebo pozastaví funkciiu \"dvojité potvrdenia\".';
 
   @override
   String get repeater_cliHelpSetAdvertInterval =>
-      'Nastavuje interval ÄasovaÄa v minÃºtach na odoÅ¡le miestny (bezprostrednÃ½) reklamnÃ½ paket. Nastavenie na 0 vypne funkciu.';
+      'Nastavuje interval časovača v minútach na odošle miestny (bezprostredný) reklamný paket. Nastavenie na 0 vypne funkciu.';
 
   @override
   String get repeater_cliHelpSetFloodAdvertInterval =>
-      'Nastavuje interval ÄasovaÄa v hodinÃ¡ch na odeslanie reklamnej vlne. Nastavenie na 0 vypne.';
+      'Nastavuje interval časovača v hodinách na odeslanie reklamnej vlne. Nastavenie na 0 vypne.';
 
   @override
   String get repeater_cliHelpSetGuestPassword =>
-      'Nastavuje/aktualizuje heslo hosÅ¥a. (pre opakovanÃ© pripojenia mÃ´Å¾u hosÅ¥ovskÃ© prihlÃ¡senia posielaÅ¥ poÅ¾adanie \"Get Stats\")';
+      'Nastavuje/aktualizuje heslo hosťa. (pre opakované pripojenia môžu hosťovské prihlásenia posielať požadanie \"Get Stats\")';
 
   @override
-  String get repeater_cliHelpSetName => 'NastavÃ­ nÃ¡zov reklamy.';
+  String get repeater_cliHelpSetName => 'Nastaví názov reklamy.';
 
   @override
   String get repeater_cliHelpSetLat =>
-      'NastavÃ­ geografickÃº Å¡Ã­rku reklamnej mapy. (desatinnÃ© stupne)';
+      'Nastaví geografickú šírku reklamnej mapy. (desatinné stupne)';
 
   @override
   String get repeater_cliHelpSetLon =>
-      'Nastavuje longitudinu reklamnej mapy. (desatinnÃ© stupne)';
+      'Nastavuje longitudinu reklamnej mapy. (desatinné stupne)';
 
   @override
   String get repeater_cliHelpSetRadio =>
-      'Nastavuje Ãºplne novÃ© parametre rÃ¡dia a uloÅ¾Ã­ ich do preferenciÃ­. PoÅ¾aduje prÃ­kaz \"reboot\" na aplikÃ¡ciu.';
+      'Nastavuje úplne nové parametre rádia a uloží ich do preferencií. Požaduje príkaz \"reboot\" na aplikáciu.';
 
   @override
   String get repeater_cliHelpSetRxDelay =>
-      'Nastavenia (experimentÃ¡lne) zÃ¡kladnÃ© (musi byÅ¥ > 1 pre ÃºÄel) na aplikÃ¡ciu mierneho onesenia prijatÃ½ch paketov, na zÃ¡klade signÃ¡lu/skÃ³re. Nastavenie na 0 vypne.';
+      'Nastavenia (experimentálne) základné (musi byť > 1 pre účel) na aplikáciu mierneho onesenia prijatých paketov, na základe signálu/skóre. Nastavenie na 0 vypne.';
 
   @override
   String get repeater_cliHelpSetTxDelay =>
-      'Nastavuje faktor nÃ¡sobenÃ½ Äasom na vzduchu pre paket v reÅ¾ime povodÅˆovej vlny a s nÃ¡hodnÃ½m systÃ©mom slotov, aby sa oneskorene jeho prenosovanie (s cieÄ¾om znÃ­Å¾iÅ¥ pravdepodobnosÅ¥ kolÃ­zii).';
+      'Nastavuje faktor násobený časom na vzduchu pre paket v režime povodňovej vlny a s náhodným systémom slotov, aby sa oneskorene jeho prenosovanie (s cieľom znížiť pravdepodobnosť kolízii).';
 
   @override
   String get repeater_cliHelpSetDirectTxDelay =>
-      'Podobne ako txdelay, ale pre aplikÃ¡ciu nÃ¡hodnÃ©ho oneskorenia pri preposlanÃ­ paketov v reÅ¾ime priameho prenosu.';
+      'Podobne ako txdelay, ale pre aplikáciu náhodného oneskorenia pri preposlaní paketov v režime priameho prenosu.';
 
   @override
-  String get repeater_cliHelpSetBridgeEnabled => 'AktivovaÅ¥/ZatvÃ¡raÅ¥ most.';
+  String get repeater_cliHelpSetBridgeEnabled => 'Aktivovať/Zatvárať most.';
 
   @override
   String get repeater_cliHelpSetBridgeDelay =>
-      'NastaviÅ¥ odklad pred retransmisiou paketov.';
+      'Nastaviť odklad pred retransmisiou paketov.';
 
   @override
   String get repeater_cliHelpSetBridgeSource =>
-      'Zvolte, Äi bude most retransmitovaÅ¥ prijatÃ© alebo vysielanÃ© balÃ­Äky.';
+      'Zvolte, či bude most retransmitovať prijaté alebo vysielané balíčky.';
 
   @override
   String get repeater_cliHelpSetBridgeBaud =>
-      'Nastavte sÃ©riovÃ½ link baudrate pre rs232 mosty.';
+      'Nastavte sériový link baudrate pre rs232 mosty.';
 
   @override
   String get repeater_cliHelpSetBridgeSecret =>
-      'NastaviÅ¥ tajomstvo mosta pre eshnow mosty.';
+      'Nastaviť tajomstvo mosta pre eshnow mosty.';
 
   @override
   String get repeater_cliHelpSetAdcMultiplier =>
-      'Nastavuje vlastnÃ½ faktor na Ãºpravu nahlÃ¡senej batÃ©riovej napÃ¤tia (podporovanÃ© len na vybranÃ½ch doskÃ¡ch).';
+      'Nastavuje vlastný faktor na úpravu nahlásenej batériovej napätia (podporované len na vybraných doskách).';
 
   @override
   String get repeater_cliHelpTempRadio =>
-      'NastavÃ­ doÄasnÃ© rÃ¡diovÃ© parametre pre zadanÃ½ poÄet minÃºt, po skonÄenÃ­ sa vrÃ¡ti k pÃ´vodnÃ½m rÃ¡diovÃ½m parametrom. (nepoÄuva sa do preferenciÃ­).';
+      'Nastaví dočasné rádiové parametre pre zadaný počet minút, po skončení sa vráti k pôvodným rádiovým parametrom. (nepočuva sa do preferencií).';
 
   @override
   String get repeater_cliHelpSetPerm =>
-      'ZmenÃ­ ACL. OdstrÃ¡ni zodpovednÃ½ zÃ¡znam (podÄ¾a prefixa pubkey), ak je \"permissions\" rovnÃ© 0. PridÃ¡ novÃ½ zÃ¡znam, ak je pubkey-hex plnej dÄºÅ¾ky a momentÃ¡lne sa nenachÃ¡dza v ACL. Aktualizuje zÃ¡znam podÄ¾a zodpovedajÃºceho prefixa pubkey. BitovÃ© oprÃ¡vnenia sa lÃ­Å¡ia podÄ¾a funkÄnej roly, ale nÃ­zke 2 bity sÃº: 0 (HostiteÄ¾), 1 (ÄŒÃ­tanie len), 2 (ÄŒÃ­tanie a zÃ¡pis), 3 (SprÃ¡vca).';
+      'Zmení ACL. Odstráni zodpovedný záznam (podľa prefixa pubkey), ak je \"permissions\" rovné 0. Pridá nový záznam, ak je pubkey-hex plnej dĺžky a momentálne sa nenachádza v ACL. Aktualizuje záznam podľa zodpovedajúceho prefixa pubkey. Bitové oprávnenia sa líšia podľa funkčnej roly, ale nízke 2 bity sú: 0 (Hostiteľ), 1 (Čítanie len), 2 (Čítanie a zápis), 3 (Správca).';
 
   @override
   String get repeater_cliHelpGetBridgeType =>
-      'ZÃ­sÅ¥ typ mosta: Å¾iadny, rs232, espnow';
+      'Zísť typ mosta: žiadny, rs232, espnow';
 
   @override
   String get repeater_cliHelpLogStart =>
-      'ZaÄÃ­na protokolovanie balÃ­kov do systÃ©mu sÃºborov.';
+      'Začína protokolovanie balíkov do systému súborov.';
 
   @override
   String get repeater_cliHelpLogStop =>
-      'ZastavÃ­ protokolovanie paketov do systÃ©movÃ©ho sÃºboru.';
+      'Zastaví protokolovanie paketov do systémového súboru.';
 
   @override
   String get repeater_cliHelpLogErase =>
-      'OdstrÃ¡ni zÃ¡znamy z balÃ­kov z systÃ©mu sÃºborov.';
+      'Odstráni záznamy z balíkov z systému súborov.';
 
   @override
   String get repeater_cliHelpNeighbors =>
-      'Zobrazuje zoznam inÃ½ch repeaterovÃ½ch uzlov zasielanÃ½ch cez zero-hop reklamy. KaÅ¾dÃ½ riadok je id-prefix-hex:timestamp:snr-times-4';
+      'Zobrazuje zoznam iných repeaterových uzlov zasielaných cez zero-hop reklamy. Každý riadok je id-prefix-hex:timestamp:snr-times-4';
 
   @override
   String get repeater_cliHelpNeighborRemove =>
-      'OdstrÃ¡ni prvÃº zhodujÃºcu poloÅ¾ku (podÄ¾a prefixu pubkey (hex)) z zoznamu susedov.';
+      'Odstráni prvú zhodujúcu položku (podľa prefixu pubkey (hex)) z zoznamu susedov.';
 
   @override
   String get repeater_cliHelpRegion =>
-      '(len sÃ©riÃ¡l) Zobrazuje vÅ¡etky definovanÃ© regiÃ³ny a aktuÃ¡lne povolenia pre povodÅˆovÃ© situÃ¡cie.';
+      '(len sériál) Zobrazuje všetky definované regióny a aktuálne povolenia pre povodňové situácie.';
 
   @override
   String get repeater_cliHelpRegionLoad =>
-      'PoznÃ¡mka: toto je Å¡peciÃ¡lna multi-prÃ­kÃ¡zovÃ¡ inÅ¡tancia. KaÅ¾dÃ© nasledujÃºce prÃ­kaza je nÃ¡zov oblasti (zapustenÃ½ s medzerami na indikÃ¡ciu hierarchickÃ©ho pomeru, s minimÃ¡lne jednou medzerou). UkonÄenÃ© odeslanÃ­m prÃ¡zdnej platnej linky/prÃ­kazu.';
+      'Poznámka: toto je špeciálna multi-príkázová inštancia. Každé nasledujúce príkaza je názov oblasti (zapustený s medzerami na indikáciu hierarchického pomeru, s minimálne jednou medzerou). Ukončené odeslaním prázdnej platnej linky/príkazu.';
 
   @override
   String get repeater_cliHelpRegionGet =>
-      'HÄ¾adÃ¡ regiÃ³n s danÃ½m prÃ­ponou nÃ¡zvu (alebo \"\\\" pre globÃ¡lny rozsah). OdpovedÃ¡ \"-> regiÃ³n-nÃ¡zev (rodiÄ-nÃ¡zev) \'F\'\"';
+      'Hľadá región s daným príponou názvu (alebo \"\\\" pre globálny rozsah). Odpovedá \"-> región-název (rodič-název) \'F\'\"';
 
   @override
   String get repeater_cliHelpRegionPut =>
-      'PridÃ¡ alebo aktualizuje definÃ­ciu regiÃ³nu s danÃ½m menom.';
+      'Pridá alebo aktualizuje definíciu regiónu s daným menom.';
 
   @override
   String get repeater_cliHelpRegionRemove =>
-      'OdstrÃ¡ni definÃ­ciu oblasti s danÃ½m nÃ¡zvom. (musÃ­ zodpovedaÅ¥ presne a nemala by maÅ¥ podoblasti)';
+      'Odstráni definíciu oblasti s daným názvom. (musí zodpovedať presne a nemala by mať podoblasti)';
 
   @override
   String get repeater_cliHelpRegionAllowf =>
-      'Nastavuje povolenie \'P\'lÃ¡vu pre zadanÃº oblasÅ¥. (\'\' pre globÃ¡lny/dediÄskÃ½ rozsah)';
+      'Nastavuje povolenie \'P\'lávu pre zadanú oblasť. (\'\' pre globálny/dedičský rozsah)';
 
   @override
   String get repeater_cliHelpRegionDenyf =>
-      'OdstrÃ¡ni povolenie \'F\'lood\' pre zadanÃº oblasÅ¥. (UPOZORNENIE: v tejto fÃ¡ze nie je odporÃºÄanÃ© ho pouÅ¾Ã­vaÅ¥ na globÃ¡lnom/dedskom rozsahu!!).';
+      'Odstráni povolenie \'F\'lood\' pre zadanú oblasť. (UPOZORNENIE: v tejto fáze nie je odporúčané ho používať na globálnom/dedskom rozsahu!!).';
 
   @override
   String get repeater_cliHelpRegionHome =>
-      'OdpovedÃ¡ s aktuÃ¡lnou \'domovskou\' oblasÅ¥ou. (PoznÃ¡mka aplikovanÃ¡ zatiaÄ¾ nikde, vyhradenÃ© na budÃºce)';
+      'Odpovedá s aktuálnou \'domovskou\' oblasťou. (Poznámka aplikovaná zatiaľ nikde, vyhradené na budúce)';
 
   @override
-  String get repeater_cliHelpRegionHomeSet => 'NastavÃ­ \'domovskÃº\' oblasÅ¥.';
+  String get repeater_cliHelpRegionHomeSet => 'Nastaví \'domovskú\' oblasť.';
 
   @override
   String get repeater_cliHelpRegionSave =>
-      'UloÅ¾Ã­ zoznam/mapu regiÃ³nov do ÃºloÅ¾iska.';
+      'Uloží zoznam/mapu regiónov do úložiska.';
 
   @override
   String get repeater_cliHelpGps =>
-      'Zobrazuje stav GPS. Ak je GPS vypnutÃ½, odpovedÃ¡ len \"off\", ak je zapnutÃ½, odpovedÃ¡ s \"on\", stavom, fixom a poÄtom satelitov.';
+      'Zobrazuje stav GPS. Ak je GPS vypnutý, odpovedá len \"off\", ak je zapnutý, odpovedá s \"on\", stavom, fixom a počtom satelitov.';
 
   @override
-  String get repeater_cliHelpGpsOnOff => 'PrepÃ­naÄ stavu GPS napÃ¡jania.';
+  String get repeater_cliHelpGpsOnOff => 'Prepínač stavu GPS napájania.';
 
   @override
   String get repeater_cliHelpGpsSync =>
-      'Synchronizuje Äas uzla s GPS hodinami.';
+      'Synchronizuje čas uzla s GPS hodinami.';
 
   @override
   String get repeater_cliHelpGpsSetLoc =>
-      'NastavÃ­ polohu uzla na GPS sÃºradnice a uloÅ¾Ã­ preferencie.';
+      'Nastaví polohu uzla na GPS súradnice a uloží preferencie.';
 
   @override
   String get repeater_cliHelpGpsAdvert =>
-      'Poskytuje konfigurÃ¡ciu reklamy pre uzol:\n- Å¾iadna: nezahrÅˆte polohu do reklÃ¡m\n- zdieÄ¾aÅ¥: zdieÄ¾ajte GPS polohu (z SensorManager)\n- nastavenia: zobrazujte polohu uloÅ¾enÃº v nastaveniach';
+      'Poskytuje konfiguráciu reklamy pre uzol:\n- žiadna: nezahrňte polohu do reklám\n- zdieľať: zdieľajte GPS polohu (z SensorManager)\n- nastavenia: zobrazujte polohu uloženú v nastaveniach';
 
   @override
   String get repeater_cliHelpGpsAdvertSet =>
-      'Nastavuje konfigurÃ¡ciu reklamy na zadanÃ© miesto.';
+      'Nastavuje konfiguráciu reklamy na zadané miesto.';
 
   @override
-  String get repeater_commandsListTitle => 'Zoznam prÃ­kazov';
+  String get repeater_commandsListTitle => 'Zoznam príkazov';
 
   @override
   String get repeater_commandsListNote =>
-      'PoznÃ¡mka: pre rÃ´zne prÃ­kazy \"set ...\" existuje aj prÃ­kaz \"get ...\".';
+      'Poznámka: pre rôzne príkazy \"set ...\" existuje aj príkaz \"get ...\".';
 
   @override
-  String get repeater_general => 'ObecnÃ©';
+  String get repeater_general => 'Obecné';
 
   @override
   String get repeater_settingsCategory => 'Nastavenia';
@@ -2392,51 +2420,50 @@ class AppLocalizationsSk extends AppLocalizations {
   String get repeater_bridge => 'Most';
 
   @override
-  String get repeater_logging => 'ZÃ¡znamy';
+  String get repeater_logging => 'Záznamy';
 
   @override
-  String get repeater_neighborsRepeaterOnly => 'SÃºseznÃ½ci (iba opakovaÄ)';
+  String get repeater_neighborsRepeaterOnly => 'Súseznýci (iba opakovač)';
 
   @override
   String get repeater_regionManagementRepeaterOnly =>
-      'SprÃ¡va regiÃ³nov (iba opakovaÄ)';
+      'Správa regiónov (iba opakovač)';
 
   @override
   String get repeater_regionNote =>
-      'RegionovÃ© prÃ­kazy boli zavÃ¡dzanÃ© na sprÃ¡vu regionÃ¡lnych definÃ­ciÃ­ a oprÃ¡vnenÃ­.';
+      'Regionové príkazy boli zavádzané na správu regionálnych definícií a oprávnení.';
 
   @override
-  String get repeater_gpsManagement => 'SprÃ¡va GPS';
+  String get repeater_gpsManagement => 'Správa GPS';
 
   @override
   String get repeater_gpsNote =>
-      'GPS prÃ­kaz bol zavÃ¡dzanÃ½ na riadenie lokalitnÃ½ch tÃ©m.';
+      'GPS príkaz bol zavádzaný na riadenie lokalitných tém.';
 
   @override
-  String get telemetry_receivedData => 'ObdolenÃ© TelemetrickÃ© dÃ¡ta';
+  String get telemetry_receivedData => 'Obdolené Telemetrické dáta';
 
   @override
-  String get telemetry_requestTimeout => 'PoÅ¾iadavka telemetrie zlyhala.';
+  String get telemetry_requestTimeout => 'Požiadavka telemetrie zlyhala.';
 
   @override
   String telemetry_errorLoading(String error) {
-    return 'Chyba pri naÄÃ­tanÃ­ telemetrie: $error';
+    return 'Chyba pri načítaní telemetrie: $error';
   }
 
   @override
-  String get telemetry_noData =>
-      'NejsÃº dostupnÃ© Å¾iadne Ãºdaje z telemetrie.';
+  String get telemetry_noData => 'Nejsú dostupné žiadne údaje z telemetrie.';
 
   @override
   String telemetry_channelTitle(int channel) {
-    return 'KanÃ¡l $channel';
+    return 'Kanál $channel';
   }
 
   @override
-  String get telemetry_batteryLabel => 'BatÃ©ria';
+  String get telemetry_batteryLabel => 'Batéria';
 
   @override
-  String get telemetry_voltageLabel => 'NapÃ¤tie';
+  String get telemetry_voltageLabel => 'Napätie';
 
   @override
   String get telemetry_mcuTemperatureLabel => 'MCU teplota';
@@ -2445,7 +2472,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get telemetry_temperatureLabel => 'Teplota';
 
   @override
-  String get telemetry_currentLabel => 'AktuÃ¡lne';
+  String get telemetry_currentLabel => 'Aktuálne';
 
   @override
   String telemetry_batteryValue(int percent, String volts) {
@@ -2464,62 +2491,61 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String telemetry_temperatureValue(String celsius, String fahrenheit) {
-    return '$celsiusÂ°C / $fahrenheitÂ°F';
+    return '$celsius°C / $fahrenheit°F';
   }
 
   @override
-  String get neighbors_receivedData => 'Obdielo dÃ¡ta suseda';
+  String get neighbors_receivedData => 'Obdielo dáta suseda';
 
   @override
-  String get neighbors_requestTimedOut =>
-      'SÃºÄia Å¾iadajÃº o ÄasovÃ© ukonÄenie.';
+  String get neighbors_requestTimedOut => 'Súďia žiadajú o časové ukončenie.';
 
   @override
   String neighbors_errorLoading(String error) {
-    return 'Chyba pri naÄÃ­tanÃ­ susedov: $error';
+    return 'Chyba pri načítaní susedov: $error';
   }
 
   @override
-  String get neighbors_repeatersNeighbors => 'OpakovadlÃ¡ SÃºseznÃ¡';
+  String get neighbors_repeatersNeighbors => 'Opakovadlá Súsezná';
 
   @override
   String get neighbors_noData =>
-      'Nie je dostupnÃ¡ Å¾iadna informÃ¡cia o susedoch.';
+      'Nie je dostupná žiadna informácia o susedoch.';
 
   @override
   String neighbors_unknownContact(String pubkey) {
-    return 'NeznÃ¡ma $pubkey';
+    return 'Neznáma $pubkey';
   }
 
   @override
   String neighbors_heardAgo(String time) {
-    return 'PoÄuli sme to: $time dozadu';
+    return 'Počuli sme to: $time dozadu';
   }
 
   @override
-  String get channelPath_title => 'Cesta balÃ­ka';
+  String get channelPath_title => 'Cesta balíka';
 
   @override
-  String get channelPath_viewMap => 'ZobraziÅ¥ mapu';
+  String get channelPath_viewMap => 'Zobraziť mapu';
 
   @override
-  String get channelPath_otherObservedPaths => 'OstatnÃ© pozorovacie cesty';
+  String get channelPath_otherObservedPaths => 'Ostatné pozorovacie cesty';
 
   @override
-  String get channelPath_repeaterHops => 'Skoky opakovaÄa';
+  String get channelPath_repeaterHops => 'Skoky opakovača';
 
   @override
   String get channelPath_noHopDetails =>
-      'Podrobnosti o balÃ­Äku zatiaÄ¾ nie sÃº dostupnÃ©.';
+      'Podrobnosti o balíčku zatiaľ nie sú dostupné.';
 
   @override
-  String get channelPath_messageDetails => 'Podrobnosti o zprÃ¡vach';
+  String get channelPath_messageDetails => 'Podrobnosti o zprávach';
 
   @override
-  String get channelPath_senderLabel => 'PosielateÄ¾';
+  String get channelPath_senderLabel => 'Posielateľ';
 
   @override
-  String get channelPath_timeLabel => 'ÄŒas';
+  String get channelPath_timeLabel => 'Čas';
 
   @override
   String get channelPath_repeatsLabel => 'Opakovanie';
@@ -2530,15 +2556,15 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get channelPath_observedLabel => 'PozorovanÃ©';
+  String get channelPath_observedLabel => 'Pozorované';
 
   @override
   String channelPath_observedPathTitle(int index, String hops) {
-    return 'SledovanÃ½ postup $index â€¢ $hops';
+    return 'Sledovaný postup $index • $hops';
   }
 
   @override
-  String get channelPath_noLocationData => 'Å½iadne Ãºdaje o polohe';
+  String get channelPath_noLocationData => 'Žiadne údaje o polohe';
 
   @override
   String channelPath_timeWithDate(int day, int month, String time) {
@@ -2551,10 +2577,10 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get channelPath_unknownPath => 'NeznÃ¡me';
+  String get channelPath_unknownPath => 'Neznáme';
 
   @override
-  String get channelPath_floodPath => 'PovodÅˆovÃ¡';
+  String get channelPath_floodPath => 'Povodňová';
 
   @override
   String get channelPath_directPath => 'Priamo';
@@ -2574,162 +2600,161 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get channelPath_noRepeaterLocations =>
-      'Pre tÃºto cestu nie je dostupnÃ½ch Å¾iadne polohy opakovaÄov.';
+      'Pre túto cestu nie je dostupných žiadne polohy opakovačov.';
 
   @override
   String channelPath_primaryPath(int index) {
-    return 'Cesta $index (HlavnÃ¡)';
+    return 'Cesta $index (Hlavná)';
   }
 
   @override
   String get channelPath_pathLabelTitle => 'Cesta';
 
   @override
-  String get channelPath_observedPathHeader => 'SledovanÃ¡ cesta';
+  String get channelPath_observedPathHeader => 'Sledovaná cesta';
 
   @override
   String channelPath_selectedPathLabel(String label, String prefixes) {
-    return '$label â€¢ $prefixes';
+    return '$label • $prefixes';
   }
 
   @override
   String get channelPath_noHopDetailsAvailable =>
-      'Pre toto balÃ­Äek nie sÃº dostupnÃ© Ãºdaje o skokoch.';
+      'Pre toto balíček nie sú dostupné údaje o skokoch.';
 
   @override
-  String get channelPath_unknownRepeater => 'NeznÃ¡me opakovaÄe';
+  String get channelPath_unknownRepeater => 'Neznáme opakovače';
 
   @override
   String get community_title => 'Komunita';
 
   @override
-  String get community_create => 'VytvoriÅ¥ komunitu';
+  String get community_create => 'Vytvoriť komunitu';
 
   @override
   String get community_createDesc =>
-      'Vytvorte novÃº komunitu a zdieÄ¾ajte cez QR kÃ³d.';
+      'Vytvorte novú komunitu a zdieľajte cez QR kód.';
 
   @override
-  String get community_join => 'PripojiÅ¥';
+  String get community_join => 'Pripojiť';
 
   @override
-  String get community_joinTitle => 'PripojiÅ¥ sa k spoloÄenstvu';
+  String get community_joinTitle => 'Pripojiť sa k spoločenstvu';
 
   @override
   String community_joinConfirmation(String name) {
-    return 'ChceÅ¡ sa pridaÅ¥ do komunity \"$name\"?';
+    return 'Chceš sa pridať do komunity \"$name\"?';
   }
 
   @override
-  String get community_scanQr => 'Skontrolujte komunitnÃ½ QR kÃ³d';
+  String get community_scanQr => 'Skontrolujte komunitný QR kód';
 
   @override
   String get community_scanInstructions =>
-      'Zamerte kameru na komunitnÃ½ QR kÃ³d.';
+      'Zamerte kameru na komunitný QR kód.';
 
   @override
-  String get community_showQr => 'ZobraziÅ¥ QR kÃ³d';
+  String get community_showQr => 'Zobraziť QR kód';
 
   @override
-  String get community_publicChannel => 'Komunita verejnÃ¡';
+  String get community_publicChannel => 'Komunita verejná';
 
   @override
-  String get community_hashtagChannel => 'KomunitnÃ½ Hashtag';
+  String get community_hashtagChannel => 'Komunitný Hashtag';
 
   @override
   String get community_name => 'Komunita';
 
   @override
-  String get community_enterName => 'Zadajte nÃ¡zov komunity';
+  String get community_enterName => 'Zadajte názov komunity';
 
   @override
   String community_created(String name) {
-    return 'Komunita \"$name\" vytvorenÃ¡';
+    return 'Komunita \"$name\" vytvorená';
   }
 
   @override
   String community_joined(String name) {
-    return 'PripojenÃ¡ komunita \"$name\"';
+    return 'Pripojená komunita \"$name\"';
   }
 
   @override
-  String get community_qrTitle => 'ZdieÄ¾Å¥ komunitu';
+  String get community_qrTitle => 'Zdieľť komunitu';
 
   @override
   String community_qrInstructions(String name) {
-    return 'Skenejte tento QR kÃ³d, aby ste sa pripojili k $name.';
+    return 'Skenejte tento QR kód, aby ste sa pripojili k $name.';
   }
 
   @override
   String get community_hashtagPrivacyHint =>
-      'HashtagovÃ© kanÃ¡ly komunity sÃº prÃ­stupnÃ© len Älenom komunity';
+      'Hashtagové kanály komunity sú prístupné len členom komunity';
 
   @override
-  String get community_invalidQrCode => 'NeplatnÃ¡ QR kÃ³d komunity.';
+  String get community_invalidQrCode => 'Neplatná QR kód komunity.';
 
   @override
-  String get community_alreadyMember => 'UÅ¾ ste Älenom.';
+  String get community_alreadyMember => 'Už ste členom.';
 
   @override
   String community_alreadyMemberMessage(String name) {
-    return 'Vy ste uÅ¾ Älenom \"$name\".';
+    return 'Vy ste už členom \"$name\".';
   }
 
   @override
-  String get community_addPublicChannel =>
-      'PridaÅ¥ verejnÃ½ komunikaÄnÃ½ kanÃ¡l';
+  String get community_addPublicChannel => 'Pridať verejný komunikačný kanál';
 
   @override
   String get community_addPublicChannelHint =>
-      'Automaticky prida verejnÃ½ kanÃ¡l pre tÃºto komunitu.';
+      'Automaticky prida verejný kanál pre túto komunitu.';
 
   @override
   String get community_noCommunities =>
-      'ZatiaÄ¾ ste sa nepripojili k Å¾iadnej komunite';
+      'Zatiaľ ste sa nepripojili k žiadnej komunite';
 
   @override
   String get community_scanOrCreate =>
-      'Skene QR kÃ³d alebo vytvor komunitu na zaÄiatok.';
+      'Skene QR kód alebo vytvor komunitu na začiatok.';
 
   @override
-  String get community_manageCommunities => 'SpravovaÅ¥ komunity';
+  String get community_manageCommunities => 'Spravovať komunity';
 
   @override
   String get community_delete => 'Nechajte komunitu';
 
   @override
   String community_deleteConfirm(String name) {
-    return 'OpustiÅ¥ \"$name\"?';
+    return 'Opustiť \"$name\"?';
   }
 
   @override
   String community_deleteChannelsWarning(int count) {
-    return 'TÃ½m sa tieÅ¾ vymaÅ¾e $count kanÃ¡l/kanÃ¡lov a ich sprÃ¡vy.';
+    return 'Tým sa tiež vymaže $count kanál/kanálov a ich správy.';
   }
 
   @override
   String community_deleted(String name) {
-    return 'OpustenÃ¡ komunita \"$name\"';
+    return 'Opustená komunita \"$name\"';
   }
 
   @override
-  String get community_regenerateSecret => 'ZobraziÅ¥ novÃ½ tajnÃ½ kÃ³d';
+  String get community_regenerateSecret => 'Zobraziť nový tajný kód';
 
   @override
   String community_regenerateSecretConfirm(String name) {
-    return 'Znovu vygenerovaÅ¥ tajnÃ½ kÄ¾ÃºÄ pre \"$name\"? VÅ¡etci Älenovia budÃº musieÅ¥ skanovaÅ¥ novÃ½ QR kÃ³d, aby mohli nadviazaÅ¥ komunikÃ¡ciu.';
+    return 'Znovu vygenerovať tajný kľúč pre \"$name\"? Všetci členovia budú musieť skanovať nový QR kód, aby mohli nadviazať komunikáciu.';
   }
 
   @override
-  String get community_regenerate => 'Znovu vygenerovaÅ¥';
+  String get community_regenerate => 'Znovu vygenerovať';
 
   @override
   String community_secretRegenerated(String name) {
-    return 'ZÃ¡znam pre \"$name\" bol regenerovanÃ½ tajne';
+    return 'Záznam pre \"$name\" bol regenerovaný tajne';
   }
 
   @override
-  String get community_updateSecret => 'AktualizovaÅ¥ tajnÃ© heslo';
+  String get community_updateSecret => 'Aktualizovať tajné heslo';
 
   @override
   String community_secretUpdated(String name) {
@@ -2738,32 +2763,31 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String community_scanToUpdateSecret(String name) {
-    return 'SkÃ¡Åˆte novÃ½ QR kÃ³d na aktualizÃ¡ciu tajnÃ©ho hesla pre \"$name\"';
+    return 'Skáňte nový QR kód na aktualizáciu tajného hesla pre \"$name\"';
   }
 
   @override
-  String get community_addHashtagChannel => 'PridaÅ¥ komunitnÃ½ hashtag';
+  String get community_addHashtagChannel => 'Pridať komunitný hashtag';
 
   @override
   String get community_addHashtagChannelDesc =>
-      'Pridajte hashtagovÃ½ kanÃ¡l pre tÃºto komunitu.';
+      'Pridajte hashtagový kanál pre túto komunitu.';
 
   @override
   String get community_selectCommunity => 'Vyberte komunitu';
 
   @override
-  String get community_regularHashtag => 'ZvyÄajnÃ½ hashtag';
+  String get community_regularHashtag => 'Zvyčajný hashtag';
 
   @override
   String get community_regularHashtagDesc =>
-      'VeÄ¾kÃ½ hashtag (ktoÄokoÄ¾vek sa mÃ´Å¾e pridaÅ¥)';
+      'Veľký hashtag (ktočokoľvek sa môže pridať)';
 
   @override
-  String get community_communityHashtag => 'KomunitnÃ½ Hashtag';
+  String get community_communityHashtag => 'Komunitný Hashtag';
 
   @override
-  String get community_communityHashtagDesc =>
-      'Å pecifickÃ© pre Älenov komunity';
+  String get community_communityHashtagDesc => 'Špecifické pre členov komunity';
 
   @override
   String community_forCommunity(String name) {
@@ -2771,16 +2795,16 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get listFilter_tooltip => 'FiltrovaÅ¥ a triediÅ¥';
+  String get listFilter_tooltip => 'Filtrovať a triediť';
 
   @override
-  String get listFilter_sortBy => 'TriediÅ¥ podÄ¾a';
+  String get listFilter_sortBy => 'Triediť podľa';
 
   @override
-  String get listFilter_latestMessages => 'PoslednÃ© sprÃ¡vy';
+  String get listFilter_latestMessages => 'Posledné správy';
 
   @override
-  String get listFilter_heardRecently => 'NedÃ¡vno poÄuli.';
+  String get listFilter_heardRecently => 'Nedávno počuli.';
 
   @override
   String get listFilter_az => 'A-Z';
@@ -2789,31 +2813,31 @@ class AppLocalizationsSk extends AppLocalizations {
   String get listFilter_filters => 'Filtre';
 
   @override
-  String get listFilter_all => 'VÅ¡etko';
+  String get listFilter_all => 'Všetko';
 
   @override
-  String get listFilter_favorites => 'ObÄ¾ÃºbenÃ©';
+  String get listFilter_favorites => 'Obľúbené';
 
   @override
-  String get listFilter_addToFavorites => 'Pridaj do obÄ¾ÃºbenÃ½ch';
+  String get listFilter_addToFavorites => 'Pridaj do obľúbených';
 
   @override
-  String get listFilter_removeFromFavorites => 'OdstrÃ¡niÅ¥ z oznaÄenÃ­';
+  String get listFilter_removeFromFavorites => 'Odstrániť z označení';
 
   @override
-  String get listFilter_users => 'PouÅ¾Ã­vatelia';
+  String get listFilter_users => 'Používatelia';
 
   @override
-  String get listFilter_repeaters => 'OpakovadlÃ¡';
+  String get listFilter_repeaters => 'Opakovadlá';
 
   @override
-  String get listFilter_roomServers => 'ServÃ©ry miestnosti';
+  String get listFilter_roomServers => 'Servéry miestnosti';
 
   @override
-  String get listFilter_unreadOnly => 'NezaregistrovanÃ© len';
+  String get listFilter_unreadOnly => 'Nezaregistrované len';
 
   @override
-  String get listFilter_newGroup => 'NovÃ¡ skupina';
+  String get listFilter_newGroup => 'Nová skupina';
 
   @override
   String get pathTrace_you => 'Vy';
@@ -2822,50 +2846,49 @@ class AppLocalizationsSk extends AppLocalizations {
   String get pathTrace_failed => 'Sledovanie cesty zlyhalo.';
 
   @override
-  String get pathTrace_notAvailable => 'Path trace nie je k dispozÃ­cii.';
+  String get pathTrace_notAvailable => 'Path trace nie je k dispozícii.';
 
   @override
-  String get pathTrace_refreshTooltip => 'ObnoviÅ¥ Path Trace.';
+  String get pathTrace_refreshTooltip => 'Obnoviť Path Trace.';
 
   @override
   String get pathTrace_someHopsNoLocation =>
-      'Jedna alebo viac chmeÄ¾ov chÃ½ba lokalita!';
+      'Jedna alebo viac chmeľov chýba lokalita!';
 
   @override
-  String get pathTrace_clearTooltip => 'ZmazaÅ¥ cestu';
+  String get pathTrace_clearTooltip => 'Zmazať cestu';
 
   @override
-  String get losSelectStartEnd =>
-      'Vyberte poÄiatoÄnÃ½ a koncovÃ½ uzol pre LOS.';
+  String get losSelectStartEnd => 'Vyberte počiatočný a koncový uzol pre LOS.';
 
   @override
   String losRunFailed(String error) {
-    return 'Kontrola priamej viditeÄ¾nosti zlyhala: $error';
+    return 'Kontrola priamej viditeľnosti zlyhala: $error';
   }
 
   @override
-  String get losClearAllPoints => 'VymazaÅ¥ vÅ¡etky body';
+  String get losClearAllPoints => 'Vymazať všetky body';
 
   @override
   String get losRunToViewElevationProfile =>
-      'Ak chcete zobraziÅ¥ vÃ½Å¡kovÃ½ profil, spustite LOS';
+      'Ak chcete zobraziť výškový profil, spustite LOS';
 
   @override
   String get losMenuTitle => 'Menu LOS';
 
   @override
   String get losMenuSubtitle =>
-      'KlepnutÃ­m na uzly alebo dlhÃ½m stlaÄenÃ­m mapy zÃ­skate vlastnÃ© body';
+      'Klepnutím na uzly alebo dlhým stlačením mapy získate vlastné body';
 
   @override
-  String get losShowDisplayNodes => 'ZobraziÅ¥ uzly zobrazenia';
+  String get losShowDisplayNodes => 'Zobraziť uzly zobrazenia';
 
   @override
-  String get losCustomPoints => 'VlastnÃ© body';
+  String get losCustomPoints => 'Vlastné body';
 
   @override
   String losCustomPointLabel(int index) {
-    return 'VlastnÃ© $index';
+    return 'Vlastné $index';
   }
 
   @override
@@ -2876,19 +2899,19 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String losAntennaA(String value, String unit) {
-    return 'AntÃ©na A: $value $unit';
+    return 'Anténa A: $value $unit';
   }
 
   @override
   String losAntennaB(String value, String unit) {
-    return 'AntÃ©na B: $value $unit';
+    return 'Anténa B: $value $unit';
   }
 
   @override
   String get losRun => 'Spustite LOS';
 
   @override
-  String get losNoElevationData => 'Å½iadne Ãºdaje o nadmorskej vÃ½Å¡ke';
+  String get losNoElevationData => 'Žiadne údaje o nadmorskej výške';
 
   @override
   String losProfileClear(
@@ -2897,7 +2920,7 @@ class AppLocalizationsSk extends AppLocalizations {
     String clearance,
     String heightUnit,
   ) {
-    return '$distance $distanceUnit, vymazaÅ¥ LOS, min. vÃ´Ä¾a $clearance $heightUnit';
+    return '$distance $distanceUnit, vymazať LOS, min. vôľa $clearance $heightUnit';
   }
 
   @override
@@ -2907,61 +2930,61 @@ class AppLocalizationsSk extends AppLocalizations {
     String obstruction,
     String heightUnit,
   ) {
-    return '$distance $distanceUnit, blokovanÃ½ $obstruction $heightUnit';
+    return '$distance $distanceUnit, blokovaný $obstruction $heightUnit';
   }
 
   @override
   String get losStatusChecking => 'LOS: kontrolujem...';
 
   @override
-  String get losStatusNoData => 'LOS: Å¾iadne Ãºdaje';
+  String get losStatusNoData => 'LOS: žiadne údaje';
 
   @override
   String losStatusSummary(int clear, int total, int blocked, int unknown) {
-    return 'LOS: $clear/$total vymazanÃ©, $blocked blokovanÃ©, $unknown neznÃ¡me';
+    return 'LOS: $clear/$total vymazané, $blocked blokované, $unknown neznáme';
   }
 
   @override
   String get losErrorElevationUnavailable =>
-      'Ãšdaje o nadmorskej vÃ½Å¡ke nie sÃº k dispozÃ­cii pre jednu alebo viacero vzoriek.';
+      'Údaje o nadmorskej výške nie sú k dispozícii pre jednu alebo viacero vzoriek.';
 
   @override
   String get losErrorInvalidInput =>
-      'NeplatnÃ© body/Ãºdaje o nadmorskej vÃ½Å¡ke pre vÃ½poÄet LOS.';
+      'Neplatné body/údaje o nadmorskej výške pre výpočet LOS.';
 
   @override
-  String get losRenameCustomPoint => 'PremenovaÅ¥ vlastnÃ½ bod';
+  String get losRenameCustomPoint => 'Premenovať vlastný bod';
 
   @override
-  String get losPointName => 'NÃ¡zov bodu';
+  String get losPointName => 'Názov bodu';
 
   @override
-  String get losShowPanelTooltip => 'ZobraziÅ¥ panel LOS';
+  String get losShowPanelTooltip => 'Zobraziť panel LOS';
 
   @override
-  String get losHidePanelTooltip => 'SkryÅ¥ panel LOS';
+  String get losHidePanelTooltip => 'Skryť panel LOS';
 
   @override
   String get losElevationAttribution =>
-      'Ãšdaje o nadmorskej vÃ½Å¡ke: Open-Meteo (CC BY 4.0)';
+      'Údaje o nadmorskej výške: Open-Meteo (CC BY 4.0)';
 
   @override
-  String get losLegendRadioHorizon => 'RÃ¡diovÃ½ horizont';
+  String get losLegendRadioHorizon => 'Rádiový horizont';
 
   @override
-  String get losLegendLosBeam => 'Priama viditeÄ¾nosÅ¥';
+  String get losLegendLosBeam => 'Priama viditeľnosť';
 
   @override
-  String get losLegendTerrain => 'TerÃ©n';
+  String get losLegendTerrain => 'Terén';
 
   @override
   String get losFrequencyLabel => 'Frekvencia';
 
   @override
-  String get losFrequencyInfoTooltip => 'ZobraziÅ¥ podrobnosti vÃ½poÄtu';
+  String get losFrequencyInfoTooltip => 'Zobraziť podrobnosti výpočtu';
 
   @override
-  String get losFrequencyDialogTitle => 'VÃ½poÄet rÃ¡diovÃ©ho horizontu';
+  String get losFrequencyDialogTitle => 'Výpočet rádiového horizontu';
 
   @override
   String losFrequencyDialogDescription(
@@ -2970,20 +2993,20 @@ class AppLocalizationsSk extends AppLocalizations {
     double frequencyMHz,
     double kFactor,
   ) {
-    return 'PoÄnÃºc od k=$baselineK pri $baselineFreq MHz vÃ½poÄet upravÃ­ k-faktor pre aktuÃ¡lne pÃ¡smo $frequencyMHz MHz, ktorÃ½ definuje zakrivenÃ½ strop rÃ¡diovÃ©ho horizontu.';
+    return 'Počnúc od k=$baselineK pri $baselineFreq MHz výpočet upraví k-faktor pre aktuálne pásmo $frequencyMHz MHz, ktorý definuje zakrivený strop rádiového horizontu.';
   }
 
   @override
-  String get contacts_pathTrace => 'Sledovanie lÃºÄov';
+  String get contacts_pathTrace => 'Sledovanie lúčov';
 
   @override
-  String get contacts_ping => 'PingovaÅ¥';
+  String get contacts_ping => 'Pingovať';
 
   @override
-  String get contacts_repeaterPathTrace => 'Sledovanie cesty k opakovaÄu';
+  String get contacts_repeaterPathTrace => 'Sledovanie cesty k opakovaču';
 
   @override
-  String get contacts_repeaterPing => 'PingovaÅ¥ opakovaÄ';
+  String get contacts_repeaterPing => 'Pingovať opakovač';
 
   @override
   String get contacts_roomPathTrace => 'Sledovanie cesty k serveru miestnosti';
@@ -2992,48 +3015,46 @@ class AppLocalizationsSk extends AppLocalizations {
   String get contacts_roomPing => 'Ping server miestnosti';
 
   @override
-  String get contacts_chatTraceRoute => 'SledovaÅ¥ trasu lÃºÄa';
+  String get contacts_chatTraceRoute => 'Sledovať trasu lúča';
 
   @override
   String contacts_pathTraceTo(String name) {
-    return 'SledovaÅ¥ trasu k $name';
+    return 'Sledovať trasu k $name';
   }
 
   @override
-  String get contacts_clipboardEmpty => 'SchrÃ¡nka je prÃ¡zdna.';
+  String get contacts_clipboardEmpty => 'Schránka je prázdna.';
 
   @override
-  String get contacts_invalidAdvertFormat => 'NeplatnÃ© kontaktnÃ© Ãºdaje';
+  String get contacts_invalidAdvertFormat => 'Neplatné kontaktné údaje';
 
   @override
-  String get contacts_contactImported => 'Kontakt bol importovanÃ½.';
+  String get contacts_contactImported => 'Kontakt bol importovaný.';
 
   @override
   String get contacts_contactImportFailed =>
-      'Kontakt sa nepodarilo importovaÅ¥.';
+      'Kontakt sa nepodarilo importovať.';
 
   @override
-  String get contacts_zeroHopAdvert => 'InzerÃ¡t Zero Hop';
+  String get contacts_zeroHopAdvert => 'Inzerát Zero Hop';
 
   @override
-  String get contacts_floodAdvert => 'InzerÃ¡t povodnÃ­';
+  String get contacts_floodAdvert => 'Inzerát povodní';
 
   @override
-  String get contacts_copyAdvertToClipboard =>
-      'KopÃ­rovaÅ¥ reklamu do schrÃ¡nky';
+  String get contacts_copyAdvertToClipboard => 'Kopírovať reklamu do schránky';
 
   @override
-  String get contacts_addContactFromClipboard => 'PridaÅ¥ kontakt z schrÃ¡nky';
+  String get contacts_addContactFromClipboard => 'Pridať kontakt z schránky';
 
   @override
-  String get contacts_ShareContact => 'KopÃ­rovaÅ¥ kontakt do schrÃ¡nky';
+  String get contacts_ShareContact => 'Kopírovať kontakt do schránky';
 
   @override
-  String get contacts_ShareContactZeroHop => 'ZdieÄ¾aÅ¥ kontakt cez inzerÃ¡t';
+  String get contacts_ShareContactZeroHop => 'Zdieľať kontakt cez inzerát';
 
   @override
-  String get contacts_zeroHopContactAdvertSent =>
-      'Poslal kontakt cez inzerÃ¡t.';
+  String get contacts_zeroHopContactAdvertSent => 'Poslal kontakt cez inzerát.';
 
   @override
   String get contacts_zeroHopContactAdvertFailed =>
@@ -3041,11 +3062,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get contacts_contactAdvertCopied =>
-      'InzerÃ¡t bol skopÃ­rovanÃ½ do schrÃ¡nky.';
+      'Inzerát bol skopírovaný do schránky.';
 
   @override
   String get contacts_contactAdvertCopyFailed =>
-      'KopÃ­rovanie inzerÃ¡tu do schrÃ¡nky zlyhalo.';
+      'Kopírovanie inzerátu do schránky zlyhalo.';
 
   @override
   String get notification_activityTitle => 'Aktivita MeshCore';
@@ -3055,9 +3076,9 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'sprÃ¡v',
-      few: 'sprÃ¡vy',
-      one: 'sprÃ¡va',
+      other: 'správ',
+      few: 'správy',
+      one: 'správa',
     );
     return '$count $_temp0';
   }
@@ -3067,9 +3088,9 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'sprÃ¡v kanÃ¡lu',
-      few: 'sprÃ¡vy kanÃ¡lu',
-      one: 'sprÃ¡va kanÃ¡lu',
+      other: 'správ kanálu',
+      few: 'správy kanálu',
+      one: 'správa kanálu',
     );
     return '$count $_temp0';
   }
@@ -3079,77 +3100,77 @@ class AppLocalizationsSk extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'novÃ½ch uzlov',
-      few: 'novÃ© uzly',
-      one: 'novÃ½ uzol',
+      other: 'nových uzlov',
+      few: 'nové uzly',
+      one: 'nový uzol',
     );
     return '$count $_temp0';
   }
 
   @override
   String notification_newTypeDiscovered(String contactType) {
-    return 'NovÃ½ $contactType objavenÃ½';
+    return 'Nový $contactType objavený';
   }
 
   @override
-  String get notification_receivedNewMessage => 'PrijatÃ¡ novÃ¡ sprÃ¡va';
+  String get notification_receivedNewMessage => 'Prijatá nová správa';
 
   @override
   String get settings_gpxExportRepeaters =>
-      'ExportovaÅ¥ repeater / server miestnosti do GPX';
+      'Exportovať repeater / server miestnosti do GPX';
 
   @override
   String get settings_gpxExportRepeatersSubtitle =>
-      'Exportuje repeater / roomserver s lokalitou do sÃºboru GPX.';
+      'Exportuje repeater / roomserver s lokalitou do súboru GPX.';
 
   @override
   String get settings_gpxExportContacts => 'Export sprievodcov do GPX';
 
   @override
   String get settings_gpxExportContactsSubtitle =>
-      'Exportuje sprievodcov s umiestnenÃ­m do sÃºboru GPX.';
+      'Exportuje sprievodcov s umiestnením do súboru GPX.';
 
   @override
-  String get settings_gpxExportAll => 'ExportovaÅ¥ vÅ¡etky kontakty do GPX';
+  String get settings_gpxExportAll => 'Exportovať všetky kontakty do GPX';
 
   @override
   String get settings_gpxExportAllSubtitle =>
-      'Exportuje vÅ¡etky kontakty s lokalitou do sÃºboru GPX.';
+      'Exportuje všetky kontakty s lokalitou do súboru GPX.';
 
   @override
-  String get settings_gpxExportSuccess => 'ÃšspeÅ¡ne exportovanÃ½ sÃºbor GPX.';
+  String get settings_gpxExportSuccess => 'Úspešne exportovaný súbor GPX.';
 
   @override
-  String get settings_gpxExportNoContacts => 'Å½iadne kontakty na export.';
+  String get settings_gpxExportNoContacts => 'Žiadne kontakty na export.';
 
   @override
   String get settings_gpxExportNotAvailable =>
-      'Nie je podporovanÃ© na vaÅ¡om zariadenÃ­/operÃ¡ciomnom systÃ©me';
+      'Nie je podporované na vašom zariadení/operáciomnom systéme';
 
   @override
-  String get settings_gpxExportError => 'Vyskytol sa chyba poÄas exportu.';
+  String get settings_gpxExportError => 'Vyskytol sa chyba počas exportu.';
 
   @override
   String get settings_gpxExportRepeatersRoom =>
-      'Umiestnenia opakovaÄov a serverov miestnostÃ­';
+      'Umiestnenia opakovačov a serverov miestností';
 
   @override
-  String get settings_gpxExportChat => 'LokÃ¡cie sprievodcov';
+  String get settings_gpxExportChat => 'Lokácie sprievodcov';
 
   @override
-  String get settings_gpxExportAllContacts => 'VÅ¡etky kontaktnÃ© lokality';
+  String get settings_gpxExportAllContacts => 'Všetky kontaktné lokality';
 
   @override
   String get settings_gpxExportShareText =>
-      'MapovÃ© Ãºdaje exportovanÃ© z meshcore-open';
+      'Mapové údaje exportované z meshcore-open';
 
   @override
   String get settings_gpxExportShareSubject =>
-      'meshcore-open export dÃ¡t GPX mapovÃ½ch Ãºdajov';
+      'meshcore-open export dát GPX mapových údajov';
 
   @override
-  String get snrIndicator_nearByRepeaters => 'Miestne opakovaÄe';
+  String get snrIndicator_nearByRepeaters => 'Miestne opakovače';
 
   @override
-  String get snrIndicator_lastSeen => 'Naposledy videnÃ½';
+  String get snrIndicator_lastSeen => 'Naposledy videný';
 }

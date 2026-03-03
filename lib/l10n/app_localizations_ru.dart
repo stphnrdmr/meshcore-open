@@ -12,93 +12,92 @@ class AppLocalizationsRu extends AppLocalizations {
   String get appTitle => 'MeshCore Open';
 
   @override
-  String get nav_contacts => 'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹';
+  String get nav_contacts => 'Контакты';
 
   @override
-  String get nav_channels => 'ÐšÐ°Ð½Ð°Ð»Ñ‹';
+  String get nav_channels => 'Каналы';
 
   @override
-  String get nav_map => 'ÐšÐ°Ñ€Ñ‚Ð°';
+  String get nav_map => 'Карта';
 
   @override
-  String get common_cancel => 'ÐžÑ‚Ð¼ÐµÐ½Ð°';
+  String get common_cancel => 'Отмена';
 
   @override
   String get common_ok => 'OK';
 
   @override
-  String get common_connect => 'ÐšÐ¾Ð½Ð½ÐµÐºÑ‚';
+  String get common_connect => 'Коннект';
 
   @override
-  String get common_unknownDevice =>
-      'ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð¾Ðµ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾';
+  String get common_unknownDevice => 'Неизвестное устройство';
 
   @override
-  String get common_save => 'Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ';
+  String get common_save => 'Сохранить';
 
   @override
-  String get common_delete => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ';
+  String get common_delete => 'Удалить';
 
   @override
-  String get common_close => 'Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ';
+  String get common_close => 'Закрыть';
 
   @override
-  String get common_edit => 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ';
+  String get common_edit => 'Изменить';
 
   @override
-  String get common_add => 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ';
+  String get common_add => 'Добавить';
 
   @override
-  String get common_settings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get common_settings => 'Настройки';
 
   @override
-  String get common_disconnect => 'ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ';
+  String get common_disconnect => 'Отключить';
 
   @override
-  String get common_connected => 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾';
+  String get common_connected => 'Подключено';
 
   @override
-  String get common_disconnected => 'ÐžÑ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾';
+  String get common_disconnected => 'Отключено';
 
   @override
-  String get common_create => 'Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ';
+  String get common_create => 'Создать';
 
   @override
-  String get common_continue => 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
+  String get common_continue => 'Продолжить';
 
   @override
-  String get common_share => 'ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ';
+  String get common_share => 'Поделиться';
 
   @override
-  String get common_copy => 'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ';
+  String get common_copy => 'Копировать';
 
   @override
-  String get common_retry => 'ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ';
+  String get common_retry => 'Повторить';
 
   @override
-  String get common_hide => 'Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ';
+  String get common_hide => 'Скрыть';
 
   @override
-  String get common_remove => 'Ð£Ð±Ñ€Ð°Ñ‚ÑŒ';
+  String get common_remove => 'Убрать';
 
   @override
-  String get common_enable => 'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ';
+  String get common_enable => 'Включить';
 
   @override
-  String get common_disable => 'Ð’Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ';
+  String get common_disable => 'Выключить';
 
   @override
-  String get common_reboot => 'ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ';
+  String get common_reboot => 'Перезагрузить';
 
   @override
-  String get common_loading => 'Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°...';
+  String get common_loading => 'Загрузка...';
 
   @override
-  String get common_notAvailable => 'â€”';
+  String get common_notAvailable => '—';
 
   @override
   String common_voltageValue(String volts) {
-    return '$volts Ð’';
+    return '$volts В';
   }
 
   @override
@@ -116,247 +115,275 @@ class AppLocalizationsRu extends AppLocalizations {
   String get connectionChoiceBluetoothLabel => 'Bluetooth';
 
   @override
-  String get usbScreenTitle => 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ñ‡ÐµÑ€ÐµÐ· USB';
+  String get usbScreenTitle => 'Подключение через USB';
 
   @override
   String get usbScreenSubtitle =>
-      'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð½Ð¾Ðµ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ñ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼ Ð¸Ð½Ñ‚ÐµÑ€Ñ„ÐµÐ¹ÑÐ¾Ð¼ Ð¸ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ ÐµÐ³Ð¾ Ð½Ð°Ð¿Ñ€ÑÐ¼ÑƒÑŽ Ðº Ð²Ð°ÑˆÐµÐ¼Ñƒ ÑƒÐ·Ð»Ñƒ MeshCore.';
+      'Выберите обнаруженное устройство с последовательным интерфейсом и подключите его напрямую к вашему узлу MeshCore.';
 
   @override
-  String get usbScreenStatus => 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ USB-ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾';
+  String get usbScreenStatus => 'Выберите USB-устройство';
 
   @override
   String get usbScreenNote =>
-      'USB-ÑÐµÑ€Ð¸Ð¹Ð½Ñ‹Ð¹ Ð¿Ð¾Ñ€Ñ‚ Ð°ÐºÑ‚Ð¸Ð²ÐµÐ½ Ð½Ð° Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°Ñ… Android Ð¸ Ð½Ð° Ð½Ð°ÑÑ‚Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð¿Ð»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ð°Ñ….';
+      'USB-серийный порт активен на поддерживаемых устройствах Android и на настольных платформах.';
 
   @override
   String get usbScreenEmptyState =>
-      'ÐÐµ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² USB. ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ð¾Ð´Ð½Ð¾ Ð¸Ð· Ð½Ð¸Ñ… Ð¸ Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚Ðµ ÑÐ¿Ð¸ÑÐ¾Ðº.';
+      'Не обнаружено устройств USB. Подключите одно из них и обновите список.';
 
   @override
-  String get scanner_scanning => 'ÐŸÐ¾Ð¸ÑÐº ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²...';
+  String get usbErrorPermissionDenied =>
+      'Запрос на доступ через USB был отклонен.';
 
   @override
-  String get scanner_connecting => 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ...';
+  String get usbErrorDeviceMissing =>
+      'Выбранное USB-устройство больше недоступно.';
 
   @override
-  String get scanner_disconnecting => 'ÐžÑ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ...';
+  String get usbErrorInvalidPort => 'Выберите действительное USB-устройство.';
 
   @override
-  String get scanner_notConnected => 'ÐÐµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾';
+  String get usbErrorBusy =>
+      'Еще одно запрошенное соединение через USB уже находится в процессе.';
+
+  @override
+  String get usbErrorNotConnected => 'Ни одно устройство USB не подключено.';
+
+  @override
+  String get usbErrorOpenFailed =>
+      'Не удалось открыть выбранное USB-устройство.';
+
+  @override
+  String get usbErrorConnectFailed =>
+      'Не удалось установить соединение с выбранным USB-устройством.';
+
+  @override
+  String get usbErrorUnsupported =>
+      'Поддержка последовательного USB отсутствует на данной платформе.';
+
+  @override
+  String get usbErrorAlreadyActive =>
+      'USB-соединение уже установлено и работает.';
+
+  @override
+  String get usbErrorNoDeviceSelected =>
+      'Не было выбрано ни одно устройство USB.';
+
+  @override
+  String get usbErrorPortClosed => 'USB-соединение не установлено.';
+
+  @override
+  String get usbErrorConnectTimedOut =>
+      'Ожидание ответа от устройства превысило установленное время.';
+
+  @override
+  String get scanner_scanning => 'Поиск устройств...';
+
+  @override
+  String get scanner_connecting => 'Подключение...';
+
+  @override
+  String get scanner_disconnecting => 'Отключение...';
+
+  @override
+  String get scanner_notConnected => 'Не подключено';
 
   @override
   String scanner_connectedTo(String deviceName) {
-    return 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ Ðº $deviceName';
+    return 'Подключено к $deviceName';
   }
 
   @override
-  String get scanner_searchingDevices =>
-      'ÐŸÐ¾Ð¸ÑÐº ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² MeshCore...';
+  String get scanner_searchingDevices => 'Поиск устройств MeshCore...';
 
   @override
-  String get scanner_tapToScan =>
-      'ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° MeshCore ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²';
+  String get scanner_tapToScan => 'Нажмите для поиска MeshCore устройств';
 
   @override
   String scanner_connectionFailed(String error) {
-    return 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ: $error';
+    return 'Подключение не удалось: $error';
   }
 
   @override
-  String get scanner_stop => 'Ð¡Ñ‚Ð¾Ð¿';
+  String get scanner_stop => 'Стоп';
 
   @override
-  String get scanner_scan => 'Ð¡ÐºÐ°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+  String get scanner_scan => 'Сканирование';
 
   @override
-  String get scanner_bluetoothOff => 'Bluetooth Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½';
+  String get scanner_bluetoothOff => 'Bluetooth выключен';
 
   @override
   String get scanner_bluetoothOffMessage =>
-      'ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð²ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Bluetooth, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð½Ð°Ð¹Ñ‚Ð¸ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°.';
+      'Пожалуйста, включите Bluetooth, чтобы найти устройства.';
 
   @override
-  String get scanner_chromeRequired =>
-      'Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€ Chrome';
+  String get scanner_chromeRequired => 'Требуется браузер Chrome';
 
   @override
   String get scanner_chromeRequiredMessage =>
-      'Ð”Ð»Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸ Bluetooth Ð² ÑÑ‚Ð¾Ð¼ Ð²ÐµÐ±-Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¸ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ Google Chrome Ð¸Ð»Ð¸ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€ Ð½Ð° Ð±Ð°Ð·Ðµ Chromium.';
+      'Для поддержки Bluetooth в этом веб-приложении требуется Google Chrome или браузер на базе Chromium.';
 
   @override
-  String get scanner_enableBluetooth => 'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Bluetooth';
+  String get scanner_enableBluetooth => 'Включите Bluetooth';
 
   @override
-  String get device_quickSwitch => 'Ð‘Ñ‹ÑÑ‚Ñ€Ð¾Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ';
+  String get device_quickSwitch => 'Быстрое переключение';
 
   @override
   String get device_meshcore => 'MeshCore';
 
   @override
-  String get settings_title => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get settings_title => 'Настройки';
 
   @override
-  String get settings_deviceInfo =>
-      'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ðµ';
+  String get settings_deviceInfo => 'Информация об устройстве';
 
   @override
-  String get settings_appSettings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get settings_appSettings => 'Настройки приложения';
 
   @override
   String get settings_appSettingsSubtitle =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ, ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð¸ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÐºÐ°Ñ€Ñ‚Ñ‹';
+      'Уведомления, сообщения и настройки карты';
 
   @override
-  String get settings_nodeSettings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð½Ð¾Ð´Ñ‹';
+  String get settings_nodeSettings => 'Настройки ноды';
 
   @override
-  String get settings_nodeName => 'Ð˜Ð¼Ñ Ð½Ð¾Ð´Ñ‹';
+  String get settings_nodeName => 'Имя ноды';
 
   @override
-  String get settings_nodeNameNotSet => 'ÐÐµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾';
+  String get settings_nodeNameNotSet => 'Не установлено';
 
   @override
-  String get settings_nodeNameHint => 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð½Ð¾Ð´Ñ‹';
+  String get settings_nodeNameHint => 'Введите имя ноды';
 
   @override
-  String get settings_nodeNameUpdated => 'Ð˜Ð¼Ñ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾';
+  String get settings_nodeNameUpdated => 'Имя обновлено';
 
   @override
-  String get settings_radioSettings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ñ€Ð°Ð´Ð¸Ð¾';
+  String get settings_radioSettings => 'Настройки радио';
 
   @override
   String get settings_radioSettingsSubtitle =>
-      'Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð°, Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¸ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ';
+      'Частота, мощность и коэффициент распространения';
 
   @override
-  String get settings_radioSettingsUpdated =>
-      'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ñ€Ð°Ð´Ð¸Ð¾ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹';
+  String get settings_radioSettingsUpdated => 'Настройки радио обновлены';
 
   @override
-  String get settings_location => 'ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ';
+  String get settings_location => 'Позиция';
 
   @override
-  String get settings_locationSubtitle => 'ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ GPS';
+  String get settings_locationSubtitle => 'Координаты GPS';
 
   @override
-  String get settings_locationUpdated =>
-      'ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ Ð¸ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ GPS Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹';
+  String get settings_locationUpdated => 'Позиция и настройки GPS обновлены';
 
   @override
-  String get settings_locationBothRequired =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¾Ñ‚Ñƒ Ð¸ Ð´Ð¾Ð»Ð³Ð¾Ñ‚Ñƒ.';
+  String get settings_locationBothRequired => 'Введите широту и долготу.';
 
   @override
-  String get settings_locationInvalid =>
-      'ÐÐµÐ²ÐµÑ€Ð½Ð°Ñ ÑˆÐ¸Ñ€Ð¾Ñ‚Ð° Ð¸Ð»Ð¸ Ð´Ð¾Ð»Ð³Ð¾Ñ‚Ð°.';
+  String get settings_locationInvalid => 'Неверная широта или долгота.';
 
   @override
-  String get settings_locationGPSEnable => 'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ GPS';
+  String get settings_locationGPSEnable => 'Включить GPS';
 
   @override
   String get settings_locationGPSEnableSubtitle =>
-      'Ð’ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ GPS Ð´Ð»Ñ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸.';
+      'Включение GPS для автоматического обновления позиции.';
 
   @override
   String get settings_locationIntervalSec =>
-      'Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð´Ð»Ñ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ GPS (ÑÐµÐºÑƒÐ½Ð´Ñ‹)';
+      'Интервал для позиционирования GPS (секунды)';
 
   @override
   String get settings_locationIntervalInvalid =>
-      'Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾ÑÑ‚Ð°Ð²Ð»ÑÑ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 60 ÑÐµÐºÑƒÐ½Ð´ Ð¸ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 86400 ÑÐµÐºÑƒÐ½Ð´.';
+      'Интервал должен составлять не менее 60 секунд и не более 86400 секунд.';
 
   @override
-  String get settings_latitude => 'Ð¨Ð¸Ñ€Ð¾Ñ‚Ð°';
+  String get settings_latitude => 'Широта';
 
   @override
-  String get settings_longitude => 'Ð”Ð¾Ð»Ð³Ð¾Ñ‚Ð°';
+  String get settings_longitude => 'Долгота';
 
   @override
-  String get settings_privacyMode =>
-      'Ð ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸';
+  String get settings_privacyMode => 'Режим конфиденциальности';
 
   @override
   String get settings_privacyModeSubtitle =>
-      'Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¸Ð¼Ñ/Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ Ð² Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¸';
+      'Скрыть имя/позицию в анонсировании';
 
   @override
   String get settings_privacyModeToggle =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ñ€ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸, Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑÐºÑ€Ñ‹Ñ‚ÑŒ ÑÐ²Ð¾Ðµ Ð¸Ð¼Ñ Ð¸ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð² Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¸.';
+      'Включите режим конфиденциальности, чтобы скрыть свое имя и местоположение в анонсировании.';
 
   @override
-  String get settings_privacyModeEnabled =>
-      'Ð ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½';
+  String get settings_privacyModeEnabled => 'Режим конфиденциальности включен';
 
   @override
   String get settings_privacyModeDisabled =>
-      'Ð ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½';
+      'Режим конфиденциальности выключен';
 
   @override
-  String get settings_actions => 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ';
+  String get settings_actions => 'Действия';
 
   @override
-  String get settings_sendAdvertisement =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+  String get settings_sendAdvertisement => 'Отправить анонсирование';
 
   @override
   String get settings_sendAdvertisementSubtitle =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¾ Ð¿Ñ€Ð¸ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ð¸ ÑÐµÐ¹Ñ‡Ð°Ñ';
+      'Отправить анонсирование о присутствии сейчас';
 
   @override
-  String get settings_advertisementSent =>
-      'ÐÐ½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾';
+  String get settings_advertisementSent => 'Анонсирование отправлено';
 
   @override
-  String get settings_syncTime => 'Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸';
+  String get settings_syncTime => 'Синхронизация времени';
 
   @override
-  String get settings_syncTimeSubtitle =>
-      'Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð²Ñ€ÐµÐ¼Ñ Ñ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð¾Ð¼';
+  String get settings_syncTimeSubtitle => 'Синхронизировать время с телефоном';
 
   @override
-  String get settings_timeSynchronized =>
-      'Ð’Ñ€ÐµÐ¼Ñ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾';
+  String get settings_timeSynchronized => 'Время синхронизировано';
 
   @override
-  String get settings_refreshContacts => 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹';
+  String get settings_refreshContacts => 'Обновить контакты';
 
   @override
   String get settings_refreshContactsSubtitle =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð² Ñ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°';
+      'Перезагрузить список контактов с устройства';
 
   @override
-  String get settings_rebootDevice =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾';
+  String get settings_rebootDevice => 'Перезагрузить устройство';
 
   @override
   String get settings_rebootDeviceSubtitle =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ MeshCore';
+      'Перезапустить устройство MeshCore';
 
   @override
   String get settings_rebootDeviceConfirm =>
-      'Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿ÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾? Ð’Ñ‹ Ð±ÑƒÐ´ÐµÑ‚Ðµ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹.';
+      'Вы уверены, что хотите перезагрузить устройство? Вы будете отключены.';
 
   @override
-  String get settings_debug => 'ÐžÑ‚Ð»Ð°Ð´ÐºÐ°';
+  String get settings_debug => 'Отладка';
 
   @override
-  String get settings_bleDebugLog => 'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ BLE';
+  String get settings_bleDebugLog => 'Журнал отладки BLE';
 
   @override
   String get settings_bleDebugLogSubtitle =>
-      'ÐšÐ¾Ð¼Ð°Ð½Ð´Ñ‹ BLE, Ð¾Ñ‚Ð²ÐµÑ‚Ñ‹ Ð¸ ÑÑ‹Ñ€Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ';
+      'Команды BLE, ответы и сырые данные';
 
   @override
-  String get settings_appDebugLog =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get settings_appDebugLog => 'Журнал отладки приложения';
 
   @override
-  String get settings_appDebugLogSubtitle =>
-      'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get settings_appDebugLogSubtitle => 'Сообщения отладки приложения';
 
   @override
-  String get settings_about => 'Ðž Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ðµ';
+  String get settings_about => 'О программе';
 
   @override
   String settings_aboutVersion(String version) {
@@ -368,1278 +395,1209 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get settings_aboutDescription =>
-      'ÐžÑ‚ÐºÑ€Ñ‹Ñ‚Ð¾Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚ÑÐºÐ¾Ðµ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð½Ð° Flutter Ð´Ð»Ñ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² MeshCore Ñ LoRa-ÑÐµÑ‚ÑÐ¼Ð¸.';
+      'Открытое клиентское приложение на Flutter для устройств MeshCore с LoRa-сетями.';
 
   @override
   String get settings_aboutOpenMeteoAttribution =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ðµ LOS: Open-Meteo (CC BY 4.0)';
+      'Данные о высоте LOS: Open-Meteo (CC BY 4.0)';
 
   @override
-  String get settings_infoName => 'Ð˜Ð¼Ñ';
+  String get settings_infoName => 'Имя';
 
   @override
   String get settings_infoId => 'ID';
 
   @override
-  String get settings_infoStatus => 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ';
+  String get settings_infoStatus => 'Статус';
 
   @override
-  String get settings_infoBattery => 'Ð‘Ð°Ñ‚Ð°Ñ€ÐµÑ';
+  String get settings_infoBattery => 'Батарея';
 
   @override
-  String get settings_infoPublicKey => 'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡';
+  String get settings_infoPublicKey => 'Публичный ключ';
 
   @override
-  String get settings_infoContactsCount =>
-      'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²';
+  String get settings_infoContactsCount => 'Количество контактов';
 
   @override
-  String get settings_infoChannelCount => 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ°Ð½Ð°Ð»Ð¾Ð²';
+  String get settings_infoChannelCount => 'Количество каналов';
 
   @override
-  String get settings_presets => 'ÐŸÑ€ÐµÑÐµÑ‚Ñ‹';
+  String get settings_presets => 'Пресеты';
 
   @override
-  String get settings_frequency => 'Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð° (ÐœÐ“Ñ†)';
+  String get settings_frequency => 'Частота (МГц)';
 
   @override
-  String get settings_frequencyHelper => '300.0 â€“ 2500.0';
+  String get settings_frequencyHelper => '300.0 – 2500.0';
 
   @override
-  String get settings_frequencyInvalid =>
-      'ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð°Ñ Ñ‡Ð°ÑÑ‚Ð¾Ñ‚Ð° (300â€“2500 ÐœÐ“Ñ†)';
+  String get settings_frequencyInvalid => 'Недопустимая частота (300–2500 МГц)';
 
   @override
-  String get settings_bandwidth => 'ÐŸÐ¾Ð»Ð¾ÑÐ° Ð¿Ñ€Ð¾Ð¿ÑƒÑÐºÐ°Ð½Ð¸Ñ';
+  String get settings_bandwidth => 'Полоса пропускания';
 
   @override
-  String get settings_spreadingFactor =>
-      'ÐšÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ñ';
+  String get settings_spreadingFactor => 'Коэффициент расширения';
 
   @override
-  String get settings_codingRate =>
-      'ÐšÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+  String get settings_codingRate => 'Коэффициент кодирования';
 
   @override
-  String get settings_txPower => 'ÐœÐ¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ (Ð´Ð‘Ð¼)';
+  String get settings_txPower => 'Мощность передачи (дБм)';
 
   @override
-  String get settings_txPowerHelper => '0 â€“ 22';
+  String get settings_txPowerHelper => '0 – 22';
 
   @override
   String get settings_txPowerInvalid =>
-      'ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð°Ñ Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ (0â€“22 Ð´Ð‘Ð¼)';
+      'Недопустимая мощность передачи (0–22 дБм)';
 
   @override
-  String get settings_clientRepeat =>
-      'ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð¸Ðµ \"Ð²Ð½Ðµ ÑÐµÑ‚Ð¸\"';
+  String get settings_clientRepeat => 'Повторение \"вне сети\"';
 
   @override
   String get settings_clientRepeatSubtitle =>
-      'ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑŒÑ‚Ðµ ÑÑ‚Ð¾Ð¼Ñƒ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ñƒ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÑÑ‚ÑŒ Ð¿Ð°ÐºÐµÑ‚Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð»Ñ Ð´Ñ€ÑƒÐ³Ð¸Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð².';
+      'Позвольте этому устройству повторять пакеты данных для других устройств.';
 
   @override
   String get settings_clientRepeatFreqWarning =>
-      'Ð”Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð² Ñ€ÐµÐ¶Ð¸Ð¼Ðµ \"Ð±ÐµÐ· Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ðº ÑÐµÑ‚Ð¸\" Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ Ñ‡Ð°ÑÑ‚Ð¾Ñ‚Ð° 433, 869 Ð¸Ð»Ð¸ 918 ÐœÐ“Ñ†.';
+      'Для работы в режиме \"без подключения к сети\" требуется частота 433, 869 или 918 МГц.';
 
   @override
   String settings_error(String message) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ°: $message';
+    return 'Ошибка: $message';
   }
 
   @override
-  String get appSettings_title => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get appSettings_title => 'Настройки приложения';
 
   @override
-  String get appSettings_appearance => 'Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ Ð²Ð¸Ð´';
+  String get appSettings_appearance => 'Внешний вид';
 
   @override
-  String get appSettings_theme => 'Ð¢ÐµÐ¼Ð°';
+  String get appSettings_theme => 'Тема';
 
   @override
-  String get appSettings_themeSystem => 'ÐšÐ°Ðº Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ';
+  String get appSettings_themeSystem => 'Как в системе';
 
   @override
-  String get appSettings_themeLight => 'Ð¡Ð²ÐµÑ‚Ð»Ð°Ñ';
+  String get appSettings_themeLight => 'Светлая';
 
   @override
-  String get appSettings_themeDark => 'Ð¢Ñ‘Ð¼Ð½Ð°Ñ';
+  String get appSettings_themeDark => 'Тёмная';
 
   @override
-  String get appSettings_language => 'Ð¯Ð·Ñ‹Ðº';
+  String get appSettings_language => 'Язык';
 
   @override
-  String get appSettings_languageSystem => 'ÐšÐ°Ðº Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ';
+  String get appSettings_languageSystem => 'Как в системе';
 
   @override
-  String get appSettings_languageEn => 'ÐÐ½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹';
+  String get appSettings_languageEn => 'Английский';
 
   @override
-  String get appSettings_languageFr => 'Ð¤Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑÐºÐ¸Ð¹';
+  String get appSettings_languageFr => 'Французский';
 
   @override
-  String get appSettings_languageEs => 'Ð˜ÑÐ¿Ð°Ð½ÑÐºÐ¸Ð¹';
+  String get appSettings_languageEs => 'Испанский';
 
   @override
-  String get appSettings_languageDe => 'ÐÐµÐ¼ÐµÑ†ÐºÐ¸Ð¹';
+  String get appSettings_languageDe => 'Немецкий';
 
   @override
-  String get appSettings_languagePl => 'ÐŸÐ¾Ð»ÑŒÑÐºÐ¸Ð¹';
+  String get appSettings_languagePl => 'Польский';
 
   @override
-  String get appSettings_languageSl => 'Ð¡Ð»Ð¾Ð²ÐµÐ½ÑÐºÐ¸Ð¹';
+  String get appSettings_languageSl => 'Словенский';
 
   @override
-  String get appSettings_languagePt => 'ÐŸÐ¾Ñ€Ñ‚ÑƒÐ³Ð°Ð»ÑŒÑÐºÐ¸Ð¹';
+  String get appSettings_languagePt => 'Португальский';
 
   @override
-  String get appSettings_languageIt => 'Ð˜Ñ‚Ð°Ð»ÑŒÑÐ½ÑÐºÐ¸Ð¹';
+  String get appSettings_languageIt => 'Итальянский';
 
   @override
-  String get appSettings_languageZh => 'ÐšÐ¸Ñ‚Ð°Ð¹ÑÐºÐ¸Ð¹';
+  String get appSettings_languageZh => 'Китайский';
 
   @override
-  String get appSettings_languageSv => 'Ð¨Ð²ÐµÐ´ÑÐºÐ¸Ð¹';
+  String get appSettings_languageSv => 'Шведский';
 
   @override
-  String get appSettings_languageNl => 'ÐÐ¸Ð´ÐµÑ€Ð»Ð°Ð½Ð´ÑÐºÐ¸Ð¹';
+  String get appSettings_languageNl => 'Нидерландский';
 
   @override
-  String get appSettings_languageSk => 'Ð¡Ð»Ð¾Ð²Ð°Ñ†ÐºÐ¸Ð¹';
+  String get appSettings_languageSk => 'Словацкий';
 
   @override
-  String get appSettings_languageBg => 'Ð‘Ð¾Ð»Ð³Ð°Ñ€ÑÐºÐ¸Ð¹';
+  String get appSettings_languageBg => 'Болгарский';
 
   @override
-  String get appSettings_languageRu => 'Ð ÑƒÑÑÐºÐ¸Ð¹';
+  String get appSettings_languageRu => 'Русский';
 
   @override
-  String get appSettings_languageUk => 'Ð£ÐºÑ€Ð°Ñ—Ð½ÑÑŒÐºÐ°';
+  String get appSettings_languageUk => 'Українська';
 
   @override
   String get appSettings_enableMessageTracing =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ñ‚Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÑƒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹';
+      'Включить трассировку сообщений';
 
   @override
   String get appSettings_enableMessageTracingSubtitle =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½Ñ‹Ðµ Ð¼ÐµÑ‚Ð°Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð¸ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð´Ð»Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹';
+      'Показывать подробные метаданные о маршрутизации и времени для сообщений';
 
   @override
-  String get appSettings_notifications => 'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ';
+  String get appSettings_notifications => 'Уведомления';
 
   @override
-  String get appSettings_enableNotifications =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ';
+  String get appSettings_enableNotifications => 'Включить уведомления';
 
   @override
   String get appSettings_enableNotificationsSubtitle =>
-      'ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÑ… Ð¸ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÑÑ…';
+      'Получать уведомления о сообщениях и оповещениях';
 
   @override
   String get appSettings_notificationPermissionDenied =>
-      'Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ðµ Ð½Ð° ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾Ñ‚ÐºÐ»Ð¾Ð½ÐµÐ½Ð¾';
+      'Разрешение на уведомления отклонено';
 
   @override
-  String get appSettings_notificationsEnabled =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹';
+  String get appSettings_notificationsEnabled => 'Уведомления включены';
 
   @override
-  String get appSettings_notificationsDisabled =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ñ‹';
+  String get appSettings_notificationsDisabled => 'Уведомления отключены';
 
   @override
-  String get appSettings_messageNotifications =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÑ…';
+  String get appSettings_messageNotifications => 'Уведомления о сообщениях';
 
   @override
   String get appSettings_messageNotificationsSubtitle =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ Ð½Ð¾Ð²Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹';
+      'Показывать уведомление при получении новых сообщений';
 
   @override
   String get appSettings_channelMessageNotifications =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÑ… Ð² ÐºÐ°Ð½Ð°Ð»Ð°Ñ…';
+      'Уведомления о сообщениях в каналах';
 
   @override
   String get appSettings_channelMessageNotificationsSubtitle =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ Ð² ÐºÐ°Ð½Ð°Ð»Ð°Ñ…';
+      'Показывать уведомление при получении сообщений в каналах';
 
   @override
   String get appSettings_advertisementNotifications =>
-      'Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ Ð¾Ð± Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÑÑ…';
+      'Уведомления об анонсированиях';
 
   @override
   String get appSettings_advertisementNotificationsSubtitle =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð¸Ð¸ Ð½Ð¾Ð²Ñ‹Ñ… Ð½Ð¾Ð´';
+      'Показывать уведомление при обнаружении новых нод';
 
   @override
-  String get appSettings_messaging => 'ÐžÐ±Ð¼ÐµÐ½ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÐ¼Ð¸';
+  String get appSettings_messaging => 'Обмен сообщениями';
 
   @override
   String get appSettings_clearPathOnMaxRetry =>
-      'Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð¿Ð¾ÑÐ»Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº';
+      'Сбросить маршрут после максимального числа попыток';
 
   @override
   String get appSettings_clearPathOnMaxRetrySubtitle =>
-      'Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð° Ð¿Ð¾ÑÐ»Ðµ 5 Ð½ÐµÑƒÐ´Ð°Ñ‡Ð½Ñ‹Ñ… Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸';
+      'Сбросить маршрут контакта после 5 неудачных попыток отправки';
 
   @override
   String get appSettings_pathsWillBeCleared =>
-      'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚Ñ‹ Ð±ÑƒÐ´ÑƒÑ‚ ÑÐ±Ñ€Ð¾ÑˆÐµÐ½Ñ‹ Ð¿Ð¾ÑÐ»Ðµ 5 Ð½ÐµÑƒÐ´Ð°Ñ‡Ð½Ñ‹Ñ… Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº';
+      'Маршруты будут сброшены после 5 неудачных попыток';
 
   @override
   String get appSettings_pathsWillNotBeCleared =>
-      'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚Ñ‹ Ð½Ðµ Ð±ÑƒÐ´ÑƒÑ‚ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ ÑÐ±Ñ€Ð°ÑÑ‹Ð²Ð°Ñ‚ÑŒÑÑ';
+      'Маршруты не будут автоматически сбрасываться';
 
   @override
   String get appSettings_autoRouteRotation =>
-      'ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð²';
+      'Автоматическое переключение маршрутов';
 
   @override
   String get appSettings_autoRouteRotationSubtitle =>
-      'Ð¦Ð¸ÐºÐ»Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒÑÑ Ð¼ÐµÐ¶Ð´Ñƒ Ð»ÑƒÑ‡ÑˆÐ¸Ð¼Ð¸ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°Ð¼Ð¸ Ð¸ Ñ€ÐµÐ¶Ð¸Ð¼Ð¾Ð¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸';
+      'Циклически переключаться между лучшими маршрутами и режимом рассылки';
 
   @override
   String get appSettings_autoRouteRotationEnabled =>
-      'ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð² Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾';
+      'Автоматическое переключение маршрутов включено';
 
   @override
   String get appSettings_autoRouteRotationDisabled =>
-      'ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð² Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾';
+      'Автоматическое переключение маршрутов отключено';
 
   @override
-  String get appSettings_battery => 'Ð‘Ð°Ñ‚Ð°Ñ€ÐµÑ';
+  String get appSettings_battery => 'Батарея';
 
   @override
-  String get appSettings_batteryChemistry => 'Ð¥Ð¸Ð¼Ð¸Ñ Ð±Ð°Ñ‚Ð°Ñ€ÐµÐ¸';
+  String get appSettings_batteryChemistry => 'Химия батареи';
 
   @override
   String appSettings_batteryChemistryPerDevice(String deviceName) {
-    return 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð´Ð»Ñ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð° ($deviceName)';
+    return 'Установить для устройства ($deviceName)';
   }
 
   @override
   String get appSettings_batteryChemistryConnectFirst =>
-      'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÑÑŒ Ðº ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ñƒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ';
+      'Подключитесь к устройству, чтобы выбрать';
 
   @override
-  String get appSettings_batteryNmc => '18650 NMC (3.0â€“4.2 Ð’)';
+  String get appSettings_batteryNmc => '18650 NMC (3.0–4.2 В)';
 
   @override
-  String get appSettings_batteryLifepo4 => 'LiFePO4 (2.6â€“3.65 Ð’)';
+  String get appSettings_batteryLifepo4 => 'LiFePO4 (2.6–3.65 В)';
 
   @override
-  String get appSettings_batteryLipo => 'LiPo (3.0â€“4.2 Ð’)';
+  String get appSettings_batteryLipo => 'LiPo (3.0–4.2 В)';
 
   @override
-  String get appSettings_mapDisplay => 'ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹';
+  String get appSettings_mapDisplay => 'Отображение карты';
 
   @override
-  String get appSettings_showRepeaters =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹';
+  String get appSettings_showRepeaters => 'Показывать репитеры';
 
   @override
   String get appSettings_showRepeatersSubtitle =>
-      'ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ';
+      'Отображать репитеры на карте';
 
   @override
-  String get appSettings_showChatNodes =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‡Ð°Ñ‚-Ð½Ð¾Ð´Ñ‹';
+  String get appSettings_showChatNodes => 'Показывать чат-ноды';
 
   @override
   String get appSettings_showChatNodesSubtitle =>
-      'ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ñ‡Ð°Ñ‚-Ð½Ð¾Ð´Ñ‹ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ';
+      'Отображать чат-ноды на карте';
 
   @override
-  String get appSettings_showOtherNodes =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ð¸Ðµ Ð½Ð¾Ð´Ñ‹';
+  String get appSettings_showOtherNodes => 'Показывать другие ноды';
 
   @override
   String get appSettings_showOtherNodesSubtitle =>
-      'ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ð¸Ðµ Ñ‚Ð¸Ð¿Ñ‹ Ð½Ð¾Ð´ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ';
+      'Отображать другие типы нод на карте';
 
   @override
-  String get appSettings_timeFilter => 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¿Ð¾ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸';
+  String get appSettings_timeFilter => 'Фильтр по времени';
 
   @override
-  String get appSettings_timeFilterShowAll =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð²ÑÐµ Ð½Ð¾Ð´Ñ‹';
+  String get appSettings_timeFilterShowAll => 'Показывать все ноды';
 
   @override
   String appSettings_timeFilterShowLast(int hours) {
-    return 'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð½Ð¾Ð´Ñ‹ Ð·Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ $hours Ñ‡';
+    return 'Показывать ноды за последние $hours ч';
   }
 
   @override
-  String get appSettings_mapTimeFilter =>
-      'Ð’Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€ ÐºÐ°Ñ€Ñ‚Ñ‹';
+  String get appSettings_mapTimeFilter => 'Временной фильтр карты';
 
   @override
   String get appSettings_showNodesDiscoveredWithin =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð½Ð¾Ð´Ñ‹, Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð½Ñ‹Ðµ Ð·Ð°:';
+      'Показывать ноды, обнаруженные за:';
 
   @override
-  String get appSettings_allTime => 'Ð’ÑÑ‘ Ð²Ñ€ÐµÐ¼Ñ';
+  String get appSettings_allTime => 'Всё время';
 
   @override
-  String get appSettings_lastHour => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ Ñ‡Ð°Ñ';
+  String get appSettings_lastHour => 'Последний час';
 
   @override
-  String get appSettings_last6Hours => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ 6 Ñ‡Ð°ÑÐ¾Ð²';
+  String get appSettings_last6Hours => 'Последние 6 часов';
 
   @override
-  String get appSettings_last24Hours => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ 24 Ñ‡Ð°ÑÐ°';
+  String get appSettings_last24Hours => 'Последние 24 часа';
 
   @override
-  String get appSettings_lastWeek => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÑŽÑŽ Ð½ÐµÐ´ÐµÐ»ÑŽ';
+  String get appSettings_lastWeek => 'Последнюю неделю';
 
   @override
-  String get appSettings_offlineMapCache => 'ÐšÑÑˆ Ð¾Ñ„Ð»Ð°Ð¹Ð½-ÐºÐ°Ñ€Ñ‚Ñ‹';
+  String get appSettings_offlineMapCache => 'Кэш офлайн-карты';
 
   @override
-  String get appSettings_unitsTitle => 'Ð•Ð´Ð¸Ð½Ð¸Ñ†Ñ‹';
+  String get appSettings_unitsTitle => 'Единицы';
 
   @override
-  String get appSettings_unitsMetric => 'ÐœÐµÑ‚Ñ€Ð¸Ñ‡ÐµÑÐºÐ°Ñ (Ð¼/ÐºÐ¼)';
+  String get appSettings_unitsMetric => 'Метрическая (м/км)';
 
   @override
-  String get appSettings_unitsImperial => 'Ð˜Ð¼Ð¿ÐµÑ€ÑÐºÐ°Ñ (ft / mi)';
+  String get appSettings_unitsImperial => 'Имперская (ft / mi)';
 
   @override
-  String get appSettings_noAreaSelected => 'ÐžÐ±Ð»Ð°ÑÑ‚ÑŒ Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð°';
+  String get appSettings_noAreaSelected => 'Область не выбрана';
 
   @override
   String appSettings_areaSelectedZoom(int minZoom, int maxZoom) {
-    return 'ÐžÐ±Ð»Ð°ÑÑ‚ÑŒ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð° (Ð¼Ð°ÑÑˆÑ‚Ð°Ð± $minZoomâ€“$maxZoom)';
+    return 'Область выбрана (масштаб $minZoom–$maxZoom)';
   }
 
   @override
-  String get appSettings_debugCard => 'ÐžÑ‚Ð»Ð°Ð´ÐºÐ°';
+  String get appSettings_debugCard => 'Отладка';
 
   @override
-  String get appSettings_appDebugLogging =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get appSettings_appDebugLogging => 'Журнал отладки приложения';
 
   @override
   String get appSettings_appDebugLoggingSubtitle =>
-      'Ð—Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°Ñ‚ÑŒ Ð¾Ñ‚Ð»Ð°Ð´Ð¾Ñ‡Ð½Ñ‹Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ð´Ð¸Ð°Ð³Ð½Ð¾ÑÑ‚Ð¸ÐºÐ¸';
+      'Записывать отладочные сообщения приложения для диагностики';
 
   @override
   String get appSettings_appDebugLoggingEnabled =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½';
+      'Журнал отладки приложения включён';
 
   @override
   String get appSettings_appDebugLoggingDisabled =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ñ‘Ð½';
+      'Журнал отладки приложения отключён';
 
   @override
-  String get contacts_title => 'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹';
+  String get contacts_title => 'Контакты';
 
   @override
-  String get contacts_noContacts => 'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð² Ð¿Ð¾ÐºÐ° Ð½ÐµÑ‚';
+  String get contacts_noContacts => 'Контактов пока нет';
 
   @override
   String get contacts_contactsWillAppear =>
-      'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹ Ð¿Ð¾ÑÐ²ÑÑ‚ÑÑ, ÐºÐ¾Ð³Ð´Ð° ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð° Ð½Ð°Ñ‡Ð½ÑƒÑ‚ Ñ€Ð°ÑÑÑ‹Ð»Ð°Ñ‚ÑŒ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ';
+      'Контакты появятся, когда устройства начнут рассылать оповещения';
 
   @override
-  String get contacts_unread => 'ÐÐµÐ¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ð¾Ðµ';
+  String get contacts_unread => 'Непрочитанное';
 
   @override
-  String get contacts_searchContactsNoNumber =>
-      'ÐŸÐ¾Ð¸ÑÐº ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²...';
+  String get contacts_searchContactsNoNumber => 'Поиск контактов...';
 
   @override
   String contacts_searchContacts(int number, String str) {
-    return 'ÐŸÐ¾Ð¸ÑÐº ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²...';
+    return 'Поиск контактов...';
   }
 
   @override
   String contacts_searchFavorites(int number, String str) {
-    return 'ÐŸÐ¾Ð¸ÑÐº $number$str Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ð³Ð¾...';
+    return 'Поиск $number$str избранного...';
   }
 
   @override
   String contacts_searchUsers(int number, String str) {
-    return 'ÐŸÐ¾Ð¸ÑÐº $number$str Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹...';
+    return 'Поиск $number$str пользователей...';
   }
 
   @override
   String contacts_searchRepeaters(int number, String str) {
-    return 'ÐŸÐ¾Ð¸ÑÐº $number$str Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»ÑÑ‚Ð¾Ñ€Ð¾Ð²...';
+    return 'Поиск $number$str ретрансляторов...';
   }
 
   @override
   String contacts_searchRoomServers(int number, String str) {
-    return 'ÐŸÐ¾Ð¸ÑÐº $number$str ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð² ÐºÐ¾Ð¼Ð½Ð°Ñ‚...';
+    return 'Поиск $number$str серверов комнат...';
   }
 
   @override
-  String get contacts_noUnreadContacts =>
-      'ÐÐµÑ‚ Ð½ÐµÐ¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ñ‹Ñ… ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²';
+  String get contacts_noUnreadContacts => 'Нет непрочитанных контактов';
 
   @override
-  String get contacts_noContactsFound =>
-      'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹ Ð¸Ð»Ð¸ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹';
+  String get contacts_noContactsFound => 'Контакты или группы не найдены';
 
   @override
-  String get contacts_deleteContact => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚';
+  String get contacts_deleteContact => 'Удалить контакт';
 
   @override
   String contacts_removeConfirm(String contactName) {
-    return 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ $contactName Ð¸Ð· ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²?';
+    return 'Удалить $contactName из контактов?';
   }
 
   @override
-  String get contacts_manageRepeater =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð¼';
+  String get contacts_manageRepeater => 'Управление репитером';
 
   @override
-  String get contacts_manageRoom =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð¼ ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+  String get contacts_manageRoom => 'Управление сервером комнат';
 
   @override
-  String get contacts_roomLogin => 'Ð’Ñ…Ð¾Ð´ Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+  String get contacts_roomLogin => 'Вход на сервер комнат';
 
   @override
-  String get contacts_openChat => 'ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ‡Ð°Ñ‚';
+  String get contacts_openChat => 'Открыть чат';
 
   @override
-  String get contacts_editGroup => 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ';
+  String get contacts_editGroup => 'Изменить группу';
 
   @override
-  String get contacts_deleteGroup => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ';
+  String get contacts_deleteGroup => 'Удалить группу';
 
   @override
   String contacts_deleteGroupConfirm(String groupName) {
-    return 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ \"$groupName\"?';
+    return 'Удалить \"$groupName\"?';
   }
 
   @override
-  String get contacts_newGroup => 'ÐÐ¾Ð²Ð°Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ð°';
+  String get contacts_newGroup => 'Новая группа';
 
   @override
-  String get contacts_groupName => 'Ð˜Ð¼Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹';
+  String get contacts_groupName => 'Имя группы';
 
   @override
-  String get contacts_groupNameRequired =>
-      'Ð˜Ð¼Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾';
+  String get contacts_groupNameRequired => 'Имя группы обязательно';
 
   @override
   String contacts_groupAlreadyExists(String name) {
-    return 'Ð“Ñ€ÑƒÐ¿Ð¿Ð° \"$name\" ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚';
+    return 'Группа \"$name\" уже существует';
   }
 
   @override
-  String get contacts_filterContacts => 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²...';
+  String get contacts_filterContacts => 'Фильтр контактов...';
 
   @override
   String get contacts_noContactsMatchFilter =>
-      'ÐÐµÑ‚ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð², ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ñ… Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ñƒ';
+      'Нет контактов, соответствующих фильтру';
 
   @override
-  String get contacts_noMembers => 'ÐÐµÑ‚ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ¾Ð²';
+  String get contacts_noMembers => 'Нет участников';
 
   @override
-  String get contacts_lastSeenNow => 'Ð’Ð¸Ð´ÐµÐ»Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚Ð¾';
+  String get contacts_lastSeenNow => 'Видели только что';
 
   @override
   String contacts_lastSeenMinsAgo(int minutes) {
-    return 'Ð’Ð¸Ð´ÐµÐ»Ð¸ $minutes Ð¼Ð¸Ð½ Ð½Ð°Ð·Ð°Ð´';
+    return 'Видели $minutes мин назад';
   }
 
   @override
-  String get contacts_lastSeenHourAgo => 'Ð’Ð¸Ð´ÐµÐ»Ð¸ 1 Ñ‡Ð°Ñ Ð½Ð°Ð·Ð°Ð´';
+  String get contacts_lastSeenHourAgo => 'Видели 1 час назад';
 
   @override
   String contacts_lastSeenHoursAgo(int hours) {
-    return 'Ð’Ð¸Ð´ÐµÐ»Ð¸ $hours Ñ‡ Ð½Ð°Ð·Ð°Ð´';
+    return 'Видели $hours ч назад';
   }
 
   @override
-  String get contacts_lastSeenDayAgo => 'Ð’Ð¸Ð´ÐµÐ»Ð¸ 1 Ð´ÐµÐ½ÑŒ Ð½Ð°Ð·Ð°Ð´';
+  String get contacts_lastSeenDayAgo => 'Видели 1 день назад';
 
   @override
   String contacts_lastSeenDaysAgo(int days) {
-    return 'Ð’Ð¸Ð´ÐµÐ»Ð¸ $days Ð´Ð½. Ð½Ð°Ð·Ð°Ð´';
+    return 'Видели $days дн. назад';
   }
 
   @override
-  String get channels_title => 'ÐšÐ°Ð½Ð°Ð»Ñ‹';
+  String get channels_title => 'Каналы';
 
   @override
-  String get channels_noChannelsConfigured =>
-      'ÐšÐ°Ð½Ð°Ð»Ñ‹ Ð½Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐ½Ñ‹';
+  String get channels_noChannelsConfigured => 'Каналы не настроены';
 
   @override
-  String get channels_addPublicChannel =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_addPublicChannel => 'Добавить публичный канал';
 
   @override
-  String get channels_searchChannels => 'ÐŸÐ¾Ð¸ÑÐº ÐºÐ°Ð½Ð°Ð»Ð¾Ð²...';
+  String get channels_searchChannels => 'Поиск каналов...';
 
   @override
-  String get channels_noChannelsFound => 'ÐšÐ°Ð½Ð°Ð»Ñ‹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹';
+  String get channels_noChannelsFound => 'Каналы не найдены';
 
   @override
   String channels_channelIndex(int index) {
-    return 'ÐšÐ°Ð½Ð°Ð» $index';
+    return 'Канал $index';
   }
 
   @override
-  String get channels_hashtagChannel => 'Ð¥ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð»';
+  String get channels_hashtagChannel => 'Хэштег-канал';
 
   @override
-  String get channels_public => 'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹';
+  String get channels_public => 'Публичный';
 
   @override
-  String get channels_private => 'ÐŸÑ€Ð¸Ð²Ð°Ñ‚Ð½Ñ‹Ð¹';
+  String get channels_private => 'Приватный';
 
   @override
-  String get channels_publicChannel => 'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_publicChannel => 'Публичный канал';
 
   @override
-  String get channels_privateChannel => 'ÐŸÑ€Ð¸Ð²Ð°Ñ‚Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_privateChannel => 'Приватный канал';
 
   @override
-  String get channels_editChannel => 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_editChannel => 'Изменить канал';
 
   @override
-  String get channels_muteChannel =>
-      'ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ ÐºÐ°Ð½Ð°Ð»Ð°';
+  String get channels_muteChannel => 'Отключить уведомления канала';
 
   @override
-  String get channels_unmuteChannel =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ ÐºÐ°Ð½Ð°Ð»Ð°';
+  String get channels_unmuteChannel => 'Включить уведомления канала';
 
   @override
-  String get channels_deleteChannel => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_deleteChannel => 'Удалить канал';
 
   @override
   String channels_deleteChannelConfirm(String name) {
-    return 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ \"$name\"? Ð­Ñ‚Ð¾ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ð½ÐµÐ»ÑŒÐ·Ñ Ð¾Ñ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ.';
+    return 'Удалить \"$name\"? Это действие нельзя отменить.';
   }
 
   @override
   String channels_channelDeleteFailed(String name) {
-    return 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ ÐºÐ°Ð½Ð°Ð» $name.';
+    return 'Не удалось удалить канал $name.';
   }
 
   @override
   String channels_channelDeleted(String name) {
-    return 'ÐšÐ°Ð½Ð°Ð» \"$name\" ÑƒÐ´Ð°Ð»Ñ‘Ð½';
+    return 'Канал \"$name\" удалён';
   }
 
   @override
-  String get channels_addChannel => 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_addChannel => 'Добавить канал';
 
   @override
-  String get channels_channelIndexLabel => 'Ð˜Ð½Ð´ÐµÐºÑ ÐºÐ°Ð½Ð°Ð»Ð°';
+  String get channels_channelIndexLabel => 'Индекс канала';
 
   @override
-  String get channels_channelName => 'Ð˜Ð¼Ñ ÐºÐ°Ð½Ð°Ð»Ð°';
+  String get channels_channelName => 'Имя канала';
 
   @override
-  String get channels_usePublicChannel =>
-      'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_usePublicChannel => 'Использовать публичный канал';
 
   @override
-  String get channels_standardPublicPsk =>
-      'Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ PSK';
+  String get channels_standardPublicPsk => 'Стандартный публичный PSK';
 
   @override
   String get channels_pskHex => 'PSK (Hex)';
 
   @override
-  String get channels_generateRandomPsk =>
-      'Ð¡Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¹ PSK';
+  String get channels_generateRandomPsk => 'Сгенерировать случайный PSK';
 
   @override
-  String get channels_enterChannelName => 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ ÐºÐ°Ð½Ð°Ð»Ð°';
+  String get channels_enterChannelName => 'Введите имя канала';
 
   @override
   String get channels_pskMustBe32Hex =>
-      'PSK Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ 32 ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°';
+      'PSK должен содержать 32 шестнадцатеричных символа';
 
   @override
   String channels_channelAdded(String name) {
-    return 'ÐšÐ°Ð½Ð°Ð» \"$name\" Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½';
+    return 'Канал \"$name\" добавлен';
   }
 
   @override
   String channels_editChannelTitle(int index) {
-    return 'Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ ÐºÐ°Ð½Ð°Ð» $index';
+    return 'Изменить канал $index';
   }
 
   @override
-  String get channels_smazCompression => 'Ð¡Ð¶Ð°Ñ‚Ð¸Ðµ SMAZ';
+  String get channels_smazCompression => 'Сжатие SMAZ';
 
   @override
   String channels_channelUpdated(String name) {
-    return 'ÐšÐ°Ð½Ð°Ð» \"$name\" Ð¾Ð±Ð½Ð¾Ð²Ð»Ñ‘Ð½';
+    return 'Канал \"$name\" обновлён';
   }
 
   @override
-  String get channels_publicChannelAdded =>
-      'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð» Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½';
+  String get channels_publicChannelAdded => 'Публичный канал добавлен';
 
   @override
-  String get channels_sortBy => 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°';
+  String get channels_sortBy => 'Сортировка';
 
   @override
-  String get channels_sortManual => 'Ð’Ñ€ÑƒÑ‡Ð½ÑƒÑŽ';
+  String get channels_sortManual => 'Вручную';
 
   @override
-  String get channels_sortAZ => 'ÐŸÐ¾ Ð°Ð»Ñ„Ð°Ð²Ð¸Ñ‚Ñƒ';
+  String get channels_sortAZ => 'По алфавиту';
 
   @override
-  String get channels_sortLatestMessages =>
-      'ÐŸÐ¾ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¼ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÐ¼';
+  String get channels_sortLatestMessages => 'По последним сообщениям';
 
   @override
-  String get channels_sortUnread => 'ÐŸÐ¾ Ð½ÐµÐ¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ñ‹Ð¼';
+  String get channels_sortUnread => 'По непрочитанным';
 
   @override
-  String get channels_createPrivateChannel =>
-      'Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð»';
+  String get channels_createPrivateChannel => 'Создать приватный канал';
 
   @override
-  String get channels_createPrivateChannelDesc =>
-      'Ð—Ð°Ñ‰Ð¸Ñ‰Ñ‘Ð½ ÑÐµÐºÑ€ÐµÑ‚Ð½Ñ‹Ð¼ ÐºÐ»ÑŽÑ‡Ð¾Ð¼.';
+  String get channels_createPrivateChannelDesc => 'Защищён секретным ключом.';
 
   @override
   String get channels_joinPrivateChannel =>
-      'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð½Ð¾Ð¼Ñƒ ÐºÐ°Ð½Ð°Ð»Ñƒ';
+      'Присоединиться к приватному каналу';
 
   @override
   String get channels_joinPrivateChannelDesc =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐµÐºÑ€ÐµÑ‚Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ.';
+      'Введите секретный ключ вручную.';
 
   @override
-  String get channels_joinPublicChannel =>
-      'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð¼Ñƒ ÐºÐ°Ð½Ð°Ð»Ñƒ';
+  String get channels_joinPublicChannel => 'Присоединиться к публичному каналу';
 
   @override
   String get channels_joinPublicChannelDesc =>
-      'Ðš ÑÑ‚Ð¾Ð¼Ñƒ ÐºÐ°Ð½Ð°Ð»Ñƒ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ð»ÑŽÐ±Ð¾Ð¹.';
+      'К этому каналу может присоединиться любой.';
 
   @override
-  String get channels_joinHashtagChannel =>
-      'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº Ñ…ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð»Ñƒ';
+  String get channels_joinHashtagChannel => 'Присоединиться к хэштег-каналу';
 
   @override
   String get channels_joinHashtagChannelDesc =>
-      'Ðš Ñ…ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð»Ð°Ð¼ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ð»ÑŽÐ±Ð¾Ð¹.';
+      'К хэштег-каналам может присоединиться любой.';
 
   @override
-  String get channels_scanQrCode => 'Ð¡ÐºÐ°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ QR-ÐºÐ¾Ð´';
+  String get channels_scanQrCode => 'Сканировать QR-код';
 
   @override
-  String get channels_scanQrCodeComingSoon => 'Ð¡ÐºÐ¾Ñ€Ð¾ Ð±ÑƒÐ´ÐµÑ‚';
+  String get channels_scanQrCodeComingSoon => 'Скоро будет';
 
   @override
-  String get channels_enterHashtag => 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ…ÑÑˆÑ‚ÐµÐ³';
+  String get channels_enterHashtag => 'Введите хэштег';
 
   @override
-  String get channels_hashtagHint => 'Ð½Ð°Ð¿Ñ€Ð¸Ð¼ÐµÑ€, #ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°';
+  String get channels_hashtagHint => 'например, #команда';
 
   @override
-  String get chat_noMessages => 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ Ð¿Ð¾ÐºÐ° Ð½ÐµÑ‚';
+  String get chat_noMessages => 'Сообщений пока нет';
 
   @override
-  String get chat_sendMessageToStart =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²ÑŒÑ‚Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð½Ð°Ñ‡Ð°Ñ‚ÑŒ';
+  String get chat_sendMessageToStart => 'Отправьте сообщение, чтобы начать';
 
   @override
-  String get chat_originalMessageNotFound =>
-      'Ð˜ÑÑ…Ð¾Ð´Ð½Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾';
+  String get chat_originalMessageNotFound => 'Исходное сообщение не найдено';
 
   @override
   String chat_replyingTo(String name) {
-    return 'ÐžÑ‚Ð²ÐµÑ‚ Ð´Ð»Ñ $name';
+    return 'Ответ для $name';
   }
 
   @override
   String chat_replyTo(String name) {
-    return 'ÐžÑ‚Ð²ÐµÑ‚Ð¸Ñ‚ÑŒ $name';
+    return 'Ответить $name';
   }
 
   @override
-  String get chat_location => 'ÐœÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ';
+  String get chat_location => 'Местоположение';
 
   @override
   String chat_sendMessageTo(String contactName) {
-    return 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ $contactName';
+    return 'Отправить сообщение $contactName';
   }
 
   @override
-  String get chat_typeMessage => 'ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ...';
+  String get chat_typeMessage => 'Напишите сообщение...';
 
   @override
   String chat_messageTooLong(int maxBytes) {
-    return 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑÐ»Ð¸ÑˆÐºÐ¾Ð¼ Ð´Ð»Ð¸Ð½Ð½Ð¾Ðµ (Ð¼Ð°ÐºÑ. $maxBytes Ð±Ð°Ð¹Ñ‚).';
+    return 'Сообщение слишком длинное (макс. $maxBytes байт).';
   }
 
   @override
-  String get chat_messageCopied => 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾';
+  String get chat_messageCopied => 'Сообщение скопировано';
 
   @override
-  String get chat_messageDeleted => 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¾';
+  String get chat_messageDeleted => 'Сообщение удалено';
 
   @override
-  String get chat_retryingMessage =>
-      'ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ';
+  String get chat_retryingMessage => 'Повтор отправки сообщения';
 
   @override
   String chat_retryCount(int current, int max) {
-    return 'ÐŸÐ¾Ð¿Ñ‹Ñ‚ÐºÐ° $current/$max';
+    return 'Попытка $current/$max';
   }
 
   @override
-  String get chat_sendGif => 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ GIF';
+  String get chat_sendGif => 'Отправить GIF';
 
   @override
-  String get chat_reply => 'ÐžÑ‚Ð²ÐµÑ‚Ð¸Ñ‚ÑŒ';
+  String get chat_reply => 'Ответить';
 
   @override
-  String get chat_addReaction => 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€ÐµÐ°ÐºÑ†Ð¸ÑŽ';
+  String get chat_addReaction => 'Добавить реакцию';
 
   @override
-  String get chat_me => 'Ð¯';
+  String get chat_me => 'Я';
 
   @override
-  String get emojiCategorySmileys => 'Ð¡Ð¼Ð°Ð¹Ð»Ñ‹';
+  String get emojiCategorySmileys => 'Смайлы';
 
   @override
-  String get emojiCategoryGestures => 'Ð–ÐµÑÑ‚Ñ‹';
+  String get emojiCategoryGestures => 'Жесты';
 
   @override
-  String get emojiCategoryHearts => 'Ð¡ÐµÑ€Ð´ÐµÑ‡ÐºÐ¸';
+  String get emojiCategoryHearts => 'Сердечки';
 
   @override
-  String get emojiCategoryObjects => 'ÐŸÑ€ÐµÐ´Ð¼ÐµÑ‚Ñ‹';
+  String get emojiCategoryObjects => 'Предметы';
 
   @override
-  String get gifPicker_title => 'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ GIF';
+  String get gifPicker_title => 'Выберите GIF';
 
   @override
-  String get gifPicker_searchHint => 'ÐŸÐ¾Ð¸ÑÐº GIF...';
+  String get gifPicker_searchHint => 'Поиск GIF...';
 
   @override
-  String get gifPicker_poweredBy => 'Ð Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð½Ð° GIPHY';
+  String get gifPicker_poweredBy => 'Работает на GIPHY';
 
   @override
-  String get gifPicker_noGifsFound => 'GIF Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹';
+  String get gifPicker_noGifsFound => 'GIF не найдены';
 
   @override
-  String get gifPicker_failedLoad =>
-      'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ GIF';
+  String get gifPicker_failedLoad => 'Не удалось загрузить GIF';
 
   @override
-  String get gifPicker_failedSearch =>
-      'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð¸ÑÐº GIF';
+  String get gifPicker_failedSearch => 'Не удалось выполнить поиск GIF';
 
   @override
-  String get gifPicker_noInternet =>
-      'ÐÐµÑ‚ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ðº Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚Ñƒ';
+  String get gifPicker_noInternet => 'Нет подключения к интернету';
 
   @override
-  String get debugLog_appTitle =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get debugLog_appTitle => 'Журнал отладки приложения';
 
   @override
-  String get debugLog_bleTitle => 'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ BLE';
+  String get debugLog_bleTitle => 'Журнал отладки BLE';
 
   @override
-  String get debugLog_copyLog => 'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¶ÑƒÑ€Ð½Ð°Ð»';
+  String get debugLog_copyLog => 'Копировать журнал';
 
   @override
-  String get debugLog_clearLog => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¶ÑƒÑ€Ð½Ð°Ð»';
+  String get debugLog_clearLog => 'Очистить журнал';
 
   @override
-  String get debugLog_copied =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½';
+  String get debugLog_copied => 'Журнал отладки скопирован';
 
   @override
-  String get debugLog_bleCopied => 'Ð–ÑƒÑ€Ð½Ð°Ð» BLE ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½';
+  String get debugLog_bleCopied => 'Журнал BLE скопирован';
 
   @override
-  String get debugLog_noEntries =>
-      'Ð–ÑƒÑ€Ð½Ð°Ð» Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð¿Ð¾ÐºÐ° Ð¿ÑƒÑÑ‚';
+  String get debugLog_noEntries => 'Журнал отладки пока пуст';
 
   @override
   String get debugLog_enableInSettings =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð¶ÑƒÑ€Ð½Ð°Ð»Ð° Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸ Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ…';
+      'Включите запись журнала отладки в настройках';
 
   @override
-  String get debugLog_frames => 'Ð¤Ñ€ÐµÐ¹Ð¼Ñ‹';
+  String get debugLog_frames => 'Фреймы';
 
   @override
-  String get debugLog_rawLogRx => 'Ð¡Ñ‹Ñ€Ð¾Ð¹ Ð¶ÑƒÑ€Ð½Ð°Ð» Ð¿Ñ€Ð¸Ñ‘Ð¼Ð°';
+  String get debugLog_rawLogRx => 'Сырой журнал приёма';
 
   @override
-  String get debugLog_noBleActivity =>
-      'ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ BLE Ð¿Ð¾ÐºÐ° Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚';
+  String get debugLog_noBleActivity => 'Активность BLE пока отсутствует';
 
   @override
   String debugFrame_length(int count) {
-    return 'Ð”Ð»Ð¸Ð½Ð° Ñ„Ñ€ÐµÐ¹Ð¼Ð°: $count Ð±Ð°Ð¹Ñ‚';
+    return 'Длина фрейма: $count байт';
   }
 
   @override
   String debugFrame_command(String value) {
-    return 'ÐšÐ¾Ð¼Ð°Ð½Ð´Ð°: 0x$value';
+    return 'Команда: 0x$value';
   }
 
   @override
-  String get debugFrame_textMessageHeader =>
-      'Ð¤Ñ€ÐµÐ¹Ð¼ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ:';
+  String get debugFrame_textMessageHeader => 'Фрейм текстового сообщения:';
 
   @override
   String debugFrame_destinationPubKey(String pubKey) {
-    return '- ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ Ð¿Ð¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»Ñ: $pubKey';
+    return '- Публичный ключ получателя: $pubKey';
   }
 
   @override
   String debugFrame_timestamp(int timestamp) {
-    return '- Ð’Ñ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ Ð¼ÐµÑ‚ÐºÐ°: $timestamp';
+    return '- Временная метка: $timestamp';
   }
 
   @override
   String debugFrame_flags(String value) {
-    return '- Ð¤Ð»Ð°Ð³Ð¸: 0x$value';
+    return '- Флаги: 0x$value';
   }
 
   @override
   String debugFrame_textType(int type, String label) {
-    return '- Ð¢Ð¸Ð¿ Ñ‚ÐµÐºÑÑ‚Ð°: $type ($label)';
+    return '- Тип текста: $type ($label)';
   }
 
   @override
   String get debugFrame_textTypeCli => 'CLI';
 
   @override
-  String get debugFrame_textTypePlain => 'ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹';
+  String get debugFrame_textTypePlain => 'Обычный';
 
   @override
   String debugFrame_text(String text) {
-    return '- Ð¢ÐµÐºÑÑ‚: \"$text\"';
+    return '- Текст: \"$text\"';
   }
 
   @override
-  String get debugFrame_hexDump =>
-      'Ð¨ÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ð¹ Ð´Ð°Ð¼Ð¿:';
+  String get debugFrame_hexDump => 'Шестнадцатеричный дамп:';
 
   @override
-  String get chat_pathManagement => 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°Ð¼Ð¸';
+  String get chat_pathManagement => 'Управление маршрутами';
 
   @override
-  String get chat_ShowAllPaths => 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð²ÑÐµ Ð¿ÑƒÑ‚Ð¸';
+  String get chat_ShowAllPaths => 'Показать все пути';
 
   @override
-  String get chat_routingMode => 'Ð ÐµÐ¶Ð¸Ð¼ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸';
+  String get chat_routingMode => 'Режим маршрутизации';
 
   @override
-  String get chat_autoUseSavedPath =>
-      'ÐÐ²Ñ‚Ð¾ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ñ…Ñ€Ð°Ð½Ñ‘Ð½Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚)';
+  String get chat_autoUseSavedPath => 'Авто (использовать сохранённый маршрут)';
 
   @override
-  String get chat_forceFloodMode =>
-      'ÐŸÑ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸';
+  String get chat_forceFloodMode => 'Принудительный режим рассылки';
 
   @override
   String get chat_recentAckPaths =>
-      'ÐÐµÐ´Ð°Ð²Ð½Ð¸Ðµ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´Ñ‘Ð½Ð½Ñ‹Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ñ‹ (Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ):';
+      'Недавние подтверждённые маршруты (нажмите, чтобы использовать):';
 
   @override
   String get chat_pathHistoryFull =>
-      'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð² Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð°. Ð£Ð´Ð°Ð»Ð¸Ñ‚Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ðµ.';
+      'История маршрутов заполнена. Удалите записи, чтобы добавить новые.';
 
   @override
-  String get chat_hopSingular => 'Ñ…Ð¾Ð¿';
+  String get chat_hopSingular => 'хоп';
 
   @override
-  String get chat_hopPlural => 'Ñ…Ð¾Ð¿Ð¾Ð²';
+  String get chat_hopPlural => 'хопов';
 
   @override
   String chat_hopsCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      many: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      few: 'Ñ…Ð¾Ð¿Ð°',
-      one: 'Ñ…Ð¾Ð¿',
+      other: 'хопов',
+      many: 'хопов',
+      few: 'хопа',
+      one: 'хоп',
     );
     return '$count $_temp0';
   }
 
   @override
-  String get chat_successes => 'ÑƒÑÐ¿ÐµÑˆÐ½Ð¾';
+  String get chat_successes => 'успешно';
 
   @override
-  String get chat_removePath => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get chat_removePath => 'Удалить маршрут';
 
   @override
   String get chat_noPathHistoryYet =>
-      'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð² Ð¿Ð¾ÐºÐ° Ð¿ÑƒÑÑ‚Ð°.\nÐžÑ‚Ð¿Ñ€Ð°Ð²ÑŒÑ‚Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶Ð¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ñ‹.';
+      'История маршрутов пока пуста.\nОтправьте сообщение, чтобы обнаружить маршруты.';
 
   @override
-  String get chat_pathActions => 'Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Ñ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¾Ð¼:';
+  String get chat_pathActions => 'Действия с маршрутом:';
 
   @override
-  String get chat_setCustomPath =>
-      'Ð£ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ';
+  String get chat_setCustomPath => 'Указать маршрут вручную';
 
   @override
-  String get chat_setCustomPathSubtitle =>
-      'Ð’Ñ€ÑƒÑ‡Ð½ÑƒÑŽ Ð·Ð°Ð´Ð°Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸';
+  String get chat_setCustomPathSubtitle => 'Вручную задать маршрут передачи';
 
   @override
-  String get chat_clearPath => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get chat_clearPath => 'Очистить маршрут';
 
   @override
   String get chat_clearPathSubtitle =>
-      'ÐŸÑ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð¿Ñ€Ð¸ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐµ';
+      'Принудительно обновить маршрут при следующей отправке';
 
   @override
   String get chat_pathCleared =>
-      'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚ Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½. Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚.';
+      'Маршрут очищен. Следующее сообщение обновит маршрут.';
 
   @override
   String get chat_floodModeSubtitle =>
-      'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°Ñ‚ÐµÐ»ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² Ð¿Ð°Ð½ÐµÐ»Ð¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+      'Используйте переключатель маршрутизации в панели приложения';
 
   @override
   String get chat_floodModeEnabled =>
-      'Ð ÐµÐ¶Ð¸Ð¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½. ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ñ‡ÐµÑ€ÐµÐ· Ð·Ð½Ð°Ñ‡Ð¾Ðº Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² Ð¿Ð°Ð½ÐµÐ»Ð¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ.';
+      'Режим рассылки включён. Отключите через значок маршрутизации в панели приложения.';
 
   @override
-  String get chat_fullPath => 'ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get chat_fullPath => 'Полный маршрут';
 
   @override
   String get chat_pathDetailsNotAvailable =>
-      'Ð”ÐµÑ‚Ð°Ð»Ð¸ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð° ÐµÑ‰Ñ‘ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ.';
+      'Детали маршрута ещё недоступны. Попробуйте отправить сообщение для обновления.';
 
   @override
   String chat_pathSetHops(int hopCount, String status) {
     String _temp0 = intl.Intl.pluralLogic(
       hopCount,
       locale: localeName,
-      other: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      many: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      few: 'Ñ…Ð¾Ð¿Ð°',
-      one: 'Ñ…Ð¾Ð¿',
+      other: 'хопов',
+      many: 'хопов',
+      few: 'хопа',
+      one: 'хоп',
     );
-    return 'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½: $hopCount $_temp0 â€” $status';
+    return 'Маршрут установлен: $hopCount $_temp0 — $status';
   }
 
   @override
   String get chat_pathSavedLocally =>
-      'Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¾ Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾. ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÑÑŒ Ð´Ð»Ñ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸.';
+      'Сохранено локально. Подключитесь для синхронизации.';
 
   @override
-  String get chat_pathDeviceConfirmed =>
-      'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾Ð¼.';
+  String get chat_pathDeviceConfirmed => 'Подтверждено устройством.';
 
   @override
-  String get chat_pathDeviceNotConfirmed =>
-      'Ð•Ñ‰Ñ‘ Ð½Ðµ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾Ð¼.';
+  String get chat_pathDeviceNotConfirmed => 'Ещё не подтверждено устройством.';
 
   @override
-  String get chat_type => 'Ð¢Ð¸Ð¿';
+  String get chat_type => 'Тип';
 
   @override
-  String get chat_path => 'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get chat_path => 'Маршрут';
 
   @override
-  String get chat_publicKey => 'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡';
+  String get chat_publicKey => 'Публичный ключ';
 
   @override
-  String get chat_compressOutgoingMessages =>
-      'Ð¡Ð¶Ð¸Ð¼Ð°Ñ‚ÑŒ Ð¸ÑÑ…Ð¾Ð´ÑÑ‰Ð¸Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ';
+  String get chat_compressOutgoingMessages => 'Сжимать исходящие сообщения';
 
   @override
-  String get chat_floodForced =>
-      'Ð Ð°ÑÑÑ‹Ð»ÐºÐ° (Ð¿Ñ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾)';
+  String get chat_floodForced => 'Рассылка (принудительно)';
 
   @override
-  String get chat_directForced => 'ÐŸÑ€ÑÐ¼Ð¾Ð¹ (Ð¿Ñ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾)';
+  String get chat_directForced => 'Прямой (принудительно)';
 
   @override
   String chat_hopsForced(int count) {
-    return '$count Ñ…Ð¾Ð¿(Ð¾Ð²) (Ð¿Ñ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾)';
+    return '$count хоп(ов) (принудительно)';
   }
 
   @override
-  String get chat_floodAuto => 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ° (Ð°Ð²Ñ‚Ð¾)';
+  String get chat_floodAuto => 'Рассылка (авто)';
 
   @override
-  String get chat_direct => 'ÐŸÑ€ÑÐ¼Ð¾Ð¹';
+  String get chat_direct => 'Прямой';
 
   @override
-  String get chat_poiShared =>
-      'Ð¢Ð¾Ñ‡ÐºÐ° Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð°';
+  String get chat_poiShared => 'Точка интереса отправлена';
 
   @override
   String chat_unread(int count) {
-    return 'ÐÐµÐ¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ñ‹Ñ…: $count';
+    return 'Непрочитанных: $count';
   }
 
   @override
-  String get chat_openLink => 'ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ?';
+  String get chat_openLink => 'Открыть ссылку?';
 
   @override
   String get chat_openLinkConfirmation =>
-      'Ð¥Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ ÑÑ‚Ñƒ ÑÑÑ‹Ð»ÐºÑƒ Ð² Ð²Ð°ÑˆÐµÐ¼ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ðµ?';
+      'Хотите открыть эту ссылку в вашем браузере?';
 
   @override
-  String get chat_open => 'ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ';
+  String get chat_open => 'Открыть';
 
   @override
   String chat_couldNotOpenLink(String url) {
-    return 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ: $url';
+    return 'Не удалось открыть ссылку: $url';
   }
 
   @override
-  String get chat_invalidLink =>
-      'ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ ÑÑÑ‹Ð»ÐºÐ¸';
+  String get chat_invalidLink => 'Неправильный формат ссылки';
 
   @override
-  String get map_title => 'ÐšÐ°Ñ€Ñ‚Ð° Ð½Ð¾Ð´';
+  String get map_title => 'Карта нод';
 
   @override
-  String get map_lineOfSight => 'Ð›Ð¸Ð½Ð¸Ñ Ð²Ð¸Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸';
+  String get map_lineOfSight => 'Линия видимости';
 
   @override
-  String get map_losScreenTitle => 'Ð›Ð¸Ð½Ð¸Ñ Ð²Ð¸Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸';
+  String get map_losScreenTitle => 'Линия видимости';
 
   @override
-  String get map_noNodesWithLocation =>
-      'ÐÐµÑ‚ Ð½Ð¾Ð´ Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð¾ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¸';
+  String get map_noNodesWithLocation => 'Нет нод с данными о местоположении';
 
   @override
   String get map_nodesNeedGps =>
-      'ÐÐ¾Ð´Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¸ GPS-ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒÑÑ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ';
+      'Ноды должны передавать свои GPS-координаты, чтобы отображаться на карте';
 
   @override
   String map_nodesCount(int count) {
-    return 'ÐÐ¾Ð´: $count';
+    return 'Нод: $count';
   }
 
   @override
   String map_pinsCount(int count) {
-    return 'ÐœÐµÑ‚Ð¾Ðº: $count';
+    return 'Меток: $count';
   }
 
   @override
-  String get map_chat => 'Ð§Ð°Ñ‚';
+  String get map_chat => 'Чат';
 
   @override
-  String get map_repeater => 'Ð ÐµÐ¿Ð¸Ñ‚ÐµÑ€';
+  String get map_repeater => 'Репитер';
 
   @override
-  String get map_room => 'ÐšÐ¾Ð¼Ð½Ð°Ñ‚Ð°';
+  String get map_room => 'Комната';
 
   @override
-  String get map_sensor => 'Ð¡ÐµÐ½ÑÐ¾Ñ€';
+  String get map_sensor => 'Сенсор';
 
   @override
-  String get map_pinDm => 'ÐœÐµÑ‚ÐºÐ° (Ð›Ð¡)';
+  String get map_pinDm => 'Метка (ЛС)';
 
   @override
-  String get map_pinPrivate => 'ÐœÐµÑ‚ÐºÐ° (ÐŸÑ€Ð¸Ð²Ð°Ñ‚Ð½Ð°Ñ)';
+  String get map_pinPrivate => 'Метка (Приватная)';
 
   @override
-  String get map_pinPublic => 'ÐœÐµÑ‚ÐºÐ° (ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð°Ñ)';
+  String get map_pinPublic => 'Метка (Публичная)';
 
   @override
-  String get map_lastSeen => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÐµÐµ Ð¿Ð¾ÑÐ²Ð»ÐµÐ½Ð¸Ðµ';
+  String get map_lastSeen => 'Последнее появление';
 
   @override
   String get map_disconnectConfirm =>
-      'Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ð¾Ñ‚ ÑÑ‚Ð¾Ð³Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°?';
+      'Вы уверены, что хотите отключиться от этого устройства?';
 
   @override
-  String get map_from => 'ÐžÑ‚';
+  String get map_from => 'От';
 
   @override
-  String get map_source => 'Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº';
+  String get map_source => 'Источник';
 
   @override
-  String get map_flags => 'Ð¤Ð»Ð°Ð³Ð¸';
+  String get map_flags => 'Флаги';
 
   @override
-  String get map_shareMarkerHere =>
-      'ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð¼ÐµÑ‚ÐºÐ¾Ð¹ Ð·Ð´ÐµÑÑŒ';
+  String get map_shareMarkerHere => 'Поделиться меткой здесь';
 
   @override
-  String get map_pinLabel => 'ÐœÐµÑ‚ÐºÐ°';
+  String get map_pinLabel => 'Метка';
 
   @override
-  String get map_label => 'ÐŸÐ¾Ð´Ð¿Ð¸ÑÑŒ';
+  String get map_label => 'Подпись';
 
   @override
-  String get map_pointOfInterest => 'Ð¢Ð¾Ñ‡ÐºÐ° Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÐ°';
+  String get map_pointOfInterest => 'Точка интереса';
 
   @override
-  String get map_sendToContact => 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñƒ';
+  String get map_sendToContact => 'Отправить контакту';
 
   @override
-  String get map_sendToChannel => 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð² ÐºÐ°Ð½Ð°Ð»';
+  String get map_sendToChannel => 'Отправить в канал';
 
   @override
-  String get map_noChannelsAvailable =>
-      'ÐÐµÑ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ñ… ÐºÐ°Ð½Ð°Ð»Ð¾Ð²';
+  String get map_noChannelsAvailable => 'Нет доступных каналов';
 
   @override
-  String get map_publicLocationShare =>
-      'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð°Ñ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð° Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get map_publicLocationShare => 'Публичная передача местоположения';
 
   @override
   String map_publicLocationShareConfirm(String channelLabel) {
-    return 'Ð’Ñ‹ ÑÐ¾Ð±Ð¸Ñ€Ð°ÐµÑ‚ÐµÑÑŒ Ð¿Ð¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÐ¼ Ð² $channelLabel. Ð­Ñ‚Ð¾Ñ‚ ÐºÐ°Ð½Ð°Ð» Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹, Ð¸ Ð»ÑŽÐ±Ð¾Ð¹, Ñƒ ÐºÐ¾Ð³Ð¾ ÐµÑÑ‚ÑŒ PSK, ÑÐ¼Ð¾Ð¶ÐµÑ‚ ÐµÐ³Ð¾ ÑƒÐ²Ð¸Ð´ÐµÑ‚ÑŒ.';
+    return 'Вы собираетесь поделиться местоположением в $channelLabel. Этот канал публичный, и любой, у кого есть PSK, сможет его увидеть.';
   }
 
   @override
   String get map_connectToShareMarkers =>
-      'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÐµÑÑŒ Ðº ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ñƒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ð¼ÐµÑ‚ÐºÐ°Ð¼Ð¸';
+      'Подключитесь к устройству, чтобы делиться метками';
 
   @override
-  String get map_filterNodes => 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð½Ð¾Ð´';
+  String get map_filterNodes => 'Фильтр нод';
 
   @override
-  String get map_nodeTypes => 'Ð¢Ð¸Ð¿Ñ‹ Ð½Ð¾Ð´';
+  String get map_nodeTypes => 'Типы нод';
 
   @override
-  String get map_chatNodes => 'Ð§Ð°Ñ‚-Ð½Ð¾Ð´Ñ‹';
+  String get map_chatNodes => 'Чат-ноды';
 
   @override
-  String get map_repeaters => 'Ð ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹';
+  String get map_repeaters => 'Репитеры';
 
   @override
-  String get map_otherNodes => 'Ð”Ñ€ÑƒÐ³Ð¸Ðµ Ð½Ð¾Ð´Ñ‹';
+  String get map_otherNodes => 'Другие ноды';
 
   @override
-  String get map_keyPrefix => 'ÐŸÑ€ÐµÑ„Ð¸ÐºÑ ÐºÐ»ÑŽÑ‡Ð°';
+  String get map_keyPrefix => 'Префикс ключа';
 
   @override
-  String get map_filterByKeyPrefix =>
-      'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¿Ð¾ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑƒ ÐºÐ»ÑŽÑ‡Ð°';
+  String get map_filterByKeyPrefix => 'Фильтр по префиксу ключа';
 
   @override
-  String get map_publicKeyPrefix =>
-      'ÐŸÑ€ÐµÑ„Ð¸ÐºÑ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ»ÑŽÑ‡Ð°';
+  String get map_publicKeyPrefix => 'Префикс публичного ключа';
 
   @override
-  String get map_markers => 'ÐœÐµÑ‚ÐºÐ¸';
+  String get map_markers => 'Метки';
 
   @override
-  String get map_showSharedMarkers =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¾Ð±Ñ‰Ð¸Ðµ Ð¼ÐµÑ‚ÐºÐ¸';
+  String get map_showSharedMarkers => 'Показывать общие метки';
 
   @override
-  String get map_lastSeenTime =>
-      'Ð’Ñ€ÐµÐ¼Ñ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð¿Ð¾ÑÐ²Ð»ÐµÐ½Ð¸Ñ';
+  String get map_lastSeenTime => 'Время последнего появления';
 
   @override
-  String get map_sharedPin => 'ÐžÐ±Ñ‰Ð°Ñ Ð¼ÐµÑ‚ÐºÐ°';
+  String get map_sharedPin => 'Общая метка';
 
   @override
-  String get map_joinRoom => 'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ðµ';
+  String get map_joinRoom => 'Присоединиться к комнате';
 
   @override
-  String get map_manageRepeater => 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð¼';
+  String get map_manageRepeater => 'Управление репитером';
 
   @override
-  String get map_tapToAdd =>
-      'ÐÐ°Ð¶Ð¸Ð¼Ð°Ð¹Ñ‚Ðµ Ð½Ð° ÑƒÐ·Ð»Ñ‹, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¸Ñ… Ð² Ð¿ÑƒÑ‚ÑŒ.';
+  String get map_tapToAdd => 'Нажимайте на узлы, чтобы добавить их в путь.';
 
   @override
-  String get map_runTrace =>
-      'Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ñ‚Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÑƒ Ð¿ÑƒÑ‚Ð¸';
+  String get map_runTrace => 'Запустить трассировку пути';
 
   @override
-  String get map_removeLast => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹';
+  String get map_removeLast => 'Удалить последний';
 
   @override
-  String get map_pathTraceCancelled =>
-      'ÐžÑ‚Ð¼ÐµÐ½Ð° Ñ‚Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ¸ Ð¿ÑƒÑ‚Ð¸';
+  String get map_pathTraceCancelled => 'Отмена трассировки пути';
 
   @override
-  String get mapCache_title => 'ÐšÑÑˆ Ð¾Ñ„Ð»Ð°Ð¹Ð½-ÐºÐ°Ñ€Ñ‚Ñ‹';
+  String get mapCache_title => 'Кэш офлайн-карты';
 
   @override
   String get mapCache_selectAreaFirst =>
-      'Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ Ð´Ð»Ñ ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+      'Сначала выберите область для кэширования';
 
   @override
   String get mapCache_noTilesToDownload =>
-      'ÐÐµÑ‚ Ð¿Ð»Ð¸Ñ‚Ð¾Ðº Ð´Ð»Ñ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð² ÑÑ‚Ð¾Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸';
+      'Нет плиток для загрузки в этой области';
 
   @override
-  String get mapCache_downloadTilesTitle => 'Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð¿Ð»Ð¸Ñ‚ÐºÐ¸';
+  String get mapCache_downloadTilesTitle => 'Загрузить плитки';
 
   @override
   String mapCache_downloadTilesPrompt(int count) {
-    return 'Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ $count Ð¿Ð»Ð¸Ñ‚Ð¾Ðº Ð´Ð»Ñ Ð¾Ñ„Ð»Ð°Ð¹Ð½-Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ?';
+    return 'Загрузить $count плиток для офлайн-использования?';
   }
 
   @override
-  String get mapCache_downloadAction => 'Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ';
+  String get mapCache_downloadAction => 'Загрузить';
 
   @override
   String mapCache_cachedTiles(int count) {
-    return 'Ð—Ð°ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¾ $count Ð¿Ð»Ð¸Ñ‚Ð¾Ðº';
+    return 'Закэшировано $count плиток';
   }
 
   @override
   String mapCache_cachedTilesWithFailed(int downloaded, int failed) {
-    return 'Ð—Ð°ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¾ $downloaded Ð¿Ð»Ð¸Ñ‚Ð¾Ðº ($failed Ð½Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ¶ÐµÐ½Ð¾)';
+    return 'Закэшировано $downloaded плиток ($failed не загружено)';
   }
 
   @override
-  String get mapCache_clearOfflineCacheTitle =>
-      'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¾Ñ„Ð»Ð°Ð¹Ð½-ÐºÑÑˆ';
+  String get mapCache_clearOfflineCacheTitle => 'Очистить офлайн-кэш';
 
   @override
   String get mapCache_clearOfflineCachePrompt =>
-      'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ð·Ð°ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð»Ð¸Ñ‚ÐºÐ¸ ÐºÐ°Ñ€Ñ‚Ñ‹?';
+      'Удалить все закэшированные плитки карты?';
 
   @override
-  String get mapCache_offlineCacheCleared => 'ÐžÑ„Ð»Ð°Ð¹Ð½-ÐºÑÑˆ Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½';
+  String get mapCache_offlineCacheCleared => 'Офлайн-кэш очищен';
 
   @override
-  String get mapCache_noAreaSelected => 'ÐžÐ±Ð»Ð°ÑÑ‚ÑŒ Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð°';
+  String get mapCache_noAreaSelected => 'Область не выбрана';
 
   @override
-  String get mapCache_cacheArea => 'ÐžÐ±Ð»Ð°ÑÑ‚ÑŒ ÐºÑÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+  String get mapCache_cacheArea => 'Область кэширования';
 
   @override
-  String get mapCache_useCurrentView =>
-      'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð²Ð¸Ð´';
+  String get mapCache_useCurrentView => 'Использовать текущий вид';
 
   @override
-  String get mapCache_zoomRange => 'Ð”Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ Ð¼Ð°ÑÑˆÑ‚Ð°Ð±Ð°';
+  String get mapCache_zoomRange => 'Диапазон масштаба';
 
   @override
   String mapCache_estimatedTiles(int count) {
-    return 'ÐžÑ†ÐµÐ½Ð¾Ñ‡Ð½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð»Ð¸Ñ‚Ð¾Ðº: $count';
+    return 'Оценочное количество плиток: $count';
   }
 
   @override
   String mapCache_downloadedTiles(int completed, int total) {
-    return 'Ð—Ð°Ð³Ñ€ÑƒÐ¶ÐµÐ½Ð¾ $completed Ð¸Ð· $total';
+    return 'Загружено $completed из $total';
   }
 
   @override
-  String get mapCache_downloadTilesButton => 'Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð¿Ð»Ð¸Ñ‚ÐºÐ¸';
+  String get mapCache_downloadTilesButton => 'Загрузить плитки';
 
   @override
-  String get mapCache_clearCacheButton => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ ÐºÑÑˆ';
+  String get mapCache_clearCacheButton => 'Очистить кэш';
 
   @override
   String mapCache_failedDownloads(int count) {
-    return 'ÐÐµÑƒÐ´Ð°Ñ‡Ð½Ñ‹Ñ… Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¾Ðº: $count';
+    return 'Неудачных загрузок: $count';
   }
 
   @override
@@ -1649,134 +1607,133 @@ class AppLocalizationsRu extends AppLocalizations {
     String east,
     String west,
   ) {
-    return 'Ð¡ $north, Ð® $south, Ð’ $east, Ð— $west';
+    return 'С $north, Ю $south, В $east, З $west';
   }
 
   @override
-  String get time_justNow => 'Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚Ð¾';
+  String get time_justNow => 'Только что';
 
   @override
   String time_minutesAgo(int minutes) {
-    return '$minutes Ð¼Ð¸Ð½ Ð½Ð°Ð·Ð°Ð´';
+    return '$minutes мин назад';
   }
 
   @override
   String time_hoursAgo(int hours) {
-    return '$hours Ñ‡ Ð½Ð°Ð·Ð°Ð´';
+    return '$hours ч назад';
   }
 
   @override
   String time_daysAgo(int days) {
-    return '$days Ð´Ð½. Ð½Ð°Ð·Ð°Ð´';
+    return '$days дн. назад';
   }
 
   @override
-  String get time_hour => 'Ñ‡Ð°Ñ';
+  String get time_hour => 'час';
 
   @override
-  String get time_hours => 'Ñ‡Ð°ÑÐ¾Ð²';
+  String get time_hours => 'часов';
 
   @override
-  String get time_day => 'Ð´ÐµÐ½ÑŒ';
+  String get time_day => 'день';
 
   @override
-  String get time_days => 'Ð´Ð½ÐµÐ¹';
+  String get time_days => 'дней';
 
   @override
-  String get time_week => 'Ð½ÐµÐ´ÐµÐ»Ñ';
+  String get time_week => 'неделя';
 
   @override
-  String get time_weeks => 'Ð½ÐµÐ´ÐµÐ»ÑŒ';
+  String get time_weeks => 'недель';
 
   @override
-  String get time_month => 'Ð¼ÐµÑÑÑ†';
+  String get time_month => 'месяц';
 
   @override
-  String get time_months => 'Ð¼ÐµÑÑÑ†ÐµÐ²';
+  String get time_months => 'месяцев';
 
   @override
-  String get time_minutes => 'Ð¼Ð¸Ð½ÑƒÑ‚';
+  String get time_minutes => 'минут';
 
   @override
-  String get time_allTime => 'Ð’ÑÑ‘ Ð²Ñ€ÐµÐ¼Ñ';
+  String get time_allTime => 'Всё время';
 
   @override
-  String get dialog_disconnect => 'ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ';
+  String get dialog_disconnect => 'Отключиться';
 
   @override
   String get dialog_disconnectConfirm =>
-      'Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ð¾Ñ‚ ÑÑ‚Ð¾Ð³Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°?';
+      'Вы уверены, что хотите отключиться от этого устройства?';
 
   @override
-  String get login_repeaterLogin => 'Ð’Ñ…Ð¾Ð´ Ð² Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€';
+  String get login_repeaterLogin => 'Вход в репитер';
 
   @override
-  String get login_roomLogin => 'Ð’Ñ…Ð¾Ð´ Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+  String get login_roomLogin => 'Вход на сервер комнат';
 
   @override
-  String get login_password => 'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ';
+  String get login_password => 'Пароль';
 
   @override
-  String get login_enterPassword => 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ';
+  String get login_enterPassword => 'Введите пароль';
 
   @override
-  String get login_savePassword => 'Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ';
+  String get login_savePassword => 'Сохранить пароль';
 
   @override
   String get login_savePasswordSubtitle =>
-      'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð±ÑƒÐ´ÐµÑ‚ Ð½Ð°Ð´Ñ‘Ð¶Ð½Ð¾ ÑÐ¾Ñ…Ñ€Ð°Ð½Ñ‘Ð½ Ð½Ð° ÑÑ‚Ð¾Ð¼ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ðµ';
+      'Пароль будет надёжно сохранён на этом устройстве';
 
   @override
   String get login_repeaterDescription =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð° Ð´Ð»Ñ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ðº Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ð¼ Ð¸ ÑÑ‚Ð°Ñ‚ÑƒÑÑƒ.';
+      'Введите пароль репитера для доступа к настройкам и статусу.';
 
   @override
   String get login_roomDescription =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹ Ð´Ð»Ñ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ðº Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ð¼ Ð¸ ÑÑ‚Ð°Ñ‚ÑƒÑÑƒ.';
+      'Введите пароль комнаты для доступа к настройкам и статусу.';
 
   @override
-  String get login_routing => 'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ñ';
+  String get login_routing => 'Маршрутизация';
 
   @override
-  String get login_routingMode => 'Ð ÐµÐ¶Ð¸Ð¼ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸';
+  String get login_routingMode => 'Режим маршрутизации';
 
   @override
   String get login_autoUseSavedPath =>
-      'ÐÐ²Ñ‚Ð¾ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ñ…Ñ€Ð°Ð½Ñ‘Ð½Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚)';
+      'Авто (использовать сохранённый маршрут)';
 
   @override
-  String get login_forceFloodMode =>
-      'ÐŸÑ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸';
+  String get login_forceFloodMode => 'Принудительный режим рассылки';
 
   @override
-  String get login_managePaths => 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°Ð¼Ð¸';
+  String get login_managePaths => 'Управление маршрутами';
 
   @override
-  String get login_login => 'Ð’Ð¾Ð¹Ñ‚Ð¸';
+  String get login_login => 'Войти';
 
   @override
   String login_attempt(int current, int max) {
-    return 'ÐŸÐ¾Ð¿Ñ‹Ñ‚ÐºÐ° $current/$max';
+    return 'Попытка $current/$max';
   }
 
   @override
   String login_failed(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ñ…Ð¾Ð´Ð°: $error';
+    return 'Ошибка входа: $error';
   }
 
   @override
   String get login_failedMessage =>
-      'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð²Ð¾Ð¹Ñ‚Ð¸. Ð›Ð¸Ð±Ð¾ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð½ÐµÐ²ÐµÑ€ÐµÐ½, Ð»Ð¸Ð±Ð¾ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½.';
+      'Не удалось войти. Либо пароль неверен, либо репитер недоступен.';
 
   @override
-  String get common_reload => 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ';
+  String get common_reload => 'Обновить';
 
   @override
-  String get common_clear => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ';
+  String get common_clear => 'Очистить';
 
   @override
   String path_currentPath(String path) {
-    return 'Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚: $path';
+    return 'Текущий маршрут: $path';
   }
 
   @override
@@ -1784,185 +1741,171 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      many: 'Ñ…Ð¾Ð¿Ð¾Ð²',
-      few: 'Ñ…Ð¾Ð¿Ð°',
-      one: 'Ñ…Ð¾Ð¿',
+      other: 'хопов',
+      many: 'хопов',
+      few: 'хопа',
+      one: 'хоп',
     );
-    return 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð¸Ð· $count $_temp0';
+    return 'Используется маршрут из $count $_temp0';
   }
 
   @override
-  String get path_enterCustomPath =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ';
+  String get path_enterCustomPath => 'Введите маршрут вручную';
 
   @override
-  String get path_currentPathLabel => 'Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get path_currentPathLabel => 'Текущий маршрут';
 
   @override
   String get path_hexPrefixInstructions =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2-ÑÐ¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ðµ ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ðµ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑ‹ Ð´Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ñ…Ð¾Ð¿Ð°, Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‘Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿ÑÑ‚Ñ‹Ð¼Ð¸.';
+      'Введите 2-символьные шестнадцатеричные префиксы для каждого хопа, разделённые запятыми.';
 
   @override
   String get path_hexPrefixExample =>
-      'ÐŸÑ€Ð¸Ð¼ÐµÑ€: A1,F2,3C (ÐºÐ°Ð¶Ð´Ñ‹Ð¹ ÑƒÐ·ÐµÐ» Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð±Ð°Ð¹Ñ‚ ÑÐ²Ð¾ÐµÐ³Ð¾ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ»ÑŽÑ‡Ð°)';
+      'Пример: A1,F2,3C (каждый узел использует первый байт своего публичного ключа)';
 
   @override
-  String get path_labelHexPrefixes =>
-      'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚ (ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ðµ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑ‹)';
+  String get path_labelHexPrefixes => 'Маршрут (шестнадцатеричные префиксы)';
 
   @override
   String get path_helperMaxHops =>
-      'ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ 64 Ñ…Ð¾Ð¿Ð°. ÐšÐ°Ð¶Ð´Ñ‹Ð¹ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑ â€” 2 ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ð° (1 Ð±Ð°Ð¹Ñ‚)';
+      'Максимум 64 хопа. Каждый префикс — 2 шестнадцатеричных символа (1 байт)';
 
   @override
-  String get path_selectFromContacts =>
-      'Ð˜Ð»Ð¸ Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð· ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²:';
+  String get path_selectFromContacts => 'Или выберите из контактов:';
 
   @override
-  String get path_noRepeatersFound =>
-      'Ð ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹ Ð¸Ð»Ð¸ ÑÐµÑ€Ð²ÐµÑ€Ñ‹ ÐºÐ¾Ð¼Ð½Ð°Ñ‚ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹.';
+  String get path_noRepeatersFound => 'Репитеры или серверы комнат не найдены.';
 
   @override
   String get path_customPathsRequire =>
-      'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ñ‹ Ñ‚Ñ€ÐµÐ±ÑƒÑŽÑ‚ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ñ‡Ð½Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð², ÑÐ¿Ð¾ÑÐ¾Ð±Ð½Ñ‹Ñ… Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ.';
+      'Пользовательские маршруты требуют промежуточных узлов, способных ретранслировать сообщения.';
 
   @override
   String path_invalidHexPrefixes(String prefixes) {
-    return 'ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ðµ ÑˆÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚ÐµÑ€Ð¸Ñ‡Ð½Ñ‹Ðµ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑ‹: $prefixes';
+    return 'Недопустимые шестнадцатеричные префиксы: $prefixes';
   }
 
   @override
-  String get path_tooLong =>
-      'ÐœÐ°Ñ€ÑˆÑ€ÑƒÑ‚ ÑÐ»Ð¸ÑˆÐºÐ¾Ð¼ Ð´Ð»Ð¸Ð½Ð½Ñ‹Ð¹. ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ 64 Ñ…Ð¾Ð¿Ð°.';
+  String get path_tooLong => 'Маршрут слишком длинный. Максимум 64 хопа.';
 
   @override
-  String get path_setPath => 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚';
+  String get path_setPath => 'Установить маршрут';
 
   @override
-  String get repeater_management => 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð¼';
+  String get repeater_management => 'Управление репитером';
 
   @override
-  String get room_management =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð¼ ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+  String get room_management => 'Управление сервером комнат';
 
   @override
-  String get repeater_managementTools =>
-      'Ð˜Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ';
+  String get repeater_managementTools => 'Инструменты управления';
 
   @override
-  String get repeater_status => 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ';
+  String get repeater_status => 'Статус';
 
   @override
   String get repeater_statusSubtitle =>
-      'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ ÑÑ‚Ð°Ñ‚ÑƒÑÐ°, ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð¸ ÑÐ¾ÑÐµÐ´ÐµÐ¹ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+      'Просмотр статуса, статистики и соседей репитера';
 
   @override
-  String get repeater_telemetry => 'Ð¢ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ñ';
+  String get repeater_telemetry => 'Телеметрия';
 
   @override
   String get repeater_telemetrySubtitle =>
-      'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ñ‚ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ð¸ Ð´Ð°Ñ‚Ñ‡Ð¸ÐºÐ¾Ð² Ð¸ ÑÐ¸ÑÑ‚ÐµÐ¼Ð½Ð¾Ð¹ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸';
+      'Просмотр телеметрии датчиков и системной статистики';
 
   @override
   String get repeater_cli => 'CLI';
 
   @override
-  String get repeater_cliSubtitle =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²ÐºÐ° ÐºÐ¾Ð¼Ð°Ð½Ð´ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñƒ';
+  String get repeater_cliSubtitle => 'Отправка команд репитеру';
 
   @override
-  String get repeater_neighbors => 'Ð¡Ð¾ÑÐµÐ´Ð¸';
+  String get repeater_neighbors => 'Соседи';
 
   @override
-  String get repeater_neighborsSubtitle =>
-      'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ ÑÐ¾ÑÐµÐ´ÐµÐ¹ Ð½Ð° Ð½ÑƒÐ»ÐµÐ²Ð¾Ð¼ Ñ…Ð¾Ð¿Ðµ.';
+  String get repeater_neighborsSubtitle => 'Просмотр соседей на нулевом хопе.';
 
   @override
-  String get repeater_settings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get repeater_settings => 'Настройки';
 
   @override
-  String get repeater_settingsSubtitle =>
-      'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_settingsSubtitle => 'Настройка параметров репитера';
 
   @override
-  String get repeater_statusTitle => 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_statusTitle => 'Статус репитера';
 
   @override
-  String get repeater_routingMode => 'Ð ÐµÐ¶Ð¸Ð¼ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð¸Ð·Ð°Ñ†Ð¸Ð¸';
+  String get repeater_routingMode => 'Режим маршрутизации';
 
   @override
   String get repeater_autoUseSavedPath =>
-      'ÐÐ²Ñ‚Ð¾ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¾Ñ…Ñ€Ð°Ð½Ñ‘Ð½Ð½Ñ‹Ð¹ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚)';
+      'Авто (использовать сохранённый маршрут)';
 
   @override
-  String get repeater_forceFloodMode =>
-      'ÐŸÑ€Ð¸Ð½ÑƒÐ´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸';
+  String get repeater_forceFloodMode => 'Принудительный режим рассылки';
 
   @override
-  String get repeater_pathManagement =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°Ð¼Ð¸';
+  String get repeater_pathManagement => 'Управление маршрутами';
 
   @override
-  String get repeater_refresh => 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ';
+  String get repeater_refresh => 'Обновить';
 
   @override
-  String get repeater_statusRequestTimeout =>
-      'Ð’Ñ€ÐµÐ¼Ñ Ð¾Ð¶Ð¸Ð´Ð°Ð½Ð¸Ñ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° Ð¸ÑÑ‚ÐµÐºÐ»Ð¾.';
+  String get repeater_statusRequestTimeout => 'Время ожидания статуса истекло.';
 
   @override
   String repeater_errorLoadingStatus(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ ÑÑ‚Ð°Ñ‚ÑƒÑÐ°: $error';
+    return 'Ошибка загрузки статуса: $error';
   }
 
   @override
-  String get repeater_systemInformation =>
-      'Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ';
+  String get repeater_systemInformation => 'Системная информация';
 
   @override
-  String get repeater_battery => 'Ð‘Ð°Ñ‚Ð°Ñ€ÐµÑ';
+  String get repeater_battery => 'Батарея';
 
   @override
-  String get repeater_clockAtLogin => 'Ð’Ñ€ÐµÐ¼Ñ (Ð¿Ñ€Ð¸ Ð²Ñ…Ð¾Ð´Ðµ)';
+  String get repeater_clockAtLogin => 'Время (при входе)';
 
   @override
-  String get repeater_uptime => 'Ð’Ñ€ÐµÐ¼Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹';
+  String get repeater_uptime => 'Время работы';
 
   @override
-  String get repeater_queueLength => 'Ð”Ð»Ð¸Ð½Ð° Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸';
+  String get repeater_queueLength => 'Длина очереди';
 
   @override
-  String get repeater_debugFlags => 'Ð¤Ð»Ð°Ð³Ð¸ Ð¾Ñ‚Ð»Ð°Ð´ÐºÐ¸';
+  String get repeater_debugFlags => 'Флаги отладки';
 
   @override
-  String get repeater_radioStatistics => 'Ð Ð°Ð´Ð¸Ð¾ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°';
+  String get repeater_radioStatistics => 'Радиостатистика';
 
   @override
-  String get repeater_lastRssi => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ RSSI';
+  String get repeater_lastRssi => 'Последний RSSI';
 
   @override
-  String get repeater_lastSnr => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ SNR';
+  String get repeater_lastSnr => 'Последний SNR';
 
   @override
-  String get repeater_noiseFloor => 'Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ ÑˆÑƒÐ¼Ð°';
+  String get repeater_noiseFloor => 'Уровень шума';
 
   @override
-  String get repeater_txAirtime => 'Ð’Ñ€ÐµÐ¼Ñ ÑÑ„Ð¸Ñ€Ð° (Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð°)';
+  String get repeater_txAirtime => 'Время эфира (передача)';
 
   @override
-  String get repeater_rxAirtime => 'Ð’Ñ€ÐµÐ¼Ñ ÑÑ„Ð¸Ñ€Ð° (Ð¿Ñ€Ð¸Ñ‘Ð¼)';
+  String get repeater_rxAirtime => 'Время эфира (приём)';
 
   @override
-  String get repeater_packetStatistics => 'Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð°ÐºÐµÑ‚Ð¾Ð²';
+  String get repeater_packetStatistics => 'Статистика пакетов';
 
   @override
-  String get repeater_sent => 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾';
+  String get repeater_sent => 'Отправлено';
 
   @override
-  String get repeater_received => 'ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¾';
+  String get repeater_received => 'Получено';
 
   @override
-  String get repeater_duplicates => 'Ð”ÑƒÐ±Ð»Ð¸ÐºÐ°Ñ‚Ñ‹';
+  String get repeater_duplicates => 'Дубликаты';
 
   @override
   String repeater_daysHoursMinsSecs(
@@ -1971,708 +1914,674 @@ class AppLocalizationsRu extends AppLocalizations {
     int minutes,
     int seconds,
   ) {
-    return '$days Ð´Ð½. $hoursÑ‡ $minutesÐ¼ $secondsÑ';
+    return '$days дн. $hoursч $minutesм $secondsс';
   }
 
   @override
   String repeater_packetTxTotal(int total, String flood, String direct) {
-    return 'Ð’ÑÐµÐ³Ð¾: $total, Ð Ð°ÑÑÑ‹Ð»ÐºÐ°: $flood, ÐŸÑ€ÑÐ¼Ñ‹Ðµ: $direct';
+    return 'Всего: $total, Рассылка: $flood, Прямые: $direct';
   }
 
   @override
   String repeater_packetRxTotal(int total, String flood, String direct) {
-    return 'Ð’ÑÐµÐ³Ð¾: $total, Ð Ð°ÑÑÑ‹Ð»ÐºÐ°: $flood, ÐŸÑ€ÑÐ¼Ñ‹Ðµ: $direct';
+    return 'Всего: $total, Рассылка: $flood, Прямые: $direct';
   }
 
   @override
   String repeater_duplicatesFloodDirect(String flood, String direct) {
-    return 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°: $flood, ÐŸÑ€ÑÐ¼Ñ‹Ðµ: $direct';
+    return 'Рассылка: $flood, Прямые: $direct';
   }
 
   @override
   String repeater_duplicatesTotal(int total) {
-    return 'Ð’ÑÐµÐ³Ð¾: $total';
+    return 'Всего: $total';
   }
 
   @override
-  String get repeater_settingsTitle => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_settingsTitle => 'Настройки репитера';
 
   @override
-  String get repeater_basicSettings => 'ÐžÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get repeater_basicSettings => 'Основные настройки';
 
   @override
-  String get repeater_repeaterName => 'Ð˜Ð¼Ñ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_repeaterName => 'Имя репитера';
 
   @override
-  String get repeater_repeaterNameHelper =>
-      'ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°ÐµÐ¼Ð¾Ðµ Ð¸Ð¼Ñ ÑÑ‚Ð¾Ð³Ð¾ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_repeaterNameHelper => 'Отображаемое имя этого репитера';
 
   @override
-  String get repeater_adminPassword =>
-      'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð°';
+  String get repeater_adminPassword => 'Пароль администратора';
 
   @override
-  String get repeater_adminPasswordHelper =>
-      'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ñ Ð¿Ð¾Ð»Ð½Ñ‹Ð¼ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð¾Ð¼';
+  String get repeater_adminPasswordHelper => 'Пароль с полным доступом';
 
   @override
-  String get repeater_guestPassword => 'Ð“Ð¾ÑÑ‚ÐµÐ²Ð¾Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ';
+  String get repeater_guestPassword => 'Гостевой пароль';
 
   @override
   String get repeater_guestPasswordHelper =>
-      'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð´Ð»Ñ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð° Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ';
+      'Пароль для доступа только для чтения';
 
   @override
-  String get repeater_radioSettings => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ñ€Ð°Ð´Ð¸Ð¾';
+  String get repeater_radioSettings => 'Настройки радио';
 
   @override
-  String get repeater_frequencyMhz => 'Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð° (ÐœÐ“Ñ†)';
+  String get repeater_frequencyMhz => 'Частота (МГц)';
 
   @override
-  String get repeater_frequencyHelper => '300â€“2500 ÐœÐ“Ñ†';
+  String get repeater_frequencyHelper => '300–2500 МГц';
 
   @override
-  String get repeater_txPower => 'ÐœÐ¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸';
+  String get repeater_txPower => 'Мощность передачи';
 
   @override
-  String get repeater_txPowerHelper => '1â€“30 Ð´Ð‘Ð¼';
+  String get repeater_txPowerHelper => '1–30 дБм';
 
   @override
-  String get repeater_bandwidth => 'ÐŸÐ¾Ð»Ð¾ÑÐ° Ð¿Ñ€Ð¾Ð¿ÑƒÑÐºÐ°Ð½Ð¸Ñ';
+  String get repeater_bandwidth => 'Полоса пропускания';
 
   @override
-  String get repeater_spreadingFactor =>
-      'ÐšÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ñ';
+  String get repeater_spreadingFactor => 'Коэффициент расширения';
 
   @override
-  String get repeater_codingRate =>
-      'ÐšÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+  String get repeater_codingRate => 'Коэффициент кодирования';
 
   @override
-  String get repeater_locationSettings =>
-      'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+  String get repeater_locationSettings => 'Настройки местоположения';
 
   @override
-  String get repeater_latitude => 'Ð¨Ð¸Ñ€Ð¾Ñ‚Ð°';
+  String get repeater_latitude => 'Широта';
 
   @override
   String get repeater_latitudeHelper =>
-      'Ð’ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ñ‹Ñ… Ð³Ñ€Ð°Ð´ÑƒÑÐ°Ñ… (Ð½Ð°Ð¿Ñ€., 37.7749)';
+      'В десятичных градусах (напр., 37.7749)';
 
   @override
-  String get repeater_longitude => 'Ð”Ð¾Ð»Ð³Ð¾Ñ‚Ð°';
+  String get repeater_longitude => 'Долгота';
 
   @override
   String get repeater_longitudeHelper =>
-      'Ð’ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ñ‹Ñ… Ð³Ñ€Ð°Ð´ÑƒÑÐ°Ñ… (Ð½Ð°Ð¿Ñ€., -122.4194)';
+      'В десятичных градусах (напр., -122.4194)';
 
   @override
-  String get repeater_features => 'Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¸';
+  String get repeater_features => 'Функции';
 
   @override
-  String get repeater_packetForwarding => 'ÐŸÐµÑ€ÐµÑÑ‹Ð»ÐºÐ° Ð¿Ð°ÐºÐµÑ‚Ð¾Ð²';
+  String get repeater_packetForwarding => 'Пересылка пакетов';
 
   @override
   String get repeater_packetForwardingSubtitle =>
-      'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñƒ Ð¿ÐµÑ€ÐµÑÑ‹Ð»Ð°Ñ‚ÑŒ Ð¿Ð°ÐºÐµÑ‚Ñ‹';
+      'Разрешить репитеру пересылать пакеты';
 
   @override
-  String get repeater_guestAccess => 'Ð“Ð¾ÑÑ‚ÐµÐ²Ð¾Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿';
+  String get repeater_guestAccess => 'Гостевой доступ';
 
   @override
   String get repeater_guestAccessSubtitle =>
-      'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð³Ð¾ÑÑ‚ÐµÐ²Ð¾Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ';
+      'Разрешить гостевой доступ только для чтения';
 
   @override
-  String get repeater_privacyMode =>
-      'Ð ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸';
+  String get repeater_privacyMode => 'Режим конфиденциальности';
 
   @override
   String get repeater_privacyModeSubtitle =>
-      'Ð¡ÐºÑ€Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ/Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð² Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÑÑ…';
+      'Скрывать имя/местоположение в оповещениях';
 
   @override
-  String get repeater_advertisementSettings =>
-      'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+  String get repeater_advertisementSettings => 'Настройки анонсирования';
 
   @override
-  String get repeater_localAdvertInterval =>
-      'Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ñ‹Ñ… Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¹';
+  String get repeater_localAdvertInterval => 'Интервал локальных анонсирований';
 
   @override
   String repeater_localAdvertIntervalMinutes(int minutes) {
-    return '$minutes Ð¼Ð¸Ð½ÑƒÑ‚';
+    return '$minutes минут';
   }
 
   @override
   String get repeater_floodAdvertInterval =>
-      'Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¹ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¾Ð¹ (flood)';
+      'Интервал анонсирований рассылкой (flood)';
 
   @override
   String repeater_floodAdvertIntervalHours(int hours) {
-    return '$hours Ñ‡Ð°ÑÐ¾Ð²';
+    return '$hours часов';
   }
 
   @override
   String get repeater_encryptedAdvertInterval =>
-      'Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» Ð·Ð°ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¹';
+      'Интервал зашифрованных анонсирований';
 
   @override
-  String get repeater_dangerZone => 'ÐžÐ¿Ð°ÑÐ½Ð°Ñ Ð·Ð¾Ð½Ð°';
+  String get repeater_dangerZone => 'Опасная зона';
 
   @override
-  String get repeater_rebootRepeater =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€';
+  String get repeater_rebootRepeater => 'Перезагрузить репитер';
 
   @override
   String get repeater_rebootRepeaterSubtitle =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+      'Перезапустить устройство репитера';
 
   @override
   String get repeater_rebootRepeaterConfirm =>
-      'Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿ÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑÑ‚Ð¾Ñ‚ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€?';
+      'Вы уверены, что хотите перезагрузить этот репитер?';
 
   @override
-  String get repeater_regenerateIdentityKey =>
-      'ÐŸÐµÑ€ÐµÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ»ÑŽÑ‡ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ†Ð¸Ð¸';
+  String get repeater_regenerateIdentityKey => 'Пересоздать ключ идентификации';
 
   @override
   String get repeater_regenerateIdentityKeySubtitle =>
-      'Ð¡Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð¾Ð²ÑƒÑŽ Ð¿Ð°Ñ€Ñƒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð³Ð¾/Ð¿Ñ€Ð¸Ð²Ð°Ñ‚Ð½Ð¾Ð³Ð¾ ÐºÐ»ÑŽÑ‡ÐµÐ¹';
+      'Сгенерировать новую пару публичного/приватного ключей';
 
   @override
   String get repeater_regenerateIdentityKeyConfirm =>
-      'Ð­Ñ‚Ð¾ ÑÐ¾Ð·Ð´Ð°ÑÑ‚ Ð½Ð¾Ð²ÑƒÑŽ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?';
+      'Это создаст новую идентичность для репитера. Продолжить?';
 
   @override
-  String get repeater_eraseFileSystem =>
-      'Ð¡Ñ‚ÐµÑ€ÐµÑ‚ÑŒ Ñ„Ð°Ð¹Ð»Ð¾Ð²ÑƒÑŽ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ';
+  String get repeater_eraseFileSystem => 'Стереть файловую систему';
 
   @override
   String get repeater_eraseFileSystemSubtitle =>
-      'ÐžÑ‚Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ð¾Ð²ÑƒÑŽ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+      'Отформатировать файловую систему репитера';
 
   @override
   String get repeater_eraseFileSystemConfirm =>
-      'Ð’ÐÐ˜ÐœÐÐÐ˜Ð•: ÑÑ‚Ð¾ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ Ð²ÑÐµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð½Ð° Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ðµ. Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ð½ÐµÐ»ÑŒÐ·Ñ Ð¾Ñ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ!';
+      'ВНИМАНИЕ: это удалит все данные на репитере. Действие нельзя отменить!';
 
   @override
   String get repeater_eraseSerialOnly =>
-      'ÐžÑ‡Ð¸ÑÑ‚ÐºÐ° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð° Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½ÑƒÑŽ ÐºÐ¾Ð½ÑÐ¾Ð»ÑŒ.';
+      'Очистка доступна только через последовательную консоль.';
 
   @override
   String repeater_commandSent(String command) {
-    return 'ÐšÐ¾Ð¼Ð°Ð½Ð´Ð° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð°: $command';
+    return 'Команда отправлена: $command';
   }
 
   @override
   String repeater_errorSendingCommand(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹: $error';
+    return 'Ошибка отправки команды: $error';
   }
 
   @override
-  String get repeater_confirm => 'ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ';
+  String get repeater_confirm => 'Подтвердить';
 
   @override
-  String get repeater_settingsSaved =>
-      'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹';
+  String get repeater_settingsSaved => 'Настройки успешно сохранены';
 
   @override
   String repeater_errorSavingSettings(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº: $error';
+    return 'Ошибка сохранения настроек: $error';
   }
 
   @override
-  String get repeater_refreshBasicSettings =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¾ÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get repeater_refreshBasicSettings => 'Обновить основные настройки';
 
   @override
-  String get repeater_refreshRadioSettings =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ñ€Ð°Ð´Ð¸Ð¾';
+  String get repeater_refreshRadioSettings => 'Обновить настройки радио';
 
   @override
-  String get repeater_refreshTxPower =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸';
+  String get repeater_refreshTxPower => 'Обновить мощность передачи';
 
   @override
   String get repeater_refreshLocationSettings =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+      'Обновить настройки местоположения';
 
   @override
-  String get repeater_refreshPacketForwarding =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿ÐµÑ€ÐµÑÑ‹Ð»ÐºÑƒ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð²';
+  String get repeater_refreshPacketForwarding => 'Обновить пересылку пакетов';
 
   @override
-  String get repeater_refreshGuestAccess =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð³Ð¾ÑÑ‚ÐµÐ²Ð¾Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿';
+  String get repeater_refreshGuestAccess => 'Обновить гостевой доступ';
 
   @override
-  String get repeater_refreshPrivacyMode =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ€ÐµÐ¶Ð¸Ð¼ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸';
+  String get repeater_refreshPrivacyMode => 'Обновить режим конфиденциальности';
 
   @override
   String get repeater_refreshAdvertisementSettings =>
-      'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¹';
+      'Обновить настройки анонсирований';
 
   @override
   String repeater_refreshed(String label) {
-    return '$label Ð¾Ð±Ð½Ð¾Ð²Ð»Ñ‘Ð½';
+    return '$label обновлён';
   }
 
   @override
   String repeater_errorRefreshing(String label) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ $label';
+    return 'Ошибка обновления $label';
   }
 
   @override
-  String get repeater_cliTitle => 'CLI Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð°';
+  String get repeater_cliTitle => 'CLI репитера';
 
   @override
-  String get repeater_debugNextCommand =>
-      'ÐžÑ‚Ð»Ð°Ð´ÐºÐ° ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹';
+  String get repeater_debugNextCommand => 'Отладка следующей команды';
 
   @override
-  String get repeater_commandHelp => 'Ð¡Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¿Ð¾ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°Ð¼';
+  String get repeater_commandHelp => 'Справка по командам';
 
   @override
-  String get repeater_clearHistory => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÑŽ';
+  String get repeater_clearHistory => 'Очистить историю';
 
   @override
-  String get repeater_noCommandsSent =>
-      'ÐšÐ¾Ð¼Ð°Ð½Ð´Ñ‹ ÐµÑ‰Ñ‘ Ð½Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐ»Ð¸ÑÑŒ';
+  String get repeater_noCommandsSent => 'Команды ещё не отправлялись';
 
   @override
   String get repeater_typeCommandOrUseQuick =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ Ð½Ð¸Ð¶Ðµ Ð¸Ð»Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð±Ñ‹ÑÑ‚Ñ€Ñ‹Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹';
+      'Введите команду ниже или используйте быстрые команды';
 
   @override
-  String get repeater_enterCommandHint => 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ...';
+  String get repeater_enterCommandHint => 'Введите команду...';
 
   @override
-  String get repeater_previousCommand => 'ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰Ð°Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°';
+  String get repeater_previousCommand => 'Предыдущая команда';
 
   @override
-  String get repeater_nextCommand => 'Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰Ð°Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°';
+  String get repeater_nextCommand => 'Следующая команда';
 
   @override
-  String get repeater_enterCommandFirst =>
-      'Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ';
+  String get repeater_enterCommandFirst => 'Сначала введите команду';
 
   @override
-  String get repeater_cliCommandFrameTitle => 'Ð¤Ñ€ÐµÐ¹Ð¼ CLI-ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹';
+  String get repeater_cliCommandFrameTitle => 'Фрейм CLI-команды';
 
   @override
   String repeater_cliCommandError(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ°: $error';
+    return 'Ошибка: $error';
   }
 
   @override
-  String get repeater_cliQuickGetName => 'ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¸Ð¼Ñ';
+  String get repeater_cliQuickGetName => 'Получить имя';
 
   @override
-  String get repeater_cliQuickGetRadio => 'ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ñ€Ð°Ð´Ð¸Ð¾';
+  String get repeater_cliQuickGetRadio => 'Получить радио';
 
   @override
-  String get repeater_cliQuickGetTx => 'ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ TX';
+  String get repeater_cliQuickGetTx => 'Получить TX';
 
   @override
-  String get repeater_cliQuickNeighbors => 'Ð¡Ð¾ÑÐµÐ´Ð¸';
+  String get repeater_cliQuickNeighbors => 'Соседи';
 
   @override
-  String get repeater_cliQuickVersion => 'Ð’ÐµÑ€ÑÐ¸Ñ';
+  String get repeater_cliQuickVersion => 'Версия';
 
   @override
-  String get repeater_cliQuickAdvertise => 'ÐÐ½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ';
+  String get repeater_cliQuickAdvertise => 'Анонсировать';
 
   @override
-  String get repeater_cliQuickClock => 'Ð’Ñ€ÐµÐ¼Ñ';
+  String get repeater_cliQuickClock => 'Время';
 
   @override
-  String get repeater_cliHelpAdvert =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÑ‚ Ð¿Ð°ÐºÐµÑ‚ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
+  String get repeater_cliHelpAdvert => 'Отправляет пакет анонсирования';
 
   @override
   String get repeater_cliHelpReboot =>
-      'ÐŸÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ¶Ð°ÐµÑ‚ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾. (Ð¾Ð±Ñ‹Ñ‡Ð½Ð¾ Ð²Ñ‹ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚Ðµ Â«Ð¢Ð°Ð¹Ð¼-Ð°ÑƒÑ‚Â» â€” ÑÑ‚Ð¾ Ð½Ð¾Ñ€Ð¼Ð°Ð»ÑŒÐ½Ð¾)';
+      'Перезагружает устройство. (обычно вы получите «Тайм-аут» — это нормально)';
 
   @override
   String get repeater_cliHelpClock =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ Ñ‚ÐµÐºÑƒÑ‰ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ð¿Ð¾ Ñ‡Ð°ÑÐ°Ð¼ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°.';
+      'Показывает текущее время по часам устройства.';
 
   @override
   String get repeater_cliHelpPassword =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð½Ð¾Ð²Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð° Ð´Ð»Ñ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°.';
+      'Устанавливает новый пароль администратора для устройства.';
 
   @override
   String get repeater_cliHelpVersion =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ Ð²ÐµÑ€ÑÐ¸ÑŽ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð° Ð¸ Ð´Ð°Ñ‚Ñƒ ÑÐ±Ð¾Ñ€ÐºÐ¸ Ð¿Ñ€Ð¾ÑˆÐ¸Ð²ÐºÐ¸.';
+      'Показывает версию устройства и дату сборки прошивки.';
 
   @override
   String get repeater_cliHelpClearStats =>
-      'Ð¡Ð±Ñ€Ð°ÑÑ‹Ð²Ð°ÐµÑ‚ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ¸ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð² Ð½Ð¾Ð»ÑŒ.';
+      'Сбрасывает различные счётчики статистики в ноль.';
 
   @override
   String get repeater_cliHelpSetAf =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð² ÑÑ„Ð¸Ñ€Ðµ.';
+      'Устанавливает коэффициент времени в эфире.';
 
   @override
   String get repeater_cliHelpSetTx =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¼Ð¾Ñ‰Ð½Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ LoRa Ð² Ð´Ð‘Ð¼. (Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ Ð¿ÐµÑ€ÐµÐ·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°)';
+      'Устанавливает мощность передачи LoRa в дБм. (требуется перезагрузка)';
 
   @override
   String get repeater_cliHelpSetRepeat =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ Ð¸Ð»Ð¸ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ Ñ€Ð¾Ð»ÑŒ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð° Ð´Ð»Ñ ÑÑ‚Ð¾Ð¹ Ð½Ð¾Ð´Ñ‹.';
+      'Включает или отключает роль репитера для этой ноды.';
 
   @override
   String get repeater_cliHelpSetAllowReadOnly =>
-      '(Ð¡ÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚) Ð•ÑÐ»Ð¸ Â«onÂ», Ñ‚Ð¾ Ð²Ñ…Ð¾Ð´ Ð±ÐµÐ· Ð¿Ð°Ñ€Ð¾Ð»Ñ Ñ€Ð°Ð·Ñ€ÐµÑˆÑ‘Ð½, Ð½Ð¾ Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ¾Ð²Ð°Ñ‚ÑŒ Ð² ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñƒ Ð½ÐµÐ»ÑŒÐ·Ñ (Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ)';
+      '(Сервер комнат) Если «on», то вход без пароля разрешён, но публиковать в комнату нельзя (только чтение)';
 
   @override
   String get repeater_cliHelpSetFloodMax =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ñ…Ð¾Ð¿Ð¾Ð² Ð´Ð»Ñ Ð²Ñ…Ð¾Ð´ÑÑ‰Ð¸Ñ… Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð² Ñ€ÐµÐ¶Ð¸Ð¼Ðµ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸ (ÐµÑÐ»Ð¸ >= Ð¼Ð°ÐºÑ., Ð¿Ð°ÐºÐµÑ‚ Ð½Ðµ Ð¿ÐµÑ€ÐµÑÑ‹Ð»Ð°ÐµÑ‚ÑÑ)';
+      'Устанавливает максимальное число хопов для входящих пакетов в режиме рассылки (если >= макс., пакет не пересылается)';
 
   @override
   String get repeater_cliHelpSetIntThresh =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¿Ð¾Ñ€Ð¾Ð³ Ð¸Ð½Ñ‚ÐµÑ€Ñ„ÐµÑ€ÐµÐ½Ñ†Ð¸Ð¸ (Ð² Ð´Ð‘). ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ 14. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ 0, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð¼ÐµÑ….';
+      'Устанавливает порог интерференции (в дБ). По умолчанию 14. Установите 0, чтобы отключить обнаружение помех.';
 
   @override
   String get repeater_cliHelpSetAgcResetInterval =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» ÑÐ±Ñ€Ð¾ÑÐ° Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ñ€ÐµÐ³ÑƒÐ»Ð¸Ñ€Ð¾Ð²ÐºÐ¸ ÑƒÑÐ¸Ð»ÐµÐ½Ð¸Ñ. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ 0, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ.';
+      'Устанавливает интервал сброса автоматической регулировки усиления. Установите 0, чтобы отключить.';
 
   @override
   String get repeater_cliHelpSetMultiAcks =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ Ð¸Ð»Ð¸ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ Â«Ð´Ð²Ð¾Ð¹Ð½Ñ‹Ñ… ACKÂ».';
+      'Включает или отключает функцию «двойных ACK».';
 
   @override
   String get repeater_cliHelpSetAdvertInterval =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» (Ð² Ð¼Ð¸Ð½ÑƒÑ‚Ð°Ñ…) Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½Ð¾Ð³Ð¾ (Ð½ÑƒÐ»ÐµÐ²Ð¾Ð¹ Ñ…Ð¾Ð¿) Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ 0, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ.';
+      'Устанавливает интервал (в минутах) отправки локального (нулевой хоп) анонсирования. Установите 0, чтобы отключить.';
 
   @override
   String get repeater_cliHelpSetFloodAdvertInterval =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» (Ð² Ñ‡Ð°ÑÐ°Ñ…) Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¹ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¾Ð¹. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ 0, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ.';
+      'Устанавливает интервал (в часах) отправки анонсирований рассылкой. Установите 0, чтобы отключить.';
 
   @override
   String get repeater_cliHelpSetGuestPassword =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚/Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÑ‚ Ð³Ð¾ÑÑ‚ÐµÐ²Ð¾Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ. (Ð´Ð»Ñ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð² Ð³Ð¾ÑÑ‚Ð¸ Ð¼Ð¾Ð³ÑƒÑ‚ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ Ð·Ð°Ð¿Ñ€Ð¾Ñ Â«Get StatsÂ»)';
+      'Устанавливает/обновляет гостевой пароль. (для репитеров гости могут отправлять запрос «Get Stats»)';
 
   @override
-  String get repeater_cliHelpSetName =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¸Ð¼Ñ Ð² Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÑÑ….';
+  String get repeater_cliHelpSetName => 'Устанавливает имя в оповещениях.';
 
   @override
   String get repeater_cliHelpSetLat =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ ÑˆÐ¸Ñ€Ð¾Ñ‚Ñƒ Ð´Ð»Ñ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð² Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÑÑ…. (Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ñ‹Ðµ Ð³Ñ€Ð°Ð´ÑƒÑÑ‹)';
+      'Устанавливает широту для карты в оповещениях. (десятичные градусы)';
 
   @override
   String get repeater_cliHelpSetLon =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð´Ð¾Ð»Ð³Ð¾Ñ‚Ñƒ Ð´Ð»Ñ ÐºÐ°Ñ€Ñ‚Ñ‹ Ð² Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸ÑÑ…. (Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ñ‹Ðµ Ð³Ñ€Ð°Ð´ÑƒÑÑ‹)';
+      'Устанавливает долготу для карты в оповещениях. (десятичные градусы)';
 
   @override
   String get repeater_cliHelpSetRadio =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¿Ð¾Ð»Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð½Ð¾Ð²Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ€Ð°Ð´Ð¸Ð¾ Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÑ‚ Ð¸Ñ… Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸. Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð° Â«rebootÂ» Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ.';
+      'Устанавливает полностью новые параметры радио и сохраняет их в настройки. Требуется команда «reboot» для применения.';
 
   @override
   String get repeater_cliHelpSetRxDelay =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ (ÑÐºÑÐ¿ÐµÑ€Ð¸Ð¼ÐµÐ½Ñ‚Ð°Ð»ÑŒÐ½Ð¾) Ð±Ð°Ð·Ð¾Ð²ÑƒÑŽ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÑƒ (>1 Ð´Ð»Ñ ÑÑ„Ñ„ÐµÐºÑ‚Ð°) Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð½ÑÑ‚Ñ‹Ñ… Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð½Ð° Ð¾ÑÐ½Ð¾Ð²Ðµ ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ð° ÑÐ¸Ð³Ð½Ð°Ð»Ð°. Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ 0, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ.';
+      'Устанавливает (экспериментально) базовую задержку (>1 для эффекта) для принятых пакетов на основе качества сигнала. Установите 0, чтобы отключить.';
 
   @override
   String get repeater_cliHelpSetTxDelay =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¼Ð½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð² ÑÑ„Ð¸Ñ€Ðµ Ð´Ð»Ñ Ð¿Ð°ÐºÐµÑ‚Ð° Ð² Ñ€ÐµÐ¶Ð¸Ð¼Ðµ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸ Ð¸ Ð¿Ñ€Ð¸Ð¼ÐµÐ½ÑÐµÑ‚ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½ÑƒÑŽ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÑƒ Ð¿ÐµÑ€ÐµÐ´ Ð¿ÐµÑ€ÐµÑÑ‹Ð»ÐºÐ¾Ð¹ (Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð»Ð¸Ð·Ð¸Ð¸).';
+      'Устанавливает множитель времени в эфире для пакета в режиме рассылки и применяет случайную задержку перед пересылкой (чтобы уменьшить коллизии).';
 
   @override
   String get repeater_cliHelpSetDirectTxDelay =>
-      'Ð¢Ð¾ Ð¶Ðµ, Ñ‡Ñ‚Ð¾ txdelay, Ð½Ð¾ Ð´Ð»Ñ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ð¾Ð¹ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð¿ÐµÑ€ÐµÑÑ‹Ð»ÐºÐ¸ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð² Ð¿Ñ€ÑÐ¼Ð¾Ð¼ Ñ€ÐµÐ¶Ð¸Ð¼Ðµ.';
+      'То же, что txdelay, но для случайной задержки пересылки пакетов в прямом режиме.';
 
   @override
-  String get repeater_cliHelpSetBridgeEnabled =>
-      'Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ/Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¼Ð¾ÑÑ‚.';
+  String get repeater_cliHelpSetBridgeEnabled => 'Включить/выключить мост.';
 
   @override
   String get repeater_cliHelpSetBridgeDelay =>
-      'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÑƒ Ð¿ÐµÑ€ÐµÐ´ Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»ÑÑ†Ð¸ÐµÐ¹ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð².';
+      'Установить задержку перед ретрансляцией пакетов.';
 
   @override
   String get repeater_cliHelpSetBridgeSource =>
-      'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ, Ð±ÑƒÐ´ÐµÑ‚ Ð»Ð¸ Ð¼Ð¾ÑÑ‚ Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ðµ Ð¸Ð»Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð°ÐºÐµÑ‚Ñ‹.';
+      'Выбрать, будет ли мост ретранслировать полученные или отправленные пакеты.';
 
   @override
   String get repeater_cliHelpSetBridgeBaud =>
-      'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ð¼Ð¾ÑÑ‚Ð¾Ð² RS232.';
+      'Установить скорость последовательного соединения для мостов RS232.';
 
   @override
   String get repeater_cliHelpSetBridgeSecret =>
-      'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐµÐºÑ€ÐµÑ‚ Ð¼Ð¾ÑÑ‚Ð° Ð´Ð»Ñ Ð¼Ð¾ÑÑ‚Ð¾Ð² ESP-NOW.';
+      'Установить секрет моста для мостов ESP-NOW.';
 
   @override
   String get repeater_cliHelpSetAdcMultiplier =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ†Ð¸Ð¸ Ð½Ð°Ð¿Ñ€ÑÐ¶ÐµÐ½Ð¸Ñ Ð±Ð°Ñ‚Ð°Ñ€ÐµÐ¸ (Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð° Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð¿Ð»Ð°Ñ‚Ð°Ñ…).';
+      'Устанавливает пользовательский коэффициент коррекции напряжения батареи (поддерживается только на некоторых платах).';
 
   @override
   String get repeater_cliHelpTempRadio =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ€Ð°Ð´Ð¸Ð¾ Ð½Ð° Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¼Ð¸Ð½ÑƒÑ‚, Ð·Ð°Ñ‚ÐµÐ¼ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ. (ÐÐ• ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÑ‚ÑÑ Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸).';
+      'Устанавливает временные параметры радио на заданное число минут, затем возвращает исходные. (НЕ сохраняется в настройки).';
 
   @override
   String get repeater_cliHelpSetPerm =>
-      'Ð˜Ð·Ð¼ÐµÐ½ÑÐµÑ‚ ACL. Ð£Ð´Ð°Ð»ÑÐµÑ‚ Ð·Ð°Ð¿Ð¸ÑÑŒ (Ð¿Ð¾ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑƒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ»ÑŽÑ‡Ð°), ÐµÑÐ»Ð¸ Â«permissionsÂ» Ñ€Ð°Ð²ÐµÐ½ Ð½ÑƒÐ»ÑŽ. Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ Ð½Ð¾Ð²ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ, ÐµÑÐ»Ð¸ ÑƒÐºÐ°Ð·Ð°Ð½ Ð¿Ð¾Ð»Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ Ð¸ Ð¾Ð½ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ð² ACL. ÐžÐ±Ð½Ð¾Ð²Ð»ÑÐµÑ‚ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð¿Ð¾ ÑÐ¾Ð²Ð¿Ð°Ð´ÐµÐ½Ð¸ÑŽ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÐ°. Ð‘Ð¸Ñ‚Ñ‹ Ð¿Ñ€Ð°Ð² Ð·Ð°Ð²Ð¸ÑÑÑ‚ Ð¾Ñ‚ Ñ€Ð¾Ð»Ð¸ Ð¿Ñ€Ð¾ÑˆÐ¸Ð²ÐºÐ¸, Ð½Ð¾ Ð¼Ð»Ð°Ð´ÑˆÐ¸Ðµ 2 Ð±Ð¸Ñ‚Ð°: 0 (Ð“Ð¾ÑÑ‚ÑŒ), 1 (Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ), 2 (Ð§Ñ‚ÐµÐ½Ð¸Ðµ/Ð·Ð°Ð¿Ð¸ÑÑŒ), 3 (ÐÐ´Ð¼Ð¸Ð½)';
+      'Изменяет ACL. Удаляет запись (по префиксу публичного ключа), если «permissions» равен нулю. Добавляет новую запись, если указан полный ключ и он отсутствует в ACL. Обновляет запись по совпадению префикса. Биты прав зависят от роли прошивки, но младшие 2 бита: 0 (Гость), 1 (Только чтение), 2 (Чтение/запись), 3 (Админ)';
 
   @override
   String get repeater_cliHelpGetBridgeType =>
-      'ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ñ‚Ð¸Ð¿ Ð¼Ð¾ÑÑ‚Ð°: none, rs232, espnow';
+      'Получает тип моста: none, rs232, espnow';
 
   @override
   String get repeater_cliHelpLogStart =>
-      'ÐÐ°Ñ‡Ð¸Ð½Ð°ÐµÑ‚ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð² Ñ„Ð°Ð¹Ð»Ð¾Ð²ÑƒÑŽ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ.';
+      'Начинает запись пакетов в файловую систему.';
 
   @override
   String get repeater_cliHelpLogStop =>
-      'ÐžÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð² Ñ„Ð°Ð¹Ð»Ð¾Ð²ÑƒÑŽ ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ.';
+      'Останавливает запись пакетов в файловую систему.';
 
   @override
   String get repeater_cliHelpLogErase =>
-      'Ð£Ð´Ð°Ð»ÑÐµÑ‚ Ð¶ÑƒÑ€Ð½Ð°Ð»Ñ‹ Ð¿Ð°ÐºÐµÑ‚Ð¾Ð² Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð¾Ð²Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹.';
+      'Удаляет журналы пакетов из файловой системы.';
 
   @override
   String get repeater_cliHelpNeighbors =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÑÐ¿Ð¸ÑÐ¾Ðº Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð², ÑƒÑÐ»Ñ‹ÑˆÐ°Ð½Ð½Ñ‹Ñ… Ñ‡ÐµÑ€ÐµÐ· Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ Ð½ÑƒÐ»ÐµÐ²Ð¾Ð³Ð¾ Ñ…Ð¾Ð¿Ð°. ÐšÐ°Ð¶Ð´Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ°: Ð¿Ñ€ÐµÑ„Ð¸ÐºÑ-id-Ð²-hex:Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ-Ð¼ÐµÑ‚ÐºÐ°:snrÃ—4';
+      'Показывает список других репитеров, услышанных через оповещения нулевого хопа. Каждая строка: префикс-id-в-hex:временная-метка:snr×4';
 
   @override
   String get repeater_cliHelpNeighborRemove =>
-      'Ð£Ð´Ð°Ð»ÑÐµÑ‚ Ð¿ÐµÑ€Ð²ÑƒÑŽ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ (Ð¿Ð¾ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑƒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð³Ð¾ ÐºÐ»ÑŽÑ‡Ð° Ð² hex) Ð¸Ð· ÑÐ¿Ð¸ÑÐºÐ° ÑÐ¾ÑÐµÐ´ÐµÐ¹.';
+      'Удаляет первую подходящую запись (по префиксу публичного ключа в hex) из списка соседей.';
 
   @override
   String get repeater_cliHelpRegion =>
-      '(Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð¾Ñ€Ñ‚) ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ Ð²ÑÐµ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‘Ð½Ð½Ñ‹Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ñ‹ Ð¸ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ðµ Ð¿Ñ€Ð°Ð²Ð° Ð½Ð° Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ.';
+      '(только через последовательный порт) Показывает все определённые регионы и текущие права на рассылку.';
 
   @override
   String get repeater_cliHelpRegionLoad =>
-      'ÐŸÐ Ð˜ÐœÐ•Ð§ÐÐÐ˜Ð•: ÑÑ‚Ð¾ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð°Ñ Ð¼Ð½Ð¾Ð³Ð¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ð°Ñ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð°. ÐšÐ°Ð¶Ð´Ð°Ñ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð°Ñ ÑÑ‚Ñ€Ð¾ÐºÐ° â€” Ð¸Ð¼Ñ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° (Ñ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ð¾Ð¼ Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð°Ð¼Ð¸ Ð´Ð»Ñ ÑƒÐºÐ°Ð·Ð°Ð½Ð¸Ñ Ð¸ÐµÑ€Ð°Ñ€Ñ…Ð¸Ð¸, Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð¾Ð´Ð¸Ð½ Ð¿Ñ€Ð¾Ð±ÐµÐ»). Ð—Ð°Ð²ÐµÑ€ÑˆÐ°ÐµÑ‚ÑÑ Ð¿ÑƒÑÑ‚Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐ¾Ð¹.';
+      'ПРИМЕЧАНИЕ: это специальная многострочная команда. Каждая следующая строка — имя региона (с отступом пробелами для указания иерархии, минимум один пробел). Завершается пустой строкой.';
 
   @override
   String get repeater_cliHelpRegionGet =>
-      'Ð˜Ñ‰ÐµÑ‚ Ñ€ÐµÐ³Ð¸Ð¾Ð½ Ð¿Ð¾ Ð¿Ñ€ÐµÑ„Ð¸ÐºÑÑƒ Ð¸Ð¼ÐµÐ½Ð¸ (Ð¸Ð»Ð¸ Â«*Â» Ð´Ð»Ñ Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸). ÐžÑ‚Ð²ÐµÑ‡Ð°ÐµÑ‚: Â«-> Ð¸Ð¼Ñ-Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° (Ñ€Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ) \'F\'Â»';
+      'Ищет регион по префиксу имени (или «*» для глобальной области). Отвечает: «-> имя-региона (родитель) \'F\'»';
 
   @override
   String get repeater_cliHelpRegionPut =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ Ð¸Ð»Ð¸ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÑ‚ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¼ Ð¸Ð¼ÐµÐ½ÐµÐ¼.';
+      'Добавляет или обновляет определение региона с заданным именем.';
 
   @override
   String get repeater_cliHelpRegionRemove =>
-      'Ð£Ð´Ð°Ð»ÑÐµÑ‚ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð° Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¼ Ð¸Ð¼ÐµÐ½ÐµÐ¼. (Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ñ‚Ð¾Ñ‡Ð½Ð¾ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°Ñ‚ÑŒ Ð¸ Ð½Ðµ Ð¸Ð¼ÐµÑ‚ÑŒ Ð´Ð¾Ñ‡ÐµÑ€Ð½Ð¸Ñ… Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¾Ð²)';
+      'Удаляет определение региона с заданным именем. (должно точно совпадать и не иметь дочерних регионов)';
 
   @override
   String get repeater_cliHelpRegionAllowf =>
-      'Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÑ‚ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ (Â«FÂ»lood) Ð´Ð»Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°. (Â«*Â» Ð´Ð»Ñ Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ð¾Ð¹/ÑƒÑÑ‚Ð°Ñ€ÐµÐ²ÑˆÐµÐ¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸)';
+      'Разрешает рассылку («F»lood) для заданного региона. («*» для глобальной/устаревшей области)';
 
   @override
   String get repeater_cliHelpRegionDenyf =>
-      'Ð—Ð°Ð¿Ñ€ÐµÑ‰Ð°ÐµÑ‚ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ (Â«FÂ»lood) Ð´Ð»Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°. (ÐÐ• Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÑ‚ÑÑ Ð´Ð»Ñ Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸!)';
+      'Запрещает рассылку («F»lood) для заданного региона. (НЕ рекомендуется для глобальной области!)';
 
   @override
   String get repeater_cliHelpRegionHome =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Â«Ð´Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹Â» Ñ€ÐµÐ³Ð¸Ð¾Ð½. (ÐŸÐ¾ÐºÐ° Ð½Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ, Ð·Ð°Ñ€ÐµÐ·ÐµÑ€Ð²Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¾ Ð½Ð° Ð±ÑƒÐ´ÑƒÑ‰ÐµÐµ)';
+      'Показывает текущий «домашний» регион. (Пока не используется, зарезервировано на будущее)';
 
   @override
   String get repeater_cliHelpRegionHomeSet =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Â«Ð´Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹Â» Ñ€ÐµÐ³Ð¸Ð¾Ð½.';
+      'Устанавливает «домашний» регион.';
 
   @override
   String get repeater_cliHelpRegionSave =>
-      'Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÐµÑ‚ ÑÐ¿Ð¸ÑÐ¾Ðº/ÐºÐ°Ñ€Ñ‚Ñƒ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¾Ð² Ð² Ð¿Ð°Ð¼ÑÑ‚ÑŒ.';
+      'Сохраняет список/карту регионов в память.';
 
   @override
   String get repeater_cliHelpGps =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÑÑ‚Ð°Ñ‚ÑƒÑ GPS. Ð•ÑÐ»Ð¸ GPS Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½ â€” Ð¾Ñ‚Ð²ÐµÑ‡Ð°ÐµÑ‚ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Â«offÂ». Ð•ÑÐ»Ð¸ Ð²ÐºÐ»ÑŽÑ‡Ñ‘Ð½ â€” Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÑÑ‚Ð°Ñ‚ÑƒÑ, Ñ„Ð¸ÐºÑÐ°Ñ†Ð¸ÑŽ, ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ¿ÑƒÑ‚Ð½Ð¸ÐºÐ¾Ð².';
+      'Показывает статус GPS. Если GPS выключен — отвечает только «off». Если включён — показывает статус, фиксацию, количество спутников.';
 
   @override
-  String get repeater_cliHelpGpsOnOff =>
-      'ÐŸÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¿Ð¸Ñ‚Ð°Ð½Ð¸Ñ GPS.';
+  String get repeater_cliHelpGpsOnOff => 'Переключает состояние питания GPS.';
 
   @override
   String get repeater_cliHelpGpsSync =>
-      'Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ð²Ñ€ÐµÐ¼Ñ Ð½Ð¾Ð´Ñ‹ Ñ Ñ‡Ð°ÑÐ°Ð¼Ð¸ GPS.';
+      'Синхронизирует время ноды с часами GPS.';
 
   @override
   String get repeater_cliHelpGpsSetLoc =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ Ð½Ð¾Ð´Ñ‹ Ð¿Ð¾ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð°Ð¼ GPS Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÑ‚ Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸.';
+      'Устанавливает позицию ноды по координатам GPS и сохраняет в настройки.';
 
   @override
   String get repeater_cliHelpGpsAdvert =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÐºÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸ÑŽ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð² Ð°Ð½Ð¾Ð½ÑÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÑÑ…:\n- none: Ð½Ðµ Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ\n- share: Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ñ‚ÑŒ GPS-ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ (Ð¸Ð· SensorManager)\n- prefs: Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ñ‚ÑŒ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð¸Ð· Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº';
+      'Показывает конфигурацию передачи местоположения в анонсированиях:\n- none: не включать местоположение\n- share: передавать GPS-координаты (из SensorManager)\n- prefs: передавать координаты из настроек';
 
   @override
   String get repeater_cliHelpGpsAdvertSet =>
-      'Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ ÐºÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸ÑŽ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ.';
+      'Устанавливает конфигурацию передачи местоположения.';
 
   @override
-  String get repeater_commandsListTitle => 'Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐºÐ¾Ð¼Ð°Ð½Ð´';
+  String get repeater_commandsListTitle => 'Список команд';
 
   @override
   String get repeater_commandsListNote =>
-      'ÐŸÐ Ð˜ÐœÐ•Ð§ÐÐÐ˜Ð•: Ð´Ð»Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ð½ÑÑ‚Ð²Ð° ÐºÐ¾Ð¼Ð°Ð½Ð´ Â«set ...Â» ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‚ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹ Â«get ...Â».';
+      'ПРИМЕЧАНИЕ: для большинства команд «set ...» существуют соответствующие команды «get ...».';
 
   @override
-  String get repeater_general => 'ÐžÐ±Ñ‰Ð¸Ðµ';
+  String get repeater_general => 'Общие';
 
   @override
-  String get repeater_settingsCategory => 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+  String get repeater_settingsCategory => 'Настройки';
 
   @override
-  String get repeater_bridge => 'ÐœÐ¾ÑÑ‚';
+  String get repeater_bridge => 'Мост';
 
   @override
-  String get repeater_logging => 'Ð–ÑƒÑ€Ð½Ð°Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+  String get repeater_logging => 'Журналирование';
 
   @override
-  String get repeater_neighborsRepeaterOnly =>
-      'Ð¡Ð¾ÑÐµÐ´Ð¸ (Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð²)';
+  String get repeater_neighborsRepeaterOnly => 'Соседи (только для репитеров)';
 
   @override
   String get repeater_regionManagementRepeaterOnly =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð°Ð¼Ð¸ (Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð²)';
+      'Управление регионами (только для репитеров)';
 
   @override
   String get repeater_regionNote =>
-      'ÐšÐ¾Ð¼Ð°Ð½Ð´Ñ‹ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¾Ð² Ð²Ð²ÐµÐ´ÐµÐ½Ñ‹ Ð´Ð»Ñ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸ÑÐ¼Ð¸ Ñ€ÐµÐ³Ð¸Ð¾Ð½Ð¾Ð² Ð¸ Ð¿Ñ€Ð°Ð²Ð°Ð¼Ð¸ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°.';
+      'Команды регионов введены для управления определениями регионов и правами доступа.';
 
   @override
-  String get repeater_gpsManagement => 'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ GPS';
+  String get repeater_gpsManagement => 'Управление GPS';
 
   @override
   String get repeater_gpsNote =>
-      'ÐšÐ¾Ð¼Ð°Ð½Ð´Ð° gps Ð²Ð²ÐµÐ´ÐµÐ½Ð° Ð´Ð»Ñ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð°Ð¼Ð¸, ÑÐ²ÑÐ·Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ñ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÐ¼.';
+      'Команда gps введена для управления параметрами, связанными с местоположением.';
 
   @override
-  String get telemetry_receivedData =>
-      'ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ðµ Ñ‚ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ';
+  String get telemetry_receivedData => 'Полученные телеметрические данные';
 
   @override
-  String get telemetry_requestTimeout =>
-      'Ð’Ñ€ÐµÐ¼Ñ Ð¾Ð¶Ð¸Ð´Ð°Ð½Ð¸Ñ Ñ‚ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ð¸ Ð¸ÑÑ‚ÐµÐºÐ»Ð¾.';
+  String get telemetry_requestTimeout => 'Время ожидания телеметрии истекло.';
 
   @override
   String telemetry_errorLoading(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ñ‚ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ð¸: $error';
+    return 'Ошибка загрузки телеметрии: $error';
   }
 
   @override
-  String get telemetry_noData =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ñ‚ÐµÐ»ÐµÐ¼ÐµÑ‚Ñ€Ð¸Ð¸ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹.';
+  String get telemetry_noData => 'Данные телеметрии недоступны.';
 
   @override
   String telemetry_channelTitle(int channel) {
-    return 'ÐšÐ°Ð½Ð°Ð» $channel';
+    return 'Канал $channel';
   }
 
   @override
-  String get telemetry_batteryLabel => 'Ð‘Ð°Ñ‚Ð°Ñ€ÐµÑ';
+  String get telemetry_batteryLabel => 'Батарея';
 
   @override
-  String get telemetry_voltageLabel => 'ÐÐ°Ð¿Ñ€ÑÐ¶ÐµÐ½Ð¸Ðµ';
+  String get telemetry_voltageLabel => 'Напряжение';
 
   @override
-  String get telemetry_mcuTemperatureLabel => 'Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° ÐœÐš';
+  String get telemetry_mcuTemperatureLabel => 'Температура МК';
 
   @override
-  String get telemetry_temperatureLabel => 'Ð¢ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°';
+  String get telemetry_temperatureLabel => 'Температура';
 
   @override
-  String get telemetry_currentLabel => 'Ð¢Ð¾Ðº';
+  String get telemetry_currentLabel => 'Ток';
 
   @override
   String telemetry_batteryValue(int percent, String volts) {
-    return '$percent% / $voltsÐ’';
+    return '$percent% / $voltsВ';
   }
 
   @override
   String telemetry_voltageValue(String volts) {
-    return '$voltsÐ’';
+    return '$voltsВ';
   }
 
   @override
   String telemetry_currentValue(String amps) {
-    return '$ampsÐ';
+    return '$ampsА';
   }
 
   @override
   String telemetry_temperatureValue(String celsius, String fahrenheit) {
-    return '$celsiusÂ°C / $fahrenheitÂ°F';
+    return '$celsius°C / $fahrenheit°F';
   }
 
   @override
-  String get neighbors_receivedData =>
-      'ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ ÑÐ¾ÑÐµÐ´ÑÑ…';
+  String get neighbors_receivedData => 'Полученные данные о соседях';
 
   @override
   String get neighbors_requestTimedOut =>
-      'Ð’Ñ€ÐµÐ¼Ñ Ð¾Ð¶Ð¸Ð´Ð°Ð½Ð¸Ñ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾ ÑÐ¾ÑÐµÐ´ÑÑ… Ð¸ÑÑ‚ÐµÐºÐ»Ð¾.';
+      'Время ожидания данных о соседях истекло.';
 
   @override
   String neighbors_errorLoading(String error) {
-    return 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ ÑÐ¾ÑÐµÐ´ÐµÐ¹: $error';
+    return 'Ошибка загрузки соседей: $error';
   }
 
   @override
-  String get neighbors_repeatersNeighbors => 'Ð¡Ð¾ÑÐµÐ´Ð¸ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð²';
+  String get neighbors_repeatersNeighbors => 'Соседи репитеров';
 
   @override
-  String get neighbors_noData =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¾ ÑÐ¾ÑÐµÐ´ÑÑ… Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹.';
+  String get neighbors_noData => 'Данные о соседях недоступны.';
 
   @override
   String neighbors_unknownContact(String pubkey) {
-    return 'ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¹ $pubkey';
+    return 'Неизвестный $pubkey';
   }
 
   @override
   String neighbors_heardAgo(String time) {
-    return 'Ð¡Ð»ÑƒÑˆÐ°Ð»(Ð°): $time Ð½Ð°Ð·Ð°Ð´';
+    return 'Слушал(а): $time назад';
   }
 
   @override
-  String get channelPath_title => 'ÐŸÑƒÑ‚ÑŒ Ð¿Ð°ÐºÐµÑ‚Ð°';
+  String get channelPath_title => 'Путь пакета';
 
   @override
-  String get channelPath_viewMap => 'ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ';
+  String get channelPath_viewMap => 'Посмотреть на карте';
 
   @override
-  String get channelPath_otherObservedPaths =>
-      'Ð”Ñ€ÑƒÐ³Ð¸Ðµ Ð½Ð°Ð±Ð»ÑŽÐ´Ð°ÐµÐ¼Ñ‹Ðµ Ð¿ÑƒÑ‚Ð¸';
+  String get channelPath_otherObservedPaths => 'Другие наблюдаемые пути';
 
   @override
-  String get channelPath_repeaterHops => 'Ð¥Ð¾Ð¿Ñ‹ Ñ‡ÐµÑ€ÐµÐ· Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹';
+  String get channelPath_repeaterHops => 'Хопы через репитеры';
 
   @override
   String get channelPath_noHopDetails =>
-      'Ð”ÐµÑ‚Ð°Ð»Ð¸ Ñ…Ð¾Ð¿Ð¾Ð² Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ð¿Ð°ÐºÐµÑ‚Ð° Ð½Ðµ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ñ‹.';
+      'Детали хопов для этого пакета не предоставлены.';
 
   @override
-  String get channelPath_messageDetails => 'Ð”ÐµÑ‚Ð°Ð»Ð¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ';
+  String get channelPath_messageDetails => 'Детали сообщения';
 
   @override
-  String get channelPath_senderLabel => 'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÑŒ';
+  String get channelPath_senderLabel => 'Отправитель';
 
   @override
-  String get channelPath_timeLabel => 'Ð’Ñ€ÐµÐ¼Ñ';
+  String get channelPath_timeLabel => 'Время';
 
   @override
-  String get channelPath_repeatsLabel => 'ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ñ‹';
+  String get channelPath_repeatsLabel => 'Повторы';
 
   @override
   String channelPath_pathLabel(int index) {
-    return 'ÐŸÑƒÑ‚ÑŒ $index';
+    return 'Путь $index';
   }
 
   @override
-  String get channelPath_observedLabel => 'ÐÐ°Ð±Ð»ÑŽÐ´Ð°ÐµÐ¼Ñ‹Ð¹';
+  String get channelPath_observedLabel => 'Наблюдаемый';
 
   @override
   String channelPath_observedPathTitle(int index, String hops) {
-    return 'ÐÐ°Ð±Ð»ÑŽÐ´Ð°ÐµÐ¼Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ $index â€¢ $hops';
+    return 'Наблюдаемый путь $index • $hops';
   }
 
   @override
-  String get channelPath_noLocationData =>
-      'ÐÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¸';
+  String get channelPath_noLocationData => 'Нет данных о местоположении';
 
   @override
   String channelPath_timeWithDate(int day, int month, String time) {
@@ -2685,361 +2594,343 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get channelPath_unknownPath => 'ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¹';
+  String get channelPath_unknownPath => 'Неизвестный';
 
   @override
-  String get channelPath_floodPath => 'Ð Ð°ÑÑÑ‹Ð»ÐºÐ°';
+  String get channelPath_floodPath => 'Рассылка';
 
   @override
-  String get channelPath_directPath => 'ÐŸÑ€ÑÐ¼Ð¾Ð¹';
+  String get channelPath_directPath => 'Прямой';
 
   @override
   String channelPath_observedZeroOf(int total) {
-    return '0 Ð¸Ð· $total Ñ…Ð¾Ð¿Ð¾Ð²';
+    return '0 из $total хопов';
   }
 
   @override
   String channelPath_observedSomeOf(int observed, int total) {
-    return '$observed Ð¸Ð· $total Ñ…Ð¾Ð¿Ð¾Ð²';
+    return '$observed из $total хопов';
   }
 
   @override
-  String get channelPath_mapTitle => 'ÐšÐ°Ñ€Ñ‚Ð° Ð¿ÑƒÑ‚Ð¸';
+  String get channelPath_mapTitle => 'Карта пути';
 
   @override
   String get channelPath_noRepeaterLocations =>
-      'ÐÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¸ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ð¾Ð² Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ð¿ÑƒÑ‚Ð¸.';
+      'Нет данных о местоположении репитеров для этого пути.';
 
   @override
   String channelPath_primaryPath(int index) {
-    return 'ÐŸÑƒÑ‚ÑŒ $index (ÐžÑÐ½Ð¾Ð²Ð½Ð¾Ð¹)';
+    return 'Путь $index (Основной)';
   }
 
   @override
-  String get channelPath_pathLabelTitle => 'ÐŸÑƒÑ‚ÑŒ';
+  String get channelPath_pathLabelTitle => 'Путь';
 
   @override
-  String get channelPath_observedPathHeader =>
-      'ÐÐ°Ð±Ð»ÑŽÐ´Ð°ÐµÐ¼Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ';
+  String get channelPath_observedPathHeader => 'Наблюдаемый путь';
 
   @override
   String channelPath_selectedPathLabel(String label, String prefixes) {
-    return '$label â€¢ $prefixes';
+    return '$label • $prefixes';
   }
 
   @override
   String get channelPath_noHopDetailsAvailable =>
-      'Ð”ÐµÑ‚Ð°Ð»Ð¸ Ñ…Ð¾Ð¿Ð¾Ð² Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ð¿Ð°ÐºÐµÑ‚Ð° Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹.';
+      'Детали хопов для этого пакета недоступны.';
 
   @override
-  String get channelPath_unknownRepeater =>
-      'ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¹ Ñ€ÐµÐ¿Ð¸Ñ‚ÐµÑ€';
+  String get channelPath_unknownRepeater => 'Неизвестный репитер';
 
   @override
-  String get community_title => 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾';
+  String get community_title => 'Сообщество';
 
   @override
-  String get community_create => 'Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾';
+  String get community_create => 'Создать сообщество';
 
   @override
   String get community_createDesc =>
-      'Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ Ð¸ Ð¿Ð¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ Ñ‡ÐµÑ€ÐµÐ· QR-ÐºÐ¾Ð´.';
+      'Создать новое сообщество и поделиться через QR-код.';
 
   @override
-  String get community_join => 'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ';
+  String get community_join => 'Присоединиться';
 
   @override
-  String get community_joinTitle =>
-      'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ñƒ';
+  String get community_joinTitle => 'Присоединиться к сообществу';
 
   @override
   String community_joinConfirmation(String name) {
-    return 'Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ñƒ  \"$name\"?';
+    return 'Вы хотите присоединиться к сообществу  \"$name\"?';
   }
 
   @override
-  String get community_scanQr =>
-      'Ð¡ÐºÐ°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ QR-ÐºÐ¾Ð´ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_scanQr => 'Сканировать QR-код сообщества';
 
   @override
   String get community_scanInstructions =>
-      'ÐÐ°Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ°Ð¼ÐµÑ€Ñƒ Ð½Ð° QR-ÐºÐ¾Ð´ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+      'Наведите камеру на QR-код сообщества';
 
   @override
-  String get community_showQr => 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ QR-ÐºÐ¾Ð´';
+  String get community_showQr => 'Показать QR-код';
 
   @override
-  String get community_publicChannel =>
-      'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð» ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_publicChannel => 'Публичный канал сообщества';
 
   @override
-  String get community_hashtagChannel =>
-      'Ð¥ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð» ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_hashtagChannel => 'Хэштег-канал сообщества';
 
   @override
-  String get community_name => 'Ð˜Ð¼Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_name => 'Имя сообщества';
 
   @override
-  String get community_enterName =>
-      'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_enterName => 'Введите имя сообщества';
 
   @override
   String community_created(String name) {
-    return 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ \"$name\" ÑÐ¾Ð·Ð´Ð°Ð½Ð¾';
+    return 'Сообщество \"$name\" создано';
   }
 
   @override
   String community_joined(String name) {
-    return 'ÐŸÑ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ð»Ð¸ÑÑŒ Ðº ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ñƒ \"$name\"';
+    return 'Присоединились к сообществу \"$name\"';
   }
 
   @override
-  String get community_qrTitle => 'ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾Ð¼';
+  String get community_qrTitle => 'Поделиться сообществом';
 
   @override
   String community_qrInstructions(String name) {
-    return 'ÐžÑ‚ÑÐºÐ°Ð½Ð¸Ñ€ÑƒÐ¹Ñ‚Ðµ ÑÑ‚Ð¾Ñ‚ QR-ÐºÐ¾Ð´, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ Ðº \"$name\"';
+    return 'Отсканируйте этот QR-код, чтобы присоединиться к \"$name\"';
   }
 
   @override
   String get community_hashtagPrivacyHint =>
-      'Ð¥ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð»Ñ‹ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÐµÐ³Ð¾ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ°Ð¼';
+      'Хэштег-каналы сообщества доступны только его участникам';
 
   @override
-  String get community_invalidQrCode =>
-      'ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ QR-ÐºÐ¾Ð´ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_invalidQrCode => 'Недопустимый QR-код сообщества';
 
   @override
-  String get community_alreadyMember => 'Ð£Ð¶Ðµ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸Ðº';
+  String get community_alreadyMember => 'Уже участник';
 
   @override
   String community_alreadyMemberMessage(String name) {
-    return 'Ð’Ñ‹ ÑƒÐ¶Ðµ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸Ðº ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð° \"$name\".';
+    return 'Вы уже участник сообщества \"$name\".';
   }
 
   @override
   String get community_addPublicChannel =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð» ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+      'Добавить публичный канал сообщества';
 
   @override
   String get community_addPublicChannelHint =>
-      'ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð» Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+      'Автоматически добавить публичный канал для этого сообщества';
 
   @override
   String get community_noCommunities =>
-      'Ð’Ñ‹ ÐµÑ‰Ñ‘ Ð½Ðµ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ð»Ð¸ÑÑŒ Ð½Ð¸ Ðº Ð¾Ð´Ð½Ð¾Ð¼Ñƒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ñƒ';
+      'Вы ещё не присоединились ни к одному сообществу';
 
   @override
   String get community_scanOrCreate =>
-      'ÐžÑ‚ÑÐºÐ°Ð½Ð¸Ñ€ÑƒÐ¹Ñ‚Ðµ QR-ÐºÐ¾Ð´ Ð¸Ð»Ð¸ ÑÐ¾Ð·Ð´Ð°Ð¹Ñ‚Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð½Ð°Ñ‡Ð°Ñ‚ÑŒ';
+      'Отсканируйте QR-код или создайте сообщество, чтобы начать';
 
   @override
-  String get community_manageCommunities =>
-      'Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°Ð¼Ð¸';
+  String get community_manageCommunities => 'Управление сообществами';
 
   @override
-  String get community_delete => 'ÐŸÐ¾ÐºÐ¸Ð½ÑƒÑ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾';
+  String get community_delete => 'Покинуть сообщество';
 
   @override
   String community_deleteConfirm(String name) {
-    return 'ÐŸÐ¾ÐºÐ¸Ð½ÑƒÑ‚ÑŒ \"$name\"?';
+    return 'Покинуть \"$name\"?';
   }
 
   @override
   String community_deleteChannelsWarning(int count) {
-    return 'Ð­Ñ‚Ð¾ Ñ‚Ð°ÐºÐ¶Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ $count ÐºÐ°Ð½Ð°Ð»(Ð¾Ð²) Ð¸ Ð¸Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ.';
+    return 'Это также удалит $count канал(ов) и их сообщения.';
   }
 
   @override
   String community_deleted(String name) {
-    return 'ÐŸÐ¾ÐºÐ¸Ð½ÑƒÐ»Ð¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾ \"$name\"';
+    return 'Покинули сообщество \"$name\"';
   }
 
   @override
-  String get community_regenerateSecret =>
-      'ÐŸÐµÑ€ÐµÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐµÐºÑ€ÐµÑ‚';
+  String get community_regenerateSecret => 'Пересоздать секрет';
 
   @override
   String community_regenerateSecretConfirm(String name) {
-    return 'ÐŸÐµÑ€ÐµÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐµÐºÑ€ÐµÑ‚Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ Ð´Ð»Ñ \"$name\"? Ð’ÑÐµ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ¸ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ñ‚ÑÐºÐ°Ð½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ QR-ÐºÐ¾Ð´ Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ñ Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ.';
+    return 'Пересоздать секретный ключ для \"$name\"? Все участники должны будут отсканировать новый QR-код для продолжения общения.';
   }
 
   @override
-  String get community_regenerate => 'ÐŸÐµÑ€ÐµÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ';
+  String get community_regenerate => 'Пересоздать';
 
   @override
   String community_secretRegenerated(String name) {
-    return 'Ð¡ÐµÐºÑ€ÐµÑ‚ Ð¿ÐµÑ€ÐµÑÐ¾Ð·Ð´Ð°Ð½ Ð´Ð»Ñ \"$name\"';
+    return 'Секрет пересоздан для \"$name\"';
   }
 
   @override
-  String get community_updateSecret => 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐµÐºÑ€ÐµÑ‚';
+  String get community_updateSecret => 'Обновить секрет';
 
   @override
   String community_secretUpdated(String name) {
-    return 'Ð¡ÐµÐºÑ€ÐµÑ‚ Ð¾Ð±Ð½Ð¾Ð²Ð»Ñ‘Ð½ Ð´Ð»Ñ \"$name\"';
+    return 'Секрет обновлён для \"$name\"';
   }
 
   @override
   String community_scanToUpdateSecret(String name) {
-    return 'ÐžÑ‚ÑÐºÐ°Ð½Ð¸Ñ€ÑƒÐ¹Ñ‚Ðµ Ð½Ð¾Ð²Ñ‹Ð¹ QR-ÐºÐ¾Ð´, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐµÐºÑ€ÐµÑ‚ Ð´Ð»Ñ \"$name\"';
+    return 'Отсканируйте новый QR-код, чтобы обновить секрет для \"$name\"';
   }
 
   @override
-  String get community_addHashtagChannel =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ…ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð» ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_addHashtagChannel => 'Добавить хэштег-канал сообщества';
 
   @override
   String get community_addHashtagChannelDesc =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ…ÑÑˆÑ‚ÐµÐ³-ÐºÐ°Ð½Ð°Ð» Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+      'Добавить хэштег-канал для этого сообщества';
 
   @override
-  String get community_selectCommunity => 'Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð¾';
+  String get community_selectCommunity => 'Выбрать сообщество';
 
   @override
-  String get community_regularHashtag => 'ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹ Ñ…ÑÑˆÑ‚ÐµÐ³';
+  String get community_regularHashtag => 'Обычный хэштег';
 
   @override
   String get community_regularHashtagDesc =>
-      'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ…ÑÑˆÑ‚ÐµÐ³ (Ð»ÑŽÐ±Ð¾Ð¹ Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒÑÑ)';
+      'Публичный хэштег (любой может присоединиться)';
 
   @override
-  String get community_communityHashtag => 'Ð¥ÑÑˆÑ‚ÐµÐ³ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+  String get community_communityHashtag => 'Хэштег сообщества';
 
   @override
   String get community_communityHashtagDesc =>
-      'Ð”Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ°Ð¼ ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°';
+      'Доступен только участникам сообщества';
 
   @override
   String community_forCommunity(String name) {
-    return 'Ð”Ð»Ñ $name';
+    return 'Для $name';
   }
 
   @override
-  String get listFilter_tooltip => 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°';
+  String get listFilter_tooltip => 'Фильтр и сортировка';
 
   @override
-  String get listFilter_sortBy => 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¿Ð¾';
+  String get listFilter_sortBy => 'Сортировка по';
 
   @override
-  String get listFilter_latestMessages =>
-      'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ';
+  String get listFilter_latestMessages => 'Последние сообщения';
 
   @override
-  String get listFilter_heardRecently => 'Ð¡Ð»Ñ‹ÑˆÐ°Ð»Ð¸ Ð½ÐµÐ´Ð°Ð²Ð½Ð¾';
+  String get listFilter_heardRecently => 'Слышали недавно';
 
   @override
-  String get listFilter_az => 'ÐŸÐ¾ Ð°Ð»Ñ„Ð°Ð²Ð¸Ñ‚Ñƒ';
+  String get listFilter_az => 'По алфавиту';
 
   @override
-  String get listFilter_filters => 'Ð¤Ð¸Ð»ÑŒÑ‚Ñ€Ñ‹';
+  String get listFilter_filters => 'Фильтры';
 
   @override
-  String get listFilter_all => 'Ð’ÑÐµ';
+  String get listFilter_all => 'Все';
 
   @override
-  String get listFilter_favorites => 'Ð˜Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ';
+  String get listFilter_favorites => 'Избранное';
 
   @override
-  String get listFilter_addToFavorites =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ';
+  String get listFilter_addToFavorites => 'Добавить в избранное';
 
   @override
-  String get listFilter_removeFromFavorites =>
-      'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¸Ð· Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ð³Ð¾';
+  String get listFilter_removeFromFavorites => 'Удалить из избранного';
 
   @override
-  String get listFilter_users => 'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ð¸';
+  String get listFilter_users => 'Пользователи';
 
   @override
-  String get listFilter_repeaters => 'Ð ÐµÐ¿Ð¸Ñ‚ÐµÑ€Ñ‹';
+  String get listFilter_repeaters => 'Репитеры';
 
   @override
-  String get listFilter_roomServers => 'Ð¡ÐµÑ€Ð²ÐµÑ€Ñ‹ ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+  String get listFilter_roomServers => 'Серверы комнат';
 
   @override
-  String get listFilter_unreadOnly => 'Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð½ÐµÐ¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð½Ð½Ñ‹Ðµ';
+  String get listFilter_unreadOnly => 'Только непрочитанные';
 
   @override
-  String get listFilter_newGroup => 'ÐÐ¾Ð²Ð°Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ð°';
+  String get listFilter_newGroup => 'Новая группа';
 
   @override
-  String get pathTrace_you => 'Ð’Ñ‹';
+  String get pathTrace_you => 'Вы';
 
   @override
-  String get pathTrace_failed =>
-      'ÐŸÑƒÑ‚ÑŒ Ñ‚Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ¸ Ð½Ðµ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½.';
+  String get pathTrace_failed => 'Путь трассировки не выполнен.';
 
   @override
-  String get pathTrace_notAvailable =>
-      'Ð¢Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ° Ð¿ÑƒÑ‚Ð¸ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð°.';
+  String get pathTrace_notAvailable => 'Трассировка пути недоступна.';
 
   @override
-  String get pathTrace_refreshTooltip => 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Path Trace';
+  String get pathTrace_refreshTooltip => 'Обновить Path Trace';
 
   @override
   String get pathTrace_someHopsNoLocation =>
-      'ÐžÐ´Ð½Ð¾Ð¼Ñƒ Ð¸Ð»Ð¸ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ð¼ Ñ…Ð¼ÐµÐ»ÑÐ¼ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½Ð¾ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ!';
+      'Одному или нескольким хмелям не указано местоположение!';
 
   @override
-  String get pathTrace_clearTooltip => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¿ÑƒÑ‚ÑŒ';
+  String get pathTrace_clearTooltip => 'Очистить путь';
 
   @override
-  String get losSelectStartEnd =>
-      'Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¸ ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ð¹ ÑƒÐ·Ð»Ñ‹ Ð´Ð»Ñ LOS.';
+  String get losSelectStartEnd => 'Выберите начальный и конечный узлы для LOS.';
 
   @override
   String losRunFailed(String error) {
-    return 'ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¿Ñ€ÑÐ¼Ð¾Ð¹ Ð²Ð¸Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð½Ðµ ÑƒÐ´Ð°Ð»Ð°ÑÑŒ: $error';
+    return 'Проверка прямой видимости не удалась: $error';
   }
 
   @override
-  String get losClearAllPoints => 'ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð²ÑÐµ Ñ‚Ð¾Ñ‡ÐºÐ¸';
+  String get losClearAllPoints => 'Очистить все точки';
 
   @override
   String get losRunToViewElevationProfile =>
-      'Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ðµ LOS, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»ÑŒ Ð²Ñ‹ÑÐ¾Ñ‚.';
+      'Запустите LOS, чтобы просмотреть профиль высот.';
 
   @override
-  String get losMenuTitle => 'Ð›ÐžÐ¡ ÐœÐµÐ½ÑŽ';
+  String get losMenuTitle => 'ЛОС Меню';
 
   @override
   String get losMenuSubtitle =>
-      'ÐšÐ¾ÑÐ½Ð¸Ñ‚ÐµÑÑŒ ÑƒÐ·Ð»Ð¾Ð² Ð¸Ð»Ð¸ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð¸ ÑƒÐ´ÐµÑ€Ð¶Ð¸Ð²Ð°Ð¹Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ñƒ Ð´Ð»Ñ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ñ… Ñ‚Ð¾Ñ‡ÐµÐº.';
+      'Коснитесь узлов или нажмите и удерживайте карту для выбора пользовательских точек.';
 
   @override
-  String get losShowDisplayNodes =>
-      'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑƒÐ·Ð»Ñ‹ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ';
+  String get losShowDisplayNodes => 'Показать узлы отображения';
 
   @override
-  String get losCustomPoints => 'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸';
+  String get losCustomPoints => 'Пользовательские точки';
 
   @override
   String losCustomPointLabel(int index) {
-    return 'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹ $index';
+    return 'Пользовательский $index';
   }
 
   @override
-  String get losPointA => 'Ð¢Ð¾Ñ‡ÐºÐ° Ð';
+  String get losPointA => 'Точка А';
 
   @override
-  String get losPointB => 'Ð¢Ð¾Ñ‡ÐºÐ° Ð‘';
+  String get losPointB => 'Точка Б';
 
   @override
   String losAntennaA(String value, String unit) {
-    return 'ÐÐ½Ñ‚ÐµÐ½Ð½Ð° Ð: $value $unit';
+    return 'Антенна А: $value $unit';
   }
 
   @override
   String losAntennaB(String value, String unit) {
-    return 'ÐÐ½Ñ‚ÐµÐ½Ð½Ð° Ð‘: $value $unit';
+    return 'Антенна Б: $value $unit';
   }
 
   @override
-  String get losRun => 'Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ð›ÐžÐ¡';
+  String get losRun => 'Запустить ЛОС';
 
   @override
-  String get losNoElevationData => 'ÐÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ðµ';
+  String get losNoElevationData => 'Нет данных о высоте';
 
   @override
   String losProfileClear(
@@ -3048,7 +2939,7 @@ class AppLocalizationsRu extends AppLocalizations {
     String clearance,
     String heightUnit,
   ) {
-    return '$distance $distanceUnit, ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ð°Ñ Ð·Ð¾Ð½Ð° Ð²Ð¸Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸, Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð·Ð°Ð·Ð¾Ñ€ $clearance $heightUnit';
+    return '$distance $distanceUnit, свободная зона видимости, минимальный зазор $clearance $heightUnit';
   }
 
   @override
@@ -3058,64 +2949,61 @@ class AppLocalizationsRu extends AppLocalizations {
     String obstruction,
     String heightUnit,
   ) {
-    return '$distance $distanceUnit, Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½ $obstruction $heightUnit';
+    return '$distance $distanceUnit, заблокирован $obstruction $heightUnit';
   }
 
   @override
-  String get losStatusChecking => 'Ð›ÐžÐ¡: Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÑŽ...';
+  String get losStatusChecking => 'ЛОС: проверяю...';
 
   @override
-  String get losStatusNoData => 'Ð›ÐžÐ¡: Ð½ÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ…';
+  String get losStatusNoData => 'ЛОС: нет данных';
 
   @override
   String losStatusSummary(int clear, int total, int blocked, int unknown) {
-    return 'LOS: $clear/$total Ð¾Ñ‡Ð¸Ñ‰ÐµÐ½Ð¾, $blocked Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¾, $unknown Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð¾.';
+    return 'LOS: $clear/$total очищено, $blocked заблокировано, $unknown неизвестно.';
   }
 
   @override
   String get losErrorElevationUnavailable =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ðµ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð´Ð»Ñ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¸Ð»Ð¸ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ñ… Ð¾Ð±Ñ€Ð°Ð·Ñ†Ð¾Ð².';
+      'Данные о высоте недоступны для одного или нескольких образцов.';
 
   @override
   String get losErrorInvalidInput =>
-      'ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ñ‚Ð¾Ñ‡ÐºÐ°Ñ…/Ð²Ñ‹ÑÐ¾Ñ‚Ðµ Ð´Ð»Ñ Ñ€Ð°ÑÑ‡ÐµÑ‚Ð° LOS.';
+      'Неверные данные о точках/высоте для расчета LOS.';
 
   @override
-  String get losRenameCustomPoint =>
-      'ÐŸÐµÑ€ÐµÐ¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÑƒÑŽ Ñ‚Ð¾Ñ‡ÐºÑƒ';
+  String get losRenameCustomPoint => 'Переименовать пользовательскую точку';
 
   @override
-  String get losPointName => 'Ð˜Ð¼Ñ Ñ‚Ð¾Ñ‡ÐºÐ¸';
+  String get losPointName => 'Имя точки';
 
   @override
-  String get losShowPanelTooltip => 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿Ð°Ð½ÐµÐ»ÑŒ LOS';
+  String get losShowPanelTooltip => 'Показать панель LOS';
 
   @override
-  String get losHidePanelTooltip => 'Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¿Ð°Ð½ÐµÐ»ÑŒ LOS';
+  String get losHidePanelTooltip => 'Скрыть панель LOS';
 
   @override
   String get losElevationAttribution =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ðµ: Open-Meteo (CC BY 4.0)';
+      'Данные о высоте: Open-Meteo (CC BY 4.0)';
 
   @override
-  String get losLegendRadioHorizon => 'Ð Ð°Ð´Ð¸Ð¾Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚';
+  String get losLegendRadioHorizon => 'Радиогоризонт';
 
   @override
-  String get losLegendLosBeam => 'Ð›Ð¸Ð½Ð¸Ñ Ð¿Ñ€ÑÐ¼Ð¾Ð¹ Ð²Ð¸Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸';
+  String get losLegendLosBeam => 'Линия прямой видимости';
 
   @override
-  String get losLegendTerrain => 'Ð ÐµÐ»ÑŒÐµÑ„';
+  String get losLegendTerrain => 'Рельеф';
 
   @override
-  String get losFrequencyLabel => 'Ð§Ð°ÑÑ‚Ð¾Ñ‚Ð°';
+  String get losFrequencyLabel => 'Частота';
 
   @override
-  String get losFrequencyInfoTooltip =>
-      'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð´ÐµÑ‚Ð°Ð»Ð¸ Ñ€Ð°ÑÑ‡Ñ‘Ñ‚Ð°';
+  String get losFrequencyInfoTooltip => 'Просмотреть детали расчёта';
 
   @override
-  String get losFrequencyDialogTitle =>
-      'Ð Ð°ÑÑ‡Ñ‘Ñ‚ Ñ€Ð°Ð´Ð¸Ð¾Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°';
+  String get losFrequencyDialogTitle => 'Расчёт радиогоризонта';
 
   @override
   String losFrequencyDialogDescription(
@@ -3124,105 +3012,97 @@ class AppLocalizationsRu extends AppLocalizations {
     double frequencyMHz,
     double kFactor,
   ) {
-    return 'ÐÐ°Ñ‡Ð¸Ð½Ð°Ñ Ñ k=$baselineK Ð½Ð° Ñ‡Ð°ÑÑ‚Ð¾Ñ‚Ðµ $baselineFreq ÐœÐ“Ñ†, Ñ€Ð°ÑÑ‡ÐµÑ‚ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð¸Ñ€ÑƒÐµÑ‚ ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ k Ð´Ð»Ñ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ³Ð¾ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° $frequencyMHz ÐœÐ“Ñ†, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ Ð¸Ð·Ð¾Ð³Ð½ÑƒÑ‚ÑƒÑŽ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ñ€Ð°Ð´Ð¸Ð¾Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°.';
+    return 'Начиная с k=$baselineK на частоте $baselineFreq МГц, расчет корректирует коэффициент k для текущего диапазона $frequencyMHz МГц, который определяет изогнутую границу радиогоризонта.';
   }
 
   @override
-  String get contacts_pathTrace => 'Ð¢Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ° Ð¿ÑƒÑ‚Ð¸';
+  String get contacts_pathTrace => 'Трассировка пути';
 
   @override
-  String get contacts_ping => 'ÐŸÐ¸Ð½Ð³Ð¾Ð²Ð°Ñ‚ÑŒ';
+  String get contacts_ping => 'Пинговать';
 
   @override
-  String get contacts_repeaterPathTrace =>
-      'ÐžÑ‚ÑÐ»ÐµÐ´Ð¸Ñ‚ÑŒ Ð¿ÑƒÑ‚ÑŒ Ðº Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»ÑÑ‚Ð¾Ñ€Ñƒ';
+  String get contacts_repeaterPathTrace => 'Отследить путь к ретранслятору';
 
   @override
-  String get contacts_repeaterPing =>
-      'ÐŸÐ¸Ð½Ð³Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÐµÐ»ÑŒ';
+  String get contacts_repeaterPing => 'Пинговать повторитель';
 
   @override
-  String get contacts_roomPathTrace =>
-      'Ð¢Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ° Ð¿ÑƒÑ‚Ð¸ Ðº ÑÐµÑ€Ð²ÐµÑ€Ñƒ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹';
+  String get contacts_roomPathTrace => 'Трассировка пути к серверу комнаты';
 
   @override
-  String get contacts_roomPing =>
-      'ÐŸÐ¸Ð½Ð³Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹';
+  String get contacts_roomPing => 'Пинговать сервер комнаты';
 
   @override
-  String get contacts_chatTraceRoute =>
-      'Ð¢Ñ€Ð°ÑÑÐ¸Ñ€Ð¾Ð²ÐºÐ° Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚Ð°';
+  String get contacts_chatTraceRoute => 'Трассировка маршрута';
 
   @override
   String contacts_pathTraceTo(String name) {
-    return 'ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼Ð°Ñ€ÑˆÑ€ÑƒÑ‚ Ðº $name';
+    return 'Показать маршрут к $name';
   }
 
   @override
-  String get contacts_clipboardEmpty => 'Ð‘ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð° Ð¿ÑƒÑÑ‚.';
+  String get contacts_clipboardEmpty => 'Буфер обмена пуст.';
 
   @override
   String get contacts_invalidAdvertFormat =>
-      'ÐÐµÐ´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ';
+      'Недействительные контактные данные';
 
   @override
-  String get contacts_contactImported =>
-      'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ Ð±Ñ‹Ð» Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½';
+  String get contacts_contactImported => 'Контакт был импортирован';
 
   @override
-  String get contacts_contactImportFailed =>
-      'ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ Ð½Ðµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ';
+  String get contacts_contactImportFailed => 'Контакт не удалось импортировать';
 
   @override
-  String get contacts_zeroHopAdvert => 'Ð ÐµÐºÐ»Ð°Ð¼Ð° Zero Hop';
+  String get contacts_zeroHopAdvert => 'Реклама Zero Hop';
 
   @override
-  String get contacts_floodAdvert => 'Ð ÐµÐºÐ»Ð°Ð¼Ð½Ñ‹Ð¹ Ð¿Ð¾Ñ‚Ð¾Ðº';
+  String get contacts_floodAdvert => 'Рекламный поток';
 
   @override
   String get contacts_copyAdvertToClipboard =>
-      'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€ÐµÐºÐ»Ð°Ð¼Ñƒ Ð² Ð±ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð°';
+      'Копировать рекламу в буфер обмена';
 
   @override
   String get contacts_addContactFromClipboard =>
-      'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚ Ð¸Ð· Ð±ÑƒÑ„ÐµÑ€Ð° Ð¾Ð±Ð¼ÐµÐ½Ð°';
+      'Добавить контакт из буфера обмена';
 
   @override
-  String get contacts_ShareContact =>
-      'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚ Ð² Ð±ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð°';
+  String get contacts_ShareContact => 'Копировать контакт в буфер обмена';
 
   @override
   String get contacts_ShareContactZeroHop =>
-      'ÐŸÐ¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð¼ Ð¿Ð¾ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸ÑŽ';
+      'Поделиться контактом по объявлению';
 
   @override
   String get contacts_zeroHopContactAdvertSent =>
-      'ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ð¾Ð±ÑŠÑÐ²Ð»ÐµÐ½Ð¸ÑŽ.';
+      'Отправлено сообщение по объявлению.';
 
   @override
   String get contacts_zeroHopContactAdvertFailed =>
-      'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚.';
+      'Не удалось отправить контакт.';
 
   @override
   String get contacts_contactAdvertCopied =>
-      'Ð ÐµÐºÐ»Ð°Ð¼Ð° ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð° Ð² Ð±ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð°.';
+      'Реклама скопирована в буфер обмена.';
 
   @override
   String get contacts_contactAdvertCopyFailed =>
-      'ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ€ÐµÐºÐ»Ð°Ð¼Ñ‹ Ð² Ð±ÑƒÑ„ÐµÑ€ Ð¾Ð±Ð¼ÐµÐ½Ð° Ð½Ðµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ.';
+      'Копирование рекламы в буфер обмена не удалось.';
 
   @override
-  String get notification_activityTitle => 'ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ MeshCore';
+  String get notification_activityTitle => 'Активность MeshCore';
 
   @override
   String notification_messagesCount(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹',
-      many: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹',
-      few: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ',
-      one: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ',
+      other: 'сообщений',
+      many: 'сообщений',
+      few: 'сообщения',
+      one: 'сообщение',
     );
     return '$count $_temp0';
   }
@@ -3232,10 +3112,10 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ ÐºÐ°Ð½Ð°Ð»Ð°',
-      many: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ ÐºÐ°Ð½Ð°Ð»Ð°',
-      few: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ ÐºÐ°Ð½Ð°Ð»Ð°',
-      one: 'ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ ÐºÐ°Ð½Ð°Ð»Ð°',
+      other: 'сообщений канала',
+      many: 'сообщений канала',
+      few: 'сообщения канала',
+      one: 'сообщение канала',
     );
     return '$count $_temp0';
   }
@@ -3245,87 +3125,78 @@ class AppLocalizationsRu extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'Ð½Ð¾Ð²Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð²',
-      many: 'Ð½Ð¾Ð²Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð²',
-      few: 'Ð½Ð¾Ð²Ñ‹Ñ… ÑƒÐ·Ð»Ð°',
-      one: 'Ð½Ð¾Ð²Ñ‹Ð¹ ÑƒÐ·ÐµÐ»',
+      other: 'новых узлов',
+      many: 'новых узлов',
+      few: 'новых узла',
+      one: 'новый узел',
     );
     return '$count $_temp0';
   }
 
   @override
   String notification_newTypeDiscovered(String contactType) {
-    return 'ÐžÐ±Ð½Ð°Ñ€ÑƒÐ¶ÐµÐ½ Ð½Ð¾Ð²Ñ‹Ð¹ $contactType';
+    return 'Обнаружен новый $contactType';
   }
 
   @override
-  String get notification_receivedNewMessage =>
-      'ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¾ Ð½Ð¾Ð²Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ';
+  String get notification_receivedNewMessage => 'Получено новое сообщение';
 
   @override
   String get settings_gpxExportRepeaters =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð¸Ð¿Ð¸Ñ‚ÐµÑ€Ñ‹ / ÑÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚Ñ‹ Ð² GPX';
+      'Экспортировать рипитеры / сервер комнаты в GPX';
 
   @override
   String get settings_gpxExportRepeatersSubtitle =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÑ‚ Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»ÑÑ‚Ð¾Ñ€Ñ‹ / ÑÐµÑ€Ð²ÐµÑ€ ÐºÐ¾Ð¼Ð½Ð°Ñ‚ Ñ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÐ¼ Ð² Ñ„Ð°Ð¹Ð» GPX.';
+      'Экспортирует ретрансляторы / сервер комнат с местоположением в файл GPX.';
 
   @override
-  String get settings_gpxExportContacts =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¿ÑƒÑ‚Ð½Ð¸ÐºÐ¾Ð² Ð² GPX';
+  String get settings_gpxExportContacts => 'Экспортировать спутников в GPX';
 
   @override
   String get settings_gpxExportContactsSubtitle =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÑ‚ ÑÐ¿ÑƒÑ‚Ð½Ð¸ÐºÐ¾Ð² Ñ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÐ¼ Ð² Ñ„Ð°Ð¹Ð» GPX.';
+      'Экспортирует спутников с местоположением в файл GPX.';
 
   @override
-  String get settings_gpxExportAll =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð²ÑÐµ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹ Ð² GPX';
+  String get settings_gpxExportAll => 'Экспортировать все контакты в GPX';
 
   @override
   String get settings_gpxExportAllSubtitle =>
-      'Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÑ‚ Ð²ÑÐµ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹ Ñ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸ÐµÐ¼ Ð² Ñ„Ð°Ð¹Ð» GPX.';
+      'Экспортирует все контакты с местоположением в файл GPX.';
 
   @override
-  String get settings_gpxExportSuccess =>
-      'Ð£ÑÐ¿ÐµÑˆÐ½Ð¾ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½ Ñ„Ð°Ð¹Ð» GPX.';
+  String get settings_gpxExportSuccess => 'Успешно экспортирован файл GPX.';
 
   @override
-  String get settings_gpxExportNoContacts =>
-      'ÐÐµÑ‚ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð² Ð´Ð»Ñ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð°.';
+  String get settings_gpxExportNoContacts => 'Нет контактов для экспорта.';
 
   @override
   String get settings_gpxExportNotAvailable =>
-      'ÐÐµ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ð½Ð° Ð²Ð°ÑˆÐµÐ¼ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ðµ/ÐžÐ¡';
+      'Не поддерживается на вашем устройстве/ОС';
 
   @override
-  String get settings_gpxExportError =>
-      'ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ðµ.';
+  String get settings_gpxExportError => 'Произошла ошибка при экспорте.';
 
   @override
   String get settings_gpxExportRepeatersRoom =>
-      'ÐœÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÐµÐ»ÐµÐ¹ Ð¸ ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð² ÐºÐ¾Ð¼Ð½Ð°Ñ‚';
+      'Местоположения повторителей и серверов комнат';
 
   @override
-  String get settings_gpxExportChat =>
-      'ÐœÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ ÑÐ¿ÑƒÑ‚Ð½Ð¸ÐºÐ¾Ð²';
+  String get settings_gpxExportChat => 'Местоположения спутников';
 
   @override
-  String get settings_gpxExportAllContacts =>
-      'Ð’ÑÐµ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð²';
+  String get settings_gpxExportAllContacts => 'Все местоположения контактов';
 
   @override
   String get settings_gpxExportShareText =>
-      'Ð”Ð°Ð½Ð½Ñ‹Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹ Ð¸Ð· meshcore-open';
+      'Данные карты экспортированы из meshcore-open';
 
   @override
   String get settings_gpxExportShareSubject =>
-      'meshcore-open ÑÐºÑÐ¿Ð¾Ñ€Ñ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… ÐºÐ°Ñ€Ñ‚Ñ‹ GPX';
+      'meshcore-open экспорт данных карты GPX';
 
   @override
-  String get snrIndicator_nearByRepeaters =>
-      'Ð‘Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐ¸Ðµ Ñ€ÐµÑ‚Ñ€Ð°Ð½ÑÐ»ÑÑ‚Ð¾Ñ€Ñ‹';
+  String get snrIndicator_nearByRepeaters => 'Ближайшие ретрансляторы';
 
   @override
-  String get snrIndicator_lastSeen => 'ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ Ñ€Ð°Ð· Ð²Ð¸Ð´ÐµÐ»Ð¸';
+  String get snrIndicator_lastSeen => 'Последний раз видели';
 }

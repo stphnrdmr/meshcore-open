@@ -358,6 +358,78 @@ abstract class AppLocalizations {
   /// **'No USB devices found. Plug one in and refresh.'**
   String get usbScreenEmptyState;
 
+  /// No description provided for @usbErrorPermissionDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'USB permission was denied.'**
+  String get usbErrorPermissionDenied;
+
+  /// No description provided for @usbErrorDeviceMissing.
+  ///
+  /// In en, this message translates to:
+  /// **'The selected USB device is no longer available.'**
+  String get usbErrorDeviceMissing;
+
+  /// No description provided for @usbErrorInvalidPort.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a valid USB device.'**
+  String get usbErrorInvalidPort;
+
+  /// No description provided for @usbErrorBusy.
+  ///
+  /// In en, this message translates to:
+  /// **'Another USB connection request is already in progress.'**
+  String get usbErrorBusy;
+
+  /// No description provided for @usbErrorNotConnected.
+  ///
+  /// In en, this message translates to:
+  /// **'No USB device is connected.'**
+  String get usbErrorNotConnected;
+
+  /// No description provided for @usbErrorOpenFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to open the selected USB device.'**
+  String get usbErrorOpenFailed;
+
+  /// No description provided for @usbErrorConnectFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to connect to the selected USB device.'**
+  String get usbErrorConnectFailed;
+
+  /// No description provided for @usbErrorUnsupported.
+  ///
+  /// In en, this message translates to:
+  /// **'USB serial is not supported on this platform.'**
+  String get usbErrorUnsupported;
+
+  /// No description provided for @usbErrorAlreadyActive.
+  ///
+  /// In en, this message translates to:
+  /// **'A USB connection is already active.'**
+  String get usbErrorAlreadyActive;
+
+  /// No description provided for @usbErrorNoDeviceSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'No USB device was selected.'**
+  String get usbErrorNoDeviceSelected;
+
+  /// No description provided for @usbErrorPortClosed.
+  ///
+  /// In en, this message translates to:
+  /// **'The USB connection is not open.'**
+  String get usbErrorPortClosed;
+
+  /// No description provided for @usbErrorConnectTimedOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Timed out waiting for the device to respond.'**
+  String get usbErrorConnectTimedOut;
+
   /// No description provided for @scanner_scanning.
   ///
   /// In en, this message translates to:

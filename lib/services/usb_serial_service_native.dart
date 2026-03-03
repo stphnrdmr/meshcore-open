@@ -140,7 +140,7 @@ class UsbSerialService {
           'Android connect failed: $msg',
           tag: 'USB Serial',
         );
-        throw StateError(msg);
+        rethrow;
       }
     } else {
       // ── Hot-restart guard ─────────────────────────────────────────────────

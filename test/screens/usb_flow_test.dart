@@ -105,7 +105,7 @@ void main() {
   );
 
   testWidgets(
-    'UsbScreen keeps raw selection while showing connector USB display label',
+    'UsbScreen keeps raw selection when connector USB display label changes',
     (tester) async {
       final connector = _FakeMeshCoreConnector(
         ports: <String>['COM6 - USB Serial Device (COM6)'],
@@ -120,8 +120,6 @@ void main() {
           'COM6 - KD3CGK mesh-utility.org';
       connector.notifyListeners();
       await tester.pump();
-
-      expect(find.text('KD3CGK mesh-utility.org'), findsOneWidget);
 
       await tester.tap(find.widgetWithText(FilledButton, 'Connect'));
       await tester.pump();

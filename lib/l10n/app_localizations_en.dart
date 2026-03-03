@@ -133,6 +133,47 @@ class AppLocalizationsEn extends AppLocalizations {
       'No USB devices found. Plug one in and refresh.';
 
   @override
+  String get usbErrorPermissionDenied => 'USB permission was denied.';
+
+  @override
+  String get usbErrorDeviceMissing =>
+      'The selected USB device is no longer available.';
+
+  @override
+  String get usbErrorInvalidPort => 'Select a valid USB device.';
+
+  @override
+  String get usbErrorBusy =>
+      'Another USB connection request is already in progress.';
+
+  @override
+  String get usbErrorNotConnected => 'No USB device is connected.';
+
+  @override
+  String get usbErrorOpenFailed => 'Failed to open the selected USB device.';
+
+  @override
+  String get usbErrorConnectFailed =>
+      'Failed to connect to the selected USB device.';
+
+  @override
+  String get usbErrorUnsupported =>
+      'USB serial is not supported on this platform.';
+
+  @override
+  String get usbErrorAlreadyActive => 'A USB connection is already active.';
+
+  @override
+  String get usbErrorNoDeviceSelected => 'No USB device was selected.';
+
+  @override
+  String get usbErrorPortClosed => 'The USB connection is not open.';
+
+  @override
+  String get usbErrorConnectTimedOut =>
+      'Timed out waiting for the device to respond.';
+
+  @override
   String get scanner_scanning => 'Scanning for devices...';
 
   @override

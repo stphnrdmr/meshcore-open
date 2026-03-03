@@ -69,7 +69,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get common_share => 'Delen';
 
   @override
-  String get common_copy => 'KopiÃ«ren';
+  String get common_copy => 'Kopiëren';
 
   @override
   String get common_retry => 'Nogmaals proberen';
@@ -93,7 +93,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get common_loading => 'Laden...';
 
   @override
-  String get common_notAvailable => 'â€”';
+  String get common_notAvailable => '—';
 
   @override
   String common_voltageValue(String volts) {
@@ -119,7 +119,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get usbScreenSubtitle =>
-      'Kies een gedetecteerd seriÃ«le apparaat en verbind deze direct met uw MeshCore-node.';
+      'Kies een gedetecteerd seriële apparaat en verbind deze direct met uw MeshCore-node.';
 
   @override
   String get usbScreenStatus => 'Selecteer een USB-apparaat';
@@ -131,6 +131,48 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get usbScreenEmptyState =>
       'Geen USB-apparaten gevonden. Sluit er een aan en herlaad.';
+
+  @override
+  String get usbErrorPermissionDenied => 'Toegang via USB is geweigerd.';
+
+  @override
+  String get usbErrorDeviceMissing =>
+      'Het geselecteerde USB-apparaat is niet meer beschikbaar.';
+
+  @override
+  String get usbErrorInvalidPort => 'Selecteer een geldig USB-apparaat.';
+
+  @override
+  String get usbErrorBusy =>
+      'Een andere verzoek om een USB-verbinding is al in behandeling.';
+
+  @override
+  String get usbErrorNotConnected => 'Er is geen USB-apparaat aangesloten.';
+
+  @override
+  String get usbErrorOpenFailed =>
+      'Kon het geselecteerde USB-apparaat niet openen.';
+
+  @override
+  String get usbErrorConnectFailed =>
+      'Kon niet verbinding maken met het geselecteerde USB-apparaat.';
+
+  @override
+  String get usbErrorUnsupported =>
+      'USB-serieel is niet ondersteund op deze platform.';
+
+  @override
+  String get usbErrorAlreadyActive => 'Een USB-verbinding is al actief.';
+
+  @override
+  String get usbErrorNoDeviceSelected => 'Geen USB-apparaat is geselecteerd.';
+
+  @override
+  String get usbErrorPortClosed => 'De USB-verbinding is niet actief.';
+
+  @override
+  String get usbErrorConnectTimedOut =>
+      'Wachtperiode is verlopen, er is geen reactie ontvangen van het apparaat.';
 
   @override
   String get scanner_scanning => 'Scannen naar apparaten...';
@@ -231,7 +273,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get settings_location => 'Locatie';
 
   @override
-  String get settings_locationSubtitle => 'GPS coÃ¶rdinaten';
+  String get settings_locationSubtitle => 'GPS coördinaten';
 
   @override
   String get settings_locationUpdated => 'Locatie bijgewerkt';
@@ -450,10 +492,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get appSettings_languageEn => 'English';
 
   @override
-  String get appSettings_languageFr => 'FranÃ§ais';
+  String get appSettings_languageFr => 'Français';
 
   @override
-  String get appSettings_languageEs => 'EspaÃ±ol';
+  String get appSettings_languageEs => 'Español';
 
   @override
   String get appSettings_languageDe => 'Deutsch';
@@ -462,16 +504,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get appSettings_languagePl => 'Polski';
 
   @override
-  String get appSettings_languageSl => 'SlovenÅ¡Äina';
+  String get appSettings_languageSl => 'Slovenščina';
 
   @override
-  String get appSettings_languagePt => 'PortuguÃªs';
+  String get appSettings_languagePt => 'Português';
 
   @override
   String get appSettings_languageIt => 'Italiano';
 
   @override
-  String get appSettings_languageZh => 'ä¸­æ–‡';
+  String get appSettings_languageZh => '中文';
 
   @override
   String get appSettings_languageSv => 'Svenska';
@@ -480,16 +522,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get appSettings_languageNl => 'Nederlands';
 
   @override
-  String get appSettings_languageSk => 'SlovenÄina';
+  String get appSettings_languageSk => 'Slovenčina';
 
   @override
-  String get appSettings_languageBg => 'Ð‘ÑŠÐ»Ð³Ð°Ñ€ÑÐºÐ¸';
+  String get appSettings_languageBg => 'Български';
 
   @override
   String get appSettings_languageRu => 'Russisch';
 
   @override
-  String get appSettings_languageUk => 'OekraÃ¯ens';
+  String get appSettings_languageUk => 'Oekraïens';
 
   @override
   String get appSettings_enableMessageTracing => 'Berichttracking inschakelen';
@@ -847,7 +889,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get channels_public => 'Openbaar';
 
   @override
-  String get channels_private => 'PrivÃ©';
+  String get channels_private => 'Privé';
 
   @override
   String get channels_publicChannel => 'Open kanaal';
@@ -947,14 +989,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get channels_sortUnread => 'Ongelezen';
 
   @override
-  String get channels_createPrivateChannel => 'Maak een PrivÃ© Kanaal';
+  String get channels_createPrivateChannel => 'Maak een Privé Kanaal';
 
   @override
   String get channels_createPrivateChannelDesc =>
       'Beveiligd met een geheime sleutel.';
 
   @override
-  String get channels_joinPrivateChannel => 'Sluit een PrivÃ© Kanaal aan';
+  String get channels_joinPrivateChannel => 'Sluit een Privé Kanaal aan';
 
   @override
   String get channels_joinPrivateChannelDesc =>
@@ -1336,7 +1378,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get map_nodesNeedGps =>
-      'Nodes moeten hun GPS-coÃ¶rdinaten delen\nom op de kaart te verschijnen';
+      'Nodes moeten hun GPS-coördinaten delen\nom op de kaart te verschijnen';
 
   @override
   String map_nodesCount(int count) {
@@ -1364,7 +1406,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get map_pinDm => 'Verzenden als bericht (DM)';
 
   @override
-  String get map_pinPrivate => 'Beveiligd (PrivÃ©)';
+  String get map_pinPrivate => 'Beveiligd (Privé)';
 
   @override
   String get map_pinPublic => 'Openbaar spikken';
@@ -2031,7 +2073,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_eraseSerialOnly =>
-      'Verwijderen is alleen beschikbaar via de seriÃ«le console.';
+      'Verwijderen is alleen beschikbaar via de seriële console.';
 
   @override
   String repeater_commandSent(String command) {
@@ -2259,7 +2301,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetBridgeBaud =>
-      'Stel de seriÃ«le link baudrate in voor rs232 bruggen.';
+      'Stel de seriële link baudrate in voor rs232 bruggen.';
 
   @override
   String get repeater_cliHelpSetBridgeSecret =>
@@ -2275,7 +2317,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetPerm =>
-      'Wijzigt de ACL. Verwijder de overeenkomstige entry (door pubkey prefix) als \"permissions\" 0 is. Voeg een nieuwe entry toe als pubkey-hex volledig is en niet momenteel in de ACL staat. Update de entry door matching pubkey prefix. Toestemming bits variÃ«ren per firmware rol, maar de onderste 2 bits zijn: 0 (Gast), 1 (Alleen lezen), 2 (Lezen/schrijven), 3 (Admin)';
+      'Wijzigt de ACL. Verwijder de overeenkomstige entry (door pubkey prefix) als \"permissions\" 0 is. Voeg een nieuwe entry toe als pubkey-hex volledig is en niet momenteel in de ACL staat. Update de entry door matching pubkey prefix. Toestemming bits variëren per firmware rol, maar de onderste 2 bits zijn: 0 (Gast), 1 (Alleen lezen), 2 (Lezen/schrijven), 3 (Admin)';
 
   @override
   String get repeater_cliHelpGetBridgeType =>
@@ -2307,7 +2349,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_cliHelpRegionLoad =>
-      'LET OP: dit is een speciale multi-command aanroep. Elke volgende opdracht is een regiortaak (uitgelijnd met spaties om de ouderhiÃ«rarchie aan te duiden, met minimaal Ã©Ã©n spatie). BeÃ«indigd door een lege regel/opdracht te sturen.';
+      'LET OP: dit is een speciale multi-command aanroep. Elke volgende opdracht is een regiortaak (uitgelijnd met spaties om de ouderhiërarchie aan te duiden, met minimaal één spatie). Beëindigd door een lege regel/opdracht te sturen.';
 
   @override
   String get repeater_cliHelpRegionGet =>
@@ -2352,7 +2394,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_cliHelpGpsSetLoc =>
-      'Stel de positie van de node vast als GPS-coÃ¶rdinaten en sla de voorkeuren op.';
+      'Stel de positie van de node vast als GPS-coördinaten en sla de voorkeuren op.';
 
   @override
   String get repeater_cliHelpGpsAdvert =>
@@ -2390,14 +2432,14 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get repeater_regionNote =>
-      'Regio-commando\'s zijn geÃ¯ntroduceerd om regio-definities en permissies te beheren.';
+      'Regio-commando\'s zijn geïntroduceerd om regio-definities en permissies te beheren.';
 
   @override
   String get repeater_gpsManagement => 'Beheer GPS';
 
   @override
   String get repeater_gpsNote =>
-      'De GPS-commando is geÃ¯ntroduceerd om locatiegerelateerde onderwerpen te beheren.';
+      'De GPS-commando is geïntroduceerd om locatiegerelateerde onderwerpen te beheren.';
 
   @override
   String get telemetry_receivedData => 'Ontvangen Telemetriedata';
@@ -2450,7 +2492,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String telemetry_temperatureValue(String celsius, String fahrenheit) {
-    return '$celsiusÂ°C / $fahrenheitÂ°F';
+    return '$celsius°C / $fahrenheit°F';
   }
 
   @override
@@ -2519,7 +2561,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String channelPath_observedPathTitle(int index, String hops) {
-    return 'Waargenomen pad $index â€¢ $hops';
+    return 'Waargenomen pad $index • $hops';
   }
 
   @override
@@ -2574,7 +2616,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String channelPath_selectedPathLabel(String label, String prefixes) {
-    return '$label â€¢ $prefixes';
+    return '$label • $prefixes';
   }
 
   @override
@@ -2991,11 +3033,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get contacts_invalidAdvertFormat => 'Ongeldige contactgegevens';
 
   @override
-  String get contacts_contactImported => 'Contact is geÃ¯mporteerd.';
+  String get contacts_contactImported => 'Contact is geïmporteerd.';
 
   @override
   String get contacts_contactImportFailed =>
-      'Contact kon niet geÃ¯mporteerd worden.';
+      'Contact kon niet geïmporteerd worden.';
 
   @override
   String get contacts_zeroHopAdvert => 'Zero Hop Reclame';
@@ -3004,14 +3046,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get contacts_floodAdvert => 'Overstromingsadvertentie';
 
   @override
-  String get contacts_copyAdvertToClipboard => 'Advert naar klembord kopiÃ«ren';
+  String get contacts_copyAdvertToClipboard => 'Advert naar klembord kopiëren';
 
   @override
   String get contacts_addContactFromClipboard =>
       'Contact uit klembord toevoegen';
 
   @override
-  String get contacts_ShareContact => 'Kontakt naar Klembord kopiÃ«ren';
+  String get contacts_ShareContact => 'Kontakt naar Klembord kopiëren';
 
   @override
   String get contacts_ShareContactZeroHop => 'Contact delen via advertentie';
@@ -3030,7 +3072,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get contacts_contactAdvertCopyFailed =>
-      'KopiÃ«ren van advertentie naar Clipboard is mislukt.';
+      'Kopiëren van advertentie naar Clipboard is mislukt.';
 
   @override
   String get notification_activityTitle => 'MeshCore Activiteit';
@@ -3099,8 +3141,7 @@ class AppLocalizationsNl extends AppLocalizations {
       'Exporteert alle contacten met een locatie naar een GPX-bestand.';
 
   @override
-  String get settings_gpxExportSuccess =>
-      'Succesvol GPX-bestand geÃ«xporteerd.';
+  String get settings_gpxExportSuccess => 'Succesvol GPX-bestand geëxporteerd.';
 
   @override
   String get settings_gpxExportNoContacts => 'Geen contacten om te exporteren.';
@@ -3124,7 +3165,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get settings_gpxExportShareText =>
-      'Kaartgegevens geÃ«xporteerd uit meshcore-open';
+      'Kaartgegevens geëxporteerd uit meshcore-open';
 
   @override
   String get settings_gpxExportShareSubject =>

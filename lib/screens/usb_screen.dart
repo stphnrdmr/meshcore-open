@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../connector/meshcore_connector.dart';
@@ -481,7 +482,7 @@ class _UsbScreenState extends State<UsbScreen> {
       setState(() {
         _ports.clear();
         _selectedPort = null;
-        _errorText = error.toString();
+        _errorText = _friendlyErrorMessage(error);
         _isLoadingPorts = false;
       });
     }
@@ -523,16 +524,56 @@ class _UsbScreenState extends State<UsbScreen> {
     }
   }
 
-  /// Strips the Dart runtime prefix (e.g. "Bad state: ", "Exception: ")
-  /// from error messages before showing them in the UI.
   String _friendlyErrorMessage(Object error) {
+    final l10n = context.l10n;
+    if (error is PlatformException) {
+      switch (error.code) {
+        case 'usb_permission_denied':
+          return l10n.usbErrorPermissionDenied;
+        case 'usb_device_missing':
+        case 'usb_device_detached':
+          return l10n.usbErrorDeviceMissing;
+        case 'usb_invalid_port':
+          return l10n.usbErrorInvalidPort;
+        case 'usb_busy':
+          return l10n.usbErrorBusy;
+        case 'usb_not_connected':
+          return l10n.usbErrorNotConnected;
+        case 'usb_driver_missing':
+        case 'usb_open_failed':
+          return l10n.usbErrorOpenFailed;
+        case 'usb_connect_failed':
+        case 'usb_write_failed':
+        case 'usb_io_error':
+          return l10n.usbErrorConnectFailed;
+      }
+    }
+
     var msg = error.toString();
-    // StateError surfaces as "Bad state: <message>"
     if (msg.startsWith('Bad state: ')) {
       msg = msg.substring('Bad state: '.length);
     } else if (msg.startsWith('Exception: ')) {
       msg = msg.substring('Exception: '.length);
     }
+
+    switch (msg) {
+      case 'USB serial transport is already active':
+        return l10n.usbErrorAlreadyActive;
+      case 'No USB serial device selected':
+        return l10n.usbErrorNoDeviceSelected;
+      case 'USB serial port is not open':
+        return l10n.usbErrorPortClosed;
+      case 'USB serial is not supported on this platform.':
+      case 'Web Serial is not supported by this browser.':
+        return l10n.usbErrorUnsupported;
+      case 'Timed out waiting for SELF_INFO during connect':
+        return l10n.usbErrorConnectTimedOut;
+    }
+
+    if (msg.startsWith('Failed to open USB port ')) {
+      return l10n.usbErrorOpenFailed;
+    }
+
     return msg;
   }
 
