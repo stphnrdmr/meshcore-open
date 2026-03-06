@@ -257,10 +257,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
         if (contact != null && contact.hasLocation) continue;
         final peers = connector.contacts
             .where(
-              (c) =>
-                  c.hasLocation &&
-                  c.path.isNotEmpty &&
-                  c.path.last == hop,
+              (c) => c.hasLocation && c.path.isNotEmpty && c.path.last == hop,
             )
             .toList();
         if (peers.isNotEmpty) {

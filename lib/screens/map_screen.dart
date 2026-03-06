@@ -555,7 +555,8 @@ class _MapScreenState extends State<MapScreen> {
     for (final c in withLocation) {
       if (c.type == advTypeRepeater) {
         if (repeaterByHash.containsKey(c.publicKey[0])) {
-          repeaterByHash[c.publicKey[0]] = null; // collision: can't disambiguate
+          repeaterByHash[c.publicKey[0]] =
+              null; // collision: can't disambiguate
         } else {
           repeaterByHash[c.publicKey[0]] = c;
         }
@@ -696,9 +697,7 @@ class _MapScreenState extends State<MapScreen> {
     const distance = Distance();
     final maxDistM = maxRangeKm * 2000;
     return anchors
-        .where(
-          (a) => anchors.any((b) => b != a && distance(a, b) <= maxDistM),
-        )
+        .where((a) => anchors.any((b) => b != a && distance(a, b) <= maxDistM))
         .toList();
   }
 
