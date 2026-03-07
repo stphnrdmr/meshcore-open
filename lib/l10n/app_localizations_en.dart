@@ -39,6 +39,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get common_delete => 'Delete';
 
   @override
+  String get common_deleteAll => 'Delete All';
+
+  @override
   String get common_close => 'Close';
 
   @override
@@ -303,6 +306,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settings_longitude => 'Longitude';
+
+  @override
+  String get settings_contactSettings => 'Contact Settings';
+
+  @override
+  String get settings_contactSettingsSubtitle =>
+      'Settings for how contacts are added.';
 
   @override
   String get settings_privacyMode => 'Privacy Mode';
@@ -1475,6 +1485,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get map_showSharedMarkers => 'Show shared markers';
+
+  @override
+  String get map_showGuessedLocations => 'Show guessed node locations';
+
+  @override
+  String get map_guessedLocation => 'Guessed location';
 
   @override
   String get map_lastSeenTime => 'Last Seen Time';
@@ -3137,4 +3153,78 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get snrIndicator_lastSeen => 'Last seen';
+
+  @override
+  String get contactsSettings_title => 'Contacts settings';
+
+  @override
+  String get contactsSettings_autoAddTitle => 'Automatic Discovery';
+
+  @override
+  String get contactsSettings_otherTitle => 'Other contact related settings';
+
+  @override
+  String get contactsSettings_autoAddUsersTitle => 'Auto-add users';
+
+  @override
+  String get contactsSettings_autoAddUsersSubtitle =>
+      'Allow the companion to automatically add discovered users.';
+
+  @override
+  String get contactsSettings_autoAddRepeatersTitle => 'Auto-add repeaters';
+
+  @override
+  String get contactsSettings_autoAddRepeatersSubtitle =>
+      'Allow the companion to automatically add discovered repeaters.';
+
+  @override
+  String get contactsSettings_autoAddRoomServersTitle =>
+      'Auto-add room servers';
+
+  @override
+  String get contactsSettings_autoAddRoomServersSubtitle =>
+      'Allow the companion to automatically add discovered room servers.';
+
+  @override
+  String get contactsSettings_autoAddSensorsTitle => 'Auto-add sensors';
+
+  @override
+  String get contactsSettings_autoAddSensorsSubtitle =>
+      'Allow the companion to automatically add discovered sensors.';
+
+  @override
+  String get contactsSettings_overwriteOldestTitle => 'Overwrite Oldest';
+
+  @override
+  String get contactsSettings_overwriteOldestSubtitle =>
+      'When the contact list is full, the oldest non-favorited contact will be replaced.';
+
+  @override
+  String get discoveredContacts_Title => 'Discovered Contacts';
+
+  @override
+  String get discoveredContacts_noMatching => 'No matching contacts';
+
+  @override
+  String get discoveredContacts_searchHint => 'Search discovered contacts';
+
+  @override
+  String get discoveredContacts_contactAdded => 'Contact added';
+
+  @override
+  String get discoveredContacts_addContact => 'Add Contact';
+
+  @override
+  String get discoveredContacts_copyContact => 'Copy Contact to clipboard';
+
+  @override
+  String get discoveredContacts_deleteContact => 'Delete Discovered Contact';
+
+  @override
+  String get discoveredContacts_deleteContactAll =>
+      'Delete All Discovered Contacts';
+
+  @override
+  String get discoveredContacts_deleteContactAllContent =>
+      'Are you sure you want to delete all discovered contacts?';
 }

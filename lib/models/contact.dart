@@ -183,7 +183,7 @@ class Contact {
             )
           : Uint8List(0);
       final name = readCString(data, contactNameOffset, maxNameSize);
-      final lastmod = readUint32LE(data, contactLastmodOffset);
+      final lastmod = readUint32LE(data, contactLastModOffset);
 
       double? lat, lon;
       final latRaw = readInt32LE(data, contactLatOffset);

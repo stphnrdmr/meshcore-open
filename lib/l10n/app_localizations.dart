@@ -184,6 +184,12 @@ abstract class AppLocalizations {
   /// **'Delete'**
   String get common_delete;
 
+  /// No description provided for @common_deleteAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete All'**
+  String get common_deleteAll;
+
   /// No description provided for @common_close.
   ///
   /// In en, this message translates to:
@@ -669,6 +675,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Longitude'**
   String get settings_longitude;
+
+  /// No description provided for @settings_contactSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact Settings'**
+  String get settings_contactSettings;
+
+  /// No description provided for @settings_contactSettingsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings for how contacts are added.'**
+  String get settings_contactSettingsSubtitle;
 
   /// No description provided for @settings_privacyMode.
   ///
@@ -2733,6 +2751,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Show shared markers'**
   String get map_showSharedMarkers;
+
+  /// No description provided for @map_showGuessedLocations.
+  ///
+  /// In en, this message translates to:
+  /// **'Show guessed node locations'**
+  String get map_showGuessedLocations;
+
+  /// No description provided for @map_guessedLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Guessed location'**
+  String get map_guessedLocation;
 
   /// No description provided for @map_lastSeenTime.
   ///
@@ -5506,6 +5536,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Last seen'**
   String get snrIndicator_lastSeen;
+
+  /// No description provided for @contactsSettings_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Contacts settings'**
+  String get contactsSettings_title;
+
+  /// No description provided for @contactsSettings_autoAddTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic Discovery'**
+  String get contactsSettings_autoAddTitle;
+
+  /// No description provided for @contactsSettings_otherTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Other contact related settings'**
+  String get contactsSettings_otherTitle;
+
+  /// No description provided for @contactsSettings_autoAddUsersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-add users'**
+  String get contactsSettings_autoAddUsersTitle;
+
+  /// No description provided for @contactsSettings_autoAddUsersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow the companion to automatically add discovered users.'**
+  String get contactsSettings_autoAddUsersSubtitle;
+
+  /// No description provided for @contactsSettings_autoAddRepeatersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-add repeaters'**
+  String get contactsSettings_autoAddRepeatersTitle;
+
+  /// No description provided for @contactsSettings_autoAddRepeatersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow the companion to automatically add discovered repeaters.'**
+  String get contactsSettings_autoAddRepeatersSubtitle;
+
+  /// No description provided for @contactsSettings_autoAddRoomServersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-add room servers'**
+  String get contactsSettings_autoAddRoomServersTitle;
+
+  /// No description provided for @contactsSettings_autoAddRoomServersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow the companion to automatically add discovered room servers.'**
+  String get contactsSettings_autoAddRoomServersSubtitle;
+
+  /// No description provided for @contactsSettings_autoAddSensorsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-add sensors'**
+  String get contactsSettings_autoAddSensorsTitle;
+
+  /// No description provided for @contactsSettings_autoAddSensorsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow the companion to automatically add discovered sensors.'**
+  String get contactsSettings_autoAddSensorsSubtitle;
+
+  /// No description provided for @contactsSettings_overwriteOldestTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Overwrite Oldest'**
+  String get contactsSettings_overwriteOldestTitle;
+
+  /// No description provided for @contactsSettings_overwriteOldestSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'When the contact list is full, the oldest non-favorited contact will be replaced.'**
+  String get contactsSettings_overwriteOldestSubtitle;
+
+  /// No description provided for @discoveredContacts_Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Discovered Contacts'**
+  String get discoveredContacts_Title;
+
+  /// No description provided for @discoveredContacts_noMatching.
+  ///
+  /// In en, this message translates to:
+  /// **'No matching contacts'**
+  String get discoveredContacts_noMatching;
+
+  /// No description provided for @discoveredContacts_searchHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search discovered contacts'**
+  String get discoveredContacts_searchHint;
+
+  /// No description provided for @discoveredContacts_contactAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact added'**
+  String get discoveredContacts_contactAdded;
+
+  /// No description provided for @discoveredContacts_addContact.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Contact'**
+  String get discoveredContacts_addContact;
+
+  /// No description provided for @discoveredContacts_copyContact.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy Contact to clipboard'**
+  String get discoveredContacts_copyContact;
+
+  /// No description provided for @discoveredContacts_deleteContact.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Discovered Contact'**
+  String get discoveredContacts_deleteContact;
+
+  /// No description provided for @discoveredContacts_deleteContactAll.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete All Discovered Contacts'**
+  String get discoveredContacts_deleteContactAll;
+
+  /// No description provided for @discoveredContacts_deleteContactAllContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete all discovered contacts?'**
+  String get discoveredContacts_deleteContactAllContent;
 }
 
 class _AppLocalizationsDelegate

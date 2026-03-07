@@ -130,7 +130,7 @@ void main() {
       connector.fakeActiveUsbPortDisplayLabel =
           'COM6 - KD3CGK mesh-utility.org';
       connector.notifyListeners();
-      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 60));
 
       await tester.tap(find.widgetWithText(FilledButton, 'Connect'));
       await tester.pump();
@@ -155,6 +155,11 @@ void main() {
     } else {
       expect(find.widgetWithText(FloatingActionButton, 'USB'), findsNothing);
     }
+
+    // ScannerScreen.dispose() schedules disconnect work that debounces notify.
+    // Drain that debounce timer before test teardown.
+    await tester.pumpWidget(const SizedBox.shrink());
+    await tester.pump(const Duration(milliseconds: 60));
   });
 
   group('Error Handling', () {
