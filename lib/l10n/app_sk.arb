@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Číslo portu musí byť medzi 1 a 65535.",
   "tcpErrorUnsupported": "Prevoz prostredníctvom protokolu TCP nie je na tejto platforme podporovaný.",
   "tcpErrorTimedOut": "Pripojenie TCP vypršalo.",
-  "tcpConnectionFailed": "Neúspešné vytvorenie TCP spojenia: {error}"
+  "tcpConnectionFailed": "Neúspešné vytvorenie TCP spojenia: {error}",
+  "map_showDiscoveryContacts": "Zobraziť kontakty objavov"
 }

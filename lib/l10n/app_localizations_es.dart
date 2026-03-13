@@ -1577,6 +1577,9 @@ class AppLocalizationsEs extends AppLocalizations {
       'Mostrar las ubicaciones estimadas de los nodos.';
 
   @override
+  String get map_showDiscoveryContacts => 'Mostrar Contactos de Descubrimiento';
+
+  @override
   String get map_guessedLocation => 'Ubicación estimada';
 
   @override

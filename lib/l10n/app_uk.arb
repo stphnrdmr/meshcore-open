@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Порт повинен бути в межах від 1 до 65535.",
   "tcpErrorUnsupported": "Транспорт TCP не підтримується на цій платформі.",
   "tcpErrorTimedOut": "З'єднання TCP завершилося через закінчення часу очікування.",
-  "tcpConnectionFailed": "Не вдалося встановити з'єднання TCP: {error}"
+  "tcpConnectionFailed": "Не вдалося встановити з'єднання TCP: {error}",
+  "map_showDiscoveryContacts": "Показати контакти Відкриття"
 }

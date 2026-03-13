@@ -1580,6 +1580,9 @@ class AppLocalizationsPl extends AppLocalizations {
       'Wyświetl lokalizacje zgadanych węzłów';
 
   @override
+  String get map_showDiscoveryContacts => 'Pokaż kontakty odkrywania';
+
+  @override
   String get map_guessedLocation => 'Wydana lokalizacja';
 
   @override

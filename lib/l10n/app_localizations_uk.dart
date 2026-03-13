@@ -1578,6 +1578,9 @@ class AppLocalizationsUk extends AppLocalizations {
       'Показати місцезнаходження передбачених вузлів';
 
   @override
+  String get map_showDiscoveryContacts => 'Показати контакти Відкриття';
+
+  @override
   String get map_guessedLocation => 'Визначено місцезнаходження';
 
   @override

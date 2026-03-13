@@ -1579,6 +1579,9 @@ class AppLocalizationsBg extends AppLocalizations {
       'Покажете местоположенията на предположените възли.';
 
   @override
+  String get map_showDiscoveryContacts => 'Покажи контакти за откриване';
+
+  @override
   String get map_guessedLocation => 'Предполагано местоположение';
 
   @override

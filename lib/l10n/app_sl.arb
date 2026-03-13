@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Port mora biti med 1 in 65535.",
   "tcpErrorUnsupported": "Transport preko protokola TCP ni podprt na tej platformi.",
   "tcpErrorTimedOut": "Povezava TCP je presegla časovno obdobje.",
-  "tcpConnectionFailed": "Napaka pri povezavi TCP: {error}"
+  "tcpConnectionFailed": "Napaka pri povezavi TCP: {error}",
+  "map_showDiscoveryContacts": "Prikaži odkritja kontaktov"
 }

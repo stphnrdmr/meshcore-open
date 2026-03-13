@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "La dimensione della porta deve essere compresa tra 1 e 65535.",
   "tcpErrorUnsupported": "Il protocollo TCP non è supportato su questa piattaforma.",
   "tcpErrorTimedOut": "La connessione TCP è scaduta.",
-  "tcpConnectionFailed": "Impossibile stabilire la connessione TCP: {error}"
+  "tcpConnectionFailed": "Impossibile stabilire la connessione TCP: {error}",
+  "map_showDiscoveryContacts": "Mostra Contatti di Discovery"
 }

@@ -1580,6 +1580,9 @@ class AppLocalizationsPt extends AppLocalizations {
       'Mostrar as localizações dos nós estimados';
 
   @override
+  String get map_showDiscoveryContacts => 'Mostrar Contatos de Descoberta';
+
+  @override
   String get map_guessedLocation => 'Localização estimada';
 
   @override

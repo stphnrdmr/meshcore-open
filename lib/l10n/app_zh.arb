@@ -1892,5 +1892,6 @@
   "tcpErrorPortInvalid": "端口号必须在 1 到 65535 之间。",
   "tcpErrorUnsupported": "此平台不支持 TCP 传输。",
   "tcpErrorTimedOut": "TCP 连接超时。",
-  "tcpConnectionFailed": "TCP 连接失败：{error}"
+  "tcpConnectionFailed": "TCP 连接失败：{error}",
+  "map_showDiscoveryContacts": "显示发现联系人"
 }

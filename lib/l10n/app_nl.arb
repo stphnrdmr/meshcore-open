@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "De poortwaarde moet tussen 1 en 65535 liggen.",
   "tcpErrorUnsupported": "TCP-transport wordt niet ondersteund op deze platform.",
   "tcpErrorTimedOut": "De TCP-verbinding is verlopen.",
-  "tcpConnectionFailed": "Verbinding met TCP mislukt: {error}"
+  "tcpConnectionFailed": "Verbinding met TCP mislukt: {error}",
+  "map_showDiscoveryContacts": "Ontdek contacten weergeven"
 }

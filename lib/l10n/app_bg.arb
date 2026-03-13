@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Портът трябва да бъде между 1 и 65535.",
   "tcpErrorUnsupported": "Транспортът чрез TCP не се поддържа на тази платформа.",
   "tcpErrorTimedOut": "Връзката TCP изтекла.",
-  "tcpConnectionFailed": "Неуспешно е установено TCP връзката: {error}"
+  "tcpConnectionFailed": "Неуспешно е установено TCP връзката: {error}",
+  "map_showDiscoveryContacts": "Покажи контакти за откриване"
 }

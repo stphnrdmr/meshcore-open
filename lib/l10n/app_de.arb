@@ -1915,5 +1915,6 @@
   "tcpErrorPortInvalid": "Die Portnummer muss zwischen 1 und 65535 liegen.",
   "tcpErrorUnsupported": "Die TCP-Übertragung wird auf dieser Plattform nicht unterstützt.",
   "tcpErrorTimedOut": "Die TCP-Verbindung ist abgelaufen.",
-  "tcpConnectionFailed": "Fehler beim TCP-Verbindungsaufbau: {error}"
+  "tcpConnectionFailed": "Fehler beim TCP-Verbindungsaufbau: {error}",
+  "map_showDiscoveryContacts": "Entdeckungs-Kontakte anzeigen"
 }

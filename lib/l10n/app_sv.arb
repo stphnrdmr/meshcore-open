@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Porten måste vara mellan 1 och 65535.",
   "tcpErrorUnsupported": "TCP-transport fungerar inte på denna plattform.",
   "tcpErrorTimedOut": "TCP-anslutningen har tidsut gått.",
-  "tcpConnectionFailed": "Fel vid TCP-anslutning: {error}"
+  "tcpConnectionFailed": "Fel vid TCP-anslutning: {error}",
+  "map_showDiscoveryContacts": "Visa Discovery-kontakter"
 }

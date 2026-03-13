@@ -1887,5 +1887,6 @@
   "tcpErrorPortInvalid": "Numer portu musi mieścić się w zakresie od 1 do 65535.",
   "tcpErrorUnsupported": "Transport protokoł TCP nie jest obsługiwany na tym urządzeniu.",
   "tcpErrorTimedOut": "Połączenie TCP zakończyło się bez powodzenia.",
-  "tcpConnectionFailed": "Błąd połączenia TCP: {error}"
+  "tcpConnectionFailed": "Błąd połączenia TCP: {error}",
+  "map_showDiscoveryContacts": "Pokaż kontakty odkrywania"
 }
