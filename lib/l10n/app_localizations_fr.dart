@@ -140,9 +140,6 @@ class AppLocalizationsFr extends AppLocalizations {
       'Entrez l\'adresse de destination et connectez-vous.';
 
   @override
-  String get tcpStatus_connecting => 'Connexion au point de terminaison TCP...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Connexion à $endpoint...';
   }

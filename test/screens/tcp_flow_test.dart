@@ -93,7 +93,7 @@ void main() {
     final l10n = AppLocalizations.of(context);
 
     await tester.enterText(find.byType(TextField).first, '');
-    await tester.tap(find.widgetWithText(FilledButton, 'Connect'));
+    await tester.tap(find.byKey(const Key('tcp_connect_button')));
     await tester.pumpAndSettle();
 
     expect(find.text(l10n.tcpErrorHostRequired), findsOneWidget);
@@ -101,7 +101,7 @@ void main() {
 
     await tester.enterText(find.byType(TextField).first, '192.168.1.50');
     await tester.enterText(find.byType(TextField).at(1), '99999');
-    await tester.tap(find.widgetWithText(FilledButton, 'Connect'));
+    await tester.tap(find.byKey(const Key('tcp_connect_button')));
     await tester.pumpAndSettle();
 
     expect(connector.connectTcpCalls, 0);
@@ -135,7 +135,7 @@ void main() {
     await tester.pump(const Duration(milliseconds: 60));
   });
 
-  testWidgets('TcpScreen allows connect while connector is scanning', (
+  testWidgets('TcpScreen disables connect button while connector is scanning', (
     tester,
   ) async {
     final connector = _FakeMeshCoreConnector()
@@ -150,12 +150,11 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    await tester.tap(find.widgetWithText(FilledButton, 'Connect'));
-    await tester.pumpAndSettle();
-
-    expect(connector.connectTcpCalls, 1);
-    expect(connector.lastHost, '192.168.40.10');
-    expect(connector.lastPort, 5000);
+    final button = tester.widget<ButtonStyleButton>(
+      find.byKey(const Key('tcp_connect_button')),
+    );
+    expect(button.onPressed, isNull);
+    expect(connector.connectTcpCalls, 0);
   });
 
   testWidgets('TcpScreen narrow width long status text does not overflow', (

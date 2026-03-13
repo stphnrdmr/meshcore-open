@@ -130,16 +130,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => 'Hamn';
+  String get tcpPortLabel => 'Port';
 
   @override
   String get tcpPortHint => '5000';
 
   @override
   String get tcpStatus_notConnected => 'Ange slutpunkt och anslut';
-
-  @override
-  String get tcpStatus_connecting => 'Anslutning till TCP-slutpunkt...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

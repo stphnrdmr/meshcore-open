@@ -1909,7 +1909,6 @@
   "tcpPortLabel": "Puerto",
   "tcpPortHint": "5000",
   "tcpStatus_notConnected": "Ingrese la dirección final y conecte.",
-  "tcpStatus_connecting": "Conectándose al punto final TCP...",
   "tcpStatus_connectingTo": "Conectándose a {endpoint}...",
   "tcpErrorHostRequired": "Se requiere la dirección IP.",
   "tcpErrorPortInvalid": "El puerto debe estar entre 1 y 65535.",

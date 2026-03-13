@@ -1881,7 +1881,6 @@
   "tcpPortLabel": "Port",
   "tcpPortHint": "5000",
   "tcpStatus_notConnected": "Wprowadź adres URL i połącz",
-  "tcpStatus_connecting": "Połączenie z punktem TCP...",
   "tcpStatus_connectingTo": "Połączenie z {endpoint}...",
   "tcpErrorHostRequired": "Wymagana jest adresa IP.",
   "tcpErrorPortInvalid": "Numer portu musi mieścić się w zakresie od 1 do 65535.",

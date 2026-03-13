@@ -130,16 +130,13 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => 'Pril';
+  String get tcpPortLabel => 'Vrata';
 
   @override
   String get tcpPortHint => '5000';
 
   @override
   String get tcpStatus_notConnected => 'Vnesite končni naslov in se povežite';
-
-  @override
-  String get tcpStatus_connecting => 'Povezava z TCP koncem...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

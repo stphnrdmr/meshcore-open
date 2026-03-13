@@ -130,7 +130,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => 'Hafen';
+  String get tcpPortLabel => 'Port';
 
   @override
   String get tcpPortHint => '5000';
@@ -138,10 +138,6 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get tcpStatus_notConnected =>
       'Geben Sie den Endpunkt ein und verbinden Sie sich.';
-
-  @override
-  String get tcpStatus_connecting =>
-      'Verbindung zum TCP-Endpunkt hergestellt...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

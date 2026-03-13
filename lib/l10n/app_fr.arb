@@ -1881,7 +1881,6 @@
   "tcpPortLabel": "Port",
   "tcpPortHint": "5000",
   "tcpStatus_notConnected": "Entrez l'adresse de destination et connectez-vous.",
-  "tcpStatus_connecting": "Connexion au point de terminaison TCP...",
   "tcpStatus_connectingTo": "Connexion à {endpoint}...",
   "tcpErrorHostRequired": "Une adresse IP est obligatoire.",
   "tcpErrorPortInvalid": "La taille du port doit être comprise entre 1 et 65535.",

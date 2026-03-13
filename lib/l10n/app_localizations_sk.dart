@@ -130,16 +130,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => 'Pri항';
+  String get tcpPortLabel => 'Port';
 
   @override
-  String get tcpPortHint => '5 000';
+  String get tcpPortHint => '5000';
 
   @override
   String get tcpStatus_notConnected => 'Zadajte cieľovú adresu a pripojte sa.';
-
-  @override
-  String get tcpStatus_connecting => 'Pripojenie k TCP endpointu...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

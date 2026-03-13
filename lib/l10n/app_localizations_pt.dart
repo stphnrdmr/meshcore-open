@@ -130,17 +130,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => 'Porto';
+  String get tcpPortLabel => 'Porta';
 
   @override
   String get tcpPortHint => '5000';
 
   @override
   String get tcpStatus_notConnected => 'Insira o endereço final e conecte-se.';
-
-  @override
-  String get tcpStatus_connecting =>
-      'Conectando ao ponto de extremidade TCP...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

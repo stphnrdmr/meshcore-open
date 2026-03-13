@@ -139,9 +139,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tcpStatus_notConnected => 'Wprowadź adres URL i połącz';
 
   @override
-  String get tcpStatus_connecting => 'Połączenie z punktem TCP...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Połączenie z $endpoint...';
   }

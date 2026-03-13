@@ -130,16 +130,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tcpHostHint => '192.168.40.10';
 
   @override
-  String get tcpPortLabel => '港';
+  String get tcpPortLabel => '端口';
 
   @override
   String get tcpPortHint => '5000';
 
   @override
   String get tcpStatus_notConnected => '输入目标地址，然后连接';
-
-  @override
-  String get tcpStatus_connecting => '连接到 TCP 终点...';
 
   @override
   String tcpStatus_connectingTo(String endpoint) {

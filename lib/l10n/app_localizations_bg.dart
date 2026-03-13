@@ -139,9 +139,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get tcpStatus_notConnected => 'Въведете крайната точка и свържете се.';
 
   @override
-  String get tcpStatus_connecting => 'Свързване към TCP крайния пункт...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Свързване към $endpoint...';
   }

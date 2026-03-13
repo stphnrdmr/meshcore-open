@@ -1121,7 +1121,6 @@
   "tcpPortLabel": "Порт",
   "tcpPortHint": "5000",
   "tcpStatus_notConnected": "Введите адрес и подключитесь.",
-  "tcpStatus_connecting": "Установление соединения с TCP-портом...",
   "tcpStatus_connectingTo": "Подключение к {endpoint}...",
   "tcpErrorHostRequired": "Необходимо указать IP-адрес.",
   "tcpErrorPortInvalid": "Порт должен находиться в диапазоне от 1 до 65535.",

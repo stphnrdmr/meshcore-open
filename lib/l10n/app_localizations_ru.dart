@@ -139,9 +139,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tcpStatus_notConnected => 'Введите адрес и подключитесь.';
 
   @override
-  String get tcpStatus_connecting => 'Установление соединения с TCP-портом...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Подключение к $endpoint...';
   }

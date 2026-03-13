@@ -139,9 +139,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tcpStatus_notConnected => 'Введіть кінцеву точку та підключіться';
 
   @override
-  String get tcpStatus_connecting => 'Підключення до TCP-кінцевої точки...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Підключення до $endpoint...';
   }

@@ -139,9 +139,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tcpStatus_notConnected => 'Ingrese la dirección final y conecte.';
 
   @override
-  String get tcpStatus_connecting => 'Conectándose al punto final TCP...';
-
-  @override
   String tcpStatus_connectingTo(String endpoint) {
     return 'Conectándose a $endpoint...';
   }

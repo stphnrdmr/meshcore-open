@@ -376,12 +376,6 @@ abstract class AppLocalizations {
   /// **'Enter endpoint and connect'**
   String get tcpStatus_notConnected;
 
-  /// No description provided for @tcpStatus_connecting.
-  ///
-  /// In en, this message translates to:
-  /// **'Connecting to TCP endpoint...'**
-  String get tcpStatus_connecting;
-
   /// No description provided for @tcpStatus_connectingTo.
   ///
   /// In en, this message translates to:

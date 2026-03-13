@@ -27,7 +27,7 @@ class _TcpScreenState extends State<TcpScreen> {
   @override
   void initState() {
     super.initState();
-    _hostController = TextEditingController(text: '192.168.40.10');
+    _hostController = TextEditingController();
     _portController = TextEditingController(text: '5000');
     _connector = context.read<MeshCoreConnector>();
 
@@ -81,6 +81,9 @@ class _TcpScreenState extends State<TcpScreen> {
             final isConnecting =
                 connector.state == MeshCoreConnectionState.connecting &&
                 connector.activeTransport == MeshCoreTransportType.tcp;
+            final isButtonDisabled =
+                isConnecting ||
+                connector.state == MeshCoreConnectionState.scanning;
             return Column(
               children: [
                 _buildStatusBar(context, connector),
@@ -112,7 +115,8 @@ class _TcpScreenState extends State<TcpScreen> {
                       ),
                       const SizedBox(height: 16),
                       FilledButton.icon(
-                        onPressed: isConnecting ? null : _connectTcp,
+                        key: const Key('tcp_connect_button'),
+                        onPressed: isButtonDisabled ? null : _connectTcp,
                         icon: isConnecting
                             ? const SizedBox(
                                 width: 18,
@@ -153,6 +157,7 @@ class _TcpScreenState extends State<TcpScreen> {
                     );
                   },
                   heroTag: 'tcp_usb_action',
+                  extendedPadding: const EdgeInsets.symmetric(horizontal: 12),
                   icon: const Icon(Icons.usb),
                   label: Text(context.l10n.connectionChoiceUsbLabel),
                 ),
@@ -162,6 +167,7 @@ class _TcpScreenState extends State<TcpScreen> {
                   Navigator.of(context).maybePop();
                 },
                 heroTag: 'tcp_ble_action',
+                extendedPadding: const EdgeInsets.symmetric(horizontal: 12),
                 icon: const Icon(Icons.bluetooth),
                 label: Text(context.l10n.connectionChoiceBluetoothLabel),
               ),
