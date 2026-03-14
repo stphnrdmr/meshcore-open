@@ -182,4 +182,12 @@ class AppSettingsService extends ChangeNotifier {
       ..remove(channelName);
     await updateSettings(_settings.copyWith(mutedChannels: updated));
   }
+
+  Future<void> setTcpServerAddress(String value) async {
+    await updateSettings(_settings.copyWith(tcpServerAddress: value));
+  }
+
+  Future<void> setTcpServerPort(int value) async {
+    await updateSettings(_settings.copyWith(tcpServerPort: value));
+  }
 }

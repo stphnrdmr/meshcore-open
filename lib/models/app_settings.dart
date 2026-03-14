@@ -40,6 +40,8 @@ class AppSettings {
   final UnitSystem unitSystem;
   final Set<String> mutedChannels;
   final bool mapShowDiscoveryContacts;
+  final String tcpServerAddress;
+  final int tcpServerPort;
 
   AppSettings({
     this.clearPathOnMaxRetry = false,
@@ -68,6 +70,8 @@ class AppSettings {
     this.unitSystem = UnitSystem.metric,
     Set<String>? mutedChannels,
     this.mapShowDiscoveryContacts = true,
+    this.tcpServerAddress = '',
+    this.tcpServerPort = 0,
   }) : batteryChemistryByDeviceId = batteryChemistryByDeviceId ?? {},
        batteryChemistryByRepeaterId = batteryChemistryByRepeaterId ?? {},
        mutedChannels = mutedChannels ?? {};
@@ -100,6 +104,8 @@ class AppSettings {
       'unit_system': unitSystem.value,
       'muted_channels': mutedChannels.toList(),
       'map_show_discovery_contacts': mapShowDiscoveryContacts,
+      'tcp_server_address': tcpServerAddress,
+      'tcp_server_port': tcpServerPort,
     };
   }
 
@@ -157,6 +163,8 @@ class AppSettings {
           {},
       mapShowDiscoveryContacts:
           json['map_show_discovery_contacts'] as bool? ?? true,
+      tcpServerAddress: json['tcp_server_address'] as String? ?? '',
+      tcpServerPort: json['tcp_server_port'] as int? ?? 0,
     );
   }
 
@@ -187,6 +195,8 @@ class AppSettings {
     UnitSystem? unitSystem,
     Set<String>? mutedChannels,
     bool? mapShowDiscoveryContacts,
+    String? tcpServerAddress,
+    int? tcpServerPort,
   }) {
     return AppSettings(
       clearPathOnMaxRetry: clearPathOnMaxRetry ?? this.clearPathOnMaxRetry,
@@ -225,6 +235,8 @@ class AppSettings {
       mutedChannels: mutedChannels ?? this.mutedChannels,
       mapShowDiscoveryContacts:
           mapShowDiscoveryContacts ?? this.mapShowDiscoveryContacts,
+      tcpServerAddress: tcpServerAddress ?? this.tcpServerAddress,
+      tcpServerPort: tcpServerPort ?? this.tcpServerPort,
     );
   }
 }

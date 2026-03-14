@@ -1,10 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:meshcore_open/models/app_settings.dart';
 import 'package:provider/provider.dart';
 
 import '../connector/meshcore_connector.dart';
 import '../l10n/l10n.dart';
+import '../services/app_settings_service.dart';
 import '../utils/platform_info.dart';
 import '../widgets/adaptive_app_bar_title.dart';
 import 'contacts_screen.dart';
@@ -27,8 +29,14 @@ class _TcpScreenState extends State<TcpScreen> {
   @override
   void initState() {
     super.initState();
-    _hostController = TextEditingController();
-    _portController = TextEditingController(text: '5000');
+    _hostController = TextEditingController(
+      text: context.read<AppSettingsService>().settings.tcpServerAddress,
+    );
+    _portController = TextEditingController(
+      text: context.read<AppSettingsService>().settings.tcpServerPort > 0
+          ? context.read<AppSettingsService>().settings.tcpServerPort.toString()
+          : '',
+    );
     _connector = context.read<MeshCoreConnector>();
 
     _connectionListener = () {
@@ -39,6 +47,12 @@ class _TcpScreenState extends State<TcpScreen> {
       if (_connector.state == MeshCoreConnectionState.connected &&
           _connector.isTcpTransportConnected &&
           !_navigatedToContacts) {
+        context.read<AppSettingsService>().setTcpServerAddress(
+          _hostController.text,
+        );
+        context.read<AppSettingsService>().setTcpServerPort(
+          int.tryParse(_portController.text) ?? 0,
+        );
         _navigatedToContacts = true;
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) => const ContactsScreen()),
