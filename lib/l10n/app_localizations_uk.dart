@@ -1511,6 +1511,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get map_shareMarkerHere => 'Поділитися маркером тут';
 
   @override
+  String get map_setAsMyLocation => 'Встановити моє місцезнаходження';
+
+  @override
   String get map_pinLabel => 'Мітка піна';
 
   @override

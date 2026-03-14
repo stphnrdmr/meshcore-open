@@ -1499,6 +1499,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get map_shareMarkerHere => 'Delite točke tukaj.';
 
   @override
+  String get map_setAsMyLocation => 'Nastavite to kot mojo lokacijo';
+
+  @override
   String get map_pinLabel => 'Oznaka za pritrditev';
 
   @override

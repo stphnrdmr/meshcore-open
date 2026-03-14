@@ -1887,5 +1887,6 @@
   "tcpErrorUnsupported": "TCP-transport wordt niet ondersteund op deze platform.",
   "tcpErrorTimedOut": "De TCP-verbinding is verlopen.",
   "tcpConnectionFailed": "Verbinding met TCP mislukt: {error}",
-  "map_showDiscoveryContacts": "Ontdek contacten weergeven"
+  "map_showDiscoveryContacts": "Ontdek contacten weergeven",
+  "map_setAsMyLocation": "Stel dit in als mijn locatie"
 }

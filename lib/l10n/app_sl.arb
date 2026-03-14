@@ -1887,5 +1887,6 @@
   "tcpErrorUnsupported": "Transport preko protokola TCP ni podprt na tej platformi.",
   "tcpErrorTimedOut": "Povezava TCP je presegla časovno obdobje.",
   "tcpConnectionFailed": "Napaka pri povezavi TCP: {error}",
-  "map_showDiscoveryContacts": "Prikaži odkritja kontaktov"
+  "map_showDiscoveryContacts": "Prikaži odkritja kontaktov",
+  "map_setAsMyLocation": "Nastavite to kot mojo lokacijo"
 }

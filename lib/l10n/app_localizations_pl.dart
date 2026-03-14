@@ -1513,6 +1513,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get map_shareMarkerHere => 'Udostępnij znacznik tutaj';
 
   @override
+  String get map_setAsMyLocation => 'Ustaw jako moje lokalizację';
+
+  @override
   String get map_pinLabel => 'Oznacz etykietę';
 
   @override

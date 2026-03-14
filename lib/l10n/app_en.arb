@@ -807,6 +807,7 @@
   "map_source": "Source",
   "map_flags": "Flags",
   "map_shareMarkerHere": "Share marker here",
+  "map_setAsMyLocation": "Set as my location",
   "map_pinLabel": "Pin label",
   "map_label": "Label",
   "map_pointOfInterest": "Point of interest",

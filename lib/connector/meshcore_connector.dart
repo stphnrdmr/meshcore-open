@@ -199,6 +199,9 @@ class MeshCoreConnector extends ChangeNotifier {
   int _queueSyncRetries = 0;
   static const int _maxQueueSyncRetries = 3;
   static const int _queueSyncTimeoutMs = 5000; // 5 second timeout
+  // Serializes path operations (setContactPath/clearContactPath) to prevent
+  // interleaved async calls from leaving in-memory state inconsistent with device.
+  Future<void> _pathOpLock = Future.value();
   Map<String, String>? _currentCustomVars;
 
   // Channel syncing state (sequential pattern)
@@ -558,6 +561,10 @@ class MeshCoreConnector extends ChangeNotifier {
       _unreadStore.saveContactUnreadCount(
         Map<String, int>.from(_contactUnreadCount),
       );
+      _notificationService.clearContactNotification(
+        contactKeyHex,
+        getTotalUnreadCount(),
+      );
       notifyListeners();
     }
   }
@@ -575,6 +582,10 @@ class MeshCoreConnector extends ChangeNotifier {
         _channelStore.saveChannels(
           _channels.isNotEmpty ? _channels : _cachedChannels,
         ),
+      );
+      _notificationService.clearChannelNotification(
+        channelIndex,
+        getTotalUnreadCount(),
       );
       notifyListeners();
     }
@@ -1740,18 +1751,33 @@ class MeshCoreConnector extends ChangeNotifier {
     Uint8List customPath,
     int pathLen,
   ) async {
-    if (!isConnected) return;
+    // Serialize path operations to prevent interleaved async calls from
+    // leaving in-memory state inconsistent with the device.
+    final prev = _pathOpLock;
+    final completer = Completer<void>();
+    _pathOpLock = completer.future;
+    await prev;
+    try {
+      if (!isConnected) return;
 
-    await sendFrame(
-      buildUpdateContactPathFrame(
-        contact.publicKey,
-        customPath,
-        pathLen,
-        type: contact.type,
-        flags: contact.flags,
-        name: contact.name,
-      ),
-    );
+      await sendFrame(
+        buildUpdateContactPathFrame(
+          contact.publicKey,
+          customPath,
+          pathLen,
+          type: contact.type,
+          flags: contact.flags,
+          name: contact.name,
+        ),
+      );
+      // USB writes return instantly (no BLE flow control), so give the firmware
+      // time to persist the path change before subsequent commands.
+      if (_activeTransport == MeshCoreTransportType.usb) {
+        await Future<void>.delayed(const Duration(milliseconds: 100));
+      }
+    } finally {
+      completer.complete();
+    }
   }
 
   Future<void> setContactFavorite(Contact contact, bool isFavorite) async {
@@ -2136,25 +2162,34 @@ class MeshCoreConnector extends ChangeNotifier {
   }
 
   Future<void> clearContactPath(Contact contact) async {
-    if (!isConnected) return;
+    // Serialize path operations to prevent interleaved async calls.
+    final prev = _pathOpLock;
+    final completer = Completer<void>();
+    _pathOpLock = completer.future;
+    await prev;
+    try {
+      if (!isConnected) return;
 
-    await sendFrame(buildResetPathFrame(contact.publicKey));
-    final existingIndex = _contacts.indexWhere(
-      (c) => c.publicKeyHex == contact.publicKeyHex,
-    );
-    if (existingIndex >= 0) {
-      final existing = _contacts[existingIndex];
-      // Use copyWith to preserve pathOverride and pathOverrideBytes
-      _contacts[existingIndex] = existing.copyWith(
-        pathOverride: null,
-        pathOverrideBytes: null,
-        pathLength: -1,
-        path: Uint8List(0),
+      await sendFrame(buildResetPathFrame(contact.publicKey));
+      if (_activeTransport == MeshCoreTransportType.usb) {
+        await Future<void>.delayed(const Duration(milliseconds: 100));
+      }
+      final existingIndex = _contacts.indexWhere(
+        (c) => c.publicKeyHex == contact.publicKeyHex,
       );
-      notifyListeners();
-      unawaited(_persistContacts());
+      if (existingIndex >= 0) {
+        final existing = _contacts[existingIndex];
+        // Preserve pathOverride and pathOverrideBytes — only reset device path
+        _contacts[existingIndex] = existing.copyWith(
+          pathLength: -1,
+          path: Uint8List(0),
+        );
+        notifyListeners();
+        unawaited(_persistContacts());
+      }
+    } finally {
+      completer.complete();
     }
-    // The device will send updated contact info with path_len = -1
   }
 
   void updateContactInMemory(
@@ -2489,6 +2524,9 @@ class MeshCoreConnector extends ChangeNotifier {
         }
         _isLoadingContacts = true;
         notifyListeners();
+        break;
+      case pushCodeAdvert:
+        // Known contact was seen again - just a pub key, no action needed
         break;
       case pushCodeNewAdvert:
         debugPrint('Got New CONTACT');

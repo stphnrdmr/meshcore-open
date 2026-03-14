@@ -1915,5 +1915,6 @@
   "tcpErrorUnsupported": "Die TCP-Übertragung wird auf dieser Plattform nicht unterstützt.",
   "tcpErrorTimedOut": "Die TCP-Verbindung ist abgelaufen.",
   "tcpConnectionFailed": "Fehler beim TCP-Verbindungsaufbau: {error}",
-  "map_showDiscoveryContacts": "Entdeckungs-Kontakte anzeigen"
+  "map_showDiscoveryContacts": "Entdeckungs-Kontakte anzeigen",
+  "map_setAsMyLocation": "Als meine aktuelle Position festlegen"
 }

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meshcore_open/screens/path_trace_map.dart';
+import 'package:meshcore_open/services/notification_service.dart';
 import 'package:meshcore_open/utils/app_logger.dart';
 import 'package:meshcore_open/widgets/app_bar.dart';
 import 'package:provider/provider.dart';
@@ -64,6 +65,13 @@ class _ContactsScreenState extends State<ContactsScreen>
     super.initState();
     _loadGroups();
     _setupFrameListener();
+    _clearAdvertNotifications();
+  }
+
+  void _clearAdvertNotifications() {
+    final connector = context.read<MeshCoreConnector>();
+    final contactIds = connector.contacts.map((c) => c.publicKeyHex).toList();
+    NotificationService().clearAdvertNotifications(contactIds);
   }
 
   @override

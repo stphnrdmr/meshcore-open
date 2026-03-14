@@ -1495,6 +1495,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get map_shareMarkerHere => 'Dela markeringen här';
 
   @override
+  String get map_setAsMyLocation => 'Ange som min plats';
+
+  @override
   String get map_pinLabel => 'Fästetikett';
 
   @override

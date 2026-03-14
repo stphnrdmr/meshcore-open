@@ -1422,6 +1422,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get map_shareMarkerHere => '在此分享标记';
 
   @override
+  String get map_setAsMyLocation => '设置为我的位置';
+
+  @override
   String get map_pinLabel => '标签';
 
   @override

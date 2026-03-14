@@ -1510,6 +1510,23 @@ class _MapScreenState extends State<MapScreen> {
               },
             ),
             ListTile(
+              leading: const Icon(Icons.my_location),
+              title: Text(context.l10n.map_setAsMyLocation),
+              onTap: () async {
+                final messenger = ScaffoldMessenger.of(context);
+                final successMsg = context.l10n.settings_locationUpdated;
+                Navigator.pop(sheetContext);
+                if (!connector.isConnected) return;
+                await connector.setNodeLocation(
+                  lat: position.latitude,
+                  lon: position.longitude,
+                );
+                await connector.refreshDeviceInfo();
+                if (!mounted) return;
+                messenger.showSnackBar(SnackBar(content: Text(successMsg)));
+              },
+            ),
+            ListTile(
               leading: const Icon(Icons.close),
               title: Text(context.l10n.common_cancel),
               onTap: () => Navigator.pop(sheetContext),

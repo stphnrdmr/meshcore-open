@@ -1503,6 +1503,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get map_shareMarkerHere => 'Deel marker hier';
 
   @override
+  String get map_setAsMyLocation => 'Stel dit in als mijn locatie';
+
+  @override
   String get map_pinLabel => 'Label vastzetten';
 
   @override

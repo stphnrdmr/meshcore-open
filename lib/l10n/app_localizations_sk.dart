@@ -1505,6 +1505,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get map_shareMarkerHere => 'Zdieľte značku tu';
 
   @override
+  String get map_setAsMyLocation => 'Nastavte ako moju polohu';
+
+  @override
   String get map_pinLabel => 'Označka upozornenia';
 
   @override

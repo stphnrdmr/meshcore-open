@@ -106,10 +106,9 @@ class _ChatScreenState extends State<ChatScreen> {
             final unreadLabel = context.l10n.chat_unread(unreadCount);
             final pathLabel = _currentPathLabel(contact);
 
-            // Show path details if we have path data (from device or override)
-            final hasPathData =
-                contact.path.isNotEmpty || contact.pathOverrideBytes != null;
+            // Show path details if we have non-empty path data (from device or override)
             final effectivePath = contact.pathOverrideBytes ?? contact.path;
+            final hasPathData = effectivePath.isNotEmpty;
 
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -143,12 +142,25 @@ class _ChatScreenState extends State<ChatScreen> {
               final contact = _resolveContact(connector);
               final isFloodMode = contact.pathOverride == -1;
 
+              final isDirectMode = contact.pathOverride == 0;
+              final activeMode = isFloodMode
+                  ? 'flood'
+                  : isDirectMode
+                  ? 'direct'
+                  : 'auto';
+
               return PopupMenuButton<String>(
                 icon: Icon(isFloodMode ? Icons.waves : Icons.route),
                 tooltip: context.l10n.chat_routingMode,
                 onSelected: (mode) async {
                   if (mode == 'flood') {
                     await connector.setPathOverride(contact, pathLen: -1);
+                  } else if (mode == 'direct') {
+                    await connector.setPathOverride(
+                      contact,
+                      pathLen: 0,
+                      pathBytes: Uint8List(0),
+                    );
                   } else {
                     await connector.setPathOverride(contact, pathLen: null);
                   }
@@ -161,7 +173,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Icon(
                           Icons.auto_mode,
                           size: 20,
-                          color: !isFloodMode
+                          color: activeMode == 'auto'
                               ? Theme.of(context).primaryColor
                               : null,
                         ),
@@ -169,7 +181,30 @@ class _ChatScreenState extends State<ChatScreen> {
                         Text(
                           context.l10n.chat_autoUseSavedPath,
                           style: TextStyle(
-                            fontWeight: !isFloodMode
+                            fontWeight: activeMode == 'auto'
+                                ? FontWeight.bold
+                                : FontWeight.normal,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    value: 'direct',
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.near_me,
+                          size: 20,
+                          color: activeMode == 'direct'
+                              ? Theme.of(context).primaryColor
+                              : null,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          context.l10n.chat_direct,
+                          style: TextStyle(
+                            fontWeight: activeMode == 'direct'
                                 ? FontWeight.bold
                                 : FontWeight.normal,
                           ),
@@ -184,7 +219,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Icon(
                           Icons.waves,
                           size: 20,
-                          color: isFloodMode
+                          color: activeMode == 'flood'
                               ? Theme.of(context).primaryColor
                               : null,
                         ),
@@ -192,7 +227,7 @@ class _ChatScreenState extends State<ChatScreen> {
                         Text(
                           context.l10n.chat_forceFloodMode,
                           style: TextStyle(
-                            fontWeight: isFloodMode
+                            fontWeight: activeMode == 'flood'
                                 ? FontWeight.bold
                                 : FontWeight.normal,
                           ),
@@ -251,7 +286,9 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
           const SizedBox(height: 8),
           Text(
-            context.l10n.chat_sendMessageTo(widget.contact.name),
+            context.l10n.chat_sendMessageTo(
+              _resolveContact(context.read<MeshCoreConnector>()).name,
+            ),
             style: TextStyle(fontSize: 14, color: Colors.grey[500]),
           ),
         ],
@@ -269,6 +306,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // Auto-scroll to bottom if user is already at bottom
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
       _scrollController.scrollToBottomIfAtBottom();
     });
 
@@ -293,10 +331,10 @@ class _ChatScreenState extends State<ChatScreen> {
             );
           }
           final messageIndex = index;
-          Contact contact = widget.contact;
+          Contact contact = _resolveContact(connector);
           final message = reversedMessages[messageIndex];
           String fourByteHex = '';
-          if (widget.contact.type == advTypeRoom) {
+          if (contact.type == advTypeRoom) {
             contact = _resolveContactFrom4Bytes(
               connector,
               message.fourByteRoomContactKey.isEmpty
@@ -314,12 +352,13 @@ class _ChatScreenState extends State<ChatScreen> {
               final textScale = context.select<ChatTextScaleService, double>(
                 (service) => service.scale,
               );
+              final resolvedContact = _resolveContact(connector);
               return _MessageBubble(
                 message: message,
-                senderName: widget.contact.type == advTypeRoom
+                senderName: resolvedContact.type == advTypeRoom
                     ? "${contact.name} [$fourByteHex]"
                     : contact.name,
-                isRoomServer: widget.contact.type == advTypeRoom,
+                isRoomServer: resolvedContact.type == advTypeRoom,
                 textScale: textScale,
                 onTap: () => _openMessagePath(message, contact),
                 onLongPress: () => _showMessageActions(message, contact),
@@ -457,7 +496,7 @@ class _ChatScreenState extends State<ChatScreen> {
       return;
     }
 
-    connector.sendMessage(widget.contact, text);
+    connector.sendMessage(_resolveContact(connector), text);
     _textController.clear();
     _textFieldFocusNode.requestFocus();
   }
@@ -654,7 +693,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
                                 // Set the path override to persist user's choice
                                 await connector.setPathOverride(
-                                  widget.contact,
+                                  _resolveContact(connector),
                                   pathLen: pathLength,
                                   pathBytes: pathBytes,
                                 );
@@ -663,7 +702,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 Navigator.pop(context);
                                 await _notifyPathSet(
                                   connector,
-                                  widget.contact,
+                                  _resolveContact(connector),
                                   pathBytes,
                                   path.hopCount,
                                 );
@@ -722,7 +761,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         style: const TextStyle(fontSize: 11),
                       ),
                       onTap: () async {
-                        await connector.clearContactPath(widget.contact);
+                        await connector.clearContactPath(
+                          _resolveContact(connector),
+                        );
                         if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
@@ -750,7 +791,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       ),
                       onTap: () async {
                         await connector.setPathOverride(
-                          widget.contact,
+                          _resolveContact(connector),
                           pathLen: -1,
                         );
                         if (!context.mounted) return;
@@ -1005,11 +1046,7 @@ class _ChatScreenState extends State<ChatScreen> {
     );
 
     if (result == null) {
-      appLogger.info(
-        'PathSelectionDialog was cancelled or returned null',
-        tag: 'ChatScreen',
-      );
-      return;
+      return; // Cancelled — keep existing path
     }
 
     if (!mounted) {
@@ -1025,14 +1062,19 @@ class _ChatScreenState extends State<ChatScreen> {
       tag: 'ChatScreen',
     );
     await connector.setPathOverride(
-      widget.contact,
+      _resolveContact(connector),
       pathLen: result.length,
       pathBytes: result,
     );
     appLogger.info('setPathOverride completed', tag: 'ChatScreen');
 
     if (!mounted) return;
-    await _notifyPathSet(connector, widget.contact, result, result.length);
+    await _notifyPathSet(
+      connector,
+      _resolveContact(connector),
+      result,
+      result.length,
+    );
   }
 
   void _openMessagePath(Message message, Contact contact) {
@@ -1044,10 +1086,10 @@ class _ChatScreenState extends State<ChatScreen> {
     final String senderName;
     if (message.isOutgoing) {
       senderName = connector.selfName ?? context.l10n.chat_me;
-    } else if (widget.contact.type == advTypeRoom) {
+    } else if (_resolveContact(connector).type == advTypeRoom) {
       senderName = "${contact.name} [$fourByteHex]";
     } else {
-      senderName = widget.contact.name;
+      senderName = _resolveContact(connector).name;
     }
     final pathMessage = ChannelMessage(
       senderKey: null,
@@ -1110,7 +1152,8 @@ class _ChatScreenState extends State<ChatScreen> {
                   _retryMessage(message);
                 },
               ),
-            if (widget.contact.type == advTypeRoom)
+            if (_resolveContact(context.read<MeshCoreConnector>()).type ==
+                advTypeRoom)
               ListTile(
                 leading: const Icon(Icons.chat),
                 title: Text(context.l10n.contacts_openChat),
@@ -1148,7 +1191,7 @@ class _ChatScreenState extends State<ChatScreen> {
   void _retryMessage(Message message) {
     final connector = Provider.of<MeshCoreConnector>(context, listen: false);
     // Retry using the contact's current path override setting
-    connector.sendMessage(widget.contact, message.text);
+    connector.sendMessage(_resolveContact(connector), message.text);
     ScaffoldMessenger.of(
       context,
     ).showSnackBar(SnackBar(content: Text(context.l10n.chat_retryingMessage)));
@@ -1174,7 +1217,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
     // For room servers, include sender name (like channels) since multiple users
     // For 1:1 chats, sender is implicit (null)
-    final senderName = widget.contact.type == advTypeRoom
+    final liveContact = _resolveContact(connector);
+    final senderName = liveContact.type == advTypeRoom
         ? senderContact.name
         : null;
     final hash = ReactionHelper.computeReactionHash(
@@ -1183,7 +1227,7 @@ class _ChatScreenState extends State<ChatScreen> {
       message.text,
     );
     final reactionText = 'r:$hash:$emojiIndex';
-    connector.sendMessage(widget.contact, reactionText);
+    connector.sendMessage(_resolveContact(connector), reactionText);
   }
 }
 
