@@ -232,7 +232,9 @@ class NotificationService {
 
     try {
       await _notifications.show(
-        id: contactId?.hashCode ?? DateTime.now().millisecondsSinceEpoch,
+        id: contactId != null
+            ? 'advert:$contactId'.hashCode
+            : DateTime.now().millisecondsSinceEpoch,
         title: _l10n.notification_newTypeDiscovered(contactType),
         body: contactName,
         notificationDetails: notificationDetails,
@@ -355,7 +357,7 @@ class NotificationService {
   Future<void> clearAdvertNotifications(List<String> contactIds) async {
     if (!await _ensureInitialized()) return;
     for (final id in contactIds) {
-      await _notifications.cancel(id: id.hashCode);
+      await _notifications.cancel(id: 'advert:$id'.hashCode);
     }
   }
 

@@ -355,24 +355,12 @@ class MessageRetryService extends ChangeNotifier {
         'Hash-based match failed for $ackHashHex, falling back to queue-based matching',
       );
 
-      // Try to identify the correct contact from _activeMessages first.
-      String? targetContactKey;
-      for (final activeId in _activeMessages) {
-        final activeContact = _pendingContacts[activeId];
-        if (activeContact != null) {
-          targetContactKey = activeContact.publicKeyHex;
-          break;
-        }
-      }
-
-      final queuesToSearch = targetContactKey != null
-          ? {targetContactKey: _pendingMessageQueuePerContact[targetContactKey]}
-          : _pendingMessageQueuePerContact;
+      // Search all contact queues so concurrent chats don't miss matches.
+      final queuesToSearch = _pendingMessageQueuePerContact;
 
       for (var entry in queuesToSearch.entries) {
         final contactKey = entry.key;
         final queue = entry.value;
-        if (queue == null) continue;
 
         // Drain stale entries until we find a valid one or exhaust the queue.
         while (queue.isNotEmpty) {
