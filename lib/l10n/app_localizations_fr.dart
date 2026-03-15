@@ -1522,6 +1522,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get map_shareMarkerHere => 'Partager le marqueur ici';
 
   @override
+  String get map_setAsMyLocation => 'Définir comme ma localisation';
+
+  @override
   String get map_pinLabel => 'Étiquete de repin';
 
   @override

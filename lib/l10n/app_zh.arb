@@ -1893,5 +1893,6 @@
   "tcpErrorUnsupported": "此平台不支持 TCP 传输。",
   "tcpErrorTimedOut": "TCP 连接超时。",
   "tcpConnectionFailed": "TCP 连接失败：{error}",
-  "map_showDiscoveryContacts": "显示发现联系人"
+  "map_showDiscoveryContacts": "显示发现联系人",
+  "map_setAsMyLocation": "设置为我的位置"
 }

@@ -1515,6 +1515,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get map_shareMarkerHere => 'Споделете маркер тук';
 
   @override
+  String get map_setAsMyLocation => 'Задайте като моя местоположение';
+
+  @override
   String get map_pinLabel => 'Етикетиране на пин';
 
   @override

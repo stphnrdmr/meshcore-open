@@ -1517,6 +1517,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get map_shareMarkerHere => 'Поделиться меткой здесь';
 
   @override
+  String get map_setAsMyLocation => 'Установить мое местоположение';
+
+  @override
   String get map_pinLabel => 'Метка';
 
   @override

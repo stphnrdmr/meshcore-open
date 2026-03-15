@@ -69,6 +69,8 @@ dependencies:
   material_symbols_icons: ^4.2906.0
   web: ^1.1.1
   flutter_svg: ^2.0.10+1
+  ml_algo: ^16.0.0
+  ml_dataframe: ^1.0.0
 
 dev_dependencies:
   flutter_test:

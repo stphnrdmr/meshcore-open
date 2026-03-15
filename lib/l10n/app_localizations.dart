@@ -2752,6 +2752,12 @@ abstract class AppLocalizations {
   /// **'Share marker here'**
   String get map_shareMarkerHere;
 
+  /// No description provided for @map_setAsMyLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Set as my location'**
+  String get map_setAsMyLocation;
+
   /// No description provided for @map_pinLabel.
   ///
   /// In en, this message translates to:

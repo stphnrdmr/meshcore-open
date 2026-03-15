@@ -44,6 +44,12 @@ class MessageRetryService extends ChangeNotifier {
       []; // Rolling buffer of recent ACK hashes
   final Map<String, List<String>> _pendingMessageQueuePerContact =
       {}; // contactPubKeyHex → FIFO queue of messageIds (DEPRECATED - will be removed)
+  final Map<String, List<String>> _sendQueue =
+      {}; // contactPubKeyHex → ordered list of messageIds awaiting send
+  final Set<String> _activeMessages =
+      {}; // messageIds currently in-flight (sent/retrying)
+  final Set<String> _resolvedMessages =
+      {}; // messageIds already resolved (prevents double _onMessageResolved)
   final Map<String, String> _expectedHashToMessageId =
       {}; // expectedAckHashHex → messageId (for matching RESP_CODE_SENT by hash)
 
@@ -52,12 +58,13 @@ class MessageRetryService extends ChangeNotifier {
   Function(Message)? _updateMessageCallback;
   Function(Contact)? _clearContactPathCallback;
   Function(Contact, Uint8List, int)? _setContactPathCallback;
-  Function(int, int)? _calculateTimeoutCallback;
+  Function(int, int, {String? contactKey})? _calculateTimeoutCallback;
   Uint8List? Function()? _getSelfPublicKeyCallback;
   String Function(Contact, String)? _prepareContactOutboundTextCallback;
   AppSettingsService? _appSettingsService;
   AppDebugLogService? _debugLogService;
   Function(String, PathSelection, bool, int?)? _recordPathResultCallback;
+  Function(String, int, int, int)? _onDeliveryObservedCallback;
 
   MessageRetryService();
 
@@ -67,12 +74,20 @@ class MessageRetryService extends ChangeNotifier {
     required Function(Message) updateMessageCallback,
     Function(Contact)? clearContactPathCallback,
     Function(Contact, Uint8List, int)? setContactPathCallback,
-    Function(int pathLength, int messageBytes)? calculateTimeoutCallback,
+    Function(int pathLength, int messageBytes, {String? contactKey})?
+    calculateTimeoutCallback,
     Uint8List? Function()? getSelfPublicKeyCallback,
     String Function(Contact, String)? prepareContactOutboundTextCallback,
     AppSettingsService? appSettingsService,
     AppDebugLogService? debugLogService,
     Function(String, PathSelection, bool, int?)? recordPathResultCallback,
+    Function(
+      String contactKey,
+      int pathLength,
+      int messageBytes,
+      int tripTimeMs,
+    )?
+    onDeliveryObservedCallback,
   }) {
     _sendMessageCallback = sendMessageCallback;
     _addMessageCallback = addMessageCallback;
@@ -85,6 +100,7 @@ class MessageRetryService extends ChangeNotifier {
     _appSettingsService = appSettingsService;
     _debugLogService = debugLogService;
     _recordPathResultCallback = recordPathResultCallback;
+    _onDeliveryObservedCallback = onDeliveryObservedCallback;
   }
 
   /// Compute expected ACK hash using same algorithm as firmware:
@@ -156,7 +172,49 @@ class MessageRetryService extends ChangeNotifier {
       _addMessageCallback!(contact.publicKeyHex, message);
     }
 
-    await _attemptSend(messageId);
+    // Queue per contact — only one message in-flight at a time to avoid
+    // overflowing the firmware's 8-entry expected_ack_table.
+    final contactKey = contact.publicKeyHex;
+    _sendQueue[contactKey] ??= [];
+    _sendQueue[contactKey]!.add(messageId);
+
+    if (!_activeMessages.any(
+      (id) => _pendingContacts[id]?.publicKeyHex == contactKey,
+    )) {
+      _sendNextForContact(contactKey);
+    }
+  }
+
+  void _sendNextForContact(String contactKey) {
+    final queue = _sendQueue[contactKey];
+    if (queue == null) return;
+
+    // Drain stale entries iteratively instead of recursing.
+    while (queue.isNotEmpty) {
+      final messageId = queue.removeAt(0);
+      if (_pendingMessages.containsKey(messageId)) {
+        _activeMessages.add(messageId);
+        _attemptSend(messageId).catchError((e) {
+          debugPrint('_attemptSend threw for $messageId: $e');
+          final msg = _pendingMessages[messageId];
+          if (msg != null) {
+            final failed = msg.copyWith(status: MessageStatus.failed);
+            _pendingMessages[messageId] = failed;
+            _updateMessageCallback?.call(failed);
+          }
+          _onMessageResolved(messageId, contactKey);
+        });
+        return;
+      }
+      // Message was cancelled/cleaned up while queued — try next
+    }
+  }
+
+  void _onMessageResolved(String messageId, String contactKey) {
+    if (_resolvedMessages.contains(messageId)) return;
+    _resolvedMessages.add(messageId);
+    _activeMessages.remove(messageId);
+    _sendNextForContact(contactKey);
   }
 
   Future<void> _attemptSend(String messageId) async {
@@ -169,13 +227,11 @@ class MessageRetryService extends ChangeNotifier {
     // Use the path that was captured when the message was first sent
     if (_setContactPathCallback != null && _clearContactPathCallback != null) {
       if (message.pathLength != null && message.pathLength! < 0) {
-        // Flood mode - clear the path
         debugPrint(
           'Setting flood mode for retry attempt ${message.retryCount}',
         );
-        _clearContactPathCallback!(contact);
+        await _clearContactPathCallback!(contact);
       } else if (message.pathLength != null && message.pathLength! >= 0) {
-        // Specific path (including direct neighbor with pathLength=0)
         final pathStr = message.pathBytes.isEmpty
             ? 'direct'
             : message.pathBytes
@@ -190,6 +246,24 @@ class MessageRetryService extends ChangeNotifier {
           message.pathLength!,
         );
       }
+    }
+
+    // Re-validate after async gap — a timer or ACK could have resolved/retried
+    // this message while we were awaiting the path callback.
+    final currentMessage = _pendingMessages[messageId];
+    if (currentMessage == null || _resolvedMessages.contains(messageId)) {
+      debugPrint(
+        '_attemptSend: message $messageId resolved during path sync, aborting',
+      );
+      return;
+    }
+    // If the message was retried by a timer during our await, the retryCount
+    // will have advanced. Only proceed if it still matches the attempt we started.
+    if (currentMessage.retryCount != message.retryCount) {
+      debugPrint(
+        '_attemptSend: message $messageId retryCount changed during path sync, aborting',
+      );
+      return;
     }
 
     final attempt = message.retryCount.clamp(0, 3);
@@ -231,6 +305,15 @@ class MessageRetryService extends ChangeNotifier {
 
     if (_sendMessageCallback != null) {
       _sendMessageCallback!(contact, message.text, attempt, timestampSeconds);
+    } else {
+      // No send callback — message would be stuck forever. Fail it immediately.
+      debugPrint(
+        '_attemptSend: no sendMessageCallback, failing message $messageId',
+      );
+      final failedMessage = message.copyWith(status: MessageStatus.failed);
+      _pendingMessages[messageId] = failedMessage;
+      _updateMessageCallback?.call(failedMessage);
+      _onMessageResolved(messageId, contact.publicKeyHex);
     }
   }
 
@@ -281,6 +364,7 @@ class MessageRetryService extends ChangeNotifier {
     }
 
     // FALLBACK: Old queue-based matching (for messages sent before hash computation was added)
+    // Only match within a single contact's queue to avoid cross-contact mismatches.
     if (messageId == null && allowQueueFallback) {
       _debugLogService?.warn(
         'RESP_CODE_SENT: ACK hash $ackHashHex not found in hash table, falling back to queue',
@@ -290,13 +374,16 @@ class MessageRetryService extends ChangeNotifier {
         'Hash-based match failed for $ackHashHex, falling back to queue-based matching',
       );
 
-      for (var entry in _pendingMessageQueuePerContact.entries) {
+      // Search all contact queues so concurrent chats don't miss matches.
+      final queuesToSearch = _pendingMessageQueuePerContact;
+
+      for (var entry in queuesToSearch.entries) {
         final contactKey = entry.key;
         final queue = entry.value;
 
-        if (queue.isNotEmpty) {
+        // Drain stale entries until we find a valid one or exhaust the queue.
+        while (queue.isNotEmpty) {
           final candidateMessageId = queue.removeAt(0);
-
           if (_pendingMessages.containsKey(candidateMessageId)) {
             messageId = candidateMessageId;
             contact = _pendingContacts[candidateMessageId];
@@ -304,21 +391,10 @@ class MessageRetryService extends ChangeNotifier {
               'Queue-based match (fallback): $ackHashHex → message $messageId for $contactKey',
             );
             break;
-          } else {
-            debugPrint('Dequeued stale message $candidateMessageId - skipping');
-            if (queue.isNotEmpty) {
-              final nextMessageId = queue.removeAt(0);
-              if (_pendingMessages.containsKey(nextMessageId)) {
-                messageId = nextMessageId;
-                contact = _pendingContacts[nextMessageId];
-                debugPrint(
-                  'Queue-based match (fallback): $ackHashHex → message $messageId',
-                );
-                break;
-              }
-            }
           }
+          debugPrint('Dequeued stale message $candidateMessageId - skipping');
         }
+        if (messageId != null) break;
       }
     }
 
@@ -357,25 +433,33 @@ class MessageRetryService extends ChangeNotifier {
       );
     }
 
-    // Use device-provided timeout, or calculate from radio settings if timeout is 0 or invalid
+    // Calculate timeout: prefer ML prediction, then device-provided, then physics fallback
+    int pathLengthValue;
+    if (selection != null) {
+      pathLengthValue = selection.useFlood ? -1 : selection.hopCount;
+      if (pathLengthValue < 0) pathLengthValue = contact.pathLength;
+    } else if (message.pathLength != null) {
+      pathLengthValue = message.pathLength!;
+    } else {
+      pathLengthValue = contact.pathLength;
+    }
+
     int actualTimeout = timeoutMs;
-    if (timeoutMs <= 0 && _calculateTimeoutCallback != null) {
-      int pathLengthValue;
-      if (selection != null) {
-        pathLengthValue = selection.useFlood ? -1 : selection.hopCount;
-        if (pathLengthValue < 0) pathLengthValue = contact.pathLength;
-      } else if (message.pathLength != null) {
-        pathLengthValue = message.pathLength!;
-      } else {
-        pathLengthValue = contact.pathLength;
-      }
-      actualTimeout = _calculateTimeoutCallback!(
+    if (_calculateTimeoutCallback != null) {
+      final calculated = _calculateTimeoutCallback!(
         pathLengthValue,
         message.text.length,
+        contactKey: contact.publicKeyHex,
       );
-      debugPrint(
-        'Using calculated timeout: ${actualTimeout}ms for path length $pathLengthValue',
-      );
+      // calculateTimeout tries ML first, falls back to physics.
+      // Use calculated value if device didn't provide one, or if ML
+      // produced a tighter prediction than the device's estimate.
+      if (timeoutMs <= 0 || calculated < timeoutMs) {
+        actualTimeout = calculated;
+        debugPrint(
+          'Using calculated timeout: ${actualTimeout}ms for path length $pathLengthValue',
+        );
+      }
     }
 
     final updatedMessage = message.copyWith(
@@ -463,22 +547,7 @@ class MessageRetryService extends ChangeNotifier {
     } else {
       // Max retries reached - mark as failed
       final failedMessage = message.copyWith(status: MessageStatus.failed);
-
-      // Move ACK hashes to history before removing
-      _moveAckHashesToHistory(messageId);
-
-      _pendingMessages.remove(messageId);
-      _pendingContacts.remove(messageId);
-      _pendingPathSelections.remove(messageId);
-      _timeoutTimers[messageId]?.cancel();
-      _timeoutTimers.remove(messageId);
-
-      // Clean up the queue entry for this contact
-      _pendingMessageQueuePerContact[contact.publicKeyHex]?.remove(messageId);
-      if (_pendingMessageQueuePerContact[contact.publicKeyHex]?.isEmpty ??
-          false) {
-        _pendingMessageQueuePerContact.remove(contact.publicKeyHex);
-      }
+      _pendingMessages[messageId] = failedMessage;
 
       // Check if we should clear the path on max retry
       if (_appSettingsService?.settings.clearPathOnMaxRetry == true &&
@@ -499,6 +568,30 @@ class MessageRetryService extends ChangeNotifier {
       }
 
       notifyListeners();
+
+      // Message is done retrying — send next queued message for this contact
+      _onMessageResolved(messageId, contact.publicKeyHex);
+
+      // Keep message in pending maps for 30s grace period so late ACKs
+      // can still match and update the message to delivered.
+      _timeoutTimers[messageId] = Timer(const Duration(seconds: 30), () {
+        _moveAckHashesToHistory(messageId);
+        // Clean up ALL hash mappings for this message
+        _ackHashToMessageId.removeWhere(
+          (_, mapping) => mapping.messageId == messageId,
+        );
+        _expectedHashToMessageId.removeWhere((_, msgId) => msgId == messageId);
+        _pendingMessages.remove(messageId);
+        _pendingContacts.remove(messageId);
+        _pendingPathSelections.remove(messageId);
+        _timeoutTimers.remove(messageId);
+        _resolvedMessages.remove(messageId);
+        final contactKey = contact.publicKeyHex;
+        _pendingMessageQueuePerContact[contactKey]?.remove(messageId);
+        if (_pendingMessageQueuePerContact[contactKey]?.isEmpty ?? false) {
+          _pendingMessageQueuePerContact.remove(contactKey);
+        }
+      });
     }
   }
 
@@ -594,7 +687,15 @@ class MessageRetryService extends ChangeNotifier {
     }
 
     if (matchedMessageId != null) {
-      final message = _pendingMessages[matchedMessageId]!;
+      final message = _pendingMessages[matchedMessageId];
+      if (message == null) {
+        // Message was already cleaned up (e.g. grace period expired)
+        _ackHashToMessageId.remove(ackHashHex);
+        debugPrint(
+          'ACK matched $matchedMessageId but message already cleaned up',
+        );
+        return;
+      }
       final contact = _pendingContacts[matchedMessageId];
       final selection = _pendingPathSelections[matchedMessageId];
 
@@ -616,12 +717,21 @@ class MessageRetryService extends ChangeNotifier {
         tripTimeMs: tripTimeMs,
       );
 
+      // Clean up ALL hash mappings for this message (from all retry attempts)
+      _ackHashToMessageId.removeWhere(
+        (_, mapping) => mapping.messageId == matchedMessageId,
+      );
+      _expectedHashToMessageId.removeWhere(
+        (_, msgId) => msgId == matchedMessageId,
+      );
+
       // Move ACK hashes to history before removing
       _moveAckHashesToHistory(matchedMessageId);
 
       _pendingMessages.remove(matchedMessageId);
       _pendingContacts.remove(matchedMessageId);
       _pendingPathSelections.remove(matchedMessageId);
+      _resolvedMessages.remove(matchedMessageId);
 
       // Clean up the queue entry for this contact (remove any remaining references to this message)
       if (contact != null) {
@@ -646,6 +756,17 @@ class MessageRetryService extends ChangeNotifier {
           true,
           tripTimeMs,
         );
+        if (_onDeliveryObservedCallback != null &&
+            tripTimeMs > 0 &&
+            message.pathLength != null) {
+          _onDeliveryObservedCallback!(
+            contact.publicKeyHex,
+            message.pathLength!,
+            message.text.length,
+            tripTimeMs,
+          );
+        }
+        _onMessageResolved(matchedMessageId, contact.publicKeyHex);
       }
 
       notifyListeners();
@@ -783,6 +904,9 @@ class MessageRetryService extends ChangeNotifier {
     _ackHistory.clear();
     _ackHashToMessageId.clear();
     _pendingMessageQueuePerContact.clear();
+    _sendQueue.clear();
+    _activeMessages.clear();
+    _resolvedMessages.clear();
     super.dispose();
   }
 }

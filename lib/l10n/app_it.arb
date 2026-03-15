@@ -1888,5 +1888,6 @@
   "tcpErrorUnsupported": "Il protocollo TCP non è supportato su questa piattaforma.",
   "tcpErrorTimedOut": "La connessione TCP è scaduta.",
   "tcpConnectionFailed": "Impossibile stabilire la connessione TCP: {error}",
-  "map_showDiscoveryContacts": "Mostra Contatti di Discovery"
+  "map_showDiscoveryContacts": "Mostra Contatti di Discovery",
+  "map_setAsMyLocation": "Imposta come la mia posizione"
 }

@@ -1888,5 +1888,6 @@
   "tcpErrorUnsupported": "O protocolo TCP não é suportado nesta plataforma.",
   "tcpErrorTimedOut": "A conexão TCP expirou.",
   "tcpConnectionFailed": "Falha na conexão TCP: {error}",
-  "map_showDiscoveryContacts": "Mostrar Contatos de Descoberta"
+  "map_showDiscoveryContacts": "Mostrar Contatos de Descoberta",
+  "map_setAsMyLocation": "Defina minha localização"
 }

@@ -1916,5 +1916,6 @@
   "tcpErrorUnsupported": "El protocolo de transporte TCP no está soportado en esta plataforma.",
   "tcpErrorTimedOut": "La conexión TCP ha caducado.",
   "tcpConnectionFailed": "Error en la conexión TCP: {error}",
-  "map_showDiscoveryContacts": "Mostrar Contactos de Descubrimiento"
+  "map_showDiscoveryContacts": "Mostrar Contactos de Descubrimiento",
+  "map_setAsMyLocation": "Establecer mi ubicación"
 }

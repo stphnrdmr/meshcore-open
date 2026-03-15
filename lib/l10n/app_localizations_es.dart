@@ -1514,6 +1514,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get map_shareMarkerHere => 'Compartir marcador aquí';
 
   @override
+  String get map_setAsMyLocation => 'Establecer mi ubicación';
+
+  @override
   String get map_pinLabel => 'Etiqueta de marcador';
 
   @override
