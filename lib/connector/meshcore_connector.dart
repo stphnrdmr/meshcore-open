@@ -4757,14 +4757,14 @@ class MeshCoreConnector extends ChangeNotifier {
             hasLocation &&
                 latitude != null &&
                 latitude.abs() <= 90 &&
-                longitude != 0
+                (latitude != 0 || longitude != 0)
             ? latitude
             : existing.latitude,
         longitude:
             hasLocation &&
                 longitude != null &&
                 longitude.abs() <= 180 &&
-                longitude != 0
+                (latitude != 0 || longitude != 0)
             ? longitude
             : existing.longitude,
         name: hasName ? name : existing.name,

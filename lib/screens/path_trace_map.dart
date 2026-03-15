@@ -93,7 +93,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
   ValueKey<String> _mapKey = const ValueKey('initial');
   double _pathDistanceMeters = 0.0;
   bool _showNodeLabels = true;
-  Contact? target;
+  Contact? _targetContact;
 
   String _formatPathPrefixes(Uint8List pathBytes) {
     return pathBytes
@@ -305,11 +305,12 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
         // Compute endpoint position for the target contact.
         LatLng? targetPos;
         bool targetGuessed = false;
-        target = widget.targetContact;
+        _targetContact = widget.targetContact;
 
-        if (target != null) {
-          if (target?.hasLocation ?? false) {
-            targetPos = LatLng(target!.latitude!, target!.longitude!);
+        if (_targetContact != null) {
+          final tc = _targetContact!;
+          if (tc.hasLocation) {
+            targetPos = LatLng(tc.latitude!, tc.longitude!);
           } else if (widget.path.length > 1) {
             // Infer from the last hop: average GPS contacts sharing that hop.
             // For a round-trip path (flipPathAround/reversePathAround), the target-side hop
@@ -334,7 +335,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
                   peers.map((c) => c.longitude!).reduce((a, b) => a + b) /
                   peers.length;
               const offsetDeg = 0.003;
-              final angle = (target!.publicKey[1] / 255.0) * 2 * pi;
+              final angle = (tc.publicKey[1] / 255.0) * 2 * pi;
               targetPos = LatLng(
                 lat + offsetDeg * cos(angle),
                 lon + offsetDeg * sin(angle),
@@ -344,7 +345,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
               final lat = inferredPositions[lastHop]!.latitude;
               final lon = inferredPositions[lastHop]!.longitude;
               const offsetDeg = 0.003;
-              final angle = (target!.publicKey[1] / 255.0) * 2 * pi;
+              final angle = (tc.publicKey[1] / 255.0) * 2 * pi;
               targetPos = LatLng(
                 lat + offsetDeg * cos(angle),
                 lon + offsetDeg * sin(angle),
@@ -355,7 +356,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
               final contact = pathContacts[lastHop];
               if (contact != null && contact.hasLocation) {
                 const offsetDeg = 0.003;
-                final angle = (target!.publicKey[1] / 255.0) * 2 * pi;
+                final angle = (tc.publicKey[1] / 255.0) * 2 * pi;
                 targetPos = LatLng(
                   contact.latitude! + offsetDeg * cos(angle),
                   contact.longitude! + offsetDeg * sin(angle),
@@ -387,7 +388,7 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
           hopLast = hop;
         }
         if (targetPos != null) {
-          if (target != null && target!.type == advTypeChat) {
+          if (_targetContact != null && _targetContact!.type == advTypeChat) {
             _points.add(targetPos);
           }
         }
@@ -479,7 +480,8 @@ class _PathTraceMapScreenState extends State<PathTraceMapScreen> {
                       ],
                     ),
                   ),
-                if (_hasData) _buildMapPathTrace(context, tileCache, target),
+                if (_hasData)
+                  _buildMapPathTrace(context, tileCache, _targetContact),
                 if (_points.isEmpty &&
                     !_hasData &&
                     !_isLoading &&
