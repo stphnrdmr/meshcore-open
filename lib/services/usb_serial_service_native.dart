@@ -189,6 +189,10 @@ class UsbSerialService {
           serial.setStopBits1();
           serial.setFlowControlNone();
           serial.setRTS(false);
+          // Toggle DTR low→high so the device sees a fresh connection even
+          // if the previous disconnect didn't cleanly signal DTR drop.
+          serial.setDTR(false);
+          await Future<void>.delayed(const Duration(milliseconds: 50));
           serial.setDTR(true);
           _serial = serial;
           // Update the normalized port name to whichever candidate succeeded.
@@ -249,6 +253,23 @@ class UsbSerialService {
     _status = UsbSerialStatus.connected;
   }
 
+  Future<void> writeRaw(Uint8List data) async {
+    if (!isConnected) {
+      throw StateError('USB serial port is not open');
+    }
+    if (_useAndroidUsbHost) {
+      try {
+        await _androidMethodChannel.invokeMethod<void>('write', {
+          'data': data,
+        });
+      } on PlatformException catch (error) {
+        throw StateError(error.message ?? error.code);
+      }
+    } else {
+      _serial!.write(data);
+    }
+  }
+
   Future<void> write(Uint8List data) async {
     if (!isConnected) {
       throw StateError('USB serial port is not open');
@@ -300,6 +321,7 @@ class UsbSerialService {
       _serial = null;
       try {
         if (serial?.isOpen() == FlOpenStatus.open) {
+          serial?.setDTR(false);
           serial?.closePort();
         }
       } catch (_) {
@@ -350,6 +372,7 @@ class UsbSerialService {
       final serial = _serial;
       try {
         if (serial?.isOpen() == FlOpenStatus.open) {
+          serial?.setDTR(false);
           serial?.closePort(); // synchronous C call — kills the SerialThread
         }
       } catch (_) {}

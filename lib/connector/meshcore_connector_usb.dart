@@ -64,6 +64,8 @@ class MeshCoreUsbManager {
 
   Future<void> write(Uint8List data) => _service.write(data);
 
+  Future<void> writeRaw(Uint8List data) => _service.writeRaw(data);
+
   // --- Label management ---
   void updateConnectedLabel(String selfName) {
     _service.updateConnectedLabel(selfName);
