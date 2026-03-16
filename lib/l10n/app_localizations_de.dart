@@ -382,7 +382,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Einstellungen für das Hinzufügen von Kontakten';
 
   @override
-  String get settings_privacyMode => 'Privatsphäreeinstellung';
+  String get settings_privacyMode => 'Datenschutzmodus';
 
   @override
   String get settings_privacyModeSubtitle =>
@@ -390,7 +390,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get settings_privacyModeToggle =>
-      'Aktivieren Sie die Privatsphäreeinstellung, um Ihren Namen und Ihre Standortdaten in Ankündigungen zu verbergen.';
+      'Aktivieren Sie den Datenschutzmodus, um Ihren Namen und Ihre Standortdaten in Ankündigungen zu verbergen.';
 
   @override
   String get settings_privacyModeEnabled => 'Datenschutzmodus aktiviert';
@@ -1949,7 +1949,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get repeater_systemInformation => 'Systeminformation';
+  String get repeater_systemInformation => 'Systeminformationen';
 
   @override
   String get repeater_battery => 'Akku';
@@ -1958,16 +1958,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_clockAtLogin => 'Uhr (bei Anmeldung)';
 
   @override
-  String get repeater_uptime => 'Verfügbarkeit';
+  String get repeater_uptime => 'Betriebszeit';
 
   @override
-  String get repeater_queueLength => 'Warteschlangenlänge';
+  String get repeater_queueLength => 'Warteschlange';
 
   @override
   String get repeater_debugFlags => 'Fehlerbehebungsoptionen';
 
   @override
-  String get repeater_radioStatistics => 'Funk-Statistik';
+  String get repeater_radioStatistics => 'Funk-Statistiken';
 
   @override
   String get repeater_lastRssi => 'Letzter RSSI';
@@ -1979,10 +1979,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_noiseFloor => 'Rauschpegel';
 
   @override
-  String get repeater_txAirtime => 'TX Airtime';
+  String get repeater_txAirtime => 'Sendedauer';
 
   @override
-  String get repeater_rxAirtime => 'RX Airtime';
+  String get repeater_rxAirtime => 'Empfangsdauer';
 
   @override
   String get repeater_packetStatistics => 'Paketstatistiken';
@@ -2027,7 +2027,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get repeater_settingsTitle => 'Repeater Einstellungen';
+  String get repeater_settingsTitle => 'Repeater-Einstellungen';
 
   @override
   String get repeater_basicSettings => 'Grundlegende Einstellungen';
@@ -2042,17 +2042,17 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_adminPassword => 'Admin-Passwort';
 
   @override
-  String get repeater_adminPasswordHelper => 'Vollzugriffspasswort';
+  String get repeater_adminPasswordHelper => 'Passwort für den Vollzugriff';
 
   @override
   String get repeater_guestPassword => 'Gast-Passwort';
 
   @override
   String get repeater_guestPasswordHelper =>
-      'Schreibgeschütztes Zugriffspasswort';
+      'Passwort für den lesenden Zugriff';
 
   @override
-  String get repeater_radioSettings => 'Funk Einstellungen';
+  String get repeater_radioSettings => 'Funk-Einstellungen';
 
   @override
   String get repeater_frequencyMhz => 'Frequenz (MHz)';
@@ -2061,7 +2061,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_frequencyHelper => '300-2500 MHz';
 
   @override
-  String get repeater_txPower => 'TX Power';
+  String get repeater_txPower => 'Sendeleistung';
 
   @override
   String get repeater_txPowerHelper => '1-30 dBm';
@@ -2076,7 +2076,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_codingRate => 'Kodierungsrate';
 
   @override
-  String get repeater_locationSettings => 'Standort Einstellungen';
+  String get repeater_locationSettings => 'Standort-Einstellungen';
 
   @override
   String get repeater_latitude => 'Breitengrad';
@@ -2098,17 +2098,17 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_packetForwardingSubtitle =>
-      'Aktivieren Sie den Repeater, um Pakete weiterzuleiten.';
+      'Paketweiterleitung aktivieren.';
 
   @override
   String get repeater_guestAccess => 'Gastzugriff';
 
   @override
   String get repeater_guestAccessSubtitle =>
-      'Gast-Zugriff mit beschränkten Rechten zulassen';
+      'Gast-Zugriff mit Lese-Rechten zulassen';
 
   @override
-  String get repeater_privacyMode => 'Privatsphäreeinstellung';
+  String get repeater_privacyMode => 'Datenschutzmodus';
 
   @override
   String get repeater_privacyModeSubtitle =>
@@ -2137,13 +2137,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_encryptedAdvertInterval =>
-      'Intervall der verschlüsselten Ankündigung';
+      'Intervall der verschlüsselten Ankündigungen';
 
   @override
   String get repeater_dangerZone => 'Gefahrenzone';
 
   @override
-  String get repeater_rebootRepeater => 'Neustart Repeater';
+  String get repeater_rebootRepeater => 'Repeater neustarten';
 
   @override
   String get repeater_rebootRepeaterSubtitle => 'Repeater-Gerät neu starten.';
@@ -2173,7 +2173,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_eraseFileSystemConfirm =>
-      'WARNUNG: Dies löscht alle Daten auf dem Repeater. Dies kann nicht rückgängig gemacht werden!';
+      'WARNUNG: Dies löscht alle Daten auf dem Repeater und kann nicht rückgängig gemacht werden!';
 
   @override
   String get repeater_eraseSerialOnly =>
@@ -2206,29 +2206,28 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_refreshRadioSettings =>
-      'Radio-Einstellungen aktualisieren';
+      'Funk-Einstellungen aktualisieren';
 
   @override
   String get repeater_refreshTxPower => 'Sendeleistung aktualisieren';
 
   @override
   String get repeater_refreshLocationSettings =>
-      'Aktualisieren Sie die Standort Einstellungen';
+      'Standort-Einstellungen aktualisieren';
 
   @override
   String get repeater_refreshPacketForwarding =>
-      'Aktualisieren Paketweiterleitung';
+      'Paketweiterleitung aktualisieren';
 
   @override
-  String get repeater_refreshGuestAccess => 'Aktualisieren Sie den Gastzugriff';
+  String get repeater_refreshGuestAccess => 'Gastzugriff aktualisieren';
 
   @override
-  String get repeater_refreshPrivacyMode =>
-      'Wiederherstellen des Datenschutzzustands';
+  String get repeater_refreshPrivacyMode => 'Datenschutzmodus aktualisieren';
 
   @override
   String get repeater_refreshAdvertisementSettings =>
-      'Aktualisieren Sie die Ankündigungseinstellungen';
+      'Ankündigungseinstellungen aktualisieren';
 
   @override
   String repeater_refreshed(String label) {
@@ -2250,7 +2249,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_commandHelp => 'Hilfe';
 
   @override
-  String get repeater_clearHistory => 'Löschen der Historie';
+  String get repeater_clearHistory => 'Historie löschen';
 
   @override
   String get repeater_noCommandsSent => 'Noch keine Befehle gesendet.';
@@ -2263,10 +2262,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_enterCommandHint => 'Geben Sie den Befehl ein...';
 
   @override
-  String get repeater_previousCommand => 'Vorhergehende Aktion';
+  String get repeater_previousCommand => 'Vorheriger Befehl';
 
   @override
-  String get repeater_nextCommand => 'Nächste Aktion';
+  String get repeater_nextCommand => 'Nächster Befehl';
 
   @override
   String get repeater_enterCommandFirst => 'Geben Sie zuerst einen Befehl ein';
@@ -2280,13 +2279,13 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get repeater_cliQuickGetName => 'Name erhalten';
+  String get repeater_cliQuickGetName => 'Namen laden';
 
   @override
-  String get repeater_cliQuickGetRadio => 'Radio empfangen';
+  String get repeater_cliQuickGetRadio => 'Radio laden';
 
   @override
-  String get repeater_cliQuickGetTx => 'Erhalte TX';
+  String get repeater_cliQuickGetTx => 'TX laden';
 
   @override
   String get repeater_cliQuickNeighbors => 'Nachbarn';
@@ -2295,10 +2294,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get repeater_cliQuickVersion => 'Version';
 
   @override
-  String get repeater_cliQuickAdvertise => 'Ankündigungen';
+  String get repeater_cliQuickAdvertise => 'Ankündigen';
 
   @override
-  String get repeater_cliQuickClock => 'Uhr';
+  String get repeater_cliQuickClock => 'Uhrzeit laden';
 
   @override
   String get repeater_cliHelpAdvert => 'Sendet eine Ankündigung';
@@ -2309,7 +2308,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_cliHelpClock =>
-      'Zeigt die aktuelle Uhrzeit pro Gerät an.';
+      'Zeigt die aktuelle Uhrzeit des Gerätes an.';
 
   @override
   String get repeater_cliHelpPassword =>
@@ -2332,23 +2331,23 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetRepeat =>
-      'Aktiviert oder deaktiviert die Repeater-Rolle für diesen Knoten.';
+      'Aktiviert oder deaktiviert Paketweiterleitung für diesen Knoten.';
 
   @override
   String get repeater_cliHelpSetAllowReadOnly =>
-      '(Raumspeicher) Wenn \'an\', dann wird die Anmeldung mit einem leeren Passwort erlaubt sein, aber es kann nicht in den Raum gesendet werden. (nur lesen möglich).';
+      '(Raumserver) Wenn \'an\', dann wird die Anmeldung mit einem leeren Passwort erlaubt sein, aber es kann nicht in den Raum gesendet werden. (nur lesen möglich).';
 
   @override
   String get repeater_cliHelpSetFloodMax =>
-      'Legt die maximale Anzahl an Hops für Pakete der eingehenden Flut (wenn >= max, wird das Paket nicht weitergeleitet)';
+      'Legt die maximale Anzahl an Hops für eingehende Flut-Pakete fest (wenn >= max, wird das Paket nicht weitergeleitet)';
 
   @override
   String get repeater_cliHelpSetIntThresh =>
-      'Legt den Interferenzeniveau (in dB) fest. Der Standardwert ist 14. Auf 0 setzen, um die Erkennung von Kanalinterferenzen zu deaktivieren.';
+      'Legt das Interferenz-Niveau (in dB) fest. Der Standardwert ist 14. Zum deaktivieren der Erkennung von Kanalinterferenzen auf 0 setzen.';
 
   @override
   String get repeater_cliHelpSetAgcResetInterval =>
-      'Legt das Intervall für das Zurücksetzen des Auto Gain Controllers fest. Auf 0 setzen, um die Funktion zu deaktivieren.';
+      'Legt das Intervall für das Zurücksetzen des Auto Gain Controllers fest. Zum deaktivieren auf 0 setzen.';
 
   @override
   String get repeater_cliHelpSetMultiAcks =>
@@ -2356,11 +2355,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetAdvertInterval =>
-      'Legt das Timer-Intervall in Minuten fest, um ein lokales (ohne-Weiterleitung) Ankündigungspaket zu senden. Auf 0 setzen, um die Funktion zu deaktivieren.';
+      'Legt das Intervall in Minuten für den Versand eines lokalen (ohne-Weiterleitung) Ankündigungspakets fest. Zum deaktivieren auf 0 setzen.';
 
   @override
   String get repeater_cliHelpSetFloodAdvertInterval =>
-      'Legt das Timer-Intervall in Stunden für den Versand eines Flut-Ankündigungspacket fest. Auf 0 setzen, um es zu deaktivieren.';
+      'Legt das Intervall in Stunden für den Versand eines Flut-Ankündigungspakets fest. Zum deaktivieren auf 0 setzen.';
 
   @override
   String get repeater_cliHelpSetGuestPassword =>
@@ -2371,15 +2370,15 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetLat =>
-      'Legt die Breitengrad der Ankündigung fest. (dezimale Grad)';
+      'Legt die Breitengrad der Ankündigung fest. (Dezimalgrad)';
 
   @override
   String get repeater_cliHelpSetLon =>
-      'Legt die Längengrade der Ankündigung fest. (dezimale Grad)';
+      'Legt die Längengrade der Ankündigung fest. (Dezimalgrad)';
 
   @override
   String get repeater_cliHelpSetRadio =>
-      'Legt komplett neue Radio-Parameter fest und speichert diese als Präferenzen. Benötigt einen \"Reboot\"-Befehl, um sie anzuwenden.';
+      'Legt komplett neue Radio-Parameter fest und speichert diese. Benötigt einen \"Reboot\"-Befehl, um sie anzuwenden.';
 
   @override
   String get repeater_cliHelpSetRxDelay =>
@@ -2580,7 +2579,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get telemetry_temperatureLabel => 'Temperatur';
 
   @override
-  String get telemetry_currentLabel => 'Aktuell';
+  String get telemetry_currentLabel => 'Strom';
 
   @override
   String telemetry_batteryValue(int percent, String volts) {
@@ -2589,7 +2588,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String telemetry_voltageValue(String volts) {
-    return '$volts Volt';
+    return '${volts}V';
   }
 
   @override
