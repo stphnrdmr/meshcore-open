@@ -152,7 +152,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tcpErrorUnsupported =>
-      'Transport protokoł TCP nie jest obsługiwany na tym urządzeniu.';
+      'Transport TCP nie jest obsługiwany na tej platformie.';
 
   @override
   String get tcpErrorTimedOut =>
@@ -168,7 +168,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get usbScreenSubtitle =>
-      'Wybierz wykryty urządzenie szeregowe i podłącz je bezpośrednio do swojego węzła MeshCore.';
+      'Wybierz wykryte urządzenie szeregowe i połącz się bezpośrednio ze swoim węzłem MeshCore.';
 
   @override
   String get usbScreenStatus => 'Wybierz urządzenie USB';
@@ -469,7 +469,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get settings_aboutDescription =>
-      'Otwarty kod źródłowy klient Flutter dla urządzeń do sieci mesh LoRa MeshCore.';
+      'Otwartoźródłowy klient Flutter dla urządzeń MeshCore LoRa do sieci mesh.';
 
   @override
   String get settings_aboutOpenMeteoAttribution =>
@@ -800,7 +800,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get appSettings_mapTimeFilter => 'Filtrowanie Czasu Mapy';
+  String get appSettings_mapTimeFilter => 'Filtr czasu mapy';
 
   @override
   String get appSettings_showNodesDiscoveredWithin => 'Pokaż węzły odkryte w:';
@@ -833,7 +833,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get appSettings_unitsImperial => 'Imperialne (ft / mi)';
 
   @override
-  String get appSettings_noAreaSelected => 'Nie zaznaczono żadnej powierzchni.';
+  String get appSettings_noAreaSelected => 'Nie wybrano żadnego obszaru.';
 
   @override
   String appSettings_areaSelectedZoom(int minZoom, int maxZoom) {
@@ -848,7 +848,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get appSettings_appDebugLoggingSubtitle =>
-      'Loguj wiadomości debugowania aplikacji w celu rozwiązywania problemów.';
+      'Rejestruj komunikaty debugowania aplikacji w celu diagnozowania problemów.';
 
   @override
   String get appSettings_appDebugLoggingEnabled =>
@@ -911,7 +911,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String contacts_removeConfirm(String contactName) {
-    return 'Usuń $contactName z kontaktów?';
+    return 'Usunąć $contactName z kontaktów?';
   }
 
   @override
@@ -1009,7 +1009,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get channels_hashtagChannel => 'Kanał z hashtagami';
+  String get channels_hashtagChannel => 'Kanał hashtagów';
 
   @override
   String get channels_public => 'Publiczny';
@@ -1075,7 +1075,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get channels_enterChannelName => 'Proszę podać nazwę kanału.';
 
   @override
-  String get channels_pskMustBe32Hex => 'PSK musi mieć 32 znaki szesnastkowe.';
+  String get channels_pskMustBe32Hex =>
+      'PSK musi składać się z 32 znaków szesnastkowych.';
 
   @override
   String channels_channelAdded(String name) {
@@ -1280,7 +1281,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get debugLog_rawLogRx => 'Surowy log RX';
 
   @override
-  String get debugLog_noBleActivity => 'Brak aktywności BLE jeszcze.';
+  String get debugLog_noBleActivity => 'Brak aktywności BLE.';
 
   @override
   String debugFrame_length(int count) {
@@ -1302,7 +1303,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String debugFrame_timestamp(int timestamp) {
-    return '- Timestamp: $timestamp';
+    return '- Znacznik czasu: $timestamp';
   }
 
   @override
@@ -1379,7 +1380,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get chat_noPathHistoryYet =>
-      'Brak jeszcze historii ścieżek.\nWyślij wiadomość, aby odkryć ścieżki.';
+      'Brak historii ścieżek.\nWyślij wiadomość, aby odkryć ścieżki.';
 
   @override
   String get chat_pathActions => 'Działania ścieżki:';
@@ -1407,7 +1408,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get chat_floodModeEnabled =>
-      'Tryb powodziowy włączony. Włącz ponownie za pomocą ikony routingu w pasku narzędzi.';
+      'Tryb zalewowy włączony. Przełącz z powrotem ikoną routingu w pasku aplikacji.';
 
   @override
   String get chat_fullPath => 'Pełna ścieżka';
@@ -1523,7 +1524,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get map_chat => 'Rozmowa';
 
   @override
-  String get map_repeater => 'Powtórzacz';
+  String get map_repeater => 'Powtarzacz';
 
   @override
   String get map_room => 'Pokój';
@@ -1657,22 +1658,22 @@ class AppLocalizationsPl extends AppLocalizations {
   String get map_pathTraceCancelled => 'Śledzenie ścieżki anulowano.';
 
   @override
-  String get mapCache_title => 'Bufor Map Offline';
+  String get mapCache_title => 'Pamięć podręczna map offline';
 
   @override
   String get mapCache_selectAreaFirst =>
-      'Wybierz obszar do wstępnego pobrania.';
+      'Najpierw wybierz obszar do zapisania w pamięci podręcznej.';
 
   @override
   String get mapCache_noTilesToDownload =>
-      'Brak dostępnych płytek do pobrania dla tego obszaru.';
+      'Brak kafelków do pobrania dla tego obszaru.';
 
   @override
-  String get mapCache_downloadTilesTitle => 'Pobierz płytki';
+  String get mapCache_downloadTilesTitle => 'Pobierz kafelki';
 
   @override
   String mapCache_downloadTilesPrompt(int count) {
-    return 'Pobierz $count płytek do użytku offline?';
+    return 'Pobrać $count kafelków do użytku offline?';
   }
 
   @override
@@ -1680,12 +1681,12 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String mapCache_cachedTiles(int count) {
-    return 'Zapisano $count płytek w pamięci podręcznej';
+    return 'Zapisano w pamięci podręcznej $count kafelków';
   }
 
   @override
   String mapCache_cachedTilesWithFailed(int downloaded, int failed) {
-    return 'Zapisano $downloaded płytek ($failed nieudane)';
+    return 'Zapisano w pamięci podręcznej $downloaded kafelków ($failed nieudanych)';
   }
 
   @override
@@ -1694,14 +1695,14 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get mapCache_clearOfflineCachePrompt =>
-      'Usuń wszystkie tymczasowe kafelki mapy?';
+      'Usunąć wszystkie zapisane kafelki mapy?';
 
   @override
   String get mapCache_offlineCacheCleared =>
-      'Pamięć podręczna offline została wyczyszczona';
+      'Wyczyszczono pamięć podręczną offline';
 
   @override
-  String get mapCache_noAreaSelected => 'Nie zaznaczono żadnej powierzchni.';
+  String get mapCache_noAreaSelected => 'Nie wybrano żadnego obszaru.';
 
   @override
   String get mapCache_cacheArea => 'Obszar pamięci podręcznej';
@@ -1710,11 +1711,11 @@ class AppLocalizationsPl extends AppLocalizations {
   String get mapCache_useCurrentView => 'Użyj aktualnego widoku';
 
   @override
-  String get mapCache_zoomRange => 'Zakres powiększenia';
+  String get mapCache_zoomRange => 'Zakres przybliżenia';
 
   @override
   String mapCache_estimatedTiles(int count) {
-    return 'Szacunkowa liczba płytek: $count';
+    return 'Szacowana liczba kafelków: $count';
   }
 
   @override
@@ -1819,7 +1820,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get login_repeaterDescription =>
-      'Wprowadź hasło do powtarzacza, aby uzyskać dostęp do ustawień i statusu.';
+      'Wprowadź hasło do powtarzacza, aby uzyskać dostęp do ustawień i stanu.';
 
   @override
   String get login_roomDescription =>
@@ -1855,7 +1856,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get login_failedMessage =>
-      'Logowanie nie powiodło się. Hasło jest nieprawidłowe albo repeater jest nieosiągalny.';
+      'Logowanie nie powiodło się. Hasło jest nieprawidłowe albo powtarzacz jest nieosiągalny.';
 
   @override
   String get common_reload => 'Odśwież';
@@ -1907,7 +1908,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get path_noRepeatersFound =>
-      'Nie znaleziono repeaterów ani serwerów pokoi.';
+      'Nie znaleziono powtarzaczy ani serwerów pokoi.';
 
   @override
   String get path_customPathsRequire =>
@@ -2080,7 +2081,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get repeater_basicSettings => 'Podstawowe Ustawienia';
 
   @override
-  String get repeater_repeaterName => 'Nazwa Powtórnika';
+  String get repeater_repeaterName => 'Nazwa powtarzacza';
 
   @override
   String get repeater_repeaterNameHelper => 'Wyświetl nazwę tego powtarzacza';
@@ -2404,7 +2405,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get repeater_cliHelpSetGuestPassword =>
-      'Ustawia/aktualizuje hasło gościa. (dla repeaterów, loginy gości mogą wysyłać żądanie \"Get Stats\")';
+      'Ustawia/aktualizuje hasło gościa. (dla powtarzaczy loginy gości mogą wysyłać żądanie \"Get Stats\")';
 
   @override
   String get repeater_cliHelpSetName => 'Ustawia nazwę rozgłoszenia.';
@@ -3152,10 +3153,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get contacts_ping => 'Pingować';
 
   @override
-  String get contacts_repeaterPathTrace => 'Śledzenie ścieżki do repeatera';
+  String get contacts_repeaterPathTrace => 'Śledzenie ścieżki do powtarzacza';
 
   @override
-  String get contacts_repeaterPing => 'Repeater pingowy';
+  String get contacts_repeaterPing => 'Ping powtarzacza';
 
   @override
   String get contacts_roomPathTrace =>
@@ -3353,7 +3354,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get contactsSettings_autoAddRepeatersSubtitle =>
-      'Zezwól na automatyczne dodawanie odkrytych repeaterów przez towarzysza.';
+      'Zezwól towarzyszowi na automatyczne dodawanie odkrytych powtarzaczy.';
 
   @override
   String get contactsSettings_autoAddRoomServersTitle =>

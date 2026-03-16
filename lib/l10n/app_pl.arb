@@ -130,7 +130,7 @@
     }
   },
   "settings_aboutLegalese": "Projekt MeshCore Open Source 2026",
-  "settings_aboutDescription": "Otwarty kod źródłowy klient Flutter dla urządzeń do sieci mesh LoRa MeshCore.",
+  "settings_aboutDescription": "Otwartoźródłowy klient Flutter dla urządzeń MeshCore LoRa do sieci mesh.",
   "settings_infoName": "Nazwa",
   "settings_infoId": "ID",
   "settings_infoStatus": "Status",
@@ -229,7 +229,7 @@
       }
     }
   },
-  "appSettings_mapTimeFilter": "Filtrowanie Czasu Mapy",
+  "appSettings_mapTimeFilter": "Filtr czasu mapy",
   "appSettings_showNodesDiscoveredWithin": "Pokaż węzły odkryte w:",
   "appSettings_allTime": "Cały czas",
   "appSettings_lastHour": "Ostatnia godzina",
@@ -237,7 +237,7 @@
   "appSettings_last24Hours": "Ostatnie 24 godziny",
   "appSettings_lastWeek": "Ostatni tydzień",
   "appSettings_offlineMapCache": "Pamięć podręczna map offline",
-  "appSettings_noAreaSelected": "Nie zaznaczono żadnej powierzchni.",
+  "appSettings_noAreaSelected": "Nie wybrano żadnego obszaru.",
   "appSettings_areaSelectedZoom": "Wybrany obszar (skala {minZoom}-{maxZoom})",
   "@appSettings_areaSelectedZoom": {
     "placeholders": {
@@ -251,7 +251,7 @@
   },
   "appSettings_debugCard": "Debug",
   "appSettings_appDebugLogging": "Logowanie Debugowania Aplikacji",
-  "appSettings_appDebugLoggingSubtitle": "Loguj wiadomości debugowania aplikacji w celu rozwiązywania problemów.",
+  "appSettings_appDebugLoggingSubtitle": "Rejestruj komunikaty debugowania aplikacji w celu diagnozowania problemów.",
   "appSettings_appDebugLoggingEnabled": "Logowanie debugowania aplikacji włączone",
   "appSettings_appDebugLoggingDisabled": "Logowanie debugowania aplikacji wyłączone.",
   "contacts_title": "Kontakty",
@@ -261,7 +261,7 @@
   "contacts_noUnreadContacts": "Brak nieprzeczytanych kontaktów",
   "contacts_noContactsFound": "Brak znalezionych kontaktów ani grup.",
   "contacts_deleteContact": "Usuń Kontakt",
-  "contacts_removeConfirm": "Usuń {contactName} z kontaktów?",
+  "contacts_removeConfirm": "Usunąć {contactName} z kontaktów?",
   "@contacts_removeConfirm": {
     "placeholders": {
       "contactName": {
@@ -337,7 +337,7 @@
       }
     }
   },
-  "channels_hashtagChannel": "Kanał z hashtagami",
+  "channels_hashtagChannel": "Kanał hashtagów",
   "channels_public": "Publiczny",
   "channels_private": "Prywatny",
   "channels_publicChannel": "Kanał publiczny",
@@ -370,7 +370,7 @@
   "channels_pskHex": "PSK (Hex)",
   "channels_generateRandomPsk": "Wygeneruj losowy klucz PSK",
   "channels_enterChannelName": "Proszę podać nazwę kanału.",
-  "channels_pskMustBe32Hex": "PSK musi mieć 32 znaki szesnastkowe.",
+  "channels_pskMustBe32Hex": "PSK musi składać się z 32 znaków szesnastkowych.",
   "channels_channelAdded": "Kanał \"{name}\" dodany",
   "@channels_channelAdded": {
     "placeholders": {
@@ -478,7 +478,7 @@
   "debugLog_enableInSettings": "Włącz logowanie debugowania aplikacji w ustawieniach",
   "debugLog_frames": "Ramki",
   "debugLog_rawLogRx": "Surowy log RX",
-  "debugLog_noBleActivity": "Brak aktywności BLE jeszcze.",
+  "debugLog_noBleActivity": "Brak aktywności BLE.",
   "debugFrame_length": "Długość ramy: {count} bajtów",
   "@debugFrame_length": {
     "placeholders": {
@@ -504,7 +504,7 @@
       }
     }
   },
-  "debugFrame_timestamp": "- Timestamp: {timestamp}",
+  "debugFrame_timestamp": "- Znacznik czasu: {timestamp}",
   "@debugFrame_timestamp": {
     "placeholders": {
       "timestamp": {
@@ -560,7 +560,7 @@
   },
   "chat_successes": "Sukcesy",
   "chat_removePath": "Usuń ścieżkę",
-  "chat_noPathHistoryYet": "Brak jeszcze historii ścieżek.\nWyślij wiadomość, aby odkryć ścieżki.",
+  "chat_noPathHistoryYet": "Brak historii ścieżek.\nWyślij wiadomość, aby odkryć ścieżki.",
   "chat_pathActions": "Działania ścieżki:",
   "chat_setCustomPath": "Ustaw ścieżkę niestandardową",
   "chat_setCustomPathSubtitle": "Ręcznie określ trasę.",
@@ -568,7 +568,7 @@
   "chat_clearPathSubtitle": "Wymuś ponowne wyznaczenie trasy przy następnym wysłaniu",
   "chat_pathCleared": "Ścieżka wyczyszczona. Następna wiadomość odnajdzie trasę.",
   "chat_floodModeSubtitle": "Użyj przełącznika routingu w pasku narzędzi.",
-  "chat_floodModeEnabled": "Tryb powodziowy włączony. Włącz ponownie za pomocą ikony routingu w pasku narzędzi.",
+  "chat_floodModeEnabled": "Tryb zalewowy włączony. Przełącz z powrotem ikoną routingu w pasku aplikacji.",
   "chat_fullPath": "Pełna ścieżka",
   "chat_pathDetailsNotAvailable": "Szczegóły ścieżki jeszcze niedostępne. Spróbuj wysłać wiadomość, aby odświeżyć.",
   "chat_pathSetHops": "Ścieżka ustawiona: {hopCount} {hopCount, plural, =1{hop} other{hops}} - {status}",
@@ -642,7 +642,7 @@
     }
   },
   "map_chat": "Rozmowa",
-  "map_repeater": "Powtórzacz",
+  "map_repeater": "Powtarzacz",
   "map_room": "Pokój",
   "map_sensor": "Czujnik",
   "map_pinDm": "Pinezka (DM)",
@@ -684,11 +684,11 @@
   "map_sharedPin": "Udostępniona pinezka",
   "map_joinRoom": "Dołącz do pokoju",
   "map_manageRepeater": "Zarządzaj powtarzaczem",
-  "mapCache_title": "Bufor Map Offline",
-  "mapCache_selectAreaFirst": "Wybierz obszar do wstępnego pobrania.",
-  "mapCache_noTilesToDownload": "Brak dostępnych płytek do pobrania dla tego obszaru.",
-  "mapCache_downloadTilesTitle": "Pobierz płytki",
-  "mapCache_downloadTilesPrompt": "Pobierz {count} płytek do użytku offline?",
+  "mapCache_title": "Pamięć podręczna map offline",
+  "mapCache_selectAreaFirst": "Najpierw wybierz obszar do zapisania w pamięci podręcznej.",
+  "mapCache_noTilesToDownload": "Brak kafelków do pobrania dla tego obszaru.",
+  "mapCache_downloadTilesTitle": "Pobierz kafelki",
+  "mapCache_downloadTilesPrompt": "Pobrać {count} kafelków do użytku offline?",
   "@mapCache_downloadTilesPrompt": {
     "placeholders": {
       "count": {
@@ -697,7 +697,7 @@
     }
   },
   "mapCache_downloadAction": "Pobierz",
-  "mapCache_cachedTiles": "Zapisano {count} płytek w pamięci podręcznej",
+  "mapCache_cachedTiles": "Zapisano w pamięci podręcznej {count} kafelków",
   "@mapCache_cachedTiles": {
     "placeholders": {
       "count": {
@@ -705,7 +705,7 @@
       }
     }
   },
-  "mapCache_cachedTilesWithFailed": "Zapisano {downloaded} płytek ({failed} nieudane)",
+  "mapCache_cachedTilesWithFailed": "Zapisano w pamięci podręcznej {downloaded} kafelków ({failed} nieudanych)",
   "@mapCache_cachedTilesWithFailed": {
     "placeholders": {
       "downloaded": {
@@ -717,13 +717,13 @@
     }
   },
   "mapCache_clearOfflineCacheTitle": "Wyczyść pamięć podręczną offline",
-  "mapCache_clearOfflineCachePrompt": "Usuń wszystkie tymczasowe kafelki mapy?",
-  "mapCache_offlineCacheCleared": "Pamięć podręczna offline została wyczyszczona",
-  "mapCache_noAreaSelected": "Nie zaznaczono żadnej powierzchni.",
+  "mapCache_clearOfflineCachePrompt": "Usunąć wszystkie zapisane kafelki mapy?",
+  "mapCache_offlineCacheCleared": "Wyczyszczono pamięć podręczną offline",
+  "mapCache_noAreaSelected": "Nie wybrano żadnego obszaru.",
   "mapCache_cacheArea": "Obszar pamięci podręcznej",
   "mapCache_useCurrentView": "Użyj aktualnego widoku",
-  "mapCache_zoomRange": "Zakres powiększenia",
-  "mapCache_estimatedTiles": "Szacunkowa liczba płytek: {count}",
+  "mapCache_zoomRange": "Zakres przybliżenia",
+  "mapCache_estimatedTiles": "Szacowana liczba kafelków: {count}",
   "@mapCache_estimatedTiles": {
     "placeholders": {
       "count": {
@@ -812,7 +812,7 @@
   "login_enterPassword": "Wprowadź hasło",
   "login_savePassword": "Zapisz hasło",
   "login_savePasswordSubtitle": "Hasło będzie bezpiecznie przechowywane na tym urządzeniu.",
-  "login_repeaterDescription": "Wprowadź hasło do powtarzacza, aby uzyskać dostęp do ustawień i statusu.",
+  "login_repeaterDescription": "Wprowadź hasło do powtarzacza, aby uzyskać dostęp do ustawień i stanu.",
   "login_roomDescription": "Wprowadź hasło do pokoju, aby uzyskać dostęp do ustawień i statusu.",
   "login_routing": "Trasowanie",
   "login_routingMode": "Tryb routingu",
@@ -839,7 +839,7 @@
       }
     }
   },
-  "login_failedMessage": "Logowanie nie powiodło się. Hasło jest nieprawidłowe albo repeater jest nieosiągalny.",
+  "login_failedMessage": "Logowanie nie powiodło się. Hasło jest nieprawidłowe albo powtarzacz jest nieosiągalny.",
   "common_reload": "Odśwież",
   "common_clear": "Wyczyść",
   "path_currentPath": "Aktualna ścieżka: {path}",
@@ -865,7 +865,7 @@
   "path_labelHexPrefixes": "Ścieżka (prefiksy hex)",
   "path_helperMaxHops": "Maksymalnie 64 skoki. Każdy prefiks ma 2 znaki szesnastkowe (1 bajt).",
   "path_selectFromContacts": "Albo wybierz z kontaktów:",
-  "path_noRepeatersFound": "Nie znaleziono repeaterów ani serwerów pokoi.",
+  "path_noRepeatersFound": "Nie znaleziono powtarzaczy ani serwerów pokoi.",
   "path_customPathsRequire": "Dostosowane ścieżki wymagają pośrednich skoków, które mogą przekazywać wiadomości.",
   "path_invalidHexPrefixes": "Nieprawidłowe prefiksy szesnastkowe: {prefixes}",
   "@path_invalidHexPrefixes": {
@@ -984,7 +984,7 @@
   },
   "repeater_settingsTitle": "Ustawienia powtarzacza",
   "repeater_basicSettings": "Podstawowe Ustawienia",
-  "repeater_repeaterName": "Nazwa Powtórnika",
+  "repeater_repeaterName": "Nazwa powtarzacza",
   "repeater_repeaterNameHelper": "Wyświetl nazwę tego powtarzacza",
   "repeater_adminPassword": "Hasło Administracyjne",
   "repeater_adminPasswordHelper": "Hasło z pełnym dostępem",
@@ -1133,7 +1133,7 @@
   "repeater_cliHelpSetMultiAcks": "Włącza lub wyłącza funkcję 'podwójnych potwierdzeń'.",
   "repeater_cliHelpSetAdvertInterval": "Ustawia interwał timera w minutach do wysyłania pakietu rozgłoszenia lokalnego (bezpośredniego). Ustaw na 0, aby wyłączyć.",
   "repeater_cliHelpSetFloodAdvertInterval": "Ustawia interwał timera w godzinach do wysłania pakietu rozgłoszeniowego typu \"flood\". Ustaw na 0, aby wyłączyć.",
-  "repeater_cliHelpSetGuestPassword": "Ustawia/aktualizuje hasło gościa. (dla repeaterów, loginy gości mogą wysyłać żądanie \"Get Stats\")",
+  "repeater_cliHelpSetGuestPassword": "Ustawia/aktualizuje hasło gościa. (dla powtarzaczy loginy gości mogą wysyłać żądanie \"Get Stats\")",
   "repeater_cliHelpSetName": "Ustawia nazwę rozgłoszenia.",
   "repeater_cliHelpSetLat": "Ustawia współrzędną geograficzną (w stopniach dziesiętnych) mapy rozgłoszeń.",
   "repeater_cliHelpSetLon": "Ustawia współrzędną długościową mapy rozgłoszeń. (stopnie dziesiętne)",
@@ -1552,11 +1552,11 @@
   "pathTrace_notAvailable": "Ścieżka śledzenia niedostępna.",
   "contacts_pathTrace": "Śledzenie Ścieżek",
   "contacts_ping": "Pingować",
-  "contacts_repeaterPathTrace": "Śledzenie ścieżki do repeatera",
+  "contacts_repeaterPathTrace": "Śledzenie ścieżki do powtarzacza",
   "contacts_roomPathTrace": "Śledzenie ścieżki do serwera pokojowego",
   "contacts_roomPing": "Pinguj serwer pokoju",
   "pathTrace_refreshTooltip": "Odśwież ścieżkę.",
-  "contacts_repeaterPing": "Repeater pingowy",
+  "contacts_repeaterPing": "Ping powtarzacza",
   "contacts_pathTraceTo": "Śledź trasę do {name}",
   "contacts_chatTraceRoute": "Śledź trasę promienia",
   "appSettings_languageRu": "Rosyjski",
@@ -1807,7 +1807,7 @@
   "settings_contactSettingsSubtitle": "Ustawienia dotyczące sposobu dodawania kontaktów",
   "contactsSettings_autoAddUsersSubtitle": "Pozwól towarzyszowi automatycznie dodawać znalezione użytkowników.",
   "contactsSettings_autoAddRepeatersTitle": "Automatyczne dodawanie powtarzalników",
-  "contactsSettings_autoAddRepeatersSubtitle": "Zezwól na automatyczne dodawanie odkrytych repeaterów przez towarzysza.",
+  "contactsSettings_autoAddRepeatersSubtitle": "Zezwól towarzyszowi na automatyczne dodawanie odkrytych powtarzaczy.",
   "contactsSettings_autoAddRoomServersTitle": "Automatycznie dodaj serwery pokojowe",
   "contactsSettings_autoAddUsersTitle": "Automatycznie dodaj użytkowników",
   "settings_contactSettings": "Ustawienia kontaktów",
@@ -1830,7 +1830,7 @@
   "discoveredContacts_deleteContactAll": "Usuń wszystkie odkryte kontakty",
   "map_guessedLocation": "Przypuszczalna lokalizacja",
   "map_showGuessedLocations": "Pokaż przypuszczalne lokalizacje węzłów",
-  "usbScreenSubtitle": "Wybierz wykryty urządzenie szeregowe i podłącz je bezpośrednio do swojego węzła MeshCore.",
+  "usbScreenSubtitle": "Wybierz wykryte urządzenie szeregowe i połącz się bezpośrednio ze swoim węzłem MeshCore.",
   "usbScreenTitle": "Połącz przez USB",
   "connectionChoiceUsbLabel": "USB",
   "connectionChoiceBluetoothLabel": "Bluetooth",
@@ -1885,7 +1885,7 @@
   "tcpStatus_connectingTo": "Połączenie z {endpoint}...",
   "tcpErrorHostRequired": "Wymagana jest adresa IP.",
   "tcpErrorPortInvalid": "Numer portu musi mieścić się w zakresie od 1 do 65535.",
-  "tcpErrorUnsupported": "Transport protokoł TCP nie jest obsługiwany na tym urządzeniu.",
+  "tcpErrorUnsupported": "Transport TCP nie jest obsługiwany na tej platformie.",
   "tcpErrorTimedOut": "Połączenie TCP zakończyło się bez powodzenia.",
   "tcpConnectionFailed": "Błąd połączenia TCP: {error}",
   "map_showDiscoveryContacts": "Pokaż odkryte kontakty",
