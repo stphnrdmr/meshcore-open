@@ -889,7 +889,10 @@ List<_PathHop> _buildPathHops(
 LatLng? _resolvePosition(Contact? contact) {
   if (contact == null) return null;
   if (!contact.hasLocation) return null;
-  return LatLng(contact.latitude!, contact.longitude!);
+  final latitude = contact.latitude;
+  final longitude = contact.longitude;
+  if (latitude == null || longitude == null) return null;
+  return LatLng(latitude, longitude);
 }
 
 String _formatPrefix(int prefix) {
