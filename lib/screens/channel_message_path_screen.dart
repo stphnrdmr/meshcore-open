@@ -848,7 +848,11 @@ List<_PathHop> _buildPathHops(
         var bestDistance = double.infinity;
         for (var j = 0; j < candidates.length; j++) {
           final candidate = candidates[j];
-          if (!candidate.hasLocation) continue;
+          if (!candidate.hasLocation ||
+              candidate.latitude == null ||
+              candidate.longitude == null) {
+            continue;
+          }
           final currentDistance = distance(
             searchPoint,
             LatLng(candidate.latitude!, candidate.longitude!),
