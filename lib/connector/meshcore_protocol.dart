@@ -220,6 +220,7 @@ const int cmdGetAutoAddConfig = 59;
 // Text message types
 const int txtTypePlain = 0;
 const int txtTypeCliData = 1;
+const int txtTypeSigned = 2;
 
 // Repeater request types (for server requests)
 const int reqTypeGetStatus = 0x01;
@@ -314,6 +315,7 @@ const int autoAddSensorFlag =
 
 // Sizes
 const int pubKeySize = 32;
+const int signatureSize = 64;
 const int maxPathSize = 64;
 const int pathHashSize = 1;
 const int maxNameSize = 32;
@@ -377,87 +379,78 @@ const int msgTextOffset = 38;
 class ParsedContactText {
   final Uint8List senderPrefix;
   final String text;
-
   const ParsedContactText({required this.senderPrefix, required this.text});
 }
 
 ParsedContactText? parseContactMessageText(Uint8List frame) {
   if (frame.isEmpty) return null;
-  final code = frame[0];
-  if (code != respCodeContactMsgRecv && code != respCodeContactMsgRecvV3) {
-    return null;
-  }
 
-  // Companion radio layout:
-  // [code][snr?][res?][res?][prefix x6][path_len][txt_type][timestamp x4][extra?][text...]
-  final isV3 = code == respCodeContactMsgRecvV3;
-  final prefixOffset = isV3 ? 4 : 1;
-  const prefixLen = 6;
-  final txtTypeOffset = prefixOffset + prefixLen + 1;
-  final timestampOffset = txtTypeOffset + 1;
-  final baseTextOffset = timestampOffset + 4;
-  if (frame.length <= baseTextOffset) return null;
-
-  final flags = frame[txtTypeOffset];
-  final shiftedType = flags >> 2;
-  final rawType = flags;
-  final isPlain = shiftedType == txtTypePlain || rawType == txtTypePlain;
-  final isCli = shiftedType == txtTypeCliData || rawType == txtTypeCliData;
-  if (!isPlain && !isCli) {
-    return null;
-  }
-
-  var text = readCString(
-    frame,
-    baseTextOffset,
-    frame.length - baseTextOffset,
-  ).trim();
-  if (text.isEmpty && frame.length > baseTextOffset + 4) {
-    text = readCString(
-      frame,
-      baseTextOffset + 4,
-      frame.length - (baseTextOffset + 4),
-    ).trim();
-  }
-  if (text.isEmpty) return null;
-
-  final senderPrefix = frame.sublist(prefixOffset, prefixOffset + prefixLen);
-  return ParsedContactText(senderPrefix: senderPrefix, text: text);
-}
-
-// Helper to read uint32 little-endian
-int readUint32LE(Uint8List data, int offset) {
-  return data[offset] |
-      (data[offset + 1] << 8) |
-      (data[offset + 2] << 16) |
-      (data[offset + 3] << 24);
-}
-
-// Helper to read uint16 little-endian
-int readUint16LE(Uint8List data, int offset) {
-  return data[offset] | (data[offset + 1] << 8);
-}
-
-// Helper to read int32 little-endian
-int readInt32LE(Uint8List data, int offset) {
-  int val = readUint32LE(data, offset);
-  if (val >= 0x80000000) val -= 0x100000000;
-  return val;
-}
-
-// Helper to read null-terminated UTF-8 string
-String readCString(Uint8List data, int offset, int maxLen) {
-  int end = offset;
-  while (end < offset + maxLen && end < data.length && data[end] != 0) {
-    end++;
-  }
+  final message = BufferReader(frame);
   try {
-    return utf8.decode(data.sublist(offset, end), allowMalformed: true);
+    final code = message.readByte();
+    if (code != respCodeContactMsgRecv && code != respCodeContactMsgRecvV3) {
+      return null;
+    }
+
+    // Companion radio layout:
+    // [code][snr?][res?][res?][prefix x6][path_len][txt_type][timestamp x4][extra?][text...]
+    if (code == respCodeContactMsgRecvV3) {
+      // Skip SNR and reserved bytes in v3 layout
+      message.skipBytes(3);
+    }
+    final senderPrefix = message.readBytes(6); // public key
+    message.skipBytes(1); // path length
+    final textType = message.readByte();
+    message.skipBytes(4); // timestamp (4 bytes)
+
+    final shiftedType = textType >> 2;
+    final isSigned = shiftedType == txtTypeSigned || textType == txtTypeSigned;
+    if (isSigned) {
+      // Signed messages have a 4-byte signature after the timestamp, before the text
+      message.skipBytes(4);
+    }
+    final text = message.readString();
+    if (text.isEmpty) return null;
+
+    return ParsedContactText(senderPrefix: senderPrefix, text: text);
   } catch (e) {
-    // Fallback to Latin-1 if UTF-8 decoding fails
-    return String.fromCharCodes(data.sublist(offset, end));
+    return null;
   }
 }
+
+// // Helper to read uint32 little-endian
+// int readUint32LE(Uint8List data, int offset) {
+//   return data[offset] |
+//       (data[offset + 1] << 8) |
+//       (data[offset + 2] << 16) |
+//       (data[offset + 3] << 24);
+// }
+
+// // Helper to read uint16 little-endian
+// int readUint16LE(Uint8List data, int offset) {
+//   return data[offset] | (data[offset + 1] << 8);
+// }
+
+// // Helper to read int32 little-endian
+// int readInt32LE(Uint8List data, int offset) {
+//   int val = readUint32LE(data, offset);
+//   if (val >= 0x80000000) val -= 0x100000000;
+//   return val;
+// }
+
+// // Helper to read null-terminated UTF-8 string
+// String readCString(Uint8List data, int offset, int maxLen) {
+//   int end = offset;
+//   while (end < offset + maxLen && end < data.length && data[end] != 0) {
+//     end++;
+//   }
+//   try {
+//     return utf8.decode(data.sublist(offset, end), allowMalformed: true);
+//   } catch (e) {
+//     // Fallback to Latin-1 if UTF-8 decoding fails
+//     return String.fromCharCodes(data.sublist(offset, end));
+//   }
+// }
 
 // Helper to convert public key to hex string
 String pubKeyToHex(Uint8List pubKey) {

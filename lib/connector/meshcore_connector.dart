@@ -257,6 +257,9 @@ class MeshCoreConnector extends ChangeNotifier {
   int? _activeChannelIndex;
   List<int> _channelOrder = [];
 
+  int _storageUsedKb = -1;
+  int _storageTotalKb = -1;
+
   // Getters
   MeshCoreConnectionState get state => _state;
   BluetoothDevice? get device => _device;
@@ -338,6 +341,8 @@ class MeshCoreConnector extends ChangeNotifier {
   int? get firmwareVerCode => _firmwareVerCode;
   Map<String, String>? get currentCustomVars => _currentCustomVars;
   int? get batteryMillivolts => _batteryMillivolts;
+  int? get storageUsedKb => _storageUsedKb;
+  int? get storageTotalKb => _storageTotalKb;
   int get maxContacts => _maxContacts;
   int get maxChannels => _maxChannels;
   Set<String> get knownContactKeys => Set.unmodifiable(_knownContactKeys);
@@ -3037,14 +3042,23 @@ class MeshCoreConnector extends ChangeNotifier {
     // [1-2] = battery_mv (uint16 LE)
     // [3-6] = storage_used_kb (uint32 LE)
     // [7-10] = storage_total_kb (uint32 LE)
-    if (frame.length >= 3) {
-      _batteryMillivolts = readUint16LE(frame, 1);
+    try {
+      final reader = BufferReader(frame);
+      reader.skipBytes(1);
+      _batteryMillivolts = reader.readInt16LE();
+      _storageUsedKb = reader.readUInt32LE();
+      _storageTotalKb = reader.readUInt32LE();
       final volts = (_batteryMillivolts! / 1000.0).toStringAsFixed(2);
       _appDebugLogService?.info(
         'Pulled battery: $volts V ($_batteryMillivolts mV)',
         tag: 'Battery',
       );
       notifyListeners();
+    } catch (e) {
+      _appDebugLogService?.error(
+        'Error parsing battery and storage frame: $e',
+        tag: 'Connector',
+      );
     }
   }
 
@@ -3702,68 +3716,89 @@ class MeshCoreConnector extends ChangeNotifier {
 
   void _handleLogRxData(Uint8List frame) {
     if (frame.length < 4) return;
-    final raw = Uint8List.fromList(frame.sublist(3));
-    final packet = _parseRawPacket(raw);
-    if (packet == null || packet.payloadType != _payloadTypeGroupText) return;
+    try {
+      final reader = BufferReader(frame);
+      reader.skipBytes(3); // Skip header
 
-    final payload = packet.payload;
-    if (payload.length <= _cipherMacSize) return;
-    final channelHash = payload[0];
-    final encrypted = Uint8List.fromList(payload.sublist(1));
+      final raw = reader.readRemainingBytes();
+      final packet = _parseRawPacket(raw);
+      if (packet == null || packet.payloadType != _payloadTypeGroupText) return;
 
-    // Use cached channels as fallback if live channels not yet loaded
-    final channelsToSearch = _channels.isNotEmpty ? _channels : _cachedChannels;
-    for (final channel in channelsToSearch) {
-      if (channel.isEmpty) continue;
-      final hash = _computeChannelHash(channel.psk);
-      if (hash != channelHash) continue;
+      final payload = packet.payload;
+      if (payload.length <= _cipherMacSize) return;
+      final channelHash = payload[0];
+      final encrypted = Uint8List.fromList(payload.sublist(1));
 
-      final decrypted = _decryptPayload(channel.psk, encrypted);
-      if (decrypted == null || decrypted.length < 6) return;
+      // Use cached channels as fallback if live channels not yet loaded
+      final channelsToSearch = _channels.isNotEmpty
+          ? _channels
+          : _cachedChannels;
+      for (final channel in channelsToSearch) {
+        if (channel.isEmpty) continue;
+        final hash = _computeChannelHash(channel.psk);
+        if (hash != channelHash) continue;
+        try {
+          final decryptedBytes = _decryptPayload(channel.psk, encrypted);
+          if (decryptedBytes == null || decryptedBytes.length < 6) return;
+          final decrypted = BufferReader(decryptedBytes);
+          // Skip header + SNR + reserved (2)
+          decrypted.skipBytes(4);
+          final txtType = decrypted.readByte();
+          if ((txtType >> 2) != 0) {
+            return;
+          }
 
-      final txtType = decrypted[4];
-      if ((txtType >> 2) != 0) {
-        return;
+          final timestampRaw = decrypted.readUInt32LE();
+          final text = decrypted.readString();
+          final parsed = _splitSenderText(text);
+          final decodedText =
+              Smaz.tryDecodePrefixed(parsed.text) ?? parsed.text;
+          if (_shouldDropSelfChannelMessage(
+            parsed.senderName,
+            packet.pathBytes,
+          )) {
+            return;
+          }
+
+          final pktHash = _computePacketHash(
+            packet.payloadType,
+            packet.payload,
+          );
+
+          final message = ChannelMessage(
+            senderKey: null,
+            senderName: parsed.senderName,
+            text: decodedText,
+            timestamp: DateTime.fromMillisecondsSinceEpoch(timestampRaw * 1000),
+            isOutgoing: false,
+            status: ChannelMessageStatus.sent,
+            pathLength: packet.isFlood ? packet.hopCount : 0,
+            pathBytes: packet.pathBytes,
+            channelIndex: channel.index,
+            packetHash: pktHash,
+          );
+
+          _updateContactLastMessageAtByName(
+            parsed.senderName,
+            message.timestamp,
+            pathBytes: message.pathBytes,
+          );
+          final isNew = _addChannelMessage(channel.index, message);
+          _maybeIncrementChannelUnread(message, isNew: isNew);
+          notifyListeners();
+          if (isNew) {
+            final label = channel.name.isEmpty
+                ? 'Channel ${channel.index}'
+                : channel.name;
+            _maybeNotifyChannelMessage(message, channelName: label);
+          }
+          return;
+        } catch (e) {
+          appLogger.warn('Decryption failed for channel ${channel.index}: $e');
+        }
       }
-
-      final timestampRaw = readUint32LE(decrypted, 0);
-      final text = readCString(decrypted, 5, decrypted.length - 5);
-      final parsed = _splitSenderText(text);
-      final decodedText = Smaz.tryDecodePrefixed(parsed.text) ?? parsed.text;
-      if (_shouldDropSelfChannelMessage(parsed.senderName, packet.pathBytes)) {
-        return;
-      }
-
-      final pktHash = _computePacketHash(packet.payloadType, packet.payload);
-
-      final message = ChannelMessage(
-        senderKey: null,
-        senderName: parsed.senderName,
-        text: decodedText,
-        timestamp: DateTime.fromMillisecondsSinceEpoch(timestampRaw * 1000),
-        isOutgoing: false,
-        status: ChannelMessageStatus.sent,
-        pathLength: packet.isFlood ? packet.hopCount : 0,
-        pathBytes: packet.pathBytes,
-        channelIndex: channel.index,
-        packetHash: pktHash,
-      );
-
-      _updateContactLastMessageAtByName(
-        parsed.senderName,
-        message.timestamp,
-        pathBytes: message.pathBytes,
-      );
-      final isNew = _addChannelMessage(channel.index, message);
-      _maybeIncrementChannelUnread(message, isNew: isNew);
-      notifyListeners();
-      if (isNew) {
-        final label = channel.name.isEmpty
-            ? 'Channel ${channel.index}'
-            : channel.name;
-        _maybeNotifyChannelMessage(message, channelName: label);
-      }
-      return;
+    } catch (e) {
+      appLogger.warn('Error handling log RX data frame: $e');
     }
   }
 
@@ -3774,15 +3809,15 @@ class MeshCoreConnector extends ChangeNotifier {
     // [2-5] = expected_ack_hash (uint32)
     // [6-9] = estimated_timeout_ms (uint32)
 
-    if (frame.length >= 10) {
-      final ackHash = Uint8List.fromList(frame.sublist(2, 6));
-      final timeoutMs = readUint32LE(frame, 6);
+    try {
+      final reader = BufferReader(frame);
+      reader.skipBytes(2); // code + is_flood
+      final ackHash = reader.readUInt32LE();
+      final timeoutMs = reader.readUInt32LE();
 
       // Check if this is a CLI command ACK - if so, ignore it
       if (_lastSentWasCliCommand) {
-        final ackHashHex = ackHash
-            .map((b) => b.toRadixString(16).padLeft(2, '0'))
-            .join();
+        final ackHashHex = ackHash.toRadixString(16).padLeft(8, '0');
         debugPrint('Ignoring CLI command ACK (sent): $ackHashHex');
         _lastSentWasCliCommand = false;
         return;
@@ -3801,7 +3836,8 @@ class MeshCoreConnector extends ChangeNotifier {
       if (_markNextPendingChannelMessageSent()) {
         return;
       }
-    } else {
+    } catch (e) {
+      appLogger.warn('Error handling message sent frame: $e');
       // Fallback to old behavior
       for (var messages in _conversations.values) {
         for (int i = messages.length - 1; i >= 0; i--) {
@@ -3880,9 +3916,11 @@ class MeshCoreConnector extends ChangeNotifier {
     // [1-4] = ack_hash (uint32)
     // [5-8] = trip_time_ms (uint32)
 
-    if (frame.length >= 9) {
-      final ackHash = Uint8List.fromList(frame.sublist(1, 5));
-      final tripTimeMs = readUint32LE(frame, 5);
+    try {
+      final reader = BufferReader(frame);
+      reader.skipBytes(1); // Skip code
+      final ackHash = reader.readUInt32LE();
+      final tripTimeMs = reader.readUInt32LE();
 
       // CLI command ACKs are already filtered in _handleMessageSent, so this should only see real messages
 
@@ -3894,7 +3932,8 @@ class MeshCoreConnector extends ChangeNotifier {
       if (_retryService != null) {
         _retryService!.handleAckReceived(ackHash, tripTimeMs);
       }
-    } else {
+    } catch (e) {
+      appLogger.warn('Error handling send confirmed frame: $e');
       // Fallback to old behavior
       for (var messages in _conversations.values) {
         for (int i = messages.length - 1; i >= 0; i--) {
@@ -3909,10 +3948,8 @@ class MeshCoreConnector extends ChangeNotifier {
     }
   }
 
-  bool _handleRepeaterCommandSent(Uint8List ackHash, int timeoutMs) {
-    final ackHashHex = ackHash
-        .map((b) => b.toRadixString(16).padLeft(2, '0'))
-        .join();
+  bool _handleRepeaterCommandSent(int ackHash, int timeoutMs) {
+    final ackHashHex = ackHash.toRadixString(16).padLeft(8, '0');
     final entry = _pendingRepeaterAcks[ackHashHex];
     if (entry == null) return false;
 
@@ -3930,10 +3967,8 @@ class MeshCoreConnector extends ChangeNotifier {
     return true;
   }
 
-  bool _handleRepeaterCommandAck(Uint8List ackHash, int tripTimeMs) {
-    final ackHashHex = ackHash
-        .map((b) => b.toRadixString(16).padLeft(2, '0'))
-        .join();
+  bool _handleRepeaterCommandAck(int ackHash, int tripTimeMs) {
+    final ackHashHex = ackHash.toRadixString(16).padLeft(8, '0');
     final entry = _pendingRepeaterAcks.remove(ackHashHex);
     if (entry == null) return false;
     entry.timeout?.cancel();
