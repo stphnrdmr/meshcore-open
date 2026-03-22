@@ -698,42 +698,42 @@ class AppLocalizationsPl extends AppLocalizations {
       'Automatyczne obracanie tras wyłączone';
 
   @override
-  String get appSettings_maxRouteWeight =>
-      'Maksymalny dopuszczalny ciężar pojazdu';
+  String get appSettings_maxRouteWeight => 'Maksymalna waga ścieżki';
 
   @override
   String get appSettings_maxRouteWeightSubtitle =>
-      'Maksymalna waga, jaką ścieżka może zgromadzić dzięki udanym dostawom.';
+      'Maksymalna waga, jaką ścieżka może osiągnąć dzięki udanym dostarczeniom';
 
   @override
-  String get appSettings_initialRouteWeight => 'Początkowa waga trasy';
+  String get appSettings_initialRouteWeight => 'Początkowa waga ścieżki';
 
   @override
   String get appSettings_initialRouteWeightSubtitle =>
-      'Początkowa waga dla nowych, odkrytych ścieżek';
+      'Waga początkowa dla nowo odkrytych ścieżek';
 
   @override
-  String get appSettings_routeWeightSuccessIncrement => 'Wzrost wagi sukcesu';
+  String get appSettings_routeWeightSuccessIncrement =>
+      'Przyrost wagi po sukcesie';
 
   @override
   String get appSettings_routeWeightSuccessIncrementSubtitle =>
-      'Waga dodana do ścieżki po pomyślnym dostarczeniu';
+      'Waga dodawana do ścieżki po udanym dostarczeniu';
 
   @override
   String get appSettings_routeWeightFailureDecrement =>
-      'Zmniejszenie wagi kary';
+      'Spadek wagi po niepowodzeniu';
 
   @override
   String get appSettings_routeWeightFailureDecrementSubtitle =>
-      'Waga usunięta z trasy po nieudanej dostawie';
+      'Waga odejmowana od ścieżki po nieudanym dostarczeniu';
 
   @override
   String get appSettings_maxMessageRetries =>
-      'Maksymalna liczba prób wysłania wiadomości';
+      'Maksymalna liczba ponowień wiadomości';
 
   @override
   String get appSettings_maxMessageRetriesSubtitle =>
-      'Liczba prób ponownego wysłania wiadomości przed oznaczaniem jej jako nieudanej';
+      'Liczba prób ponowienia przed oznaczeniem wiadomości jako nieudanej';
 
   @override
   String path_routeWeight(String weight, String max) {
