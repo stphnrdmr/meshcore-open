@@ -975,7 +975,6 @@ void _privacySettings(BuildContext context, MeshCoreConnector connector) {
                 value: advertLocPolicy,
                 onChanged: (value) {
                   setDialogState(() => advertLocPolicy = value);
-                  advertLocPolicy = value;
                 },
               ),
               const SizedBox(height: 8),
