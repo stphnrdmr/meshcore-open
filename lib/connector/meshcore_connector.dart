@@ -4943,6 +4943,17 @@ class MeshCoreConnector extends ChangeNotifier {
     );
   }
 
+  bool hasValidLocation(double? latitude, double? longitude) {
+    const double epsilon = 1e-6;
+    final lat = latitude ?? 0.0;
+    final lon = longitude ?? 0.0;
+    return (lat.abs() > epsilon || lon.abs() > epsilon) &&
+        lat >= -90.0 &&
+        lat <= 90.0 &&
+        lon >= -180.0 &&
+        lon <= 180.0;
+  }
+
   void _handlePayloadAdvertReceived(
     Uint8List rawPacket,
     Uint8List payload,
@@ -4980,6 +4991,9 @@ class MeshCoreConnector extends ChangeNotifier {
         latitude = advert.readInt32LE() / 1e6;
         longitude = advert.readInt32LE() / 1e6;
       }
+      // Validate location values if present
+      hasLocation = hasValidLocation(latitude, longitude);
+
       if (hasName && advert.remaining > 0) {
         name = advert.readCString();
       }
@@ -5045,20 +5059,8 @@ class MeshCoreConnector extends ChangeNotifier {
 
       // CRITICAL: Preserve user's path override when contact is refreshed from device
       _contacts[existingIndex] = existing.copyWith(
-        latitude:
-            hasLocation &&
-                latitude != null &&
-                latitude.abs() <= 90 &&
-                (latitude != 0 || longitude != 0)
-            ? latitude
-            : existing.latitude,
-        longitude:
-            hasLocation &&
-                longitude != null &&
-                longitude.abs() <= 180 &&
-                (latitude != 0 || longitude != 0)
-            ? longitude
-            : existing.longitude,
+        latitude: hasLocation ? latitude : existing.latitude,
+        longitude: hasLocation ? longitude : existing.longitude,
         name: hasName ? name : existing.name,
         path: Uint8List.fromList(path.reversed.toList()),
         pathLength: path.length,
@@ -5225,6 +5227,10 @@ class MeshCoreConnector extends ChangeNotifier {
     unawaited(_channelMessageStore.saveChannelMessages(channelIndex, messages));
     markChannelRead(channelIndex);
     notifyListeners();
+  }
+
+  void deleteAllPaths() {
+    _pathHistoryService?.clearAllHistories();
   }
 }
 

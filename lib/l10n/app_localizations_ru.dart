@@ -1690,6 +1690,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get map_otherNodes => 'Другие ноды';
 
   @override
+  String get map_showOverlaps => 'Перекрытия ключа повтора';
+
+  @override
   String get map_keyPrefix => 'Префикс ключа';
 
   @override
@@ -1731,6 +1734,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Запустить трассировку пути';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Вернуться обратно по тому же пути';
 
   @override
   String get map_removeLast => 'Удалить последний';

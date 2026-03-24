@@ -1665,6 +1665,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get map_otherNodes => 'Andra noder';
 
   @override
+  String get map_showOverlaps => 'Repeater-nyckelöverlappningar';
+
+  @override
   String get map_keyPrefix => 'Nyckelprefix';
 
   @override
@@ -1706,6 +1709,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Kör spårsökning';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Gå tillbaka på samma väg';
 
   @override
   String get map_removeLast => 'Ta bort sista';

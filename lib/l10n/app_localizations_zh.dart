@@ -1583,6 +1583,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get map_otherNodes => '其他节点';
 
   @override
+  String get map_showOverlaps => '重复键重叠';
+
+  @override
   String get map_keyPrefix => '关键字前缀';
 
   @override
@@ -1623,6 +1626,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get map_runTrace => '运行路径追踪';
+
+  @override
+  String get map_runTraceWithReturnPath => '沿着相同的路径返回';
 
   @override
   String get map_removeLast => '移除最后一个';

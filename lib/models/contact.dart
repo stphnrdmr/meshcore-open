@@ -183,12 +183,13 @@ class Contact {
       final lastMod = reader.readUInt32LE();
 
       double? lat, lon;
-      final latRaw = reader.readInt32LE();
-      final lonRaw = reader.readInt32LE();
-
-      if (latRaw != 0 || lonRaw != 0) {
-        lat = latRaw / 1e6;
-        lon = lonRaw / 1e6;
+      if (reader.remaining >= 8) {
+        final latRaw = reader.readInt32LE();
+        final lonRaw = reader.readInt32LE();
+        if (latRaw != 0 || lonRaw != 0) {
+          lat = latRaw / 1e6;
+          lon = lonRaw / 1e6;
+        }
       }
 
       return Contact(

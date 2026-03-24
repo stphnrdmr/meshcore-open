@@ -1686,6 +1686,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get map_otherNodes => 'Otros Nodos';
 
   @override
+  String get map_showOverlaps => 'Superposiciones de tecla repetidora';
+
+  @override
   String get map_keyPrefix => 'Prefijo de clave';
 
   @override
@@ -1727,6 +1730,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Ejecutar Rastreo de Ruta';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Volver atrás por el mismo camino.';
 
   @override
   String get map_removeLast => 'Eliminar último';

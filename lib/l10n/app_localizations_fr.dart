@@ -1696,6 +1696,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get map_otherNodes => 'Autres nœuds';
 
   @override
+  String get map_showOverlaps => 'Chevauchement de la touche répétitive';
+
+  @override
   String get map_keyPrefix => 'Préfixe clé';
 
   @override
@@ -1738,6 +1741,9 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Exécuter la traçage de chemin';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Revenir sur le même chemin.';
 
   @override
   String get map_removeLast => 'Supprimer le dernier';

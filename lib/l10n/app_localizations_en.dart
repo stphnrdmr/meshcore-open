@@ -1657,6 +1657,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get map_otherNodes => 'Other Nodes';
 
   @override
+  String get map_showOverlaps => 'Repeater Key Overlaps';
+
+  @override
   String get map_keyPrefix => 'Key Prefix';
 
   @override
@@ -1696,7 +1699,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get map_tapToAdd => 'Tap on nodes to add them to the path.';
 
   @override
-  String get map_runTrace => 'Run Path Trace';
+  String get map_runTrace => 'Run path trace';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Return back on the same path.';
 
   @override
   String get map_removeLast => 'Remove Last';

@@ -1672,6 +1672,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get map_otherNodes => 'Druge vozlišča';
 
   @override
+  String get map_showOverlaps => 'Prekrivanje ključa ponovnega predvajanja';
+
+  @override
   String get map_keyPrefix => 'Predpona ključa';
 
   @override
@@ -1712,6 +1715,9 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Zaženi sledenje poti';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Vrni se nazaj po isti poti.';
 
   @override
   String get map_removeLast => 'Odstrani Zadnji';

@@ -1685,6 +1685,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get map_otherNodes => 'Інші вузли';
 
   @override
+  String get map_showOverlaps => 'Перекриття ключа повторювача';
+
+  @override
   String get map_keyPrefix => 'Префікс ключа';
 
   @override
@@ -1726,6 +1729,9 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Виконати трасування шляху';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Повернутися назад тим же шляхом';
 
   @override
   String get map_removeLast => 'Видалити останній';

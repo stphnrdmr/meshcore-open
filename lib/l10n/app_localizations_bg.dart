@@ -1690,6 +1690,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get map_otherNodes => 'Други възли';
 
   @override
+  String get map_showOverlaps => 'Покриване на ключа на повтаряча';
+
+  @override
   String get map_keyPrefix => 'Префикс на ключа';
 
   @override
@@ -1732,6 +1735,9 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Изпълни Път на Следване';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Върни се по същия път.';
 
   @override
   String get map_removeLast => 'Премахни Последно';

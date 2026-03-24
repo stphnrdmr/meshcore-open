@@ -1675,6 +1675,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get map_otherNodes => 'Andere Nodes';
 
   @override
+  String get map_showOverlaps => 'Herhalingssleutel overlapt';
+
+  @override
   String get map_keyPrefix => 'Prefix sleutel';
 
   @override
@@ -1717,6 +1720,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Padeshulp traceren';
+
+  @override
+  String get map_runTraceWithReturnPath => 'Terugkeren op hetzelfde pad.';
 
   @override
   String get map_removeLast => 'Verwijder Laatste';

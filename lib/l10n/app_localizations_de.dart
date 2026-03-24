@@ -1687,6 +1687,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get map_otherNodes => 'Andere Knoten';
 
   @override
+  String get map_showOverlaps => 'Überlappungen der Repeater-Taste';
+
+  @override
   String get map_keyPrefix => 'Schlüsselpräfix';
 
   @override
@@ -1729,6 +1732,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get map_runTrace => 'Pfadverlauf ausführen';
+
+  @override
+  String get map_runTraceWithReturnPath =>
+      'Auf dem gleichen Pfad zurückkehren.';
 
   @override
   String get map_removeLast => 'Letztes Entfernen';
