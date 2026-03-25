@@ -2034,5 +2034,16 @@
   "radioStats_stripNoise": "Rauschpegel: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Abrufen von Radiostatus…",
   "radioStats_settingsTile": "Senderinformationen",
-  "radioStats_settingsSubtitle": "Rauschpegel, RSSI, Signal-Rausch-Verhältnis (SNR) und Nutzzeit"
+  "radioStats_settingsSubtitle": "Rauschpegel, RSSI, Signal-Rausch-Verhältnis (SNR) und Nutzzeit",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "PIN anzeigen",
+  "scanner_linuxPairingHidePin": "PIN ausblenden",
+  "scanner_linuxPairingPinTitle": "Bluetooth-Paarungs-PIN",
+  "scanner_linuxPairingPinPrompt": "Geben Sie die PIN für {deviceName} ein (leer lassen, falls keine)."
 }

@@ -3580,4 +3580,18 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get radioStats_settingsSubtitle =>
       'Уровень шума, RSSI, SNR и время передачи';
+
+  @override
+  String get scanner_linuxPairingShowPin => 'Показать PIN';
+
+  @override
+  String get scanner_linuxPairingHidePin => 'Скрыть PIN';
+
+  @override
+  String get scanner_linuxPairingPinTitle => 'PIN‑код сопряжения Bluetooth';
+
+  @override
+  String scanner_linuxPairingPinPrompt(String deviceName) {
+    return 'Введите PIN‑код для $deviceName (оставьте пустым, если нет).';
+  }
 }

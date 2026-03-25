@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Bakgrundsnivå: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Hämtar radiostatistik…",
   "radioStats_settingsTile": "Radiostation",
-  "radioStats_settingsSubtitle": "Bakgrundsnivå, RSSI, SNR och tillgänglig tid"
+  "radioStats_settingsSubtitle": "Bakgrundsnivå, RSSI, SNR och tillgänglig tid",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Visa PIN",
+  "scanner_linuxPairingPinTitle": "Bluetooth‑parnings‑PIN",
+  "scanner_linuxPairingPinPrompt": "Ange PIN för {deviceName} (lämna tomt om ingen).",
+  "scanner_linuxPairingHidePin": "Dölj PIN"
 }

@@ -3569,4 +3569,18 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get radioStats_settingsSubtitle =>
       'Nivel de ruido, RSSI, SNR y tiempo de transmisión';
+
+  @override
+  String get scanner_linuxPairingShowPin => 'Mostrar PIN';
+
+  @override
+  String get scanner_linuxPairingHidePin => 'Ocultar PIN';
+
+  @override
+  String get scanner_linuxPairingPinTitle => 'PIN de emparejamiento Bluetooth';
+
+  @override
+  String scanner_linuxPairingPinPrompt(String deviceName) {
+    return 'Introduzca el PIN para $deviceName (déjelo en blanco si no hay ninguno).';
+  }
 }

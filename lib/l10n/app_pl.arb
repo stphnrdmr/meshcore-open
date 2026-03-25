@@ -2044,5 +2044,16 @@
   "radioStats_stripNoise": "Poziom szumów: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Pobieranie danych dotyczących radia…",
   "radioStats_settingsTile": "Statystyki radiowe",
-  "radioStats_settingsSubtitle": "Szum tła, RSSI, SNR oraz czas dostępny"
+  "radioStats_settingsSubtitle": "Szum tła, RSSI, SNR oraz czas dostępny",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Pokaż PIN",
+  "scanner_linuxPairingHidePin": "Ukryj PIN",
+  "scanner_linuxPairingPinPrompt": "Wprowadź kod PIN dla {deviceName} (pozostaw puste, jeśli brak).",
+  "scanner_linuxPairingPinTitle": "Kod PIN parowania Bluetooth"
 }

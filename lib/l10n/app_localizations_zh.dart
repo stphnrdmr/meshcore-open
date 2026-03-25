@@ -3298,4 +3298,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get radioStats_settingsSubtitle => '噪声水平、RSSI、信噪比和空中时间';
+
+  @override
+  String get scanner_linuxPairingShowPin => '显示 PIN码';
+
+  @override
+  String get scanner_linuxPairingHidePin => '隐藏 PIN';
+
+  @override
+  String get scanner_linuxPairingPinTitle => '蓝牙配对 PIN';
+
+  @override
+  String scanner_linuxPairingPinPrompt(String deviceName) {
+    return '输入 $deviceName 的 PIN（如果没有，请留空）。';
+  }
 }

@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Úroveň hluku: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Získavanie údajov o rádiu…",
   "radioStats_settingsTile": "Štatistiky rádiových vysielaní",
-  "radioStats_settingsSubtitle": "Úroveň hluku, RSSI, SNR a časové rozloženie"
+  "radioStats_settingsSubtitle": "Úroveň hluku, RSSI, SNR a časové rozloženie",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingPinPrompt": "Zadajte PIN pre {deviceName} (ak nie je, nechajte prázdne).",
+  "scanner_linuxPairingShowPin": "Zobraziť PIN",
+  "scanner_linuxPairingHidePin": "Skryť PIN",
+  "scanner_linuxPairingPinTitle": "Bluetooth párovací PIN"
 }

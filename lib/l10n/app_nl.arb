@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Ruisfrequentie: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Radio-statistieken ophalen…",
   "radioStats_settingsTile": "Statistieken over radio",
-  "radioStats_settingsSubtitle": "Ruimtelijke ruis, RSSI, SNR en beschikbare tijd"
+  "radioStats_settingsSubtitle": "Ruimtelijke ruis, RSSI, SNR en beschikbare tijd",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Toon PIN",
+  "scanner_linuxPairingHidePin": "PIN verbergen",
+  "scanner_linuxPairingPinPrompt": "Voer PIN in voor {deviceName} (laat leeg als er geen is).",
+  "scanner_linuxPairingPinTitle": "Bluetooth‑koppelings‑PIN"
 }

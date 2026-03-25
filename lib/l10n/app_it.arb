@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Livello di rumore: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Recupero delle statistiche radio…",
   "radioStats_settingsTile": "Statistiche radio",
-  "radioStats_settingsSubtitle": "Livello di rumore, RSSI, rapporto segnale/rumore (SNR) e tempo di trasmissione"
+  "radioStats_settingsSubtitle": "Livello di rumore, RSSI, rapporto segnale/rumore (SNR) e tempo di trasmissione",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Mostra PIN",
+  "scanner_linuxPairingHidePin": "Nascondi PIN",
+  "scanner_linuxPairingPinTitle": "PIN di associazione Bluetooth",
+  "scanner_linuxPairingPinPrompt": "Inserisci il PIN per {deviceName} (lascia vuoto se non ce n'è)."
 }

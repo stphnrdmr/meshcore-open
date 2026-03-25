@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Število šuma: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Prejemanje statistike o radiju…",
   "radioStats_settingsTile": "Radijske statistike",
-  "radioStats_settingsSubtitle": "Število šumov, RSSI, SNR in čas, ki ga je napolnila oprema"
+  "radioStats_settingsSubtitle": "Število šumov, RSSI, SNR in čas, ki ga je napolnila oprema",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Prikaži PIN",
+  "scanner_linuxPairingHidePin": "Skrij PIN",
+  "scanner_linuxPairingPinPrompt": "Vnesite PIN za {deviceName} (pustite prazno, če ga ni).",
+  "scanner_linuxPairingPinTitle": "Bluetooth PIN za seznanjanje"
 }

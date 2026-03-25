@@ -3576,4 +3576,18 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get radioStats_settingsSubtitle =>
       'Rauschpegel, RSSI, Signal-Rausch-Verhältnis (SNR) und Nutzzeit';
+
+  @override
+  String get scanner_linuxPairingShowPin => 'PIN anzeigen';
+
+  @override
+  String get scanner_linuxPairingHidePin => 'PIN ausblenden';
+
+  @override
+  String get scanner_linuxPairingPinTitle => 'Bluetooth-Paarungs-PIN';
+
+  @override
+  String scanner_linuxPairingPinPrompt(String deviceName) {
+    return 'Geben Sie die PIN für $deviceName ein (leer lassen, falls keine).';
+  }
 }

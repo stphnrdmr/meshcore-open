@@ -1246,5 +1246,16 @@
   "radioStats_stripNoise": "Уровень шума: {noiseDbm} дБм",
   "radioStats_stripWaiting": "Получение данных о радио…",
   "radioStats_settingsTile": "Статистика радиовещания",
-  "radioStats_settingsSubtitle": "Уровень шума, RSSI, SNR и время передачи"
+  "radioStats_settingsSubtitle": "Уровень шума, RSSI, SNR и время передачи",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "Показать PIN",
+  "scanner_linuxPairingPinPrompt": "Введите PIN‑код для {deviceName} (оставьте пустым, если нет).",
+  "scanner_linuxPairingHidePin": "Скрыть PIN",
+  "scanner_linuxPairingPinTitle": "PIN‑код сопряжения Bluetooth"
 }

@@ -2011,5 +2011,16 @@
   "radioStats_stripNoise": "噪声水平：{noiseDbm} dBm",
   "radioStats_stripWaiting": "正在获取收音机数据…",
   "radioStats_settingsTile": "广播统计数据",
-  "radioStats_settingsSubtitle": "噪声水平、RSSI、信噪比和空中时间"
+  "radioStats_settingsSubtitle": "噪声水平、RSSI、信噪比和空中时间",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingShowPin": "显示 PIN码",
+  "scanner_linuxPairingPinPrompt": "输入 {deviceName} 的 PIN（如果没有，请留空）。",
+  "scanner_linuxPairingPinTitle": "蓝牙配对 PIN",
+  "scanner_linuxPairingHidePin": "隐藏 PIN"
 }

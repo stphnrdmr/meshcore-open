@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Рівень шуму: {noiseDbm} дБм",
   "radioStats_stripWaiting": "Отримано статистику радіо…",
   "radioStats_settingsTile": "Дані про радіостанції",
-  "radioStats_settingsSubtitle": "Рівень шуму, RSSI, SNR та час, протягом якого пристрій використовує радіоканал."
+  "radioStats_settingsSubtitle": "Рівень шуму, RSSI, SNR та час, протягом якого пристрій використовує радіоканал.",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingPinTitle": "PIN‑код спарювання Bluetooth",
+  "scanner_linuxPairingShowPin": "Показати PIN",
+  "scanner_linuxPairingPinPrompt": "Введіть PIN для {deviceName} (залиште порожнім, якщо його немає).",
+  "scanner_linuxPairingHidePin": "Приховати PIN"
 }

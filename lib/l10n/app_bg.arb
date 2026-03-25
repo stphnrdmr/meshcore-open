@@ -2006,5 +2006,16 @@
   "radioStats_stripNoise": "Ниво на шума: {noiseDbm} dBm",
   "radioStats_stripWaiting": "Извличане на данни за радиото…",
   "radioStats_settingsTile": "Статистически данни за радиостанции",
-  "radioStats_settingsSubtitle": "Ниво на шума, RSSI, SNR и време на пренос"
+  "radioStats_settingsSubtitle": "Ниво на шума, RSSI, SNR и време на пренос",
+  "@scanner_linuxPairingPinPrompt": {
+    "placeholders": {
+      "deviceName": {
+        "type": "String"
+      }
+    }
+  },
+  "scanner_linuxPairingHidePin": "Скрий ПИН",
+  "scanner_linuxPairingShowPin": "Покажи PIN",
+  "scanner_linuxPairingPinTitle": "PIN код за сдвояване на Bluetooth",
+  "scanner_linuxPairingPinPrompt": "Въведете ПИН за {deviceName} (оставете празно, ако няма)."
 }
